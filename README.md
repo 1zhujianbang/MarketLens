@@ -2,7 +2,7 @@
 
 |需求|状态|
 |---|:---:|
-|加密货币市场新闻资讯API接入|&#x274C;|
+|加密货币市场新闻资讯API接入|&#x2705;|
 |历史几年K线数据（日线、周线、月线）获取|&#x274C;|
 |利用历史数据训练模型：PPO或等价/混合算法|&#x274C;|
 |模型分析实时数据，输出信号|&#x274C;|
@@ -31,6 +31,8 @@
         │   └── config_manager.py # 配置管理器
         ├── data/                 # 数据模块
         │   ├── data_collector.py # 数据收集器
+        │   ├── news_collector.py # 新闻收集器
+        |   ├── RESTful-API-main/ # 新闻API文档
         │   └── websocket_collector.py # WebSocket实时数据
         ├── models/               # 模型管理
         │   └── model_loader.py   # 模型加载器
