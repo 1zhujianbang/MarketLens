@@ -41,3 +41,6 @@
 ### 转发代理IP白名单
 
 提交被限制IP到issue中即可，管理员会添加至白名单
+
+或者通过地址 data_config.proxy/admin/ 登录后台
+白名单账号:admin 密码:pwdcantsimple 该账号可对白名单IP进行CLUD
