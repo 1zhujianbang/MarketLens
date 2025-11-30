@@ -121,7 +121,7 @@ class TradingAgent:
         
         # 3.2 获取实时数据
         print("获取实时行情数据...")
-        self.realtime_data = self.okx_client.get_realtime_data()
+        self.realtime_data = self.okx_client.get_all_tickers_with_changes() 
         print(f"成功获取 {len(self.realtime_data)} 个交易对的实时数据")
         
         # 验证实时数据
@@ -189,6 +189,8 @@ class TradingAgent:
                     # 如果计算失败，至少保留原始数据
                     self.technical_data[pair] = data
 
+
+
     def _print_data_statistics(self):
         """打印数据统计信息"""
         print("\n📊 数据初始化完成:")
@@ -201,11 +203,11 @@ class TradingAgent:
         
         # 显示每个交易对的最新价格
         print("\n   最新价格:")
-        for pair, ticker in self.realtime_data.items():
+        tickers_with_changes = self.okx_client.get_all_tickers_with_changes()
+        for pair, ticker in tickers_with_changes.items():
             if ticker:
-                price = float(ticker.get('last', 0))
-                change_24h = float(ticker.get('24hChange', 0))
-                print(f"     {pair}: {price:.2f} ({change_24h:+.2f}%)")
+                display_str = self.okx_client.format_price_display(ticker)
+                print(f"     {display_str}")
 
     async def _initialize_news_data(self):
         """初始化新闻数据"""
