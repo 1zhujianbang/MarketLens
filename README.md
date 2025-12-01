@@ -55,3 +55,7 @@
 
 或者通过地址 data_config.proxy/admin/ 登录后台
 白名单账号:admin 密码:pwdcantsimple 该账号可对白名单IP进行CLUD
+
+### 根据学习模型结果得出的结论
+
+- 学习模型只会数学形态拟合，没有任何实际意义
