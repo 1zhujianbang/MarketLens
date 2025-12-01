@@ -108,10 +108,10 @@ def save_pending_entities(candidates: Set[str]):
 
 def _add_concept_to_event_keywords(entity: str, event_keywords: dict) -> dict:
     """
-    交互式询问是否将 concept 类实体加入事件关键词库
+    交互式询问是否将 actions 类实体加入事件关键词库
     返回更新后的 event_keywords 字典
     """
-    print(f"\n💡 检测到 '{entity}' 被加入 'concepts'，是否也作为事件关键词？")
+    print(f"\n💡 检测到 '{entity}' 被加入 'actions'，是否也作为事件关键词？")
     print("[1] 加入现有事件类型")
     print("[2] 创建新事件类型")
     print("[3] 不加入事件关键词库")
@@ -223,7 +223,7 @@ def approve_pending_entities():
                         target_cat = categories[idx]
                         approved_updates[entity] = target_cat
                         print(f"✅ '{entity}' 将加入分类 '{target_cat}'")
-                        if target_cat == "concepts":
+                        if target_cat == "events":
                             # 只有当 EVENT_KEYWORDS_FILE 存在或可加载时才处理
                             try:
                                 with open(EVENT_KEYWORDS_FILE, "r", encoding="utf-8") as f:
