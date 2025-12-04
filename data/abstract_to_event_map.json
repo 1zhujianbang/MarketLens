@@ -150,7 +150,7 @@
     "sources": [
       "blockbeats"
     ],
-    "first_seen": "2025-12-04T14:40:33.958319+00:00"
+    "first_seen": "2025-12-04T13:02:58+00:00"
   },
   "Ripple首席执行官Brad Garlinghouse在Binance区块链周预测2026年底比特币将达18万美元": {
     "entities": [
@@ -162,7 +162,7 @@
     "sources": [
       "blockbeats"
     ],
-    "first_seen": "2025-12-04T14:40:36.399178+00:00"
+    "first_seen": "2025-12-04T12:58:51+00:00"
   },
   "Solana基金会主席Lily Liu称比特币升至9万美元属正常并可能突破10万美元": {
     "entities": [
@@ -3322,5 +3322,152 @@
       "blockbeats"
     ],
     "first_seen": "2025-12-04T13:32:39+00:00"
+  },
+  "美国公布截至11月29日当周初请失业金人数为19.1万人，低于预期": {
+    "entities": [
+      "美国"
+    ],
+    "event_summary": "美国（作为主权国家及数据发布主体）公布了其特定统计周期的劳动力市场数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T13:30:20+00:00"
+  },
+  "Robinhood上线AERO现货交易": {
+    "entities": [
+      "Robinhood"
+    ],
+    "event_summary": "金融服务公司Robinhood在其平台上推出了AERO代币的现货交易服务",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T13:26:17+00:00"
+  },
+  "某新建钱包从Galaxy Digital提取538.42枚BTC": {
+    "entities": [
+      "Galaxy Digital"
+    ],
+    "event_summary": "一家注册公司向一个新建钱包转移了大量比特币资产",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T13:15:30+00:00"
+  },
+  "Solana基金会主席Lily Liu称比特币价格达到9万美元属正常并可能突破10万美元": {
+    "entities": [
+      "Lily Liu",
+      "Solana基金会"
+    ],
+    "event_summary": "Solana基金会主席在活动中评论比特币价格水平",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T12:58:51+00:00"
+  },
+  "Binance首席执行官Richard Teng承认市场波动但强调趋势乐观": {
+    "entities": [
+      "Richard Teng",
+      "Binance"
+    ],
+    "event_summary": "Binance首席执行官在活动中回应近期市场波动",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T12:58:51+00:00"
+  },
+  "贝莱德CEO称部分主权财富基金在比特币价格下跌期间买入比特币": {
+    "entities": [
+      "贝莱德",
+      "Larry Fink"
+    ],
+    "event_summary": "贝莱德首席执行官公开表示部分主权财富基金正在逐步买入比特币以建立长期头寸",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T12:52:41+00:00"
+  },
+  "贝莱德CEO警告美国若不加速数字化投入将面临落后风险": {
+    "entities": [
+      "贝莱德",
+      "Larry Fink",
+      "美国"
+    ],
+    "event_summary": "贝莱德首席执行官警告美国政府需加快在数字化和代币化领域的投入以避免落后于其他国家",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T12:52:41+00:00"
+  },
+  "Tether投资智利数字资产交易所OrionX后将其从官网投资组合中移除": {
+    "entities": [
+      "Tether",
+      "OrionX"
+    ],
+    "event_summary": "Tether曾投资并公开列出OrionX为其投资组合公司，后将其从官方网站移除",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T07:30:13+00:00"
+  },
+  "Tether投资Samson Mow创立的Exordium公司": {
+    "entities": [
+      "Tether",
+      "Exordium",
+      "Samson Mow"
+    ],
+    "event_summary": "Tether参与了由Samson Mow创立的Exordium公司的证券型代币发行",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T07:30:13+00:00"
+  },
+  "Tether投资Samson Mow创立的Jan3公司": {
+    "entities": [
+      "Tether",
+      "Jan3",
+      "Samson Mow"
+    ],
+    "event_summary": "Tether向Samson Mow创立的Jan3公司提供资金以加速AQUA钱包的开发",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T07:30:13+00:00"
+  },
+  "iFinex向Blockstream提供资助": {
+    "entities": [
+      "iFinex",
+      "Blockstream"
+    ],
+    "event_summary": "iFinex作为Bitfinex平台运营方之一，曾向Blockstream提供资金支持",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T07:30:13+00:00"
+  },
+  "Tether对已破产的Celsius进行股权投资": {
+    "entities": [
+      "Tether",
+      "Celsius",
+      "Alex Mashinsky"
+    ],
+    "event_summary": "Tether曾作为股权投资方投资Celsius，该公司后因欺诈倒闭，其前CEO Alex Mashinsky被判刑",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T07:30:13+00:00"
+  },
+  "美俄莫斯科会谈未就乌克兰和平协议达成妥协": {
+    "entities": [
+      "普京",
+      "美国",
+      "俄罗斯",
+      "史蒂夫·威特科夫",
+      "贾里德·库什纳"
+    ],
+    "event_summary": "俄罗斯总统普京与美国特使史蒂夫·威特科夫及特朗普顾问贾里德·库什纳在莫斯科会谈，未接受任何乌克兰和平协议方案",
+    "sources": [
+      "gnews"
+    ],
+    "first_seen": "2025-12-04T03:45:14+00:00"
   }
 }

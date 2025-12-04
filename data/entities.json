@@ -79,7 +79,7 @@
     ]
   },
   "Binance": {
-    "first_seen": "2025-12-04T13:37:05+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -115,7 +115,7 @@
     ]
   },
   "Galaxy Digital": {
-    "first_seen": "2025-12-04T14:40:29.518365+00:00",
+    "first_seen": "2025-12-04T13:15:30+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -127,49 +127,49 @@
     ]
   },
   "Matrixport": {
-    "first_seen": "2025-12-04T14:40:33.956318+00:00",
+    "first_seen": "2025-12-04T13:02:58+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Brad Garlinghouse": {
-    "first_seen": "2025-12-04T14:40:36.396672+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Ripple": {
-    "first_seen": "2025-12-04T14:40:36.396672+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Lily Liu": {
-    "first_seen": "2025-12-04T14:40:36.396672+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Solana基金会": {
-    "first_seen": "2025-12-04T14:40:36.396672+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Richard Teng": {
-    "first_seen": "2025-12-04T14:40:36.396672+00:00",
+    "first_seen": "2025-12-04T12:58:51+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "贝莱德": {
-    "first_seen": "2025-12-04T14:40:40.137770+00:00",
+    "first_seen": "2025-12-04T12:52:41+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Larry Fink": {
-    "first_seen": "2025-12-04T14:40:40.137770+00:00",
+    "first_seen": "2025-12-04T12:52:41+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -823,7 +823,7 @@
     ]
   },
   "Robinhood": {
-    "first_seen": "2025-12-04T14:43:18.218371+00:00",
+    "first_seen": "2025-12-04T13:26:17+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -1609,7 +1609,7 @@
     ]
   },
   "Tether": {
-    "first_seen": "2025-12-04T14:46:25.921253+00:00",
+    "first_seen": "2025-12-04T07:30:13+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -2644,6 +2644,66 @@
     "first_seen": "2025-12-04T13:40:42+00:00",
     "sources": [
       "blockbeats"
+    ]
+  },
+  "OrionX": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Exordium": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Samson Mow": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Jan3": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "iFinex": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Blockstream": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Celsius": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Alex Mashinsky": {
+    "first_seen": "2025-12-04T07:30:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "史蒂夫·威特科夫": {
+    "first_seen": "2025-12-04T03:45:14+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "贾里德·库什纳": {
+    "first_seen": "2025-12-04T03:45:14+00:00",
+    "sources": [
+      "gnews"
     ]
   }
 }
