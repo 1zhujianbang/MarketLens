@@ -1,1 +1,1070 @@
-{}
+{
+  "Pacifica": {
+    "first_seen": "2025-12-04T10:56:13.071355+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbob": {
+    "first_seen": "2025-12-04T10:56:13.071355+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "DefiLlama": {
+    "first_seen": "2025-12-04T10:56:21.801608+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CZ": {
+    "first_seen": "2025-12-04T11:00:25.547555+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "何一": {
+    "first_seen": "2025-12-04T11:00:25.547555+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Binance": {
+    "first_seen": "2025-12-04T11:00:25.547555+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "BNB Chain": {
+    "first_seen": "2025-12-04T11:00:25.547555+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Aztec": {
+    "first_seen": "2025-12-04T11:00:27.051261+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Uniswap": {
+    "first_seen": "2025-12-04T11:00:27.051261+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国": {
+    "first_seen": "2025-12-04T11:00:35.153442+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美联储": {
+    "first_seen": "2025-12-04T11:00:35.153442+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Polymarket": {
+    "first_seen": "2025-12-04T11:00:35.153442+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bitget Wallet": {
+    "first_seen": "2025-12-04T11:00:39.575294+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Google": {
+    "first_seen": "2025-12-04T11:00:39.575294+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Apple": {
+    "first_seen": "2025-12-04T11:00:39.575294+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Binance Wallet": {
+    "first_seen": "2025-12-04T11:00:40.702155+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "日本": {
+    "first_seen": "2025-12-04T11:00:41.740055+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Tom Lee": {
+    "first_seen": "2025-12-04T11:00:45.058778+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "BitMine": {
+    "first_seen": "2025-12-04T11:00:45.058778+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Vitalik Buterin": {
+    "first_seen": "2025-12-04T11:00:46.317814+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "BlockBeats": {
+    "first_seen": "2025-12-04T11:00:50.925502+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "GMGN": {
+    "first_seen": "2025-12-04T11:00:50.925502+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "@ali_charts": {
+    "first_seen": "2025-12-04T11:00:54.598068+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "XMAQUINA": {
+    "first_seen": "2025-12-04T11:00:55.776509+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "WLFI项目方": {
+    "first_seen": "2025-12-04T11:00:59.271914+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Jump Crypto": {
+    "first_seen": "2025-12-04T11:00:59.271914+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "James Wynn": {
+    "first_seen": "2025-12-04T11:01:02.376125+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Hyperliquid Strategies": {
+    "first_seen": "2025-12-04T11:01:04.022183+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CryptoQuant": {
+    "first_seen": "2025-12-04T11:01:07.825408+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Ki Young Ju": {
+    "first_seen": "2025-12-04T11:01:07.825408+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ADP": {
+    "first_seen": "2025-12-04T11:01:09.569169+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ISM": {
+    "first_seen": "2025-12-04T11:01:09.569169+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "特朗普": {
+    "first_seen": "2025-12-04T11:01:09.569169+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "哈塞特": {
+    "first_seen": "2025-12-04T11:01:09.569169+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Entrée Capital": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Stripe": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Rapyd": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Mesh": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Gen Labs": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Breez": {
+    "first_seen": "2025-12-04T11:02:05.081556+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Meow": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Jupiter": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Citadel": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Jump": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Paradigm": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "SCP": {
+    "first_seen": "2025-12-04T11:02:06.815642+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "贝莱德": {
+    "first_seen": "2025-12-04T11:02:10.406984+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "富达": {
+    "first_seen": "2025-12-04T11:02:10.406984+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bitwise": {
+    "first_seen": "2025-12-04T11:02:10.406984+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "灰度": {
+    "first_seen": "2025-12-04T11:02:10.406984+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Farside Investors": {
+    "first_seen": "2025-12-04T11:02:14.584995+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ARK Investment Management LLC": {
+    "first_seen": "2025-12-04T11:02:14.584995+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Circle": {
+    "first_seen": "2025-12-04T11:02:16.457975+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Delphi Digital": {
+    "first_seen": "2025-12-04T11:02:19.647118+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "paulwei": {
+    "first_seen": "2025-12-04T11:02:23.629010+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Hyperliquid": {
+    "first_seen": "2025-12-04T11:02:23.629010+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Richard Teng": {
+    "first_seen": "2025-12-04T11:02:27.923996+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "香港": {
+    "first_seen": "2025-12-04T11:02:27.923996+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Galaxy Digital": {
+    "first_seen": "2025-12-04T11:02:29.731983+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Fengbushi Capital": {
+    "first_seen": "2025-12-04T11:02:29.731983+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "FBG Capital": {
+    "first_seen": "2025-12-04T11:02:29.731983+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Onchain Lens": {
+    "first_seen": "2025-12-04T11:03:30.514077+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Strategy": {
+    "first_seen": "2025-12-04T11:03:34.210228+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "易理华": {
+    "first_seen": "2025-12-04T11:03:35.355594+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Liquid Capital": {
+    "first_seen": "2025-12-04T11:03:35.355594+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "黄立成": {
+    "first_seen": "2025-12-04T11:03:37.755881+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国证券交易委员会": {
+    "first_seen": "2025-12-04T11:03:42.097403+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Direxion": {
+    "first_seen": "2025-12-04T11:03:42.097403+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ProShares": {
+    "first_seen": "2025-12-04T11:03:42.097403+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Tidal": {
+    "first_seen": "2025-12-04T11:03:42.097403+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Changpeng Zhao": {
+    "first_seen": "2025-12-04T11:03:46.869641+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "YZi Labs": {
+    "first_seen": "2025-12-04T11:03:46.869641+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Predict.fun": {
+    "first_seen": "2025-12-04T11:03:46.869641+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "贝森特": {
+    "first_seen": "2025-12-04T11:03:53.682454+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Paul Atkins": {
+    "first_seen": "2025-12-04T11:03:53.682454+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "富兰克林": {
+    "first_seen": "2025-12-04T11:03:53.682454+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbase Global Inc.": {
+    "first_seen": "2025-12-04T11:03:54.770164+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Brian Armstrong": {
+    "first_seen": "2025-12-04T11:03:54.770164+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Solana Mobile": {
+    "first_seen": "2025-12-04T11:03:58.917174+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Solana Labs": {
+    "first_seen": "2025-12-04T11:03:58.917174+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "HTX": {
+    "first_seen": "2025-12-04T11:04:02.312059+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "康涅狄格州消费者保护部门": {
+    "first_seen": "2025-12-04T11:04:03.833177+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Robinhood": {
+    "first_seen": "2025-12-04T11:04:03.833177+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Kalshi": {
+    "first_seen": "2025-12-04T11:04:03.833177+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Crypto.com": {
+    "first_seen": "2025-12-04T11:04:03.833177+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Fanatics": {
+    "first_seen": "2025-12-04T11:04:07.206901+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbase": {
+    "first_seen": "2025-12-04T11:04:10.690335+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "以太坊基金会": {
+    "first_seen": "2025-12-04T11:04:14.307655+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国财政部": {
+    "first_seen": "2025-12-04T11:04:16.473613+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "白宫国家经济委员会": {
+    "first_seen": "2025-12-04T11:04:16.473613+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "凯文·哈塞特": {
+    "first_seen": "2025-12-04T11:04:17.608953+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "英国《金融时报》": {
+    "first_seen": "2025-12-04T11:04:17.608953+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "英伟达": {
+    "first_seen": "2025-12-04T11:04:18.663051+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "黄仁勋": {
+    "first_seen": "2025-12-04T11:04:18.663051+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Larry Fink": {
+    "first_seen": "2025-12-04T11:04:20.623498+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "KobeissiLetter": {
+    "first_seen": "2025-12-04T11:04:30.277674+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "加拿大": {
+    "first_seen": "2025-12-04T11:04:30.277674+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "瑞士": {
+    "first_seen": "2025-12-04T11:04:30.277674+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "德国": {
+    "first_seen": "2025-12-04T11:04:30.277674+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "凯文·沃什": {
+    "first_seen": "2025-12-04T11:04:31.899261+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "克里斯托弗·沃勒": {
+    "first_seen": "2025-12-04T11:04:31.899261+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国商品期货交易委员会": {
+    "first_seen": "2025-12-04T11:04:33.852795+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "QCX": {
+    "first_seen": "2025-12-04T11:04:33.852795+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "链上分析师 Ai 姨": {
+    "first_seen": "2025-12-04T11:04:37.185962+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "富兰克林邓普顿": {
+    "first_seen": "2025-12-04T11:04:45.750442+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "华盛顿邮报": {
+    "first_seen": "2025-12-04T11:04:50.683667+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "纽约时报": {
+    "first_seen": "2025-12-04T11:04:50.683667+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "珍妮特·耶伦": {
+    "first_seen": "2025-12-04T11:04:59.183724+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Strategy (MSTR)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Circle (CRCL)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbase (COIN)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "MARA Holdings (MARA)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Riot Platforms (RIOT)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bitmine Immersion (BMNR)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "SharpLink Gaming (SBET)": {
+    "first_seen": "2025-12-04T11:05:00.764575+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国总统": {
+    "first_seen": "2025-12-04T11:05:02.030281+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "荷兰国际集团": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Banca Sella": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "KBC": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Danske Bank": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "DekaBank": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "UniCredit": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "SEB": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CaixaBank": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Raiffeisen Bank International": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Qivalis": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "阿姆斯特丹": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "欧盟": {
+    "first_seen": "2025-12-04T11:05:12.846075+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Ostium": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "General Catalyst": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Jump Trading": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbase Ventures": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Wintermute": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "GSR": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Kaledora Kiernan-Linn": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Marco Antonio Ribeiro": {
+    "first_seen": "2025-12-04T11:05:14.489445+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CME集团": {
+    "first_seen": "2025-12-04T11:05:18.061790+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "10X Capital": {
+    "first_seen": "2025-12-04T11:05:19.265404+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CEA Industries, Inc.": {
+    "first_seen": "2025-12-04T11:05:19.265404+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国自动数据处理公司": {
+    "first_seen": "2025-12-04T11:05:24.540834+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国劳工统计局": {
+    "first_seen": "2025-12-04T11:05:24.540834+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ADP（全称：Automatic Data Processing）": {
+    "first_seen": "2025-12-04T11:05:31.382055+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "芝加哥商品交易所": {
+    "first_seen": "2025-12-04T11:05:36.133266+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Axis": {
+    "first_seen": "2025-12-04T11:05:39.372179+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Galaxy Ventures": {
+    "first_seen": "2025-12-04T11:05:39.372179+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Binance Alpha": {
+    "first_seen": "2025-12-04T11:05:40.519940+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "IFR": {
+    "first_seen": "2025-12-04T11:05:42.046930+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "42.space": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "4D Labs": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "AllScale": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Advent": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "AgriDynamics": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bento.fun": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "FingerDance": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Frontrun": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Help.fun": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Hertzflow": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Manifolds": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "MeleeMon": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Neomera BioLab": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Sats Terminal": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Saturn Labs": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Trellis Robotics": {
+    "first_seen": "2025-12-04T11:05:45.001736+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "DeAgentAI": {
+    "first_seen": "2025-12-04T11:05:49.481697+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bonson": {
+    "first_seen": "2025-12-04T11:05:52.686223+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "钱志敏": {
+    "first_seen": "2025-12-04T11:05:56.709350+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "英国警方": {
+    "first_seen": "2025-12-04T11:05:56.709350+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "财经杂志": {
+    "first_seen": "2025-12-04T11:05:56.709350+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "慢雾安全团队": {
+    "first_seen": "2025-12-04T11:05:58.130359+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Coinbase Prime": {
+    "first_seen": "2025-12-04T11:06:01.906426+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Lookonchain": {
+    "first_seen": "2025-12-04T11:06:01.906426+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "开曼群岛": {
+    "first_seen": "2025-12-04T11:06:07.536746+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "经济合作与发展组织": {
+    "first_seen": "2025-12-04T11:06:07.536746+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Farcaster": {
+    "first_seen": "2025-12-04T11:06:21.199278+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "BMNR": {
+    "first_seen": "2025-12-04T11:06:21.199278+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "汇旺": {
+    "first_seen": "2025-12-04T11:06:21.199278+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "柬埔寨": {
+    "first_seen": "2025-12-04T11:06:21.199278+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "白宫": {
+    "first_seen": "2025-12-04T11:06:35.695838+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  }
+}

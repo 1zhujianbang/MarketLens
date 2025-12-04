@@ -15,6 +15,15 @@ if sys.platform == 'win32':
 import aiodns
 loop = asyncio.get_event_loop()
 resolver = aiodns.DNSResolver(loop=loop)
+from ..utils.tool_function import tools
+tools=tools()
+from .api_client import DataAPIPool
+API_POOL = None
+
+def init_api_pool():
+    global API_POOL
+    if API_POOL is None:
+        API_POOL = DataAPIPool()
 
 def _json_serializer(obj):
     """支持 datetime 的 JSON 序列化辅助函数"""
@@ -33,6 +42,19 @@ class Language(Enum):
     CN = "cn"  # 中文
     EN = "en"  # 英文
     CHT = "cht"  # 繁体中文
+
+class NewsCollector:
+    def __init__(self):
+        pass
+
+    def data_extract(self):
+        init_api_pool()
+        if API_POOL is None:
+            tools.log("[数据获取] ❌ API 池未初始化")
+            return []
+        
+        
+
 
 class BlockbeatsNewsCollector:
     """Blockbeats新闻数据收集器"""

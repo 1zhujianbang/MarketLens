@@ -6,5 +6,5 @@
 __pycache__/
 *.pyc
 .env.local
-.log
-.jsonl
+*.log
+*.jsonl

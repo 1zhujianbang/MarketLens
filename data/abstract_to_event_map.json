@@ -1,1 +1,1323 @@
-{}
+{
+  "Pacifica完成本周1000万枚积分发放": {
+    "entities": [
+      "Pacifica"
+    ],
+    "event_summary": "Pacifica向活跃用户发放积分奖励",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T10:56:13.076993+00:00"
+  },
+  "Coinbob追踪Pacifica高频交易地址行为": {
+    "entities": [
+      "Coinbob",
+      "Pacifica"
+    ],
+    "event_summary": "Coinbob监测并报告Pacifica平台交易地址活动",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T10:56:13.076993+00:00"
+  },
+  "DefiLlama发布过去24小时Perp DEX交易量数据": {
+    "entities": [
+      "DefiLlama"
+    ],
+    "event_summary": "数据平台发布了多个去中心化永续合约交易所的交易量、总锁仓价值和未平仓合约数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T10:56:21.802622+00:00"
+  },
+  "CZ称何一已任Binance联席CEO并赞其为最努力的人，自己现专注BNB Chain生态及多国政府加密顾问工作": {
+    "entities": [
+      "CZ",
+      "何一",
+      "Binance",
+      "BNB Chain"
+    ],
+    "event_summary": "Binance联合创始人CZ公开确认何一升任联席CEO并肯定其贡献，同时表示自己不再全职管理Binance，而是转向BNB Chain生态建设和以加密顾问身份服务多国政府",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:25.551072+00:00"
+  },
+  "AZTEC与Uniswap合作推出CCA机制的代币公售": {
+    "entities": [
+      "Aztec",
+      "Uniswap"
+    ],
+    "event_summary": "Aztec与Uniswap联合发起采用连续清算拍卖机制的代币公开销售",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:27.052269+00:00"
+  },
+  "美国将公布多项就业与经济活动数据": {
+    "entities": [
+      "美国"
+    ],
+    "event_summary": "美国（政府统计部门）计划公布包括挑战者企业裁员人数、初请失业金人数、全球供应链压力指数和工厂订单月率在内的一系列经济数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:35.155442+00:00"
+  },
+  "市场高度押注美联储12月降息": {
+    "entities": [
+      "美联储"
+    ],
+    "event_summary": "市场参与者普遍预期美联储（美国中央银行）将在12月做出降息25个基点的决策",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:35.155442+00:00"
+  },
+  "Polymarket平台显示美联储12月降息概率为94%": {
+    "entities": [
+      "Polymarket",
+      "美联储"
+    ],
+    "event_summary": "预测市场平台Polymarket（公司）上关于美联储（美国中央银行）12月降息的合约显示其发生概率为94%",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:35.155442+00:00"
+  },
+  "Bitget Wallet推出基于TEE的Social Login功能，支持用户通过Google、Apple ID或邮箱创建和访问自托管钱包": {
+    "entities": [
+      "Bitget Wallet",
+      "Google",
+      "Apple"
+    ],
+    "event_summary": "一个加密货币钱包服务商推出了无需助记词、基于可信执行环境技术的新型社交登录功能",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:39.577559+00:00"
+  },
+  "Binance Wallet 宣布将于今日20时向积分达标用户发放Alpha空投": {
+    "entities": [
+      "Binance Wallet"
+    ],
+    "event_summary": "Binance Wallet 向符合条件的用户进行代币空投",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:40.704154+00:00"
+  },
+  "日本10年期国债收益率升至2006年以来最高的1.9%以上": {
+    "entities": [
+      "日本"
+    ],
+    "event_summary": "市场加息预期推动日本国债收益率升至多年高位",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:41.742058+00:00"
+  },
+  "Tom Lee预测比特币与以太坊价格将大幅上涨": {
+    "entities": [
+      "Tom Lee",
+      "BitMine",
+      "Binance"
+    ],
+    "event_summary": "BitMine董事长Tom Lee在Binance活动中发表了对加密货币价格的个人预测",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:45.060773+00:00"
+  },
+  "Vitalik Buterin 发文宣布以太坊 Fusaka 升级中的 PeerDAS 实现分片和数据可用性抽样": {
+    "entities": [
+      "Vitalik Buterin"
+    ],
+    "event_summary": "以太坊联合创始人公开宣布 Fusaka 升级中的 PeerDAS 功能成功实现分片",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:46.319815+00:00"
+  },
+  "某地址在BSC链上买入Meme币bibi后实现大幅盈利": {
+    "entities": [
+      "BlockBeats",
+      "GMGN"
+    ],
+    "event_summary": "监测机构报告显示一个匿名地址通过交易某Meme币获得了高额回报",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:50.927989+00:00"
+  },
+  "分析师结合成本基础热力图分析以太坊价格阻力位与支撑位": {
+    "entities": [
+      "BlockBeats",
+      "@ali_charts"
+    ],
+    "event_summary": "一名分析师通过社交媒体平台发布了基于数据图表的加密货币市场技术分析观点",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:54.600088+00:00"
+  },
+  "XMAQUINA公司发起DEUS代币生成事件治理提案并启动社区投票": {
+    "entities": [
+      "XMAQUINA"
+    ],
+    "event_summary": "XMAQUINA公司就DEUS代币社区销售及流动性安排向DAO提交治理提案并开放投票",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:55.777513+00:00"
+  },
+  "WLFI项目方多签地址向Jump Crypto转移价值4006万美元的代币": {
+    "entities": [
+      "WLFI项目方",
+      "Jump Crypto"
+    ],
+    "event_summary": "一个项目方的多签地址向一家加密货币交易公司转移了大量项目代币",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:00:59.272914+00:00"
+  },
+  "交易员James Wynn平仓比特币空单并预测价格走势": {
+    "entities": [
+      "James Wynn"
+    ],
+    "event_summary": "一名自然人交易员公开了其个人交易操作及对比特币价格的市场预测",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:01:02.378145+00:00"
+  },
+  "Hyperliquid Strategies公司将1200万枚HYPE质押": {
+    "entities": [
+      "Hyperliquid Strategies"
+    ],
+    "event_summary": "Hyperliquid Strategies质押了价值4.2亿美元的自有代币",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:01:04.024183+00:00"
+  },
+  "CryptoQuant首席执行官分析比特币链上指标多数看跌，并指出若无宏观流动性支撑市场将走熊": {
+    "entities": [
+      "CryptoQuant",
+      "Ki Young Ju"
+    ],
+    "event_summary": "一家数据分析公司的负责人发表了对比特币市场指标和趋势的看法",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:01:07.825928+00:00"
+  },
+  "美国ADP私营部门就业报告与ISM服务业数据弱于预期，强化市场对美联储12月降息的预期": {
+    "entities": [
+      "美国",
+      "ADP",
+      "ISM",
+      "美联储"
+    ],
+    "event_summary": "经济数据显示就业与通胀压力放缓，市场据此提高美联储12月降息概率",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:01:09.571171+00:00"
+  },
+  "特朗普暗示将提名哈塞特为下一任美联储主席": {
+    "entities": [
+      "特朗普",
+      "哈塞特",
+      "美国"
+    ],
+    "event_summary": "特朗普表示有意提名哈塞特担任美联储主席",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:01:09.571171+00:00"
+  },
+  "Entrée Capital推出3亿美元新基金专注投资早期加密与Web3基础设施项目": {
+    "entities": [
+      "Entrée Capital",
+      "Stripe",
+      "Rapyd",
+      "Mesh",
+      "Gen Labs",
+      "Breez"
+    ],
+    "event_summary": "一家风险投资公司宣布设立新基金，用于投资特定领域的早期创业项目",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:05.082568+00:00"
+  },
+  "Jupiter创始人Meow介绍HumidiFi团队背景及合作": {
+    "entities": [
+      "Meow",
+      "Jupiter",
+      "Citadel",
+      "Jump",
+      "Paradigm",
+      "SCP"
+    ],
+    "event_summary": "Jupiter创始人Meow公开介绍HumidiFi团队技术背景并提及曾在Citadel、Jump、Paradigm和SCP等机构任职的成员",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:06.817489+00:00"
+  },
+  "美国以太坊现货ETF合计净流入1.4亿美元": {
+    "entities": [
+      "贝莱德",
+      "富达",
+      "Bitwise",
+      "灰度"
+    ],
+    "event_summary": "四家资产管理公司的以太坊现货ETF产品合计录得1.4亿美元单日资金净流入",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:10.409512+00:00"
+  },
+  "Farside Investors监测显示美国比特币现货ETF单日净流出1490万美元": {
+    "entities": [
+      "Farside Investors",
+      "贝莱德",
+      "ARK Investment Management LLC",
+      "灰度"
+    ],
+    "event_summary": "数据监测机构报告了美国多家资产管理公司旗下比特币现货ETF的资金流动情况",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:14.586516+00:00"
+  },
+  "Circle 在 Solana 网络上增发 5 亿枚 USDC": {
+    "entities": [
+      "Circle"
+    ],
+    "event_summary": "Circle 公司在其支持的 Solana 区块链上新增发行 5 亿枚稳定币 USDC",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:16.458972+00:00"
+  },
+  "Delphi Digital分析美联储利率路径及流动性环境变化": {
+    "entities": [
+      "Delphi Digital",
+      "美联储"
+    ],
+    "event_summary": "一家研究机构分析了美国中央银行未来的利率调整计划及其对市场流动性的影响",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:19.649106+00:00"
+  },
+  "加密交易员paulwei调整比特币挂单策略并公开实盘交易记录": {
+    "entities": [
+      "paulwei",
+      "Hyperliquid"
+    ],
+    "event_summary": "一名自然人交易员调整了其比特币交易策略参数，并在某交易平台上公开了其交易记录与盈亏情况",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:23.630003+00:00"
+  },
+  "Binance 宣布联合创始人何一正式出任联席 CEO，与 Richard Teng 共同领导公司": {
+    "entities": [
+      "Binance",
+      "何一",
+      "Richard Teng"
+    ],
+    "event_summary": "Binance 任命何一为联席 CEO，与现任 CEO Richard Teng 形成双 CEO 管理架构",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:27.926223+00:00"
+  },
+  "何一在采访中提及香港虚拟资产监管及 Binance 在港布局": {
+    "entities": [
+      "何一",
+      "Binance",
+      "香港"
+    ],
+    "event_summary": "何一表示 Binance 尊重香港作为亚洲金融中心地位，正观察并摸索在港合规开展业务的可能",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:27.926223+00:00"
+  },
+  "某鲸鱼地址向 Binance 和 Galaxy Digital 转入 30603 枚 ETH": {
+    "entities": [
+      "Binance",
+      "Galaxy Digital"
+    ],
+    "event_summary": "某鲸鱼地址将价值 7055 万美元的 ETH 转入 Binance 与 Galaxy Digital",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:29.733999+00:00"
+  },
+  "该鲸鱼地址曾与 Fengbushi Capital 和 FBG Capital 有过资金交互": {
+    "entities": [
+      "Fengbushi Capital",
+      "FBG Capital"
+    ],
+    "event_summary": "该鲸鱼地址过去曾与 Fengbushi Capital 和 FBG Capital 发生资金往来",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:02:29.733999+00:00"
+  },
+  "链上分析师监测高频交易者持仓状况": {
+    "entities": [
+      "BlockBeats"
+    ],
+    "event_summary": "BlockBeats 报道某高频合约交易者在 Hyperliquid 平台的持仓数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:21.162135+00:00"
+  },
+  "巨鲸地址pension-usdt.eth在Hyperliquid上加仓大额BTC空单": {
+    "entities": [
+      "Hyperliquid"
+    ],
+    "event_summary": "一个被标记为pension-usdt.eth的地址在Hyperliquid交易平台上增加了约6000万美元的比特币空头持仓",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:26.318358+00:00"
+  },
+  "一新创建的钱包以20倍杠杆开设并平仓比特币空单，亏损320万美元": {
+    "entities": [
+      "BlockBeats",
+      "Onchain Lens"
+    ],
+    "event_summary": "区块链媒体和监测平台报道了某匿名钱包在比特币杠杆交易中发生重大亏损的事件",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:30.515077+00:00"
+  },
+  "CryptoQuant分析报告称Strategy设立美元股息储备基金以应对潜在比特币熊市": {
+    "entities": [
+      "CryptoQuant",
+      "Strategy"
+    ],
+    "event_summary": "一家数据分析公司发布报告，分析另一家公司改变其财务策略以应对市场风险",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:34.212428+00:00"
+  },
+  "Liquid Capital创始人易理华称ETH仍被低估": {
+    "entities": [
+      "易理华",
+      "Liquid Capital"
+    ],
+    "event_summary": "Liquid Capital创始人易理华在社交媒体表示ETH仍被低估",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:35.356593+00:00"
+  },
+  "黄立成平仓 ETH、ZEC、HYPE 多单并继续滚仓": {
+    "entities": [
+      "黄立成"
+    ],
+    "event_summary": "黄立成在 Hyperliquid 上平仓部分多头仓位并重新开仓",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:37.756880+00:00"
+  },
+  "「James Wynn」高杠杆 BTC 多单浮盈 24 万美元": {
+    "entities": [
+      "James Wynn"
+    ],
+    "event_summary": "James Wynn 在 Hyperliquid 上通过 40 倍杠杆 BTC 多单获得浮盈",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:37.756880+00:00"
+  },
+  "美国证券交易委员会向多家ETF发行商发出警告函，暂停高杠杆产品申请": {
+    "entities": [
+      "美国证券交易委员会",
+      "Direxion",
+      "ProShares",
+      "Tidal"
+    ],
+    "event_summary": "美国证券交易委员会依据《1940年投资公司法》向多家ETF发行商发出警告，暂停其杠杆率超过200%的ETF产品申请",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:42.098402+00:00"
+  },
+  "某以太坊持有者向币安存入5000枚以太坊": {
+    "entities": [
+      "Binance"
+    ],
+    "event_summary": "一个未具名的以太坊持有者向加密货币交易所币安存入了大量以太坊资产",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:45.500005+00:00"
+  },
+  "CZ称predict.fun创始人曾任职Binance且项目由YZi Labs投资孵化": {
+    "entities": [
+      "Changpeng Zhao",
+      "Binance",
+      "YZi Labs",
+      "Predict.fun"
+    ],
+    "event_summary": "Binance创始人CZ在社交媒体披露Predict.fun创始人曾在Binance任职且该项目由YZi Labs孵化投资",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:46.871651+00:00"
+  },
+  "Binance联合创始人何一发文确认其仍担任首席客服": {
+    "entities": [
+      "何一",
+      "Binance"
+    ],
+    "event_summary": "Binance联合创始人何一通过社交媒体公开表示自己仍在公司担任首席客服职务",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:50.414546+00:00"
+  },
+  "美国 ADP 就业数据公布后，美联储 12 月降息概率略降至 88.8%": {
+    "entities": [
+      "美国"
+    ],
+    "event_summary": "美国公布 11 月 ADP 就业数据后，市场预计美联储 12 月降息概率小幅下降",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:53.684983+00:00"
+  },
+  "特朗普团队拟提名哈塞特任美联储主席、贝森特任白宫国家经济委员会主任": {
+    "entities": [
+      "特朗普",
+      "哈塞特",
+      "贝森特",
+      "美国"
+    ],
+    "event_summary": "特朗普的幕僚正讨论由哈塞特出任美联储主席、现任财政部长贝森特兼任白宫国家经济委员会主任",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:53.684983+00:00"
+  },
+  "美国证券交易委员会主席 Paul Atkins 称《加密货币市场结构法案》即将通过": {
+    "entities": [
+      "美国证券交易委员会",
+      "Paul Atkins"
+    ],
+    "event_summary": "美国证券交易委员会主席表示加密货币市场结构立法即将获得通过",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:53.684983+00:00"
+  },
+  "Polymarket 推出美国版 APP 并重返美国市场": {
+    "entities": [
+      "Polymarket",
+      "美国"
+    ],
+    "event_summary": "预测市场平台 Polymarket 正式在美国上线本地化应用",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:53.684983+00:00"
+  },
+  "富兰克林 Solana 现货 ETF 上市交易": {
+    "entities": [
+      "富兰克林"
+    ],
+    "event_summary": "富兰克林公司推出的 Solana 现货 ETF 开始交易",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:53.684983+00:00"
+  },
+  "Coinbase首席执行官称美国多家大型银行正与Coinbase合作开展稳定币及加密货币试点": {
+    "entities": [
+      "Coinbase Global Inc.",
+      "Brian Armstrong"
+    ],
+    "event_summary": "Coinbase首席执行官披露美国大型银行与Coinbase联合推进稳定币与加密货币试点项目",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:54.772160+00:00"
+  },
+  "Solana Mobile宣布其原生代币SKR将于2026年1月发行并公布代币经济模型": {
+    "entities": [
+      "Solana Mobile",
+      "Solana Labs"
+    ],
+    "event_summary": "一家移动设备公司宣布了其未来代币的发行计划与分配方案",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:03:58.919557+00:00"
+  },
+  "比特币价格跌破9.3万美元": {
+    "entities": [
+      "BlockBeats",
+      "HTX"
+    ],
+    "event_summary": "新闻媒体引用某交易所行情数据，报道了比特币价格变动情况",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:02.314677+00:00"
+  },
+  "康涅狄格州消费者保护部门责令Robinhood、Kalshi、Crypto.com停止向州内居民提供无牌照体育博彩服务": {
+    "entities": [
+      "康涅狄格州消费者保护部门",
+      "Robinhood",
+      "Kalshi",
+      "Crypto.com"
+    ],
+    "event_summary": "康涅狄格州消费者保护部门向三家预测市场平台发出停止侵权通知，要求终止无牌照体育博彩业务",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:03.835694+00:00"
+  },
+  "Fanatics与Crypto.com合作推出粉丝预测市场平台Fanatics Markets": {
+    "entities": [
+      "Fanatics",
+      "Crypto.com",
+      "Polymarket",
+      "Kalshi"
+    ],
+    "event_summary": "一家体育商品公司与一家加密货币交易所合作推出了一个预测市场平台。",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:07.208901+00:00"
+  },
+  "Coinbase将Beam代币列入上币路线图": {
+    "entities": [
+      "Coinbase"
+    ],
+    "event_summary": "加密货币交易所Coinbase宣布将Beam代币纳入其未来计划上线的资产清单",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:10.692335+00:00"
+  },
+  "以太坊Fusaka升级在以太坊主网正式激活": {
+    "entities": [
+      "以太坊基金会"
+    ],
+    "event_summary": "以太坊基金会作为核心开发组织，在以太坊主网执行了名为Fusaka的技术升级",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:14.309655+00:00"
+  },
+  "特朗普团队考虑让贝森特兼任白宫国家经济委员会主任": {
+    "entities": [
+      "美国财政部",
+      "贝森特",
+      "特朗普",
+      "哈塞特",
+      "白宫国家经济委员会"
+    ],
+    "event_summary": "特朗普的幕僚讨论若提名哈塞特为美联储主席，则财政部长贝森特兼任白宫国家经济委员会主任",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:16.475144+00:00"
+  },
+  "债券投资者向美国财政部表达对凯文·哈塞特可能出任美联储主席的担忧": {
+    "entities": [
+      "凯文·哈塞特",
+      "美国财政部",
+      "美国",
+      "英国《金融时报》"
+    ],
+    "event_summary": "债券投资者通过美国财政部转达对潜在美联储主席人选凯文·哈塞特政策立场的担忧",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:17.610953+00:00"
+  },
+  "英伟达CEO黄仁勋指出能源将成为AI发展的全球瓶颈": {
+    "entities": [
+      "英伟达",
+      "黄仁勋"
+    ],
+    "event_summary": "英伟达首席执行官公开表态称能源供应将制约人工智能发展",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:18.664877+00:00"
+  },
+  "贝莱德CEO Larry Fink承认此前反对比特币和加密货币是「错误的」": {
+    "entities": [
+      "Larry Fink",
+      "贝莱德"
+    ],
+    "event_summary": "贝莱德CEO Larry Fink公开承认过去反对比特币和加密货币的观点错误",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:20.625710+00:00"
+  },
+  "Jupiter更新HumidiFi ICO细则，提升JUP质押者轮与公售轮代币比例": {
+    "entities": [
+      "Jupiter"
+    ],
+    "event_summary": "一个名为Jupiter的实体更新了其暗池DEX项目HumidiFi的首次代币发行细则",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:24.477112+00:00"
+  },
+  "KobeissiLetter发布市场分析称加密货币ETF上周资金流入11亿美元创7周新高": {
+    "entities": [
+      "KobeissiLetter"
+    ],
+    "event_summary": "一家市场分析机构发布报告称加密货币ETF资金流入创近期新高",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:30.279675+00:00"
+  },
+  "美国、加拿大、瑞士和德国的加密货币ETF资金流动情况被披露": {
+    "entities": [
+      "美国",
+      "加拿大",
+      "瑞士",
+      "德国"
+    ],
+    "event_summary": "报告列举了多个主权国家加密货币ETF的资金流入与流出数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:30.279675+00:00"
+  },
+  "华尔街及美国企业界向特朗普施压，反对任命凯文·哈塞特担任美联储主席": {
+    "entities": [
+      "特朗普",
+      "凯文·哈塞特",
+      "美联储",
+      "凯文·沃什",
+      "克里斯托弗·沃勒"
+    ],
+    "event_summary": "华尔街和美国企业界试图劝阻特朗普任命凯文·哈塞特，并提及其他潜在美联储主席候选人",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:31.901258+00:00"
+  },
+  "Polymarket推出美国版APP并重返美国市场": {
+    "entities": [
+      "Polymarket",
+      "美国"
+    ],
+    "event_summary": "Polymarket面向美国居民开放预测市场交易",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:33.855882+00:00"
+  },
+  "2022年Polymarket因美国商品期货交易委员会执法迁往海外并被罚款140万美元": {
+    "entities": [
+      "美国商品期货交易委员会",
+      "Polymarket"
+    ],
+    "event_summary": "美国商品期货交易委员会对Polymarket处以罚款并迫使其离开美国",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:33.855882+00:00"
+  },
+  "2025年7月Polymarket收购持牌衍生品交易平台和清算所QCX": {
+    "entities": [
+      "Polymarket",
+      "QCX"
+    ],
+    "event_summary": "Polymarket收购QCX为其美国合规回归铺路",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:33.855882+00:00"
+  },
+  "链上分析师监测到某以太坊巨鲸加仓以摊薄成本": {
+    "entities": [
+      "链上分析师 Ai 姨"
+    ],
+    "event_summary": "一位自然人分析师通过监测工具，报告了某匿名以太坊持有者的加仓行为",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:37.188969+00:00"
+  },
+  "Binance联席CEO何一阐述平台在Meme币上架策略上面临的平衡挑战": {
+    "entities": [
+      "Binance",
+      "何一"
+    ],
+    "event_summary": "Binance高管解释了交易平台在满足用户交易需求与管控风险之间进行动态权衡的立场",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:41.012325+00:00"
+  },
+  "美国证券交易委员会主席表示《加密货币市场结构法案》即将通过": {
+    "entities": [
+      "美国证券交易委员会",
+      "Paul Atkins"
+    ],
+    "event_summary": "美国证券交易委员会主席在电视直播中宣布一项关于加密货币市场结构的法案即将获得通过",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:44.474487+00:00"
+  },
+  "富兰克林邓普顿宣布旗下 Solana 现货 ETF（SOEZ）上市交易": {
+    "entities": [
+      "富兰克林邓普顿"
+    ],
+    "event_summary": "富兰克林邓普顿推出并上市交易其 Solana 现货 ETF 产品",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:45.752922+00:00"
+  },
+  "币安联合首席执行官何一就市场回调与行业走势发表个人观点": {
+    "entities": [
+      "何一",
+      "Binance"
+    ],
+    "event_summary": "币安联合首席执行官何一以个人身份对近期市场回调及未来行业趋势发表了评论性观点",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:49.424552+00:00"
+  },
+  "美国财长贝森特否认特朗普精神状态正在衰退": {
+    "entities": [
+      "美国财政部",
+      "贝森特",
+      "特朗普",
+      "美国",
+      "华盛顿邮报",
+      "纽约时报"
+    ],
+    "event_summary": "美国财政部长贝森特公开驳斥媒体关于美国总统特朗普健康状况的报道",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:50.686033+00:00"
+  },
+  "Binance推出面向6-17岁青少年的家长监管加密储蓄账户Binance Junior": {
+    "entities": [
+      "Binance",
+      "Richard Teng"
+    ],
+    "event_summary": "Binance公司由其CEO Richard Teng宣布推出专为未成年人设计的加密货币子账户产品",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:51.824834+00:00"
+  },
+  "比特币与以太坊价格分别突破93000美元与3100美元": {
+    "entities": [
+      "BlockBeats",
+      "HTX"
+    ],
+    "event_summary": "媒体报道了特定交易平台行情数据显示两种加密资产价格达到特定点位",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:55.158765+00:00"
+  },
+  "美国财长表示某些经济领域已出现疲软并认为需要降息": {
+    "entities": [
+      "美国财政部",
+      "珍妮特·耶伦"
+    ],
+    "event_summary": "美国财政部长就经济状况发表观点，指出部分领域疲软并呼吁调整货币政策",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:04:59.186417+00:00"
+  },
+  "美股开盘加密概念股表现分化，Bitmine Immersion涨2.59%": {
+    "entities": [
+      "Strategy (MSTR)",
+      "Circle (CRCL)",
+      "Coinbase (COIN)",
+      "MARA Holdings (MARA)",
+      "Riot Platforms (RIOT)",
+      "Bitmine Immersion (BMNR)",
+      "SharpLink Gaming (SBET)"
+    ],
+    "event_summary": "多家上市加密相关公司在美股开盘时段股价涨跌不一",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:00.767108+00:00"
+  },
+  "美国财长贝森特称特朗普已使15%至20%的关税成为常态": {
+    "entities": [
+      "美国财政部",
+      "贝森特",
+      "美国总统",
+      "特朗普"
+    ],
+    "event_summary": "美国财政部长贝森特评论前总统特朗普将15%–20%关税常态化",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:02.032287+00:00"
+  },
+  "Binance 联席 CEO 何一否认存在上币白手套或亲戚渠道": {
+    "entities": [
+      "何一",
+      "Binance"
+    ],
+    "event_summary": "Binance 高管公开澄清公司上币流程无内部关系渠道并鼓励举报诈骗",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:03.438720+00:00"
+  },
+  "比特币价格跌破92000美元且24小时涨幅收窄": {
+    "entities": [
+      "BlockBeats",
+      "HTX"
+    ],
+    "event_summary": "媒体平台报道了某交易所行情数据显示的比特币价格变动情况",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:06.746087+00:00"
+  },
+  "Binance联合创始人何一正式出任公司联席首席执行官": {
+    "entities": [
+      "何一",
+      "Binance",
+      "Richard Teng"
+    ],
+    "event_summary": "Binance公司宣布其联合创始人何一正式担任联席首席执行官，与Richard Teng共同负责公司管理",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:10.219948+00:00"
+  },
+  "欧洲九家主要银行在阿姆斯特丹注册成立稳定币发行机构Qivalis，计划于2026年下半年推出受MiCA监管的欧元稳定币": {
+    "entities": [
+      "荷兰国际集团",
+      "Banca Sella",
+      "KBC",
+      "Danske Bank",
+      "DekaBank",
+      "UniCredit",
+      "SEB",
+      "CaixaBank",
+      "Raiffeisen Bank International",
+      "Qivalis",
+      "阿姆斯特丹",
+      "欧盟"
+    ],
+    "event_summary": "九家欧洲银行联合设立Qivalis公司，计划发行符合欧盟MiCA法规的欧元稳定币",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:12.849586+00:00"
+  },
+  "Ostium完成2000万美元A轮融资": {
+    "entities": [
+      "Ostium",
+      "General Catalyst",
+      "Jump Trading",
+      "Coinbase Ventures",
+      "Wintermute",
+      "GSR",
+      "Kaledora Kiernan-Linn",
+      "Marco Antonio Ribeiro"
+    ],
+    "event_summary": "Ostium公司获得多家投资机构共计2000万美元的A轮投资",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:14.492024+00:00"
+  },
+  "CME美联储观察数据显示ADP数据公布后美联储12月降息概率微调": {
+    "entities": [
+      "美联储",
+      "CME集团"
+    ],
+    "event_summary": "数据提供商根据就业数据更新了市场对美联储未来利率决策的概率预测",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:18.064777+00:00"
+  },
+  "YZi Labs向10X Capital发出整改通知，要求其改进治理并落实BNB财库战略": {
+    "entities": [
+      "YZi Labs",
+      "10X Capital",
+      "CEA Industries, Inc."
+    ],
+    "event_summary": "YZi Labs要求资产管理人10X Capital纠正治理与信息披露问题以保护CEA Industries股东利益",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:19.268021+00:00"
+  },
+  "美国自动数据处理公司发布报告显示11月私营部门就业人数意外下降": {
+    "entities": [
+      "美国自动数据处理公司",
+      "美国劳工统计局"
+    ],
+    "event_summary": "一家私营公司发布了显示美国劳动力市场恶化的就业数据报告",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:24.543956+00:00"
+  },
+  "美国劳工统计局将延迟发布11月官方就业报告": {
+    "entities": [
+      "美国劳工统计局"
+    ],
+    "event_summary": "一个政府机构因政府停摆而推迟发布官方的劳动力市场统计数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:24.543956+00:00"
+  },
+  "美国自动数据处理公司修正10月就业人数数据": {
+    "entities": [
+      "美国自动数据处理公司"
+    ],
+    "event_summary": "一家美国公司发布了对其先前报告的就业数据的修正",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:27.836954+00:00"
+  },
+  "美国ADP就业数据不及预期，现货黄金短线小幅上涨": {
+    "entities": [
+      "美国",
+      "ADP（全称：Automatic Data Processing）"
+    ],
+    "event_summary": "美国自动数据处理公司发布的就业数据低于市场预期，导致现货黄金价格出现短暂上涨",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:31.385162+00:00"
+  },
+  "美国11月ADP就业人数减少3.2万人": {
+    "entities": [
+      "美国"
+    ],
+    "event_summary": "美国公布11月ADP就业人数减少3.2万人",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:32.353505+00:00"
+  },
+  "CME美联储观察显示ADP数据公布前美联储12月降息概率为89.2%": {
+    "entities": [
+      "芝加哥商品交易所",
+      "美联储",
+      "ADP"
+    ],
+    "event_summary": "一家金融数据服务商发布了关于中央银行未来利率决策的市场预测概率数据",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:36.136783+00:00"
+  },
+  "量化收益协议Axis完成500万美元私募轮融资，Galaxy Ventures领投": {
+    "entities": [
+      "Axis",
+      "Galaxy Ventures"
+    ],
+    "event_summary": "Galaxy Ventures领投了Axis的500万美元私募轮融资",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:39.374672+00:00"
+  },
+  "Binance Alpha启动第二轮Humanity Protocol代币空投": {
+    "entities": [
+      "Binance Alpha"
+    ],
+    "event_summary": "Binance Alpha向符合条件的用户发放Humanity Protocol代币空投",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:40.522015+00:00"
+  },
+  "市场预期美联储将于12月降息，ADP及PMI数据料难改变这一预期": {
+    "entities": [
+      "美联储",
+      "ADP",
+      "IFR"
+    ],
+    "event_summary": "市场分析机构IFR称，美联储12月降息概率已接近确定，即将公布的ADP就业数据与PMI数据预计不会强劲到足以阻止降息",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:42.049882+00:00"
+  },
+  "以太坊基金会计划按既定时间表激活Fusaka升级": {
+    "entities": [
+      "以太坊基金会"
+    ],
+    "event_summary": "以太坊基金会将于指定时间对以太坊主网进行Fusaka升级",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:43.220278+00:00"
+  },
+  "YZi Labs宣布投资17家初创公司，覆盖Web3、AI与生物技术": {
+    "entities": [
+      "YZi Labs",
+      "42.space",
+      "4D Labs",
+      "AllScale",
+      "Advent",
+      "AgriDynamics",
+      "Bento.fun",
+      "FingerDance",
+      "Frontrun",
+      "Help.fun",
+      "Hertzflow",
+      "Manifolds",
+      "MeleeMon",
+      "Neomera BioLab",
+      "Sats Terminal",
+      "Saturn Labs",
+      "Predict.fun",
+      "Trellis Robotics"
+    ],
+    "event_summary": "YZi Labs对17家初创企业进行投资，支持其在Web3、人工智能及生物技术领域的发展",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:45.004738+00:00"
+  },
+  "DeAgentAI公告其Discord服务器疑似遭黑客入侵并已迁移至新服务器": {
+    "entities": [
+      "DeAgentAI",
+      "BlockBeats"
+    ],
+    "event_summary": "一家名为DeAgentAI的公司公告其Discord服务器疑似被黑客入侵，并已迁移至新服务器",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:49.485227+00:00"
+  },
+  "COC游戏宣布官网更新并上线链上数据查询功能": {
+    "entities": [
+      "Bonson"
+    ],
+    "event_summary": "游戏创始人宣布其项目完成了官网更新并上线了链上数据查询功能",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:52.689233+00:00"
+  },
+  "英国警方通过钱志敏电脑开机密码和助记词线索成功追缴比特币": {
+    "entities": [
+      "钱志敏",
+      "英国警方",
+      "财经杂志"
+    ],
+    "event_summary": "英国警方利用从逃犯钱志敏电子设备中获取的密码线索，成功追缴了涉案的比特币资产。",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:56.712347+00:00"
+  },
+  "慢雾安全团队发布Solana钱包Owner权限篡改攻击预警": {
+    "entities": [
+      "慢雾安全团队"
+    ],
+    "event_summary": "慢雾安全团队公开提醒用户警惕Solana链上Owner权限被钓鱼替换的新型攻击",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:05:58.132878+00:00"
+  },
+  "贝莱德向Coinbase Prime转移大量以太坊": {
+    "entities": [
+      "贝莱德",
+      "Coinbase Prime",
+      "Lookonchain"
+    ],
+    "event_summary": "资产管理公司贝莱德将其持有的以太坊资产转移至加密货币交易所Coinbase的机构服务平台",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:01.910412+00:00"
+  },
+  "开曼群岛Web3基金会公司注册量同比激增70%": {
+    "entities": [
+      "开曼群岛"
+    ],
+    "event_summary": "开曼群岛的Web3基金会公司注册数量在统计期间内出现显著增长",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:07.540046+00:00"
+  },
+  "国际税收透明标准OECD CARF报告框架将于2026年正式实施": {
+    "entities": [
+      "经济合作与发展组织"
+    ],
+    "event_summary": "经济合作与发展组织制定的加密资产报告框架（CARF）确定了正式实施时间",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:07.540046+00:00"
+  },
+  "Binance声明其AI助手名为Bibi，同名Meme代币并非官方发行": {
+    "entities": [
+      "Binance"
+    ],
+    "event_summary": "Binance公告称其AI助手名称为Bibi，并澄清同名Meme代币bibi并非官方发行",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:08.711438+00:00"
+  },
+  "Farcaster创始人宣布将进行Clanker平台首次打新预售": {
+    "entities": [
+      "Farcaster"
+    ],
+    "event_summary": "一个项目创始人宣布了其平台即将进行的首次代币销售活动",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "Coinbase向纽约居民开放SUI交易": {
+    "entities": [
+      "Coinbase"
+    ],
+    "event_summary": "一家加密货币交易所扩展了其服务范围至美国特定行政区的居民",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "美股盘前加密货币概念股BMNR上涨": {
+    "entities": [
+      "BMNR"
+    ],
+    "event_summary": "一家上市公司（股票代码BMNR）的股价在特定交易时段出现上涨",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "Binance联合创始人何一出任联合首席执行官": {
+    "entities": [
+      "Binance",
+      "何一"
+    ],
+    "event_summary": "一家公司的联合创始人被任命为该公司的联合首席执行官",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "预测市场显示凯文·哈塞特可能当选美联储新主席": {
+    "entities": [
+      "美联储",
+      "凯文·哈塞特",
+      "特朗普",
+      "Polymarket"
+    ],
+    "event_summary": "预测市场数据显示某位特定人物成为美国中央银行领导人的概率很高",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "柬埔寨汇旺公司暂停提现": {
+    "entities": [
+      "汇旺",
+      "柬埔寨"
+    ],
+    "event_summary": "一家位于特定国家的金融服务公司发布了暂停客户提现的公告",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:21.202278+00:00"
+  },
+  "Binance Alpha 宣布将于指定时间开放积分门槛为 242 分的空投申领": {
+    "entities": [
+      "Binance"
+    ],
+    "event_summary": "Binance 宣布其 Alpha 活动将开放满足积分门槛用户的代币空投申领",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:22.490222+00:00"
+  },
+  "预测市场显示凯文·哈塞特当选美联储主席概率大幅领先": {
+    "entities": [
+      "Polymarket",
+      "凯文·哈塞特",
+      "美联储",
+      "特朗普"
+    ],
+    "event_summary": "预测市场数据显示凯文·哈塞特成为下一任美联储主席的可能性很高",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:35.697845+00:00"
+  },
+  "凯文·哈塞特公开主张美联储应继续降息以刺激经济": {
+    "entities": [
+      "凯文·哈塞特",
+      "美联储"
+    ],
+    "event_summary": "凯文·哈塞特公开表示暂停降息时机不佳，并预计政府停摆将拖累GDP增长",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:35.697845+00:00"
+  },
+  "美联储正式结束量化紧缩政策": {
+    "entities": [
+      "美联储"
+    ],
+    "event_summary": "美联储宣布结束了自2022年开始的资产负债表缩减过程",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:35.697845+00:00"
+  },
+  "凯文·哈塞特曾持有Coinbase股票并担任其顾问": {
+    "entities": [
+      "凯文·哈塞特",
+      "Coinbase",
+      "白宫"
+    ],
+    "event_summary": "凯文·哈塞特曾公开持有Coinbase股票并担任其顾问委员会成员，并参与白宫数字资产政策讨论",
+    "sources": [
+      "blockbeats"
+    ],
+    "first_seen": "2025-12-04T11:06:35.697845+00:00"
+  }
+}

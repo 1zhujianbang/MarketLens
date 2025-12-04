@@ -2,7 +2,9 @@ from ..config.config_manager import TradingConfig
 from ..models.model_loader import ModelLoader
 from ..data.data_collector import OKXMarketClient
 from ..data.news_collector import BlockbeatsNewsCollector, NewsType, Language
-from ..agents.agent1 import process_news_stream, ENTITIES_FILE, ABSTRACT_MAP_FILE, RAW_NEWS_DIR
+from ..agents.agent1 import process_news_stream
+from ..utils.tool_function import tools
+tools = tools()
 from datetime import datetime, timezone
 import re
 import pandas as pd
@@ -212,7 +214,7 @@ class TradingAgent:
         print("📰 初始化新闻数据（调用 Agent1）...")
         try:
             # 1. 获取原始新闻
-            important_news = await self.news_collector.get_latest_important_news(limit=5)
+            important_news = await self.news_collector.get_latest_important_news(limit=200)
             if not important_news:
                 print("📭 未获取到重要新闻")
                 self.news_data['structured'] = pd.DataFrame()
@@ -221,7 +223,7 @@ class TradingAgent:
 
             # 2. 生成唯一临时文件名
             temp_filename = f"temp_{uuid.uuid4().hex}.jsonl"
-            raw_file = RAW_NEWS_DIR / temp_filename
+            raw_file = tools.RAW_NEWS_DIR / temp_filename
 
             # 3. 写入 raw_news 目录（供 agent1 读取）
             with open(raw_file, "w", encoding="utf-8") as f:
@@ -274,10 +276,10 @@ class TradingAgent:
     
     def _build_structured_news_from_agent1_output(self) -> pd.DataFrame:
         """从 agent1 生成的 abstract_map.json 构建结构化 DataFrame"""
-        if not ABSTRACT_MAP_FILE.exists():
+        if not tools.ABSTRACT_MAP_FILE.exists():
             return pd.DataFrame()
 
-        with open(ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
+        with open(tools.ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
             abstract_map = json.load(f)
 
         records = []

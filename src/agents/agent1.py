@@ -23,96 +23,16 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 from dotenv import load_dotenv
+from ..utils.tool_function import tools
+tools = tools()
+from .api_client import LLMAPIPool
+API_POOL = None
 
-# ======================
-# 路径与配置
-# ======================
+def init_api_pool():
+    global API_POOL
+    if API_POOL is None:
+        API_POOL = LLMAPIPool()
 
-ROOT_DIR = Path(__file__).parent.parent.parent
-DATA_DIR = ROOT_DIR / "data"
-CONFIG_DIR = ROOT_DIR / "config"
-RAW_NEWS_DIR = DATA_DIR / "raw_news"
-DEDUPED_NEWS_DIR = DATA_DIR / "deduped_news"
-LOG_FILE = DATA_DIR / "logs" / "agent1.log"
-
-# 确保目录存在
-for d in [DATA_DIR, RAW_NEWS_DIR, DEDUPED_NEWS_DIR, DATA_DIR / "logs"]:
-    d.mkdir(parents=True, exist_ok=True)
-
-# 数据文件
-ENTITIES_FILE = DATA_DIR / "entities.json"
-ABSTRACT_MAP_FILE = DATA_DIR / "abstract_to_event_map.json"
-PROCESSED_IDS_FILE = DATA_DIR / "processed_ids.txt"
-STOP_WORDS_FILE = DATA_DIR / "stop_words.txt"
-
-# 加载环境变量
-load_dotenv(CONFIG_DIR / ".env.local")
-LLM_MODEL = os.getenv("AGENT1_LLM_MODEL", "deepseek-chat")
-DEDUPE_THRESHOLD = int(os.getenv("AGENT1_DEDUPE_THRESHOLD", "3"))
-
-# ======================
-# 工具函数
-# ======================
-
-def log(msg: str):
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    line = f"[{now}] {msg}"
-    print(line)
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(line + "\n")
-
-def load_stop_words() -> Set[str]:
-    stop_words = set()
-    if STOP_WORDS_FILE.exists():
-        with open(STOP_WORDS_FILE, "r", encoding="utf-8") as f:
-            for line in f:
-                word = line.strip()
-                if word and not word.startswith("#"):
-                    stop_words.add(word)
-    return stop_words
-
-STOP_WORDS = load_stop_words()
-
-def is_valid_entity(entity: str) -> bool:
-    word = entity.strip()
-    if not word or len(word) < 2:
-        return False
-    if word in STOP_WORDS:
-        return False
-    if word.isdigit() or re.match(r'^[0-9+\-\.%$€¥]+$', word):
-        return False
-    if not any(c.isalnum() for c in word):
-        return False
-    # 排除常见无效模式
-    if re.search(
-        r'(上涨|下跌|暴涨|暴跌|利好|利空|市场|投资者|用户|社区|'
-        r'协议|链|代币|币种|项目|平台|技术|系统|机制|概念|'
-        r'行情|趋势|信号|策略|模型|算法|框架|生态)$',
-        word
-    ):
-        return False
-    return True
-
-def simhash(text: str, bits=64) -> int:
-    text = re.sub(r'\s+', ' ', text.lower())
-    tokens = text.split()
-    v = [0] * bits
-    for token in tokens:
-        h = int(hashlib.md5(token.encode()).hexdigest(), 16)
-        for i in range(bits):
-            bit = (h >> i) & 1
-            if bit:
-                v[i] += 1
-            else:
-                v[i] -= 1
-    hash_val = 0
-    for i in range(bits):
-        if v[i] > 0:
-            hash_val |= (1 << i)
-    return hash_val
-
-def hamming_distance(h1: int, h2: int) -> int:
-    return bin(h1 ^ h2).count("1")
 
 # ======================
 # 新闻去重器
@@ -124,15 +44,15 @@ class NewsDeduplicator:
         self.seen_hashes: Set[int] = set()
 
     def is_duplicate(self, text: str) -> bool:
-        h = simhash(text)
+        h = tools.simhash(text)
         for seen_h in self.seen_hashes:
-            if hamming_distance(h, seen_h) <= self.threshold:
+            if tools.hamming_distance(h, seen_h) <= self.threshold:
                 return True
         self.seen_hashes.add(h)
         return False
 
     def dedupe_file(self, input_path: Path, output_path: Path):
-        log(f"🔍 去重中: {input_path.name}")
+        tools.log(f"🔍 去重中: {input_path.name}")
         seen_ids = set()
         if output_path.exists():
             with open(output_path, "r", encoding="utf-8") as f:
@@ -155,29 +75,18 @@ class NewsDeduplicator:
                     fout.write(line)
                     seen_ids.add(news["id"])
                 except Exception as e:
-                    log(f"⚠️ 跳过无效行: {e}")
+                    tools.log(f"⚠️ 跳过无效行: {e}")
 
 # ======================
 # LLM 结构化提取器（含精准提示词）
 # ======================
 
-def llm_extract_events(title: str, content: str) -> List[Dict]:
-    try:
-        from openai import OpenAI
-    except ImportError:
-        log("❌ openai 未安装，跳过 LLM 提取")
+def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
+    # 初始化 API 池（单例）
+    init_api_pool()
+    if API_POOL is None:
+        tools.log("[LLM请求] ❌ API 池未初始化")
         return []
-
-    api_key = os.getenv("API_KEY")
-    base_url = os.getenv("API_URL")
-    if not api_key:
-        log("❌ API_KEY 未设置")
-        return []
-
-    client = OpenAI(
-        api_key=api_key,
-        base_url=base_url
-    )
 
     prompt = f"""你是一名专业的金融与法律信息结构化专家。请从以下新闻中提取所有**真实存在的、具有法律人格或行政职能的实体**。
 
@@ -219,28 +128,30 @@ def llm_extract_events(title: str, content: str) -> List[Dict]:
 标题：{title}
 正文：{content}"""
 
+    # 调用 API 池
+    raw_content = API_POOL.call(
+        prompt=prompt,
+        max_tokens=1500,
+        timeout=55,      # 避开 60s 代理超时
+        retries=max_retries
+    )
+
+    if not raw_content:
+        return []
+
+    # 清理 Markdown 包裹
     try:
-        response = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=8000,
-            timeout=600,
-            stream=False
-        )
-        content = response.choices[0].message.content.strip()
+        if raw_content.startswith("```json"):
+            raw_content = raw_content.split("```json", 1)[1].split("```")[0]
+        elif raw_content.startswith("```"):
+            raw_content = raw_content.split("```", 1)[1].split("```")[0]
 
-        # 清理 Markdown 包裹
-        if content.startswith("```json"):
-            content = content.split("```json", 1)[1].split("```")[0]
-        elif content.startswith("```"):
-            content = content.split("```", 1)[1].split("```")[0]
-
-        data = json.loads(content)
+        data = json.loads(raw_content)
         events = data.get("events", [])
         result = []
         for item in events:
             abstract = item.get("abstract", "").strip()
-            entities = [e for e in item.get("entities", []) if is_valid_entity(e)]
+            entities = [e for e in item.get("entities", []) if tools.is_valid_entity(e)]
             summary = item.get("event_summary", "").strip()
             if abstract and entities and summary:
                 result.append({
@@ -250,9 +161,9 @@ def llm_extract_events(title: str, content: str) -> List[Dict]:
                 })
         return result
     except Exception as e:
-        log(f"❌ LLM 提取失败: {e}")
+        tools.log(f"[LLM获取] ❌ LLM 返回内容解析失败: {e}")
         return []
-
+    
 # ======================
 # 自动更新知识库
 # ======================
@@ -261,8 +172,8 @@ def update_entities(entities: List[str], source: str):
     """自动写入主实体库"""
     now = datetime.now(timezone.utc).isoformat()
     existing = {}
-    if ENTITIES_FILE.exists():
-        with open(ENTITIES_FILE, "r", encoding="utf-8") as f:
+    if tools.ENTITIES_FILE.exists():
+        with open(tools.ENTITIES_FILE, "r", encoding="utf-8") as f:
             existing = json.load(f)
     
     for ent in entities:
@@ -275,13 +186,13 @@ def update_entities(entities: List[str], source: str):
             if source not in existing[ent]["sources"]:
                 existing[ent]["sources"].append(source)
     
-    with open(ENTITIES_FILE, "w", encoding="utf-8") as f:
+    with open(tools.ENTITIES_FILE, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
 
 def update_abstract_map(extracted_list: List[Dict], source: str):
     abstract_map = {}
-    if ABSTRACT_MAP_FILE.exists():
-        with open(ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
+    if tools.ABSTRACT_MAP_FILE.exists():
+        with open(tools.ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
             abstract_map = json.load(f)
     
     now = datetime.now(timezone.utc).isoformat()
@@ -299,7 +210,7 @@ def update_abstract_map(extracted_list: List[Dict], source: str):
             s_set.add(source)
             abstract_map[key]["sources"] = sorted(s_set)
     
-    with open(ABSTRACT_MAP_FILE, "w", encoding="utf-8") as f:
+    with open(tools.ABSTRACT_MAP_FILE, "w", encoding="utf-8") as f:
         json.dump(abstract_map, f, ensure_ascii=False, indent=2)
 
 # ======================
@@ -308,35 +219,35 @@ def update_abstract_map(extracted_list: List[Dict], source: str):
 
 def get_unprocessed_news_files() -> List[Path]:
     processed_ids = set()
-    if PROCESSED_IDS_FILE.exists():
-        with open(PROCESSED_IDS_FILE, "r") as f:
+    if tools.PROCESSED_IDS_FILE.exists():
+        with open(tools.PROCESSED_IDS_FILE, "r") as f:
             processed_ids = set(line.strip() for line in f if line.strip())
     
     unprocessed = []
-    for raw_file in sorted(RAW_NEWS_DIR.glob("*.jsonl")):
-        deduped_file = DEDUPED_NEWS_DIR / f"{raw_file.stem}_deduped.jsonl"
+    for raw_file in sorted(tools.RAW_NEWS_DIR.glob("*.jsonl")):
+        deduped_file = tools.DEDUPED_NEWS_DIR / f"{raw_file.stem}_deduped.jsonl"
         if not deduped_file.exists():
-            deduper = NewsDeduplicator(threshold=DEDUPE_THRESHOLD)
+            deduper = NewsDeduplicator(threshold=tools.DEDUPE_THRESHOLD)
             deduper.dedupe_file(raw_file, deduped_file)
         unprocessed.append(deduped_file)
     return unprocessed
 
 def process_news_stream():
-    log("🚀 启动 Agent1：流式事件与真实实体提取...")
+    tools.log("🚀 启动 Agent1：流式事件与真实实体提取...")
     files = get_unprocessed_news_files()
     if not files:
-        log("📭 无可处理新闻文件")
+        tools.log("📭 无可处理新闻文件")
         return
 
     processed_ids = set()
-    if PROCESSED_IDS_FILE.exists():
-        with open(PROCESSED_IDS_FILE, "r") as f:
+    if tools.PROCESSED_IDS_FILE.exists():
+        with open(tools.PROCESSED_IDS_FILE, "r") as f:
             processed_ids = set(line.strip() for line in f if line.strip())
 
     total_processed = 0
-    with open(PROCESSED_IDS_FILE, "a") as id_log:
+    with open(tools.PROCESSED_IDS_FILE, "a") as id_log:
         for file_path in files:
-            log(f"📄 处理文件: {file_path.name}")
+            tools.log(f"📄 处理文件: {file_path.name}")
             with open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
                     try:
@@ -350,8 +261,8 @@ def process_news_stream():
                         source = news.get("source", "unknown")
 
                         extracted = llm_extract_events(title, content)
-                        # 防止 API 限流
-                        time.sleep(5)   
+
+                        # 只有成功提取到有效事件，才视为“已处理”
                         if extracted:
                             all_entities = []
                             for ev in extracted:
@@ -361,15 +272,20 @@ def process_news_stream():
                                 update_abstract_map(extracted, source)
                                 total_processed += 1
 
-                        id_log.write(news_id + "\n")
-                        processed_ids.add(news_id)
+                                # ✅ 仅在此处记录为已处理！
+                                id_log.write(news_id + "\n")
+                                processed_ids.add(news_id)
+                            else:
+                                tools.log(f"🔍 新闻 {news_id}：LLM 返回事件但无有效实体，暂不标记")
+                        else:
+                            tools.log(f"⏳ 新闻 {news_id}：LLM 未返回有效事件，保留重试机会")
 
                     except Exception as e:
-                        log(f"⚠️ 处理单条新闻失败: {e}")
-                        continue
+                        tools.log(f"⚠️ 处理单条新闻失败: {e}")
 
              
-    log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
+    tools.log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
+    
 
 # ======================
 # 入口
