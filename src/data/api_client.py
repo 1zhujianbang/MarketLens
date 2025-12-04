@@ -1,75 +1,92 @@
-import aiohttp
-import asyncio
-import random
-import json
+# src/data/api_client.py （建议单独文件）
 import os
-import time
-from typing import Optional, Dict, Any
-from ..utils.tool_function import tools
-tools=tools()
-from dotenv import load_dotenv
+import json
 from pathlib import Path
+from typing import Optional, Any
+
+from dotenv import load_dotenv
+from .news_collector import BlockbeatsNewsCollector, GNewsCollector, Language
+
 class DataAPIPool:
+    _instance = None
+    _collectors = {}
+
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+
     def __init__(self):
+        if hasattr(self, '_initialized') and self._initialized:
+            return
+        self._initialized = True
+
+        # 加载配置
         PROJECT_ROOT = Path(__file__).parent.parent.parent.resolve()
         dotenv_path = PROJECT_ROOT / "config" / ".env.local"
         load_dotenv(dotenv_path)
-        self.clients = []
-        self._load_clients()
-        if not self.clients:
-            raise ValueError("[数据获取] ❌ 未配置任何有效的 数据源 API")
 
-    def _load_clients(self):
+        self.configs = []
+        self._load_configs()
+        # 调试：打印已加载的数据源配置
+        print(f"[数据获取][DataAPIPool] 已加载数据源配置: {[c.get('name') for c in self.configs]}")
+
+    def _load_configs(self):
         try:
             apis_config = os.getenv("DATA_APIS")
+            if not apis_config:
+                raise ValueError("DATA_APIS 未设置")
+            print(f"[数据获取][DataAPIPool] 原始 DATA_APIS 环境变量: {apis_config}")
             apis = json.loads(apis_config)
             for cfg in apis:
-                if not cfg.get("enabled", True):
-                    continue
-                try:
-                    self.clients.append({
-                        "name": cfg["name"],
-                        "base_url": cfg["base_url"]
-                    })
-                    pass
-                except Exception as e:
-                    tools.log(f"[数据获取] ⚠️ 跳过无效 API 配置 {cfg.get('name')}: {e}")
+                if cfg.get("enabled", True):
+                    self.configs.append(cfg)
         except Exception as e:
-            tools.log(f"[数据获取] ❌ 解析 DATA_APIS 失败: {e}")
+            print(f"[数据获取] ❌ 解析 DATA_APIS 失败: {e}")
+            raise
 
-    async def call(self, prompt: str, max_tokens: int = 1500, timeout: int = 55, retries: int = 2) -> Optional[str]:
-        """
-        尝试调用 API 池中的服务，直到成功或耗尽重试次数。
-        返回 raw LLM content (str)，由调用方解析 JSON。
-        """
-        available = self.clients.copy()
-        if not available:
-            return None
+    def get_collector(self, name: str) -> Optional[Any]:
+        """根据 name 返回对应的新闻收集器实例（单例）"""
+        if name in self._collectors:
+            print(f"[数据获取][DataAPIPool] 复用已创建的 collector: {name}")
+            return self._collectors[name]
 
-        for attempt in range(retries + 1):
-            if not available:
-                available = self.clients.copy()  # 重置候选池
+        # 查找配置
+        config = None
+        for cfg in self.configs:
+            if cfg["name"] == name:
+                config = cfg
+                break
 
-            # 随机选一个（简单负载均衡），也可改为 round-robin
-            choice = random.choice(available)
-            name, url = choice["name"], choice["base_url"]
+        if not config:
+            raise ValueError(f"[数据获取][DataAPIPool] 未找到名为 '{name}' 的数据源配置")
 
-            try:
-                tools.log(f"[数据请求] 尝试 API [{name}] (第 {attempt+1} 次)")
-                async with self.session.get(url) as response:
-                    if response.status != 200:
-                        error_text = await response.text()
-                        raise Exception(f"API请求失败: {response.status} - {error_text}")
-                    
-                    result = await response.json()
-                    tools.log(f"[数据获取] ✅ API [{name}] 成功返回")
-                    return result
-                    
-            except aiohttp.ClientError as e:
-                tools.log("[数据获取] ❌ API [{name}] 失败: {e}")
-            except json.JSONDecodeError as e:
-                tools.log("[数据获取] ❌ API [{name}] 失败: {e}")
-            time.sleep(2 ** attempt)  # 指数退避
+        # 创建对应 collector
+        print(f"[数据获取][DataAPIPool] 准备创建 collector: {name}, config={config}")
+        if name == "Blockbeats":
+            collector = BlockbeatsNewsCollector(
+                language=Language.CN,  # 可从配置读取
+                timeout=config.get("timeout", 30),
+            )
+        elif name == "GNews":
+            api_key = config.get("api_key") or os.getenv("GNEWS_API_KEY", "")
+            if not api_key:
+                raise ValueError("GNews 数据源需要配置 api_key 或环境变量 GNEWS_API_KEY")
 
-        tools.log("[数据获取] 💥 所有 API 尝试均失败")
-        return None
+            language = config.get("language", "zh")
+            country = config.get("country")  # 可选，如 "cn", "us"
+
+            collector = GNewsCollector(
+                api_key=api_key,
+                language=language,
+                country=country,
+                timeout=config.get("timeout", 30),
+            )
+        else:
+            raise NotImplementedError(f"不支持的数据源类型: {name}")
+
+        self._collectors[name] = collector
+        return collector
+
+    def list_available_sources(self) -> list:
+        return [cfg["name"] for cfg in self.configs]

@@ -17,7 +17,7 @@ import re
 import time
 import hashlib
 from pathlib import Path
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Optional
 from datetime import datetime, timezone
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -43,6 +43,11 @@ class NewsDeduplicator:
         self.threshold = threshold
         self.seen_hashes: Set[int] = set()
 
+    @staticmethod
+    def _news_key(news: Dict) -> str:
+        """构造用于去重的唯一键，包含 source 前缀，兼容多数据源。"""
+        return f"{news.get('source', 'unknown')}:{news.get('id')}"
+
     def is_duplicate(self, text: str) -> bool:
         h = tools.simhash(text)
         for seen_h in self.seen_hashes:
@@ -51,31 +56,55 @@ class NewsDeduplicator:
         self.seen_hashes.add(h)
         return False
 
-    def dedupe_file(self, input_path: Path, output_path: Path):
+    def dedupe_file(self, input_path: Path, output_path: Path, processed_ids: Optional[Set[str]] = None):
+        """
+        对单个原始文件做去重：
+        - 先用 processed_ids（全局已处理 ID，如 blockbeats:323066）过滤历史已处理新闻
+        - 再结合已有去重文件 & simhash 去掉本批内/跨批的重复内容
+        """
         tools.log(f"🔍 去重中: {input_path.name}")
-        seen_ids = set()
+
+        # 先加载“全局已处理 ID”，避免老新闻再次进入去重结果
+        seen_ids: Set[str] = set(processed_ids or set())
+        if processed_ids:
+            tools.log(f"🔍 已有历史 processed_ids 数量: {len(processed_ids)}")
+
+        # 再加载已有去重结果文件中的 ID，实现跨批次的本地去重
         if output_path.exists():
             with open(output_path, "r", encoding="utf-8") as f:
                 for line in f:
-                    item = json.loads(line)
-                    seen_ids.add(item["id"])
+                    try:
+                        item = json.loads(line)
+                        seen_ids.add(self._news_key(item))
+                    except Exception as e:
+                        tools.log(f"⚠️ 读取历史去重文件时跳过无效行: {e}")
         
+        kept, skipped_id, skipped_sim = 0, 0, 0
         with open(input_path, "r", encoding="utf-8") as fin, \
              open(output_path, "a", encoding="utf-8") as fout:
             for line in fin:
                 try:
                     news = json.loads(line)
-                    if news["id"] in seen_ids:
+                    key = self._news_key(news)
+
+                    # 1) 按全局 ID 去重（包括 processed_ids 和已有去重文件中的 ID）
+                    if key in seen_ids:
+                        skipped_id += 1
                         continue
+
+                    # 2) 构造文本，按内容相似度去重
                     raw_text = (news.get("title", "") + " " + news.get("content", "")).strip()
                     if not raw_text:
                         continue
                     if self.is_duplicate(raw_text):
+                        skipped_sim += 1
                         continue
                     fout.write(line)
-                    seen_ids.add(news["id"])
+                    seen_ids.add(key)
+                    kept += 1
                 except Exception as e:
                     tools.log(f"⚠️ 跳过无效行: {e}")
+        tools.log(f"✅ 去重完成: 保留 {kept} 条, 按 ID 跳过 {skipped_id} 条, 按相似度跳过 {skipped_sim} 条")
 
 # ======================
 # LLM 结构化提取器（含精准提示词）
@@ -168,9 +197,14 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 # 自动更新知识库
 # ======================
 
-def update_entities(entities: List[str], source: str):
-    """自动写入主实体库"""
+def update_entities(entities: List[str], source: str, published_at: Optional[str] = None):
+    """自动写入主实体库
+
+    时间刻使用新闻的发布时间（若提供），否则回退到当前时间。
+    """
     now = datetime.now(timezone.utc).isoformat()
+    # 如果提供了发布时间，则优先使用该时间；否则使用当前时间
+    base_ts = published_at or now
     existing = {}
     if tools.ENTITIES_FILE.exists():
         with open(tools.ENTITIES_FILE, "r", encoding="utf-8") as f:
@@ -179,23 +213,33 @@ def update_entities(entities: List[str], source: str):
     for ent in entities:
         if ent not in existing:
             existing[ent] = {
-                "first_seen": now,
+                "first_seen": base_ts,
                 "sources": [source]
             }
         else:
+            # 如果已有 first_seen，且新闻时间更早，则更新为更早的时间
+            try:
+                old_ts = existing[ent].get("first_seen")
+                if old_ts and base_ts and base_ts < old_ts:
+                    existing[ent]["first_seen"] = base_ts
+            except Exception:
+                # 异常时不强制更新，避免破坏已有数据
+                pass
+
             if source not in existing[ent]["sources"]:
                 existing[ent]["sources"].append(source)
     
     with open(tools.ENTITIES_FILE, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
 
-def update_abstract_map(extracted_list: List[Dict], source: str):
+def update_abstract_map(extracted_list: List[Dict], source: str, published_at: Optional[str] = None):
     abstract_map = {}
     if tools.ABSTRACT_MAP_FILE.exists():
         with open(tools.ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
             abstract_map = json.load(f)
     
     now = datetime.now(timezone.utc).isoformat()
+    base_ts = published_at or now
     for item in extracted_list:
         key = item["abstract"]
         if key not in abstract_map:
@@ -203,9 +247,17 @@ def update_abstract_map(extracted_list: List[Dict], source: str):
                 "entities": item["entities"],
                 "event_summary": item["event_summary"],
                 "sources": [source],
-                "first_seen": now
+                "first_seen": base_ts
             }
         else:
+            # first_seen 取最早的发布时间
+            try:
+                old_ts = abstract_map[key].get("first_seen")
+                if old_ts and base_ts and base_ts < old_ts:
+                    abstract_map[key]["first_seen"] = base_ts
+            except Exception:
+                pass
+
             s_set = set(abstract_map[key]["sources"])
             s_set.add(source)
             abstract_map[key]["sources"] = sorted(s_set)
@@ -228,7 +280,8 @@ def get_unprocessed_news_files() -> List[Path]:
         deduped_file = tools.DEDUPED_NEWS_DIR / f"{raw_file.stem}_deduped.jsonl"
         if not deduped_file.exists():
             deduper = NewsDeduplicator(threshold=tools.DEDUPE_THRESHOLD)
-            deduper.dedupe_file(raw_file, deduped_file)
+            # 先用 processed_ids 过滤“历史已处理新闻”，再写入去重文件
+            deduper.dedupe_file(raw_file, deduped_file, processed_ids)
         unprocessed.append(deduped_file)
     return unprocessed
 
@@ -252,40 +305,61 @@ def process_news_stream():
                 for line in f:
                     try:
                         news = json.loads(line)
-                        news_id = news["id"]
-                        if news_id in processed_ids:
+                        raw_id = str(news.get("id", "")).strip()
+                        source = news.get("source", "unknown").strip().lower()
+                        
+                        if not raw_id or not source:
+                            tools.log("⚠️ 跳过无 ID 或无 source 的新闻")
+                            continue
+
+                        global_id = f"{source}:{raw_id}"  # 👈 关键：带前缀的全局唯一 ID
+
+                        if global_id in processed_ids:
                             continue
 
                         title = news.get("title", "")
                         content = news.get("content", "")
-                        source = news.get("source", "unknown")
+
+                        # 为避免超长正文导致 LLM 超出 token 或返回异常 JSON，这里对正文做长度截断
+                        MAX_CONTENT_CHARS = 2000  # 可调，比如 1500 / 3000
+                        if isinstance(content, str) and len(content) > MAX_CONTENT_CHARS:
+                            content = content[:MAX_CONTENT_CHARS] + "……【后文已截断】"
 
                         extracted = llm_extract_events(title, content)
 
-                        # 只有成功提取到有效事件，才视为“已处理”
                         if extracted:
                             all_entities = []
                             for ev in extracted:
                                 all_entities.extend(ev["entities"])
                             if all_entities:
-                                update_entities(all_entities, source)
-                                update_abstract_map(extracted, source)
+                                # 优先使用新闻自身的时间戳（由采集器提供），否则使用当前时间
+                                ts = news.get("timestamp")
+                                # 部分旧数据可能是 datetime 对象或其他类型，统一转为字符串
+                                published_at = None
+                                if ts:
+                                    try:
+                                        published_at = (
+                                            ts if isinstance(ts, str) else str(ts)
+                                        )
+                                    except Exception:
+                                        published_at = None
+
+                                update_entities(all_entities, source, published_at)
+                                update_abstract_map(extracted, source, published_at)
                                 total_processed += 1
 
-                                # ✅ 仅在此处记录为已处理！
-                                id_log.write(news_id + "\n")
-                                processed_ids.add(news_id)
+                                id_log.write(global_id + "\n")  # 👈 写入带前缀的 ID
+                                processed_ids.add(global_id)
                             else:
-                                tools.log(f"🔍 新闻 {news_id}：LLM 返回事件但无有效实体，暂不标记")
+                                tools.log(f"🔍 新闻 {global_id}：LLM 返回事件但无有效实体，暂不标记")
                         else:
-                            tools.log(f"⏳ 新闻 {news_id}：LLM 未返回有效事件，保留重试机会")
+                            tools.log(f"⏳ 新闻 {global_id}：LLM 未返回有效事件，保留重试机会")
 
                     except Exception as e:
                         tools.log(f"⚠️ 处理单条新闻失败: {e}")
 
-             
     tools.log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
-    
+
 
 # ======================
 # 入口

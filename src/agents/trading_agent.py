@@ -1,7 +1,7 @@
 from ..config.config_manager import TradingConfig
 from ..models.model_loader import ModelLoader
 from ..data.data_collector import OKXMarketClient
-from ..data.news_collector import BlockbeatsNewsCollector, NewsType, Language
+from ..data.news_collector import NewsCollector
 from ..agents.agent1 import process_news_stream
 from ..utils.tool_function import tools
 tools = tools()
@@ -26,7 +26,8 @@ class TradingAgent:
 
         # 初始化客户端
         self.okx_client = OKXMarketClient(config.user_config, config.data_config)
-        self.news_collector = BlockbeatsNewsCollector(language=Language.CN)
+        # 使用统一的 NewsCollector（内部通过 DATA_APIS 调用 Blockbeats、GNews 等多数据源）
+        self.news_collector = NewsCollector()
 
         # 数据存储
         self.market_data = {}
@@ -210,61 +211,24 @@ class TradingAgent:
                 print(f"     {display_str}")
 
     async def _initialize_news_data(self):
-        """初始化新闻数据：通过 agent1 处理"""
-        print("📰 初始化新闻数据（调用 Agent1）...")
+        """初始化新闻数据：通过统一 NewsCollector + Agent1 处理多数据源新闻"""
+        print("📰 初始化新闻数据（NewsCollector + Agent1）...")
         try:
-            # 1. 获取原始新闻
-            important_news = await self.news_collector.get_latest_important_news(limit=200)
-            if not important_news:
-                print("📭 未获取到重要新闻")
-                self.news_data['structured'] = pd.DataFrame()
-                self.market_sentiment = self._analyze_market_sentiment_from_df(pd.DataFrame())
-                return
+            # 1. 使用统一 NewsCollector 抓取多数据源新闻（Blockbeats、GNews 等），写入 raw_news 目录
+            print("🔍 调用 NewsCollector.data_extract 抓取新闻（支持多数据源）...")
+            await self.news_collector.data_extract()
 
-            # 2. 生成唯一临时文件名
-            temp_filename = f"temp_{uuid.uuid4().hex}.jsonl"
-            raw_file = tools.RAW_NEWS_DIR / temp_filename
-
-            # 3. 写入 raw_news 目录（供 agent1 读取）
-            with open(raw_file, "w", encoding="utf-8") as f:
-                for idx, news in enumerate(important_news):
-                    # ✅ 正确处理 dict 类型的新闻
-                    title = news.get('title', '').strip()
-                    content_raw = news.get('content', '').strip()
-                    
-                    # 清理 HTML（避免 <p>, <br> 干扰去重和 LLM）
-                    clean_content = re.sub(r'<[^>]+>', '', content_raw).strip()
-                    final_content = clean_content or title  # 兜底
-                    
-                    item = {
-                        "id": str(news.get("id", f"temp_{idx}")),
-                        "title": title,
-                        "content": final_content,
-                        "source": "blockbeats",
-                        "timestamp": datetime.now(timezone.utc).isoformat()
-                    }
-                    f.write(json.dumps(item, ensure_ascii=False) + "\n")
-
-            print(f"✅ 写入 {len(important_news)} 条新闻到 {raw_file.name}")
-
-            # 4. 调用 agent1 主流程
+            # 2. 调用 agent1 主流程，从 raw_news / deduped_news 中读取并结构化处理
             process_news_stream()
 
-            # 5. 从 agent1 输出文件构建结构化 DataFrame
+            # 3. 从 agent1 输出文件构建结构化 DataFrame
             df_structured = self._build_structured_news_from_agent1_output()
 
-            # 6. 保存并分析
+            # 4. 保存并分析
             self.news_data['structured'] = df_structured
             self.market_sentiment = self._analyze_market_sentiment_from_df(df_structured)
 
-            # 7. 清理临时文件
-            try:
-                raw_file.unlink()
-                print(f"🗑️  已清理临时文件: {raw_file.name}")
-            except Exception as e:
-                print(f"⚠️  无法删除临时文件: {e}")
-
-            # 8. 打印摘要
+            # 5. 打印摘要
             self._print_news_summary()
 
         except Exception as e:
