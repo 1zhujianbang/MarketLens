@@ -45,7 +45,10 @@
     "first_seen": "2025-12-03T16:52:00+00:00",
     "sources": [
       "blockbeats",
-      "gnews"
+      "gnews",
+      "the guardian",
+      "espn",
+      "the independent"
     ]
   },
   "CME": {
@@ -55,9 +58,10 @@
     ]
   },
   "美联储": {
-    "first_seen": "2025-12-04T14:06:44+00:00",
+    "first_seen": "2025-12-04T09:29:00+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews"
     ]
   },
   "美国劳工部": {
@@ -193,7 +197,7 @@
     ]
   },
   "MicroStrategy": {
-    "first_seen": "2025-12-04T14:40:47.836739+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -279,7 +283,8 @@
   "唐纳德·特朗普": {
     "first_seen": "2025-12-04T14:40:58.505715+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews"
     ]
   },
   "墨西哥": {
@@ -291,7 +296,9 @@
   "加拿大": {
     "first_seen": "2025-12-04T14:40:58.505715+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews",
+      "espn"
     ]
   },
   "Bitwise": {
@@ -385,9 +392,10 @@
     ]
   },
   "日本": {
-    "first_seen": "2025-12-04T14:41:29.942572+00:00",
+    "first_seen": "2025-12-04T10:19:37+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews"
     ]
   },
   "日本央行": {
@@ -631,9 +639,10 @@
     ]
   },
   "哈佛大学": {
-    "first_seen": "2025-12-04T14:43:18.218371+00:00",
+    "first_seen": "2025-12-04T09:29:00+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews"
     ]
   },
   "马克斯·普朗克研究所": {
@@ -855,7 +864,9 @@
   "Meta": {
     "first_seen": "2025-12-04T14:43:18.218371+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews",
+      "business insider"
     ]
   },
   "复旦大学": {
@@ -1233,7 +1244,9 @@
   "德国": {
     "first_seen": "2025-12-04T14:44:37.583614+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews",
+      "bbc"
     ]
   },
   "美国联邦储备委员会": {
@@ -1315,9 +1328,10 @@
     ]
   },
   "柬埔寨": {
-    "first_seen": "2025-12-04T14:45:34.088801+00:00",
+    "first_seen": "2025-12-04T10:19:37+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews"
     ]
   },
   "Donald Trump": {
@@ -1501,7 +1515,7 @@
     ]
   },
   "美国国税局": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -1513,13 +1527,13 @@
     ]
   },
   "Holloman Air Force Base": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Vandenberg Space Force Base": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -1527,7 +1541,9 @@
   "加利福尼亚州": {
     "first_seen": "2025-12-04T14:46:14.111165+00:00",
     "sources": [
-      "blockbeats"
+      "blockbeats",
+      "gnews",
+      "abc7 los angeles"
     ]
   },
   "亚利桑那州": {
@@ -1543,13 +1559,13 @@
     ]
   },
   "Tesla": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
   },
   "Saunders": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -1561,7 +1577,7 @@
     ]
   },
   "Zach Rodriguez": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -1591,7 +1607,7 @@
     ]
   },
   "Moises Gonzalez": {
-    "first_seen": "2025-12-04T14:46:14.111165+00:00",
+    "first_seen": "2025-12-02T10:58:56+00:00",
     "sources": [
       "blockbeats"
     ]
@@ -2475,13 +2491,17 @@
   "俄罗斯": {
     "first_seen": "2025-12-03T16:52:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "dw",
+      "le figaro"
     ]
   },
   "乌克兰": {
     "first_seen": "2025-12-04T01:41:16+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "the guardian",
+      "le figaro"
     ]
   },
   "北约": {
@@ -2523,13 +2543,17 @@
   "中华人民共和国": {
     "first_seen": "2025-12-04T00:09:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "rfi",
+      "新华网",
+      "dw"
     ]
   },
   "台铃": {
     "first_seen": "2025-12-04T00:09:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "中国网新闻中心"
     ]
   },
   "杭州市": {
@@ -2541,25 +2565,38 @@
   "法国": {
     "first_seen": "2025-12-04T00:00:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "rfi",
+      "21财经",
+      "dw",
+      "libération",
+      "le figaro"
     ]
   },
   "马克龙": {
     "first_seen": "2025-12-04T00:00:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "21财经",
+      "dw"
     ]
   },
   "中国": {
     "first_seen": "2025-12-04T00:00:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "blockbeats",
+      "21财经",
+      "le figaro"
     ]
   },
   "北京": {
     "first_seen": "2025-12-04T00:00:00+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "中国网新闻中心",
+      "21财经",
+      "le figaro"
     ]
   },
   "成都": {
@@ -2704,6 +2741,1274 @@
     "first_seen": "2025-12-04T03:45:14+00:00",
     "sources": [
       "gnews"
+    ]
+  },
+  "美国有线电视新闻网": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "消费者新闻与商业频道": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国商务部": {
+    "first_seen": "2025-12-05T03:24:32+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美银": {
+    "first_seen": "2025-12-05T03:10:35+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Takayasu Kudo": {
+    "first_seen": "2025-12-05T03:10:35+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Solmate Infrastructure": {
+    "first_seen": "2025-12-05T02:58:07+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "RockawayX": {
+    "first_seen": "2025-12-05T02:58:07+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Eric Trump": {
+    "first_seen": "2025-12-05T02:38:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "American Bitcoin Corp": {
+    "first_seen": "2025-12-05T02:38:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "GameStop": {
+    "first_seen": "2025-12-05T02:38:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Bithumb": {
+    "first_seen": "2025-12-05T02:12:54+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "SoFi Technologies": {
+    "first_seen": "2025-12-05T01:32:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "高盛集团": {
+    "first_seen": "2025-12-05T01:32:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "FalconX": {
+    "first_seen": "2025-12-05T01:31:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "BitGo": {
+    "first_seen": "2025-12-05T01:31:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "证券业与金融市场协会": {
+    "first_seen": "2025-12-05T01:17:43+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "花旗集团": {
+    "first_seen": "2025-12-05T01:17:43+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "杰森·威廉姆斯": {
+    "first_seen": "2025-12-05T01:17:43+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Galaxy": {
+    "first_seen": "2025-12-05T01:02:52+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Samara Cohen": {
+    "first_seen": "2025-12-05T01:02:52+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "AlphaTON Capital Corp": {
+    "first_seen": "2025-12-05T00:44:13+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Chainlink": {
+    "first_seen": "2025-12-05T00:38:47+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Aerodrome": {
+    "first_seen": "2025-12-05T00:38:47+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CNBC": {
+    "first_seen": "2025-12-05T00:33:17+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "21Shares": {
+    "first_seen": "2025-12-05T00:23:30+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "纳斯达克交易所": {
+    "first_seen": "2025-12-05T00:23:30+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "弗拉基米尔·普京": {
+    "first_seen": "2025-12-04T14:13:01+00:00",
+    "sources": [
+      "gnews",
+      "dw"
+    ]
+  },
+  "印度": {
+    "first_seen": "2025-12-04T14:13:01+00:00",
+    "sources": [
+      "gnews",
+      "dw"
+    ]
+  },
+  "纳伦德拉·莫迪": {
+    "first_seen": "2025-12-04T14:13:01+00:00",
+    "sources": [
+      "gnews",
+      "dw"
+    ]
+  },
+  "印度外交部": {
+    "first_seen": "2025-12-04T14:13:01+00:00",
+    "sources": [
+      "gnews",
+      "dw"
+    ]
+  },
+  "中法企业家委员会": {
+    "first_seen": "2025-12-04T13:33:46+00:00",
+    "sources": [
+      "gnews",
+      "rfi"
+    ]
+  },
+  "欧盟": {
+    "first_seen": "2025-12-04T13:33:46+00:00",
+    "sources": [
+      "gnews",
+      "rfi"
+    ]
+  },
+  "中国疾控中心": {
+    "first_seen": "2025-12-04T10:43:31+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "新华社": {
+    "first_seen": "2025-12-04T10:43:31+00:00",
+    "sources": [
+      "gnews",
+      "中国网新闻中心"
+    ]
+  },
+  "徐鹏航": {
+    "first_seen": "2025-12-04T10:43:31+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "彭韵佳": {
+    "first_seen": "2025-12-04T10:43:31+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "北京首都国际机场": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "对外经济贸易大学法国经济研究中心": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "赵永升": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews",
+      "21财经"
+    ]
+  },
+  "南方财经21世纪经济报道": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "郑青亭": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews",
+      "21财经"
+    ]
+  },
+  "陈俊康": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "gnews",
+      "21财经"
+    ]
+  },
+  "王毅": {
+    "first_seen": "2025-12-04T10:21:37+00:00",
+    "sources": [
+      "gnews",
+      "dw"
+    ]
+  },
+  "习近平": {
+    "first_seen": "2025-12-04T08:21:34+00:00",
+    "sources": [
+      "gnews",
+      "dw",
+      "le figaro"
+    ]
+  },
+  "北京人民大会堂": {
+    "first_seen": "2025-12-04T10:21:37+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "央视网": {
+    "first_seen": "2025-12-04T10:19:37+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "微软": {
+    "first_seen": "2025-12-04T09:52:46+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "人民大会堂": {
+    "first_seen": "2025-12-04T08:21:34+00:00",
+    "sources": [
+      "gnews",
+      "le figaro"
+    ]
+  },
+  "朱亚文": {
+    "first_seen": "2025-12-04T10:15:09+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "陈晓": {
+    "first_seen": "2025-12-04T10:15:09+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "周迅": {
+    "first_seen": "2025-12-04T10:15:09+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "汤唯": {
+    "first_seen": "2025-12-04T10:15:09+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "郑晓龙": {
+    "first_seen": "2025-12-04T10:15:09+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Farside": {
+    "first_seen": "2025-12-05T04:51:19+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "胡安·奥兰多·埃尔南德斯": {
+    "first_seen": "2025-12-05T04:47:23+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "洪都拉斯": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "blockbeats",
+      "gnews"
+    ]
+  },
+  "萨姆·班克曼-弗里德": {
+    "first_seen": "2025-12-05T04:47:23+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Anatoly Yakovenko": {
+    "first_seen": "2025-12-05T03:45:46+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "雅迪": {
+    "first_seen": "2025-12-04T16:26:00+00:00",
+    "sources": [
+      "gnews",
+      "中国网新闻中心"
+    ]
+  },
+  "市场监管总局": {
+    "first_seen": "2025-12-04T16:25:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Moonshot": {
+    "first_seen": "2025-12-05T04:21:20+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "HumidiFi": {
+    "first_seen": "2025-12-05T04:01:25+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "美国国务院": {
+    "first_seen": "2025-12-04T17:16:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Any Lucia López Belloza": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Babson College": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "美国移民及海关执法局": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "波士顿": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "奥斯汀": {
+    "first_seen": "2025-12-04T17:10:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Criscilla Anderson": {
+    "first_seen": "2025-12-04T16:56:52+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Dallas Cowboys Cheerleaders": {
+    "first_seen": "2025-12-04T16:56:52+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "英国": {
+    "first_seen": "2025-12-04T16:55:31+00:00",
+    "sources": [
+      "gnews",
+      "blockbeats",
+      "bbc"
+    ]
+  },
+  "挪威": {
+    "first_seen": "2025-12-04T16:55:31+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "克里斯·保罗": {
+    "first_seen": "2025-12-04T16:39:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "洛杉矶快船队": {
+    "first_seen": "2025-12-04T16:39:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "美国卫生部": {
+    "first_seen": "2025-12-04T17:13:20+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Robert Kennedy Jr.": {
+    "first_seen": "2025-12-04T17:13:20+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "疫苗实践咨询委员会": {
+    "first_seen": "2025-12-04T17:13:20+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "美国国防部": {
+    "first_seen": "2025-12-04T17:10:36+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "加尔省": {
+    "first_seen": "2025-12-04T17:01:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "阿莱斯市": {
+    "first_seen": "2025-12-04T17:01:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "埃本·埃策贝斯": {
+    "first_seen": "2025-12-04T16:39:21+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "南非": {
+    "first_seen": "2025-12-04T16:39:21+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "威尔士": {
+    "first_seen": "2025-12-04T16:39:21+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "朗德省": {
+    "first_seen": "2025-12-04T16:22:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "苏斯通地方单位": {
+    "first_seen": "2025-12-04T16:22:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "圣巴泰勒米": {
+    "first_seen": "2025-12-04T16:22:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "圣克里克迪加沃": {
+    "first_seen": "2025-12-04T16:22:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "索尔德拉拜": {
+    "first_seen": "2025-12-04T16:22:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "奥地利": {
+    "first_seen": "2025-12-04T16:16:53+00:00",
+    "sources": [
+      "gnews",
+      "franceinfo",
+      "20 minutes"
+    ]
+  },
+  "奈杰尔·法拉奇": {
+    "first_seen": "2025-12-04T17:03:00+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "英国广播公司": {
+    "first_seen": "2025-12-04T17:03:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "改革党": {
+    "first_seen": "2025-12-04T17:03:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Creative Assembly": {
+    "first_seen": "2025-12-04T17:00:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "英格兰": {
+    "first_seen": "2025-12-04T16:51:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Heysham": {
+    "first_seen": "2025-12-04T16:51:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Lancs": {
+    "first_seen": "2025-12-04T16:51:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "沙卡·希斯洛普": {
+    "first_seen": "2025-12-04T16:48:07+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "FTX": {
+    "first_seen": "2025-12-05T04:47:23+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "山姆·班克曼-弗里德": {
+    "first_seen": "2025-12-05T04:47:23+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "X公司": {
+    "first_seen": "2025-12-05T04:47:23+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "American Bitcoin Corp.": {
+    "first_seen": "2025-12-05T02:38:26+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Luke Air Force Base": {
+    "first_seen": "2025-12-02T10:58:56+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Durelle Bailey": {
+    "first_seen": "2025-12-02T10:58:56+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Chegg": {
+    "first_seen": "2025-12-02T10:58:56+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "George Mason University": {
+    "first_seen": "2025-12-02T10:58:56+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Lopes Lara": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CNN": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "CBS": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Google Finance": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Yahoo Finance": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ICE": {
+    "first_seen": "2025-12-05T03:38:05+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Changpeng Zhao": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Mario Nawfal": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Sam Bankman-Fried": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Meta Platforms Inc.": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Binance Holdings Limited": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Tether Limited": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Paolo Ardoino": {
+    "first_seen": "2025-12-05T01:27:11+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "SellCell": {
+    "first_seen": "2025-12-04T16:46:02+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "国际足联": {
+    "first_seen": "2025-12-04T16:45:00+00:00",
+    "sources": [
+      "gnews",
+      "espn"
+    ]
+  },
+  "Lando Norris": {
+    "first_seen": "2025-12-04T17:13:17+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Max Verstappen": {
+    "first_seen": "2025-12-04T17:13:17+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Oscar Piastri": {
+    "first_seen": "2025-12-04T17:13:17+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Binky Felstead": {
+    "first_seen": "2025-12-04T16:57:43+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Robyn Lott": {
+    "first_seen": "2025-12-04T16:47:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "CoinGecko": {
+    "first_seen": "2025-12-05T06:16:17+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "ZachXBT": {
+    "first_seen": "2025-12-05T06:01:47+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "Danish Zulfiqar": {
+    "first_seen": "2025-12-05T06:01:47+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "嘉鱼县公安局": {
+    "first_seen": "2025-12-05T05:10:31+00:00",
+    "sources": [
+      "blockbeats"
+    ]
+  },
+  "东印度公司": {
+    "first_seen": "2025-12-04T18:29:38+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Emmanuel Macron": {
+    "first_seen": "2025-12-04T18:29:00+00:00",
+    "sources": [
+      "gnews",
+      "the guardian"
+    ]
+  },
+  "Volodymyr Zelenskyy": {
+    "first_seen": "2025-12-04T18:29:00+00:00",
+    "sources": [
+      "gnews",
+      "the guardian"
+    ]
+  },
+  "Der Spiegel": {
+    "first_seen": "2025-12-04T18:29:00+00:00",
+    "sources": [
+      "gnews",
+      "the guardian"
+    ]
+  },
+  "阿尔塞纳·温格": {
+    "first_seen": "2025-12-04T18:23:00+00:00",
+    "sources": [
+      "gnews",
+      "espn"
+    ]
+  },
+  "西班牙": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews",
+      "the new york times",
+      "20 minutes",
+      "the guardian"
+    ]
+  },
+  "爱尔兰": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews",
+      "the new york times",
+      "20 minutes",
+      "the guardian"
+    ]
+  },
+  "荷兰": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews",
+      "the new york times",
+      "20 minutes",
+      "the guardian"
+    ]
+  },
+  "斯洛文尼亚": {
+    "first_seen": "2025-12-04T18:12:45+00:00",
+    "sources": [
+      "gnews",
+      "the new york times"
+    ]
+  },
+  "以色列": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews",
+      "the new york times",
+      "le monde.fr",
+      "franceinfo",
+      "20 minutes",
+      "the guardian"
+    ]
+  },
+  "布法罗比尔队": {
+    "first_seen": "2025-12-04T18:11:15+00:00",
+    "sources": [
+      "gnews",
+      "nbc sports"
+    ]
+  },
+  "Darius Slay": {
+    "first_seen": "2025-12-04T18:11:15+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Drew Rosenhaus": {
+    "first_seen": "2025-12-04T18:11:15+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Ed Bambas": {
+    "first_seen": "2025-12-04T18:07:00+00:00",
+    "sources": [
+      "gnews",
+      "nbc news"
+    ]
+  },
+  "Kate Walsh": {
+    "first_seen": "2025-12-04T18:00:00+00:00",
+    "sources": [
+      "gnews",
+      "variety"
+    ]
+  },
+  "ABC": {
+    "first_seen": "2025-12-04T18:00:00+00:00",
+    "sources": [
+      "gnews",
+      "variety"
+    ]
+  },
+  "美国地质调查局": {
+    "first_seen": "2025-12-04T17:58:36+00:00",
+    "sources": [
+      "gnews",
+      "abc7 los angeles"
+    ]
+  },
+  "内华达州": {
+    "first_seen": "2025-12-04T17:58:36+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "苏格兰": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "澳大利亚": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "克罗地亚": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "雷恩检察院": {
+    "first_seen": "2025-12-04T18:06:00+00:00",
+    "sources": [
+      "gnews",
+      "libération"
+    ]
+  },
+  "Frédéric Teillet": {
+    "first_seen": "2025-12-04T18:06:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Sainte-Soline": {
+    "first_seen": "2025-12-04T18:06:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Deux-Sèvres": {
+    "first_seen": "2025-12-04T18:06:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "阿莱斯检察院": {
+    "first_seen": "2025-12-04T17:59:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "欧洲广播联盟": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews",
+      "le monde.fr",
+      "franceinfo",
+      "20 minutes"
+    ]
+  },
+  "维也纳": {
+    "first_seen": "2025-12-04T17:49:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Hugo Robert": {
+    "first_seen": "2025-12-04T17:51:32+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Iris Club de Croix": {
+    "first_seen": "2025-12-04T17:51:32+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Stade de Reims": {
+    "first_seen": "2025-12-04T17:51:32+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Fabrice Bocquet": {
+    "first_seen": "2025-12-04T17:47:25+00:00",
+    "sources": [
+      "gnews",
+      "l'équipe"
+    ]
+  },
+  "Franck Haise": {
+    "first_seen": "2025-12-04T17:47:25+00:00",
+    "sources": [
+      "gnews",
+      "l'équipe"
+    ]
+  },
+  "OGC Nice": {
+    "first_seen": "2025-12-04T17:47:25+00:00",
+    "sources": [
+      "gnews",
+      "l'équipe"
+    ]
+  },
+  "法国核安全监管机构": {
+    "first_seen": "2025-12-04T17:36:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Bure": {
+    "first_seen": "2025-12-04T17:36:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "埃马纽埃尔·马克龙": {
+    "first_seen": "2025-12-04T17:35:05+00:00",
+    "sources": [
+      "gnews",
+      "le figaro"
+    ]
+  },
+  "法兰西共和国": {
+    "first_seen": "2025-12-04T17:35:05+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "Derbyshire Police": {
+    "first_seen": "2025-12-04T18:21:17+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "约翰·斯温尼": {
+    "first_seen": "2025-12-04T18:19:20+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "Reform UK": {
+    "first_seen": "2025-12-04T17:52:41+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "格拉斯哥": {
+    "first_seen": "2025-12-04T18:19:20+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "Jim ...": {
+    "first_seen": "2025-12-04T18:15:00+00:00",
+    "sources": [
+      "gnews",
+      "the independent"
+    ]
+  },
+  "Frank-Walter Steinmeier": {
+    "first_seen": "2025-12-04T18:11:22+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "沙特职业联赛": {
+    "first_seen": "2025-12-04T18:04:00+00:00",
+    "sources": [
+      "gnews",
+      "the telegraph"
+    ]
+  },
+  "穆罕默德·萨拉赫": {
+    "first_seen": "2025-12-04T18:04:00+00:00",
+    "sources": [
+      "gnews",
+      "the telegraph"
+    ]
+  },
+  "利物浦足球俱乐部": {
+    "first_seen": "2025-12-04T18:04:00+00:00",
+    "sources": [
+      "gnews",
+      "the telegraph"
+    ]
+  },
+  "Nigel Farage": {
+    "first_seen": "2025-12-04T17:52:41+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "BBC": {
+    "first_seen": "2025-12-04T17:52:41+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "Richard Tice": {
+    "first_seen": "2025-12-04T17:52:41+00:00",
+    "sources": [
+      "gnews",
+      "bbc"
+    ]
+  },
+  "Shaka Hislop": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews",
+      "the guardian"
+    ]
+  },
+  "纽卡斯尔联足球俱乐部": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "西汉姆联足球俱乐部": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "朴茨茅斯足球俱乐部": {
+    "first_seen": "2025-12-04T17:45:00+00:00",
+    "sources": [
+      "gnews"
+    ]
+  },
+  "广州天河雅迪电动车销售店": {
+    "first_seen": "2025-12-04T16:26:00+00:00",
+    "sources": [
+      "中国网新闻中心"
+    ]
+  },
+  "广州": {
+    "first_seen": "2025-12-04T16:26:00+00:00",
+    "sources": [
+      "中国网新闻中心"
+    ]
+  },
+  "南京": {
+    "first_seen": "2025-12-04T16:26:00+00:00",
+    "sources": [
+      "中国网新闻中心"
+    ]
+  },
+  "国家市场监督管理总局": {
+    "first_seen": "2025-12-04T16:25:00+00:00",
+    "sources": [
+      "中国网新闻中心"
+    ]
+  },
+  "中国疾病预防控制中心": {
+    "first_seen": "2025-12-04T10:43:31+00:00",
+    "sources": [
+      "新华网"
+    ]
+  },
+  "对外经济贸易大学": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "21财经"
+    ]
+  },
+  "法国经济研究中心": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "21财经"
+    ]
+  },
+  "21世纪经济报道": {
+    "first_seen": "2025-12-04T10:26:00+00:00",
+    "sources": [
+      "21财经"
+    ]
+  },
+  "达柳斯·斯雷": {
+    "first_seen": "2025-12-04T18:11:15+00:00",
+    "sources": [
+      "nbc sports"
+    ]
+  },
+  "德鲁·罗森豪斯": {
+    "first_seen": "2025-12-04T18:11:15+00:00",
+    "sources": [
+      "nbc sports"
+    ]
+  },
+  "United States Army": {
+    "first_seen": "2025-12-04T18:07:00+00:00",
+    "sources": [
+      "nbc news"
+    ]
+  },
+  "法国阿莱斯市检察院": {
+    "first_seen": "2025-12-04T17:59:00+00:00",
+    "sources": [
+      "le parisien"
+    ]
+  },
+  "法国核安全局": {
+    "first_seen": "2025-12-04T17:36:00+00:00",
+    "sources": [
+      "actualités – orange"
+    ]
+  },
+  "Steve Cropper": {
+    "first_seen": "2025-12-04T18:12:00+00:00",
+    "sources": [
+      "the times",
+      "the guardian"
+    ]
+  },
+  "德比郡警方": {
+    "first_seen": "2025-12-04T18:21:17+00:00",
+    "sources": [
+      "itvx"
+    ]
+  },
+  "德比市": {
+    "first_seen": "2025-12-04T18:21:17+00:00",
+    "sources": [
+      "itvx"
+    ]
+  },
+  "沙特阿拉伯": {
+    "first_seen": "2025-12-04T18:04:00+00:00",
+    "sources": [
+      "the telegraph"
     ]
   }
 }

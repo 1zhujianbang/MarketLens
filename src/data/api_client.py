@@ -54,7 +54,7 @@ class DataAPIPool:
         # 查找配置
         config = None
         for cfg in self.configs:
-            if cfg["name"] == name:
+            if name in cfg["name"]:
                 config = cfg
                 break
 
@@ -63,18 +63,18 @@ class DataAPIPool:
 
         # 创建对应 collector
         print(f"[数据获取][DataAPIPool] 准备创建 collector: {name}, config={config}")
-        if name == "Blockbeats":
+        if "Blockbeats" in name:
             collector = BlockbeatsNewsCollector(
                 language=Language.CN,  # 可从配置读取
                 timeout=config.get("timeout", 30),
             )
-        elif name == "GNews":
+        elif "GNews" in name:
             api_key = config.get("api_key") or os.getenv("GNEWS_API_KEY", "")
             if not api_key:
                 raise ValueError("GNews 数据源需要配置 api_key 或环境变量 GNEWS_API_KEY")
 
             language = config.get("language", "zh")
-            country = config.get("country")  # 可选，如 "cn", "us"
+            country = config.get("country")
 
             collector = GNewsCollector(
                 api_key=api_key,
