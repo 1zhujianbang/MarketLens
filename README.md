@@ -80,16 +80,17 @@
         ├── __init__.py
         ├── agents/               # 智能体模块
         │   ├── agent1.py         # 实体提取智能体
+        │   ├── agent2.py         # 新闻拓展智能体
+        │   ├── api_client.py     # api管理器
         │   └── market_analysis_agent.py  # 市场分析智能体
         ├── analysis/             # 分析模块
         │   └── technical_calculator.py # 技术指标计算器
         ├── config/               # 配置管理
         │   └── config_manager.py # 配置管理器
         ├── data/                 # 数据模块
+        │   ├── api_client.py     # api管理器
         │   ├── data_collector.py # 市场数据收集器
-        │   ├── news_collector.py # 新闻收集器
-        │   ├── RESTful-API-main/ # 新闻API文档
-        │   └── websocket_collector.py # WebSocket实时数据
+        │   └── news_collector.py # 新闻收集器
         ├── models/               # 模型管理
         │   └── model_loader.py   # 模型加载器
         └── utils/                # 工具模块
