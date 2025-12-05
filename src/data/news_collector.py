@@ -9,7 +9,6 @@ import json
 from enum import Enum
 import os
 import hashlib
-from deep_translator import GoogleTranslator
 
 os.environ["AIODNS_NO_winloop"] = "1"
 
@@ -614,7 +613,6 @@ class GNewsCollector:
         - page:    页码
         - truncate: 内容截断设置，如 "content"
         """
-        query = GoogleTranslator(source='auto', target=self.language).translate(query)
         
         params: Dict[str, Any] = {
             "q": query,

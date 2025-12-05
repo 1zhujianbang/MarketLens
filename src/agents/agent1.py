@@ -138,7 +138,8 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 1. 判断新闻是否包含一个或多个独立事件。
 2. 对每个事件，输出：
    - 一个简洁、客观、无情绪的中文摘要（作为事件唯一标识）
-   - 所有符合上述定义的实体（全称优先，避免缩写）
+   - 所有符合上述定义的实体（全称优先，避免缩写，使用中文或英文表述）
+   - 所有符合上述定义的实体的原始语言表述（保留新闻中实体的原始语言形式，原始语言实体数组的索引与实体数组索引对应）
    - 该事件的本质描述（一句话说明“谁对谁做了什么”）
 
 【输出格式】
@@ -148,6 +149,7 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
     {{
       "abstract": "美国证券交易委员会推迟对比特币ETF的最终决定",
       "entities": ["美国证券交易委员会", "VanEck"],
+      "entities_original": ["美国证券交易委员会", "VanEck"],
       "event_summary": "监管机构延长了对某资产管理公司比特币ETF申请的审查期"
     }}
   ]
@@ -180,12 +182,23 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
         result = []
         for item in events:
             abstract = item.get("abstract", "").strip()
-            entities = [e for e in item.get("entities", []) if tools.is_valid_entity(e)]
+            # 确保entities和entities_original一一对应，且都有效
+            entities_raw = item.get("entities", [])
+            entities_original_raw = item.get("entities_original", [])
+            entities = []
+            entities_original = []
+            
+            # 遍历并过滤，确保索引对应
+            for ent, ent_original in zip(entities_raw, entities_original_raw):
+                if tools.is_valid_entity(ent) and tools.is_valid_entity(ent_original):
+                    entities.append(ent)
+                    entities_original.append(ent_original)
             summary = item.get("event_summary", "").strip()
             if abstract and entities and summary:
                 result.append({
                     "abstract": abstract,
                     "entities": entities,
+                    "entities_original": entities_original,
                     "event_summary": summary
                 })
         return result
@@ -197,10 +210,11 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 # 自动更新知识库
 # ======================
 
-def update_entities(entities: List[str], source: str, published_at: Optional[str] = None):
+def update_entities(entities: List[str], entities_original: List[str], source: str, published_at: Optional[str] = None):
     """自动写入主实体库
 
     时间刻使用新闻的发布时间（若提供），否则回退到当前时间。
+    支持实体的原始语言表述，entities和entities_original数组的索引对应。
     """
     now = datetime.now(timezone.utc).isoformat()
     # 如果提供了发布时间，则优先使用该时间；否则使用当前时间
@@ -210,11 +224,13 @@ def update_entities(entities: List[str], source: str, published_at: Optional[str
         with open(tools.ENTITIES_FILE, "r", encoding="utf-8") as f:
             existing = json.load(f)
     
-    for ent in entities:
+    # 确保两个数组长度一致
+    for ent, ent_original in zip(entities, entities_original):
         if ent not in existing:
             existing[ent] = {
                 "first_seen": base_ts,
-                "sources": [source]
+                "sources": [source],
+                "original_forms": [ent_original]  # 新增：保存原始语言表述
             }
         else:
             # 如果已有 first_seen，且新闻时间更早，则更新为更早的时间
@@ -228,6 +244,12 @@ def update_entities(entities: List[str], source: str, published_at: Optional[str
 
             if source not in existing[ent]["sources"]:
                 existing[ent]["sources"].append(source)
+            
+            # 更新原始语言表述（去重）
+            if "original_forms" not in existing[ent]:
+                existing[ent]["original_forms"] = []
+            if ent_original not in existing[ent]["original_forms"]:
+                existing[ent]["original_forms"].append(ent_original)
     
     with open(tools.ENTITIES_FILE, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
@@ -329,9 +351,11 @@ def process_news_stream():
 
                         if extracted:
                             all_entities = []
+                            all_entities_original = []
                             for ev in extracted:
                                 all_entities.extend(ev["entities"])
-                            if all_entities:
+                                all_entities_original.extend(ev["entities_original"])
+                            if all_entities and len(all_entities) == len(all_entities_original):
                                 # 优先使用新闻自身的时间戳（由采集器提供），否则使用当前时间
                                 ts = news.get("timestamp")
                                 # 部分旧数据可能是 datetime 对象或其他类型，统一转为字符串
@@ -344,7 +368,7 @@ def process_news_stream():
                                     except Exception:
                                         published_at = None
 
-                                update_entities(all_entities, source, published_at)
+                                update_entities(all_entities, all_entities_original, source, published_at)
                                 update_abstract_map(extracted, source, published_at)
                                 total_processed += 1
 
@@ -357,6 +381,24 @@ def process_news_stream():
 
                     except Exception as e:
                         tools.log(f"⚠️ 处理单条新闻失败: {e}")
+            
+            # 处理完文件后删除对应的raw_news文件和该deduped_news文件
+            try:
+                # 找到对应的raw_news文件（去掉"_deduped"后缀）
+                raw_file_name = file_path.stem.replace("_deduped", "") + ".jsonl"
+                raw_file_path = tools.RAW_NEWS_DIR / raw_file_name
+                
+                # 删除raw_news文件
+                if raw_file_path.exists():
+                    raw_file_path.unlink()
+                    tools.log(f"🗑️ 删除原始新闻文件: {raw_file_path.name}")
+                
+                # 删除deduped_news文件
+                if file_path.exists():
+                    file_path.unlink()
+                    tools.log(f"🗑️ 删除去重新闻文件: {file_path.name}")
+            except Exception as e:
+                tools.log(f"⚠️ 删除文件失败: {e}")
 
     tools.log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
 

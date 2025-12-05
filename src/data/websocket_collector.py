@@ -104,7 +104,7 @@ class OKXWebSocketCollector:
     
     def _init_data_buffers(self):
         """初始化数据缓冲区"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         for symbol in symbols:
             self.realtime_data[symbol] = {}
             self.historical_data[symbol] = pd.DataFrame()
@@ -112,9 +112,9 @@ class OKXWebSocketCollector:
             self.funding_rates[symbol] = {}
             self.open_interest[symbol] = {}
     
-    def get_trading_pairs(self) -> List[str]:
-        """从配置中获取交易对列表"""
-        return self.user_config.trading_pairs
+    def get_symbols(self) -> List[str]:
+        """获取配置的市场符号列表"""
+        return self.user_config.symbols
     
     def get_timeframe(self) -> str:
         """从配置中获取时间框架"""
@@ -260,7 +260,7 @@ class OKXWebSocketCollector:
         })
         
         # 订阅实时行情
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         ticker_args = [{"channel": "tickers", "instId": symbol} for symbol in symbols]
         await self._send_custom_message({
             "op": "subscribe",
@@ -351,21 +351,21 @@ class OKXWebSocketCollector:
     
     async def subscribe_tickers_async(self):
         """订阅实时行情频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "tickers", "instId": symbol} for symbol in symbols]
         await self.ws_public_async.subscribe(args, callback=self._handle_ticker_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的实时行情")
     
     def subscribe_tickers_sync(self):
         """同步订阅实时行情频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "tickers", "instId": symbol} for symbol in symbols]
         self.ws_public.subscribe(args, callback=self._handle_ticker_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的实时行情")
     
     async def subscribe_candles_async(self):
         """订阅K线数据频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         timeframe = self.get_timeframe()
         channel = f"candle{timeframe}"
         args = [{"channel": channel, "instId": symbol} for symbol in symbols]
@@ -374,7 +374,7 @@ class OKXWebSocketCollector:
     
     def subscribe_candles_sync(self):
         """同步订阅K线数据频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         timeframe = self.get_timeframe()
         channel = f"candle{timeframe}"
         args = [{"channel": channel, "instId": symbol} for symbol in symbols]
@@ -383,21 +383,21 @@ class OKXWebSocketCollector:
     
     async def subscribe_mark_price_async(self):
         """订阅标记价格频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "mark-price", "instId": symbol} for symbol in symbols]
         await self.ws_public_async.subscribe(args, callback=self._handle_mark_price_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的标记价格")
     
     def subscribe_mark_price_sync(self):
         """同步订阅标记价格频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "mark-price", "instId": symbol} for symbol in symbols]
         self.ws_public.subscribe(args, callback=self._handle_mark_price_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的标记价格")
     
     async def subscribe_funding_rate_async(self):
         """订阅资金费率频道（永续合约）"""
-        swap_symbols = [symbol for symbol in self.get_trading_pairs() if "SWAP" in symbol]
+        swap_symbols = [symbol for symbol in self.get_symbols() if "SWAP" in symbol]
         if swap_symbols:
             args = [{"channel": "funding-rate", "instId": symbol} for symbol in swap_symbols]
             await self.ws_public_async.subscribe(args, callback=self._handle_funding_rate_data)
@@ -405,7 +405,7 @@ class OKXWebSocketCollector:
     
     def subscribe_funding_rate_sync(self):
         """同步订阅资金费率频道（永续合约）"""
-        swap_symbols = [symbol for symbol in self.get_trading_pairs() if "SWAP" in symbol]
+        swap_symbols = [symbol for symbol in self.get_symbols() if "SWAP" in symbol]
         if swap_symbols:
             args = [{"channel": "funding-rate", "instId": symbol} for symbol in swap_symbols]
             self.ws_public.subscribe(args, callback=self._handle_funding_rate_data)
@@ -413,14 +413,14 @@ class OKXWebSocketCollector:
     
     async def subscribe_open_interest_async(self):
         """订阅持仓总量频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "open-interest", "instId": symbol} for symbol in symbols]
         await self.ws_public_async.subscribe(args, callback=self._handle_open_interest_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的持仓总量")
     
     def subscribe_open_interest_sync(self):
         """同步订阅持仓总量频道"""
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         args = [{"channel": "open-interest", "instId": symbol} for symbol in symbols]
         self.ws_public.subscribe(args, callback=self._handle_open_interest_data)
         print(f"✅ 已订阅 {len(symbols)} 个交易对的持仓总量")
@@ -700,9 +700,9 @@ async def proxy_websocket_demo():
     
     # 配置 - 设置代理
     user_config = UserConfig(
-        trading_pairs=['BTC-USDT', 'ETH-USDT', 'SOL-USDT'],
+        symbols=['BTC-USDT', 'ETH-USDT', 'SOL-USDT'],
         initial_capital=10000.0,
-        risk_appetite='moderate'
+        risk_preference='moderate'
     )
     
     data_config = DataConfig(

@@ -6,7 +6,7 @@
 
 from .config_manager import (
     # 主配置类
-    TradingConfig,
+    MarketAnalysisConfig,
     ConfigManager,
     validate_config,
     
@@ -72,7 +72,7 @@ from .config_manager import (
 # 定义 __all__ 来控制导入行为
 __all__ = [
     # 主配置类
-    'TradingConfig',
+    'MarketAnalysisConfig',
     'ConfigManager', 
     'validate_config',
     

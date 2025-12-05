@@ -29,18 +29,19 @@ from .agent1 import llm_extract_events, update_entities, update_abstract_map
 tools = tools()
 data_api_pool = DataAPIPool()
 
-async def expand_news_by_entities(entities: List[str], limit_per_entity: int = 10) -> List[Dict]:
+async def expand_news_by_entities(entities: List[Dict], limit_per_entity: int = 10) -> List[Dict]:
     """
-    根据实体列表搜索相关新闻
+    根据实体列表搜索相关新闻，支持使用原始词进行检索
     
     Args:
-        entities: 实体列表
+        entities: 实体列表，每个实体包含name和original_forms字段
         limit_per_entity: 每个实体搜索的新闻数量限制
         
     Returns:
         搜索到的相关新闻列表
     """
     expanded_news = []
+    news_id_set = set()  # 用于去重
     
     # 获取所有可用的新闻收集器
     news_collectors = []
@@ -59,48 +60,66 @@ async def expand_news_by_entities(entities: List[str], limit_per_entity: int = 1
     
     # 为每个实体搜索相关新闻
     for entity in entities:
-        tools.log(f"🔍 为实体 '{entity}' 搜索相关新闻...")
+        entity_name = entity['name']
+        original_forms = entity.get('original_forms', [])
         
-        for collector in news_collectors:
-            try:
-                # 使用搜索功能获取相关新闻
-                if hasattr(collector, 'search_news_by_keyword'):
-                    news_list = await collector.search_news_by_keyword(
-                        keyword=entity,
-                        limit=limit_per_entity
-                    )
-                    
-                    # 为每条新闻添加实体标签
-                    for news in news_list:
-                        news['expanded_from_entity'] = entity
-                        news['source'] = collector.__class__.__name__.replace('NewsCollector', '').lower()
-                        expanded_news.append(news)
-                elif hasattr(collector, 'search'):
-                    # 兼容不同的搜索方法名
-                    news_list = await collector.search(
-                        query=entity,
-                        limit=limit_per_entity
-                    )
-                    
-                    for news in news_list:
-                        news['expanded_from_entity'] = entity
-                        news['source'] = collector.__class__.__name__.replace('Collector', '').lower()
-                        expanded_news.append(news)
-            except Exception as e:
-                tools.log(f"⚠️ 从 {collector.__class__.__name__} 搜索实体 '{entity}' 相关新闻失败: {e}")
+        # 构建搜索关键词列表：实体名称 + 所有原始词
+        search_terms = [entity_name] + original_forms
+        
+        tools.log(f"🔍 为实体 '{entity_name}' 搜索相关新闻，包含 {len(original_forms)} 个原始词...")
+        
+        for search_term in search_terms:
+            tools.log(f"   📝 使用关键词 '{search_term}' 进行搜索...")
+            
+            for collector in news_collectors:
+                try:
+                    # 使用搜索功能获取相关新闻
+                    if hasattr(collector, 'search_news_by_keyword'):
+                        news_list = await collector.search_news_by_keyword(
+                            keyword=search_term,
+                            limit=limit_per_entity
+                        )
+                        
+                        # 为每条新闻添加实体标签并去重
+                        for news in news_list:
+                            # 生成唯一标识符用于去重
+                            news_id = f"{news.get('url', '')}_{news.get('publishedAt', '')}"
+                            if news_id not in news_id_set:
+                                news_id_set.add(news_id)
+                                news['expanded_from_entity'] = entity_name
+                                news['search_term'] = search_term  # 记录使用的搜索词
+                                news['source'] = collector.__class__.__name__.replace('NewsCollector', '').lower()
+                                expanded_news.append(news)
+                    elif hasattr(collector, 'search'):
+                        # 兼容不同的搜索方法名
+                        news_list = await collector.search(
+                            query=search_term,
+                            limit=limit_per_entity
+                        )
+                        
+                        for news in news_list:
+                            news_id = f"{news.get('url', '')}_{news.get('publishedAt', '')}"
+                            if news_id not in news_id_set:
+                                news_id_set.add(news_id)
+                                news['expanded_from_entity'] = entity_name
+                                news['search_term'] = search_term  # 记录使用的搜索词
+                                news['source'] = collector.__class__.__name__.replace('Collector', '').lower()
+                                expanded_news.append(news)
+                except Exception as e:
+                    tools.log(f"⚠️ 从 {collector.__class__.__name__} 使用关键词 '{search_term}' 搜索失败: {e}")
     
     return expanded_news
 
-def get_recent_entities(time_window_hours: int = 24, limit: int = 50) -> List[str]:
+def get_recent_entities(time_window_days: int = 30, limit: int = 50) -> List[Dict]:
     """
-    获取最近时间窗口内的实体列表
+    获取最近时间窗口内的实体列表，包含原始词信息
     
     Args:
-        time_window_hours: 时间窗口（小时）
+        time_window_days: 时间窗口（天）
         limit: 返回的实体数量限制
         
     Returns:
-        最近的实体列表
+        最近的实体列表，每个实体包含名称和原始词信息
     """
     entities = []
     
@@ -121,7 +140,7 @@ def get_recent_entities(time_window_hours: int = 24, limit: int = 50) -> List[st
     
     # 过滤时间窗口内的实体
     now = datetime.now(timezone.utc)
-    time_window = timedelta(hours=time_window_hours)
+    time_window = timedelta(days=time_window_days)
     
     for entity_name, entity_info in sorted_entities:
         first_seen = entity_info.get('first_seen')
@@ -138,7 +157,11 @@ def get_recent_entities(time_window_hours: int = 24, limit: int = 50) -> List[st
                 
                 # 检查是否在时间窗口内
                 if now - seen_time <= time_window:
-                    entities.append(entity_name)
+                    entity_info = {
+                        'name': entity_name,
+                        'original_forms': entity_data[entity_name].get('original_forms', [])
+                    }
+                    entities.append(entity_info)
                     if len(entities) >= limit:
                         break
             except Exception as e:
@@ -193,8 +216,9 @@ async def process_expanded_news(expanded_news: List[Dict]) -> int:
                     if published_at and isinstance(published_at, datetime):
                         published_at = published_at.isoformat()
                     
-                    # 更新实体库和事件映射
-                    update_entities(all_entities, source, published_at)
+                    # 更新实体库和事件映射（在agent2中，我们没有提取原始词，所以使用实体名称作为原始词）
+                    all_entities_original = all_entities  # 使用实体名称作为原始词
+                    update_entities(all_entities, all_entities_original, source, published_at)
                     update_abstract_map(extracted, source, published_at)
                     processed_count += 1
                     
@@ -210,7 +234,7 @@ async def main():
     tools.log("🚀 启动 Agent2：实体拓展新闻...")
     
     # 1. 获取最近的实体
-    recent_entities = get_recent_entities(time_window_hours=24, limit=50)
+    recent_entities = get_recent_entities(time_window_days=30, limit=50)
     
     if not recent_entities:
         tools.log("📭 没有可用的实体进行新闻拓展")

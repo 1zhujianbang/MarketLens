@@ -1,49 +1,41 @@
 # =============================================
-# AI Trading Bot 配置文件
+# AI Market Analysis System 配置文件
 # =============================================
 
 # 用户基础配置
 user_config:
-  # 交易对配置
-  trading_pairs:
-    - "BTC-USDT"
-    - "ETH-USDT"
-    - "SOL-USDT"
+  # 市场符号配置（支持全球股票、外汇、商品等）
+  symbols:
+    - "AAPL"
+    - "MSFT"
+    - "GOOGL"
+    - "EUR/USD"
+    - "GBP/JPY"
+    - "GOLD"
+    - "OIL"
   
-  # 风险偏好: conservative(保守), moderate(中性), aggressive(激进)
-  risk_appetite: "moderate"
+  # 分析风险偏好: conservative(保守), moderate(中性), aggressive(激进)
+  risk_preference: "moderate"
   
-  # 资金（以基准货币计）
-  cash: 10000.0
-  
-  # 基准货币
-  base_currency: "USDT"
-  
-  # 交易模式: paper(模拟交易), live(实盘交易)
-  trading_mode: "paper"
-  
-  # 是否启用自动交易
-  auto_trading: false
-
   # 是否启用自动更新实体功能
-  auto_update_entities: true  # 默认关闭，需人工审核
+  auto_update_entities: true  # 默认开启，自动更新实体数据
 
-# 模型配置(modeL_config中L大写，避免与BaseModel库关键字冲突)
-modeL_config:
+# 模型配置
+model_config:
   # 模型名称（对应models目录下的模型文件）
-  model_name: "transformer_v2_7d.pt"
+  model_name: "explainable_market_model.pt"
   
-  # 模型类型: "transformer", "lstm", "gru", "ensemble"
-  model_type: "transformer"
+  # 模型类型: "explainable", "transformer", "lstm", "gru", "ensemble"
+  model_type: "explainable"
   
-  # 数据时间窗口（用于预测的小时数）
+  # 数据时间窗口（用于分析的小时数）
   data_window: 168
   
-  # 预测目标: "price", "trend", "volatility"
-  prediction_target: "trend"
+  # 分析目标: "trend", "volatility", "correlation", "sentiment"
+  analysis_target: "trend"
   
-  # 预测时间跨度（小时）
-  prediction_horizon: 24
+  # 分析时间跨度（小时）
+  analysis_horizon: 24
   
   # 特征列表
   features:
@@ -82,115 +74,50 @@ modeL_config:
     learning_rate: 0.001
     dropout_rate: 0.2
 
-# 风险控制配置
-risk_config:
-  # 仓位管理
-  position_management:
-    # 单笔最大仓位比例 (0.01 = 1%)
-    max_position_size: 0.03
-    
-    # 总仓位最大比例
-    max_total_position: 0.15
-    
-    # 最小交易金额
-    min_trade_amount: 10.0
-    
-    # 是否允许杠杆交易
-    enable_leverage: false
-    
-    # 杠杆倍数（如果启用）
-    leverage: 1
-  
-  # 止损配置
-  stop_loss:
-    # 启用止损
+# 市场分析风险参数
+market_risk_params:
+  # 波动率分析配置
+  volatility:
     enabled: true
-    
-    # 止损类型: "fixed", "trailing", "atr"
-    type: "trailing"
-    
-    # 固定止损比例
-    fixed_stop_loss: 0.05
-    
-    # 移动止损比例
-    trailing_stop_loss: 0.03
-    
-    # ATR止损倍数
-    atr_stop_multiplier: 2.0
+    period: 20
+    threshold: 0.02
   
-  # 止盈配置
-  take_profit:
-    # 启用止盈
+  # 相关性分析配置
+  correlation:
     enabled: true
-    
-    # 止盈比例
-    profit_target: 0.08
-    
-    # 部分止盈配置
-    partial_take_profit:
-      enabled: true
-      levels:
-        - { profit: 0.03, close_percent: 0.3 }
-        - { profit: 0.06, close_percent: 0.3 }
-        - { profit: 0.10, close_percent: 0.4 }
-  
-  # 每日风险限制
-  daily_limits:
-    # 最大每日亏损金额
-    max_daily_loss: 500.0
-    
-    # 最大每日亏损比例 (0-100)
-    max_daily_loss_percent: 0.05
-    
-    # 最大每日交易次数 ()
-    max_daily_trades: 10
-
-# 交易所配置
-exchange_config:
-  # 交易所名称: "binance", "okx", "bybit"
-  exchange_name: "binance"
-  
-  # API配置
-  api:
-    # API Key（建议从环境变量读取）
-    api_key: "${BINANCE_API_KEY}"
-    
-    # API Secret（建议从环境变量读取）
-    api_secret: "${BINANCE_API_SECRET}"
-    
-    # 沙盒模式（仅测试）
-    sandbox_mode: true
-  
-  # 网络配置
-  network:
-    # 请求超时时间（秒）
-    timeout: 30
-    
-    # 重试次数
-    retries: 3
-    
-    # 速率限制（请求/秒）
-    rate_limit: 10
+    lookback_period: 30
+    min_correlation: 0.7
 
 # 数据配置
 data_config:
-  # 数据源: "exchange", "database", "csv"
-  data_source: "exchange"
+  # 数据源: "market_api", "database", "csv", "news_api"
+  data_source: "market_api"
 
   # 代理设置（如有需要）
   proxy: "http://154.83.14.105:80/"
   
-  # 交易所数据沙盒模式，默认使用实盘数据,只在data_source为exchange时该参数有效
-  sandbox: false
-
   # 时间框架: "1M", "5M", "15M", "1H", "4H", "1D"
   timeframe: "1H"
   
   # 历史数据获取天数
   historical_days: 30
   
-  # 实时数据更新间隔（秒）
+  # 数据更新间隔（秒）
   update_interval: 60
+  
+  # 多源数据配置
+  multi_source:
+    # 市场数据API
+    market_apis:
+      - "yfinance"
+      - "alphavantage"
+      - "bloomberg"
+    
+    # 新闻数据API
+    news_apis:
+      - "gnews"
+      - "bloomberg_news"
+      - "reuters"
   
   # 特征工程配置
   feature_engineering:
@@ -249,18 +176,22 @@ strategy_config:
       enabled: true
       max_volatility: 0.10
   
-  # 出场条件
-  exit_conditions:
-    # AI出场信号
-    ai_exit_signal: true
+  # 分析输出配置
+  analysis_output:
+    # 生成分析报告
+    generate_reports: true
     
-    # 时间基出场
-    time_based_exit:
-      enabled: false
-      max_holding_hours: 72
+    # 报告格式
+    report_formats:
+      - "pdf"
+      - "html"
+      - "json"
     
-    # 技术指标出场
-    technical_exit: true
+    # 报告输出路径
+    report_path: "./reports"
+    
+    # 报告生成间隔（小时）
+    report_interval: 24
 
 # 监控与日志配置
 monitoring_config:
@@ -270,7 +201,7 @@ monitoring_config:
     level: "INFO"
     
     # 日志文件路径
-    file_path: "./logs/trading_bot.log"
+    file_path: "./logs/market_analysis.log"
     
     # 是否输出到控制台
     console_output: true
@@ -282,16 +213,14 @@ monitoring_config:
     
     # 监控指标
     metrics:
-      # 收益率
-      - "returns"
-      # 最大回撤
-      - "drawdown"
-      # 夏普比率
-      - "sharpe_ratio"
-      # 盈利率
-      - "win_rate"
-      # 获利因子
-      - "profit_factor"
+      # 分析速度
+      - "analysis_speed"
+      # 模型准确率
+      - "model_accuracy"
+      # 数据更新延迟
+      - "data_update_latency"
+      # 分析覆盖度
+      - "analysis_coverage"
     
     # 报告生成间隔（小时）
     report_interval: 24
@@ -315,14 +244,16 @@ monitoring_config:
     
     # 告警条件
     alert_conditions:
-      # 连续亏损
-      - "large_loss"
+      # 市场异常波动
+      - "market_volatility_spike"
       # 系统错误
       - "system_error"
-      # 连接断开
-      - "connection_lost"
+      # 数据连接断开
+      - "data_connection_lost"
       # 异常交易量
       - "unusual_volume"
+      # 新闻影响事件
+      - "significant_news_event"
 
 # 备份与恢复配置
 backup_config:
@@ -335,9 +266,10 @@ backup_config:
   # 备份内容
   backup_items:
     - "config"
-    - "trade_history"
-    - "portfolio_state"
+    - "analysis_results"
+    - "knowledge_graph"
     - "model_performance"
+    - "market_data"
   
   # 备份路径
   backup_path: "./backups"

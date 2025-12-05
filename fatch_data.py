@@ -1,9 +1,8 @@
 from src.config.config_manager import UserConfig, DataConfig
 from src.data.data_collector import OKXMarketClient
-from src.config.config_manager import TradingConfig
+from src.config.config_manager import MarketAnalysisConfig
 
-# 创建配置
-config = TradingConfig.from_yaml("config/config.yaml")
+config = MarketAnalysisConfig.from_yaml("config/config.yaml")
 user_config = config.user_config
 data_config = config.data_config
 

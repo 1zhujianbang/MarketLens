@@ -6,20 +6,16 @@ import warnings
 
 # 用户配置
 class UserConfig(BaseModel):
-    trading_pairs: List[str] = Field(..., min_length=1, description="至少需要一个交易对")
-    risk_appetite: str = Field(..., pattern="^(conservative|保守|moderate|中性|aggressive|激进)$", description="风险偏好必须是 conservative/保守/moderate/中性/aggressive/激进")
-    cash: float = Field(..., gt=0, description="资金必须大于0")
-    base_currency: str = Field(..., min_length=3, max_length=5, description="基础货币代码长度3-5")
-    trading_mode: str = Field(..., pattern="^(paper|live)$", description="交易模式必须是 paper/live")
-    auto_trading: bool
-    auto_update_entities: bool = False  # 是否启用自动更新实体功能，默认关闭
-
-    @field_validator('cash')
-    @classmethod
-    def validate_cash(cls, v):
-        if v < 100:
-            warnings.warn("资金较低，建议至少100以上", UserWarning)
-        return v
+    # 用户账户配置
+    user_id: str = Field(..., description="用户唯一标识")
+    api_key: str = Field(..., description="API密钥")
+    api_secret: str = Field(..., description="API密钥密码")
+    
+    # 市场数据配置
+    symbols: List[str] = Field(..., min_length=1, description="要分析的市场符号列表")
+    data_sources: Dict[str, Dict[str, Any]] = Field(default_factory=dict, description="数据源配置")
+    update_interval: int = Field(30, ge=1, description="数据更新间隔（秒）")
+    historical_data_length: int = Field(1000, ge=100, description="历史数据长度")
 
 # 超参数配置
 class HyperParameters(BaseModel):
@@ -54,81 +50,13 @@ class ModelConfig(BaseModel):
     features: List[str] = Field(..., min_length=1, description="至少需要一个特征")
     hyperparameters: HyperParameters
 
-# 仓位管理
-class PositionManagement(BaseModel):
-    max_position_size: float = Field(..., gt=0, le=1, description="最大单仓位比例必须在0-1之间")
-    max_total_position: float = Field(..., gt=0, le=5, description="最大总仓位比例必须在0-5之间")
-    min_trade_amount: float = Field(..., gt=0, description="最小交易金额必须大于0")
-    enable_leverage: bool
-    leverage: int = Field(..., ge=1, le=100, description="杠杆必须在1-100之间")
-
-    @field_validator('leverage')
-    @classmethod
-    def validate_leverage(cls, v, values):
-        if v > 10 and not values.get('enable_leverage', False):
-            warnings.warn("高杠杆使用但未启用杠杆交易", UserWarning)
-        return v
-
-# 止损配置
-class StopLoss(BaseModel):
-    enabled: bool
-    type: str = Field(..., pattern="^(fixed|trailing|atr)$", description="止损类型必须是 fixed/trailing/atr")
-    fixed_stop_loss: float = Field(..., ge=0, le=1, description="固定止损比例必须在0-1之间")
-    trailing_stop_loss: float = Field(..., ge=0, le=1, description="移动止损比例必须在0-1之间")
-    atr_stop_multiplier: float = Field(..., ge=0, le=5, description="ATR止损乘数必须在0-5之间")
-
-class Levels(BaseModel):
-    profit: float = Field(..., gt=0, le=10, description="止盈金额必须大于0")
-    close_percent: float = Field(..., gt=0, le=1, description="止盈百分比必须大于0")
-
-# 部分止盈
-class PartialTakeProfit(BaseModel):
-    enabled: bool
-    levels: List[Levels]
-
-# 止盈配置
-class TakeProfit(BaseModel):
-    enabled: bool
-    profit_target: float = Field(..., gt=0, le=10, description="盈利目标必须在0-10之间")
-    partial_take_profit: PartialTakeProfit
-
-# 每日限制
-class DailyLimits(BaseModel):
-    max_daily_loss: float = Field(..., ge=0, description="最大日亏损金额必须大于0")
-    max_daily_loss_percent: float = Field(..., ge=0, le=100, description="最大日亏损百分比必须在0-100之间")
-    max_daily_trades: int = Field(..., ge=0, description="最大日交易数必须大于0")
-
-# 风险配置
-class RiskConfig(BaseModel):
-    position_management: PositionManagement
-    stop_loss: StopLoss
-    take_profit: TakeProfit
-    daily_limits: DailyLimits
-
-# API配置
-class Api(BaseModel):
-    api_key: str = Field(..., min_length=1, description="API密钥不能为空")
-    api_secret: str = Field(..., min_length=1, description="API密钥不能为空")
-    sandbox_mode: bool = True
-
-    @field_validator('sandbox_mode')
-    @classmethod
-    def validate_sandbox_mode(cls, v):
-        if not v:
-            warnings.warn("生产模式启用，请确保API密钥安全", UserWarning)
-        return v
-
-# 网络配置
-class Network(BaseModel):
-    timeout: int = Field(..., ge=1, le=60, description="超时时间必须在1-60秒之间")
-    retries: int = Field(..., ge=0, le=10, description="重试次数必须在0-10之间")
-    rate_limit: int = Field(..., ge=1, le=1000, description="速率限制必须在1-1000之间")
-
-# 交易所配置
-class ExchangeConfig(BaseModel):
-    exchange_name: str = Field(..., pattern="^(binance|okx|huobi|bybit)$", description="交易所必须是 binance/okx/huobi/bybit")
-    api: Api
-    network: Network
+# 市场分析风险参数配置
+class MarketRiskParams(BaseModel):
+    # 波动率分析配置
+    volatility: Dict[str, Any] = Field(default_factory=dict, description="波动率分析配置")
+    
+    # 相关性分析配置
+    correlation: Dict[str, Any] = Field(default_factory=dict, description="相关性分析配置")
 
 # 技术指标配置
 class RSIConfig(BaseModel):
@@ -197,36 +125,7 @@ class DataConfig(BaseModel):
             warnings.warn("历史数据天数较少，可能影响模型性能", UserWarning)
         return v
 
-# 交易策略配置
-class SignalGeneration(BaseModel):
-    confidence_threshold: float = Field(..., ge=0, le=1, description="置信度阈值必须在0-1之间")
-    min_signal_strength: float = Field(..., ge=0, le=1, description="最小信号强度必须在0-1之间")
-    confirmation_period: int = Field(..., ge=0, le=10, description="确认周期必须在0-10之间")
 
-class VolatilityFilter(BaseModel):
-    enabled: bool
-    max_volatility: float = Field(..., gt=0, le=1, description="最大波动率必须在0-1之间")
-
-class EntryConditions(BaseModel):
-    ai_signal_enabled: bool = True
-    technical_confirmation: bool = True
-    market_regime_filter: bool = True
-    volatility_filter: VolatilityFilter
-
-class TimeBasedExit(BaseModel):
-    enabled: bool = False
-    max_holding_hours: int = Field(..., ge=1, le=720, description="最大持仓时间必须在1-720小时之间")
-
-class ExitConditions(BaseModel):
-    ai_exit_signal: bool = True
-    time_based_exit: TimeBasedExit
-    technical_exit: bool = True
-
-class StrategyConfig(BaseModel):
-    strategy_name: str = Field(..., min_length=1, description="策略名称不能为空")
-    signal_generation: SignalGeneration
-    entry_conditions: EntryConditions
-    exit_conditions: ExitConditions
 
 # 监控与日志配置
 class LoggingConfig(BaseModel):
@@ -289,20 +188,18 @@ class AdvancedConfig(BaseModel):
     random_seed: int = Field(..., ge=0, le=9999, description="随机种子必须在0-9999之间")
 
 # 主配置类
-class TradingConfig(BaseModel):
+class MarketAnalysisConfig(BaseModel):
     user_config: UserConfig
-    modeL_config: ModelConfig
-    risk_config: RiskConfig
-    exchange_config: ExchangeConfig
+    model_config: ModelConfig
     data_config: DataConfig
-    strategy_config: StrategyConfig
     monitoring_config: MonitoringConfig
     backup_config: BackupConfig
     advanced_config: AdvancedConfig
-    config_version: str = Field(..., pattern="^[0-9]+\\.[0-9]+\\.[0-9]+$", description="配置版本格式必须为 x.x.x")
+    market_risk_params: Optional[MarketRiskParams] = Field(default_factory=MarketRiskParams, description="市场分析风险参数")
+    config_version: str = Field(..., pattern="^[0-9]+\.[0-9]+\.[0-9]+$", description="配置版本格式必须为 x.x.x")
 
     @classmethod
-    def from_yaml(cls, file_path: str = None) -> 'TradingConfig':
+    def from_yaml(cls, file_path: str = None) -> 'MarketAnalysisConfig':
         """从YAML文件创建配置实例"""
         if file_path is None:
             file_path = ConfigManager().config_path
@@ -363,18 +260,18 @@ class ConfigManager:
         with open(self.config_path, 'r', encoding='utf-8') as file:
             return yaml.safe_load(file)
     
-    def validate_config(self) -> TradingConfig:
+    def validate_config(self) -> MarketAnalysisConfig:
         """验证配置"""
         config_data = self.load_config()
         return validate_config(config_data)
 
-def validate_config(config_data: dict) -> TradingConfig:
+def validate_config(config_data: dict) -> MarketAnalysisConfig:
     """
     验证配置数据并返回配置对象
     """
     try:
         warnings.simplefilter("always")
-        config = TradingConfig(**config_data)
+        config = MarketAnalysisConfig(**config_data)
         print("✅ 配置验证通过!")
         return config
         
@@ -395,7 +292,7 @@ def validate_config(config_data: dict) -> TradingConfig:
 if __name__ == '__main__':
     try:
         # 方法1: 自动查找
-        config = TradingConfig.from_yaml()
+        config = MarketAnalysisConfig.from_yaml()
         
         # 方法2: 使用管理器
         # manager = ConfigManager()
@@ -403,7 +300,7 @@ if __name__ == '__main__':
         
         print("🎉 配置验证完成!")
         print(f"版本: {config.config_version}")
-        print(f"交易对: {config.user_config.trading_pairs}")
+        print(f"市场符号: {config.user_config.symbols}")
         
     except Exception as e:
         print(f"💥 配置处理失败: {e}")

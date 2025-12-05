@@ -5,14 +5,12 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta, timezone
 import time
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 from ..config.config_manager import UserConfig, DataConfig
-from okx.api import API
-from okx.app.utils import eprint
 import os
 
-class OKXMarketClient:
-    """OKX 市场数据客户端"""
+class MarketClient:
+    """通用市场数据客户端"""
     
     def __init__(self, user_config: UserConfig, data_config: DataConfig):
         """
@@ -24,211 +22,142 @@ class OKXMarketClient:
         """
         self.user_config = user_config
         self.data_config = data_config
-
-        # 初始化 API
-        self.api = API(proxy_host=self.data_config.proxy)
+        # 市场符号列表（股票、指数、商品等）
+        self.symbols = []
+        # 数据源配置
+        self.data_source = data_config.data_source
         
-    def get_trading_pairs(self) -> List[str]:
-        """从配置中获取交易对列表"""
-        return self.user_config.trading_pairs
+    def get_symbols(self) -> List[str]:
+        """从配置中获取市场符号列表"""
+        return self.user_config.symbols if hasattr(self.user_config, 'symbols') else self.symbols
     
     def get_timeframe(self) -> str:
-        """从配置中获取时间框架，转换为OKX支持的格式"""
-        timeframe_map = {
-            '1m': '1m', '3m': '3m', '5m': '5m', '15m': '15m', '30m': '30m',
-            '1h': '1H', '2h': '2H', '4h': '4H', '6h': '6H', '12h': '12H',
-            '1d': '1D', '3d': '3D', '1w': '1W', '1M': '1M', '3M': '3M'
-        }
-        config_tf = self.data_config.timeframe
-        return timeframe_map.get(config_tf, '1H')  # 默认为1小时
+        """从配置中获取时间框架"""
+        return self.data_config.timeframe if hasattr(self.data_config, 'timeframe') else '1H'  # 默认为1小时
     
     def get_historical_days(self) -> int:
         """从配置中获取历史天数"""
-        return self.data_config.historical_days
+        return self.data_config.historical_days if hasattr(self.data_config, 'historical_days') else 30
     
-    def _fix_datetime_warning(self):
-        """修复datetime警告的替代方法"""
-        # 这个警告来自OKX库内部，我们可以在自己的代码中使用正确的方法
-        pass
+    def set_symbols(self, symbols: List[str]):
+        """设置市场符号列表"""
+        self.symbols = symbols
     
-    def get_ticker(self, instId: str) -> Optional[Dict]:
-        """获取单个交易对行情"""
-        try:
-            result = self.api.market.get_ticker(instId=instId)
-            # result = self.api.public.get_history_mark_price_candles(instId=instId)
-            if result['code'] == '0' and result['data']:
-                return result['data'][0]
-            else:
-                print(f"获取 {instId} 行情失败: {result.get('msg', 'Unknown error')}")
-                return None
-        except Exception as e:
-            print(f"获取 {instId} 行情异常: {str(e)}")
-            return None
+    def get_ticker(self, symbol: str) -> Optional[Dict]:
+        """获取单个市场符号的行情数据"""
+        # 根据不同数据源实现不同的行情获取逻辑
+        # 这里提供一个通用接口，具体实现需要根据数据源扩展
+        print(f"获取 {symbol} 行情数据...")
+        # TODO: 实现通用行情获取逻辑
+        return None
     
     def get_all_tickers(self) -> Dict[str, Dict]:
-        """获取配置中所有交易对的行情"""
+        """获取所有市场符号的行情数据"""
         tickers = {}
-        symbols = self.get_trading_pairs()
-        print(f"正在获取 {len(symbols)} 个交易对的实时行情...")
+        symbols = self.get_symbols()
+        print(f"正在获取 {len(symbols)} 个市场符号的实时行情...")
         
-        for instId in symbols:
-            ticker_data = self.get_ticker(instId)
+        for symbol in symbols:
+            ticker_data = self.get_ticker(symbol)
             if ticker_data:
-                tickers[instId] = ticker_data
-                print(f"✅ 成功获取 {instId} 实时数据")
+                tickers[symbol] = ticker_data
+                print(f"✅ 成功获取 {symbol} 实时数据")
             else:
-                print(f"❌ 无法获取 {instId} 实时数据")
+                print(f"❌ 无法获取 {symbol} 实时数据")
             time.sleep(2)  # 限速
         return tickers
     
     def get_kline(self, 
-                  instId: str, 
-                  bar: str = None, 
+                  symbol: str, 
+                  timeframe: str = None, 
                   limit: int = 100,
-                  after: str = None) -> Optional[pd.DataFrame]:
+                  start_time: Optional[str] = None) -> Optional[pd.DataFrame]:
         """
-        获取K线数据
+        获取K线/蜡烛图数据
         
         Args:
-            instId: 交易对
-            bar: K线周期，如果为None则使用配置中的timeframe
+            symbol: 市场符号
+            timeframe: 时间周期，如果为None则使用配置中的timeframe
             limit: 数据条数
-            after: 在此时间之后的数据
+            start_time: 起始时间
         """
-        if bar is None:
-            bar = self.get_timeframe()
+        if timeframe is None:
+            timeframe = self.get_timeframe()
             
-        try:
-            # 构建请求参数
-            params = {
-                'instId': instId,
-                'bar': bar,
-                'limit': str(limit)
-            }
-            if after:
-                params['after'] = after
-                
-            result = self.api.market.get_candles(**params)
-            if result['code'] == '0':
-                return self._parse_candles_data(result['data'])
-            else:
-                print(f"获取 {instId} K线失败: {result.get('msg', 'Unknown error')}, 参数: bar={bar}")
-                return None
-        except Exception as e:
-            print(f"获取 {instId} K线异常: {str(e)}")
-            return None
+        # 根据不同数据源实现不同的K线获取逻辑
+        # 这里提供一个通用接口，具体实现需要根据数据源扩展
+        print(f"获取 {symbol} 的 {timeframe} K线数据...")
+        # TODO: 实现通用K线获取逻辑
+        return None
     
     def _parse_candles_data(self, candles_data: List) -> pd.DataFrame:
-        """解析K线数据"""
+        """解析K线/蜡烛图数据"""
         if not candles_data:
             return pd.DataFrame()
         
+        # 通用的蜡烛图数据解析，支持不同数据源的格式
+        # 这里假设数据格式为 [timestamp, open, high, low, close, volume, ...]
         df = pd.DataFrame(candles_data, columns=[
-            'timestamp', 'open', 'high', 'low', 'close', 'volume', 'volCcy', 'volCcyQuote', 'confirm'
+            'timestamp', 'open', 'high', 'low', 'close', 'volume'
         ])
         
         # 数据类型转换
-        numeric_columns = ['open', 'high', 'low', 'close', 'volume', 'volCcy', 'volCcyQuote']
+        numeric_columns = ['open', 'high', 'low', 'close', 'volume']
         for col in numeric_columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce')
         
-        df['timestamp'] = pd.to_datetime(df['timestamp'].astype(int), unit='ms')
-        df.set_index('timestamp', inplace=True)
-        df.sort_index(inplace=True)
+        # 处理时间戳
+        if 'timestamp' in df.columns:
+            try:
+                df['timestamp'] = pd.to_datetime(df['timestamp'].astype(int), unit='ms')
+            except:
+                df['timestamp'] = pd.to_datetime(df['timestamp'], errors='coerce')
+            df.set_index('timestamp', inplace=True)
+            df.sort_index(inplace=True)
         
         return df
     
     def get_historical_klines(self, 
-                            instId: str, 
-                            bar: str = None,
+                            symbol: str, 
+                            timeframe: str = None,
                             days: int = None,
                             limit: int = 100) -> pd.DataFrame:
         """
-        获取历史K线数据（自动分页）
+        获取历史K线/蜡烛图数据（自动分页）
         
         Args:
-            instId: 交易对
-            bar: K线周期，如果为None则使用配置中的timeframe
+            symbol: 市场符号
+            timeframe: 时间周期，如果为None则使用配置中的timeframe
             days: 数据天数，如果为None则使用配置中的historical_days
             limit: 每次请求的条数
         """
-        if bar is None:
-            bar = self.get_timeframe()
+        if timeframe is None:
+            timeframe = self.get_timeframe()
         if days is None:
             days = self.get_historical_days()
             
-        print(f"获取 {instId} 的 {days} 天数据，时间框架: {bar}")
+        print(f"获取 {symbol} 的 {days} 天数据，时间框架: {timeframe}")
         
         all_data = pd.DataFrame()
-        limit = 240  # 每次最多240条
+        limit = 240  # 每次最多获取的条数
         
-        # 计算需要的总条数
-        total_bars = self._calculate_total_bars(bar, days)
+        # 计算需要的总条数（基于时间框架和天数）
+        total_bars = self._calculate_total_bars(timeframe, days)
         
         if total_bars <= 0:
-            print(f"❌ 时间框架 {bar} 和天数 {days} 计算出的条数为0")
+            print(f"❌ 时间框架 {timeframe} 和天数 {days} 计算出的条数为0")
             return all_data
         
         print(f"需要获取大约 {total_bars} 条K线数据")
         
         # 分批获取数据 - 从最新数据开始向前获取
-        after = None  # 使用 after 参数获取更早的数据
+        current_count = 0
         
-        while len(all_data) < total_bars:
-            current_limit = min(limit, total_bars - len(all_data))
-            
-            try:
-                # 使用 after 参数获取更早的数据
-                params = {
-                    'instId': instId,
-                    'bar': bar,
-                    'limit': str(current_limit)
-                }
-                if after:
-                    params['after'] = str(after)
-                
-                result = self.api.market.get_candles(**params)
-                
-                if result['code'] == '0' and result['data']:
-                    kline_data = self._parse_candles_data(result['data'])
-                    
-                    if not kline_data.empty:
-                        # 如果是第一次获取，直接赋值
-                        if all_data.empty:
-                            all_data = kline_data
-                        else:
-                            # 合并数据，确保时间顺序（最新的在前面）
-                            all_data = pd.concat([kline_data, all_data])
-                            all_data = all_data[~all_data.index.duplicated(keep='first')]
-                            all_data.sort_index(inplace=True)
-                        
-                        # 设置下一次请求的起始时间（获取更早的数据）
-                        if not kline_data.empty:
-                            after = int(kline_data.index[0].timestamp() * 1000)
-                        
-                        current_count = len(all_data)
-                        print(f"  ✅ 已获取 {len(kline_data)} 条数据，总计 {current_count}/{total_bars}")
-                    else:
-                        print(f"  ⚠️ 获取到空数据，停止请求")
-                        break
-                else:
-                    print(f"  ❌ 获取数据失败: {result.get('msg', 'Unknown error')}")
-                    break
-                
-                # 限速，避免请求过快
-                time.sleep(0.5)
-                
-            except Exception as e:
-                print(f"  ❌ 获取数据时发生异常: {str(e)}")
-                break
+        # TODO: 根据不同数据源实现具体的历史数据获取逻辑
+        # 这里提供一个通用框架，需要根据数据源扩展
+        print(f"  🚧 历史数据获取功能正在开发中...")
         
-        if not all_data.empty:
-            actual_bars = len(all_data)
-            print(f"✅ 成功获取 {instId} 的 {actual_bars} 条历史数据")
-            print(f"📊 数据时间范围: {all_data.index[0]} 到 {all_data.index[-1]}")
-        else:
-            print(f"❌ 未能获取 {instId} 的历史数据")
-            
         return all_data
 
     def export_historical_klines_to_csv(self,
@@ -430,7 +359,7 @@ class OKXMarketClient:
     def get_all_historical_klines(self) -> Dict[str, pd.DataFrame]:
         """获取配置中所有交易对的历史K线数据"""
         market_data = {}
-        symbols = self.get_trading_pairs()
+        symbols = self.get_symbols()
         print(f"开始获取 {len(symbols)} 个交易对的历史数据...")
         
         success_count = 0
@@ -486,7 +415,7 @@ class OKXMarketClient:
         available_instruments = self.get_instruments("SPOT")
         available_pairs = [inst['instId'] for inst in available_instruments]
         
-        configured_pairs = self.get_trading_pairs()
+        configured_pairs = self.get_symbols()
         
         valid_pairs = []
         invalid_pairs = []

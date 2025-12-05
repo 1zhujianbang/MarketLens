@@ -3,12 +3,12 @@ import torch.nn as nn
 import numpy as np
 from pathlib import Path
 
-class TradingTransformer(nn.Module):
+class MarketAnalysisTransformer(nn.Module):
     """专门用于交易的 Transformer 模型"""
     
     def __init__(self, feature_size=9, d_model=128, nhead=8, num_layers=4, 
                  seq_length=168, output_size=3, dropout=0.1):
-        super(TradingTransformer, self).__init__()
+        super(MarketAnalysisTransformer, self).__init__()
         
         self.feature_size = feature_size
         self.d_model = d_model
@@ -75,7 +75,7 @@ def create_advanced_transformer():
     model_dir.mkdir(exist_ok=True)
     
     # 创建模型
-    model = TradingTransformer(
+    model = MarketAnalysisTransformer(
         feature_size=9,      # 对应你的9个特征
         d_model=128,
         nhead=8,
@@ -106,7 +106,7 @@ if __name__ == "__main__":
     
     # 测试加载
     try:
-        model = TradingTransformer()
+        model = MarketAnalysisTransformer()
         model.load_state_dict(torch.load("models/transformer_v2_7d.pt", map_location='cpu'))
         model.eval()
         print("✅ 模型加载测试成功!")

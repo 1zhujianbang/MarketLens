@@ -1,36 +1,33 @@
 import asyncio
-from src.config.config_manager import TradingConfig
-from src.agents.trading_agent import TradingAgent
+from src.config.config_manager import MarketAnalysisConfig
+from src.agents.trading_agent import MarketAnalysisAgent
 
 async def main():
     try:
         # 方法1: 自动加载配置
-        config = TradingConfig.from_yaml()
+        config = MarketAnalysisConfig.from_yaml()
         
         # 方法2: 指定配置文件路径
-        # config = TradingConfig.from_yaml('config/user_config.yaml')
+        # config = MarketAnalysisConfig.from_yaml('config/user_config.yaml')
         
-        # 创建交易Agent
-        agent = TradingAgent(config)
+        # 创建市场分析智能体
+        agent = MarketAnalysisAgent(config)
         await agent.initialize()
         
         print(agent.get_status())
-        print("✅ 交易系统启动成功!")
-        
-        # 进入主循环
-        # agent.run()
+        print("✅ 市场分析系统启动成功!")
 
         return 0
         
     except Exception as e:
-        print(f"💥 系统启动失败: {e}")
+        print(f"💥 市场分析系统启动失败: {e}")
         return 1
     
     finally:
-        # 显示关闭所有资源
+        # 关闭所有资源
         if agent:
             await agent.cleanup()
-            print("🎯 所有资源已显示关闭")
+            print("🎯 所有资源已关闭")
 
 if __name__ == "__main__":
     try:
