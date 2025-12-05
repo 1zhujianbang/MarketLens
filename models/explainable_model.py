@@ -462,81 +462,65 @@ class MarketAnalysisTrainer:
         
         print("✅ 市场分析模型训练完成！")
         return self.train_stats
-        
-        # 最终更新
-        if hasattr(self.agent, 'update') and callable(self.agent.update):
-            if hasattr(self.agent, 'states') and len(self.agent.states) > 0:
-                self.agent.update()
-        
-        self.episode_returns.append(episode_reward)
-        self.episode_lengths.append(episode_length)
-        
-        if episode % 10 == 0:
-            avg_last10 = np.mean(self.episode_returns[-10:]) if len(self.episode_returns) >= 10 else episode_reward
-            print(f"Ep {episode:3d} | R: {episode_reward:6.2f} | Avg10: {avg_last10:6.2f} | Len: {episode_length}")
-            
-        if episode % self.save_interval == 0 and episode > 0:
-            path = f"models/pth/market_analysis_model_ep{episode:04d}.pth"
-            if hasattr(self.agent, 'save_model') and callable(self.agent.save_model):
-                self.agent.save_model(path)
-                print(f"💾 模型保存: {path}")
-        
-        # 保存最终模型
-        self.agent.save_model("models/pth/ppo_trading_agent_final.pth")
-        print("✅ 训练完成，最终模型已保存")
-        return self.episode_returns, self.episode_lengths
     
     def plot_training_progress(self):
-        plt.figure(figsize=(12, 4))
-        plt.subplot(1, 2, 1)
-        plt.plot(self.episode_returns, alpha=0.7)
-        plt.title('Episode Returns')
-        plt.xlabel('Episode')
-        plt.ylabel('Return')
+        plt.figure(figsize=(12, 8))
+        plt.subplot(2, 1, 1)
+        plt.plot(self.train_stats['total_loss'], alpha=0.7, color='blue')
+        plt.title('总损失变化')
+        plt.xlabel('轮次 (Epoch)')
+        plt.ylabel('损失值 (Loss)')
         plt.grid(True)
         
-        plt.subplot(1, 2, 2)
-        plt.plot(self.episode_lengths, alpha=0.7, color='orange')
-        plt.title('Episode Lengths')
-        plt.xlabel('Episode')
-        plt.ylabel('Steps')
+        plt.subplot(2, 1, 2)
+        plt.plot(self.train_stats['trend_loss'], alpha=0.7, color='green', label='趋势损失')
+        plt.plot(self.train_stats['volatility_loss'], alpha=0.7, color='orange', label='波动率损失')
+        plt.plot(self.train_stats['strength_loss'], alpha=0.7, color='red', label='市场强度损失')
+        plt.title('各子任务损失变化')
+        plt.xlabel('轮次 (Epoch)')
+        plt.ylabel('损失值 (Loss)')
+        plt.legend()
         plt.grid(True)
         
         plt.tight_layout()
         plt.show()
 
 def main():
-    df = pd.read_csv('models/data/1D/BTC_USDT_1D_5years_20251130_193559.csv')
+    df = pd.read_csv('models/data/market_data.csv')
     print("📊 数据加载成功:", df.shape)
     print("📅 时间范围:", df['timestamp'].iloc[0] if 'timestamp' in df else 'N/A', 
             "→", df['timestamp'].iloc[-1] if 'timestamp' in df else 'N/A')
     
     
-    # 创建环境
-    env = TorchTradingEnvironment(
+    # 创建市场分析环境
+    env = MarketAnalysisEnvironment(
         df, 
-        initial_balance=10000,
-        transaction_cost=0.001,
-        lookback_window=30,
-        allow_short=True
+        lookback_window=30
     )
     
-    print("🔧 环境创建成功 | 状态维度:", env.state_dim)
+    print("🔧 市场分析环境创建成功 | 特征维度:", env.feature_dim)
     
-    agent = PPOAgent(state_dim=env.state_dim)
+    # 初始化市场分析器
+    analyzer = MarketAnalyzer(feature_dim=env.feature_dim)
     
-    trainer = PPOTrainer(
-        env, 
-        agent, 
-        max_episodes=300,   # 合理训练轮次
-        max_steps=500,      # 每轮最多500步
-        update_interval=128 # 更频繁更新
-    )
+    print("📈 市场分析器初始化完成")
     
-    returns, lengths = trainer.train()
-    trainer.plot_training_progress()
+    # 示例：使用环境获取数据并进行分析
+    step = env.lookback_window
+    features, price_change, done, info = env.step()
     
-    return agent, returns
+    print("🔍 市场分析示例:")
+    print(f"当前价格: {info['current_price']:.2f}")
+    print(f"价格变化: {price_change:.4f}")
+    
+    # 使用分析器进行市场分析
+    analysis = analyzer.analyze(features)
+    print("📊 市场分析结果:")
+    print(f"趋势: {analysis['trend_interpretation']} (强度: {analysis['trend']:.2f})")
+    print(f"波动率: {analysis['volatility_interpretation']} (程度: {analysis['volatility']:.2f})")
+    print(f"市场强度: {analysis['strength_interpretation']} (指数: {analysis['market_strength']:.2f})")
+    
+    return analyzer
 
 
 if __name__ == "__main__":

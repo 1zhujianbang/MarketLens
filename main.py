@@ -1,6 +1,6 @@
 import asyncio
 from src.config.config_manager import MarketAnalysisConfig
-from src.agents.trading_agent import MarketAnalysisAgent
+from src.agents.market_analysis_agent import MarketAnalysisAgent
 
 async def main():
     try:
