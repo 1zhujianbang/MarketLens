@@ -17,10 +17,6 @@ import sys
 if sys.platform == "win32":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-import aiodns
-
-loop = asyncio.get_event_loop()
-resolver = aiodns.DNSResolver(loop=loop)
 
 from ..utils.tool_function import tools
 
@@ -58,11 +54,14 @@ class NewsCollector:
     def __init__(self):
         pass
 
-    async def data_extract(self):
+    async def data_extract(self, limit: int = 50):
         """
         抓取配置中的所有新闻源（如 Blockbeats、GNews），统一写入 raw_news 目录。
+        
+        Args:
+            limit: 每个数据源抓取的最大条数
         """
-        tools.log("[数据获取] 🚀 开始执行 NewsCollector.data_extract")
+        tools.log(f"[数据获取] 🚀 开始执行 NewsCollector.data_extract (limit={limit})")
         init_api_pool()  # 初始化 DataAPIPool
         if API_POOL is None:
             tools.log("[数据获取] ❌ API 池未初始化")
@@ -85,7 +84,7 @@ class NewsCollector:
                     async def fetch_one(col):
                         async with col:
                             # 约定：所有 collector 都实现 get_latest_important_news + news_to_dataframe
-                            news_list = await col.get_latest_important_news(limit=50)
+                            news_list = await col.get_latest_important_news(limit=limit) 
                             df = col.news_to_dataframe(news_list)
                             return df
 
@@ -158,7 +157,13 @@ class BlockbeatsNewsCollector:
     
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         """异步上下文管理器退出"""
-        await self.session.close()
+        if self.session:
+            await self.session.close()
+            self.session = None # Reset session
+        # Connector usually closed when session is closed, but good to be safe if managed externally
+        # But here we created it, so we rely on session.close() usually.
+        # However, to be fully clean if we want to reuse object but not session:
+        # self._connector = None 
     
     async def close(self):
         """显式关闭连接"""
@@ -200,9 +205,6 @@ class BlockbeatsNewsCollector:
             _, cached_data = self.cache[cache_key]
             print(f"📰 使用缓存数据: {endpoint}")
             return cached_data
-        
-        if not self.session:
-            self.session = aiohttp.ClientSession()
         
         url = f"{self.BASE_URL}{endpoint}"
         
@@ -765,9 +767,7 @@ class GNewsCollector:
     
     def clear_cache(self):
         """清空缓存"""
-        self.cache.clear()
-        print("✅ 新闻缓存已清空")
-
+        pass # GNews collector currently doesn't implement in-memory cache like Blockbeats
 
 # 使用示例和测试
 async def news_collector_demo():

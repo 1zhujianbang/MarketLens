@@ -526,3 +526,771 @@
 [2025-12-07 15:17:19] [知识图谱] 数据保存完成
 [2025-12-07 15:17:19] [知识图谱] 实体和事件更新完成
 [2025-12-07 15:17:19] [知识图谱] 知识图谱刷新完成
+[2025-12-07 17:18:01] Fetched 5 items from GNews-cn
+[2025-12-07 17:18:04] Fetched 5 items from GNews-us
+[2025-12-07 17:18:06] Fetched 5 items from GNews-fr
+[2025-12-07 17:18:09] Fetched 5 items from GNews-gb
+[2025-12-07 17:18:12] Fetched 5 items from GNews-hk
+[2025-12-07 17:18:14] Fetched 5 items from GNews-ru
+[2025-12-07 17:18:18] Fetched 5 items from GNews-ua
+[2025-12-07 17:18:21] Fetched 5 items from GNews-tw
+[2025-12-07 17:18:25] Fetched 5 items from GNews-sg
+[2025-12-07 17:18:28] Fetched 5 items from GNews-jp
+[2025-12-07 17:18:30] Fetched 5 items from GNews-br
+[2025-12-07 17:18:33] Fetched 5 items from GNews-ar
+[2025-12-07 17:18:36] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:18:49] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:18:49] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:18:51] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:18:51] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:18:53] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:18:53] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:21:37] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:21:37] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:22:40] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:22:40] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:22:54] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:22:54] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:22:57] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:22:57] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:23:02] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:23:02] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:23:06] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:23:06] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:23:29] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:23:29] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:23:31] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:23:31] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:23:35] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:23:35] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:23:40] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:23:40] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:23:49] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:23:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:23:54] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:23:54] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:23:55] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:23:55] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:24:05] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:24:05] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:24:08] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:24:08] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:24:13] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:24:13] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:24:43] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:24:43] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:25:00] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:25:00] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:03] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:03] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:07] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:07] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:25:16] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:25:16] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:25:23] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:25:23] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:25] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:25] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:25:30] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:25:30] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:25:36] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:25:36] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:42] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:42] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:47] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:47] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:25:51] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:25:51] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:25:55] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:25:55] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:25:59] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:25:59] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:26:04] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:26:04] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:26:12] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:26:12] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:26:26] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:26:26] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:26:32] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:26:32] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:27:20] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:27:20] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:27:29] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:27:29] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:27:32] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:27:32] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:27:33] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:27:33] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:27:38] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:27:38] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:27:44] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:27:44] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:29:01] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:29:01] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:29:04] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:29:04] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:29:10] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:29:10] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:29:18] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:29:18] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:29:26] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:29:26] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:29:30] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:29:30] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:29:35] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:29:35] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:29:46] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 17:29:47] [LLM请求] 尝试 API [deepseek-chat] (第 2 次)
+[2025-12-07 17:29:57] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:29:57] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:29:58] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:29:58] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:30:11] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:30:11] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:32:07] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:32:07] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 17:32:09] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 17:32:09] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:32:14] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 17:32:14] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:32:19] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:32:19] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:32:26] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:32:26] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 17:32:30] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 17:32:30] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:38:40] Fetched 1 items from GNews-cn
+[2025-12-07 17:38:43] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 17:39:01] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:34:07] Fetched 10 items from GNews-cn
+[2025-12-07 21:34:08] Fetched 10 items from GNews-us
+[2025-12-07 21:34:12] Fetched 10 items from GNews-fr
+[2025-12-07 21:34:13] Fetched 10 items from GNews-gb
+[2025-12-07 21:34:14] Fetched 9 items from GNews-hk
+[2025-12-07 21:34:15] Fetched 10 items from GNews-ru
+[2025-12-07 21:34:18] Fetched 10 items from GNews-ua
+[2025-12-07 21:34:21] Fetched 7 items from GNews-tw
+[2025-12-07 21:34:22] Fetched 10 items from GNews-sg
+[2025-12-07 21:34:25] Fetched 10 items from GNews-jp
+[2025-12-07 21:34:28] Fetched 10 items from GNews-br
+[2025-12-07 21:34:32] Fetched 10 items from GNews-ar
+[2025-12-07 21:34:34] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:34:40] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:34:40] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:34:47] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:34:47] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:34:53] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:34:53] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:34:59] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:34:59] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:35:06] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:35:06] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:35:15] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:35:15] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:35:20] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:35:20] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:35:26] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:35:26] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:35:28] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:35:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:35:34] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:35:34] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:35:38] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:35:38] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:35:41] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:35:41] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:35:48] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:35:48] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:35:52] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:35:52] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:35:59] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:35:59] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:36:07] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:36:07] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:36:10] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:36:10] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:36:13] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:36:13] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:36:19] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:36:19] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:36:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:36:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:36:32] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:36:32] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:36:35] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:36:35] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:36:40] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:36:40] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:36:46] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:36:46] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:36:53] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:36:53] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:36:58] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:36:58] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:04] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:04] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:37:12] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:37:12] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:19] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:19] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:37:23] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:37:23] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:28] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:37:32] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:37:32] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:34] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:34] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:37:35] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:37:35] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:37] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:37] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:41] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:41] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:37:44] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:37:44] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:37:49] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:37:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:37:54] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:37:54] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:37:56] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:37:56] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:38:02] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:38:02] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:38:08] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:38:08] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:12] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:12] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:15] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:15] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:17] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:17] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:38:23] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:38:23] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:38:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:38:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:31] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:31] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:38:34] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:38:34] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:36] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:36] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:38:39] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:38:39] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:38:45] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:38:45] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:38:51] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:38:51] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:38:59] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:38:59] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:02] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:02] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:39:04] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:39:04] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:12] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:12] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:39:18] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:39:18] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:24] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:24] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:26] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:26] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:39:29] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:39:29] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:39:31] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:39:31] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:36] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:36] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:40] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:40] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:41] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:41] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:45] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:45] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:39:50] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:39:50] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:51] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:51] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:54] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:54] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:39:59] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:39:59] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:40:07] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:40:07] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:40:13] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:40:13] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:40:19] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:40:19] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:40:24] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:40:24] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:40:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:40:28] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:40:32] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:40:32] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:40:40] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:40:40] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:40:44] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:40:44] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:40:51] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:40:51] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:41:07] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:41:07] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:12] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:12] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:15] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:15] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:41:20] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:41:20] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:24] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:24] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:41:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:41:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:30] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:30] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:34] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:34] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:41:35] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:41:35] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:41:43] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:41:43] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:41:48] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:41:48] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:41:50] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:41:50] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:41:59] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:41:59] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:42:01] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:42:01] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:42:05] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:42:05] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:42:10] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:42:10] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:42:16] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:42:16] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:42:21] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:42:21] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:42:24] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:42:24] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:42:32] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:42:32] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:42:37] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:42:37] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:42:49] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:42:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:42:53] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:42:53] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:42:54] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 21:42:55] [LLM请求] 尝试 API [deepseek-chat] (第 2 次)
+[2025-12-07 21:43:07] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:43:07] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:43:16] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:43:16] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:43:21] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:43:21] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:43:27] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:43:27] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:43:30] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:43:30] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:43:41] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:43:41] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:43:45] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:43:45] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:43:48] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:43:48] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:43:56] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:43:56] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:44:01] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:44:01] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:44:09] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:44:09] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:44:15] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:44:15] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:44:20] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:44:20] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:44:25] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:56:00] Fetched 10 items from GNews-cn
+[2025-12-07 21:56:01] Fetched 10 items from GNews-us
+[2025-12-07 21:56:03] Fetched 10 items from GNews-fr
+[2025-12-07 21:56:05] Fetched 10 items from GNews-gb
+[2025-12-07 21:56:09] Fetched 9 items from GNews-hk
+[2025-12-07 21:56:12] Fetched 10 items from GNews-ru
+[2025-12-07 21:56:13] Fetched 10 items from GNews-ua
+[2025-12-07 21:56:14] Fetched 7 items from GNews-tw
+[2025-12-07 21:56:19] Fetched 10 items from GNews-sg
+[2025-12-07 21:56:21] Fetched 10 items from GNews-jp
+[2025-12-07 21:56:24] Fetched 10 items from GNews-br
+[2025-12-07 21:56:25] Fetched 10 items from GNews-ar
+[2025-12-07 21:56:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:56:33] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 21:56:34] [LLM请求] 尝试 API [Aliyun-Qwen] (第 2 次)
+[2025-12-07 21:56:37] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:56:37] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:56:42] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:56:42] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:56:45] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:56:45] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:56:52] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:56:52] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:56:58] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:56:58] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:05] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:05] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:57:10] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:57:10] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:21] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:21] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:57:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:57:28] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:32] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:32] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:34] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:34] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:57:45] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:57:45] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:57:49] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:57:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:54] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:54] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:57:56] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:57:56] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:58:06] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:58:06] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:58:11] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:58:11] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:15] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:15] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:58:25] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:58:25] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:58:27] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:58:27] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:58:33] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:58:33] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:37] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:37] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:58:41] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:58:41] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:44] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:44] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:47] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:47] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:49] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:58:52] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:58:52] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:59:00] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:59:00] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:59:05] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:59:05] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:12] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:12] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:59:18] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:59:18] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:59:24] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:59:24] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:33] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:33] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:34] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:34] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:36] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:36] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:59:42] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:59:42] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:59:45] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:59:45] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:49] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:49] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 21:59:50] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 21:59:50] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 21:59:53] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 21:59:53] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 21:59:58] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 21:59:58] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:02] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:02] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:05] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:05] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:00:11] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:00:11] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:00:17] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:00:17] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:00:22] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:00:22] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:00:24] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:00:24] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:28] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:28] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:29] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:29] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:00:35] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:00:35] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:42] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:42] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:44] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:44] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:00:49] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:00:49] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:00:50] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:00:50] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:00:53] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:00:53] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:00:58] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:00:58] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:01:06] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:01:06] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:01:11] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:01:11] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:01:20] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:01:20] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:01:28] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:01:28] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:01:33] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:01:33] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:01:39] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:01:39] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:01:44] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:01:44] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:01:47] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:01:47] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:01:52] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:01:52] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:01:59] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:01:59] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:02:04] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:02:04] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:02:07] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:02:07] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:02:13] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:02:13] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:02:17] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:02:17] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:02:23] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:02:23] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:02:27] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:02:27] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:02:33] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:02:33] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:02:40] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:02:40] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:02:45] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:02:45] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:02:51] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:02:51] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:02:53] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:02:53] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:02:59] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:02:59] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:03:07] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:03:07] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:03:11] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:03:11] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:20] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:20] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:25] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:25] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:26] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:26] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:03:32] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:03:32] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:38] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:38] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:40] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:40] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:41] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:41] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:03:45] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:03:45] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:03:49] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:03:49] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:03:56] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:03:56] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:04:01] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:04:01] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:04:05] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:04:05] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:04:12] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:04:12] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:16] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:16] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:04:21] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:04:21] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:24] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:24] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:04:28] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:04:28] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:29] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:29] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:35] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:35] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:42] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:42] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:04:46] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 22:04:47] [LLM请求] 尝试 API [Aliyun-Qwen] (第 2 次)
+[2025-12-07 22:04:48] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:48] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:04:50] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:04:50] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:05:01] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:05:01] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:07] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:07] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:05:10] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:05:10] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:12] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:12] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:05:15] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 22:05:16] [LLM请求] 尝试 API [Aliyun-Qwen] (第 2 次)
+[2025-12-07 22:05:17] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:17] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:19] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:19] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:23] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:23] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:05:37] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:05:37] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:46] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:46] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:05:48] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:05:48] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:05:55] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:05:55] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:06:01] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:06:01] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:06:05] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:06:05] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:06:13] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:13:17] [知识图谱] 开始刷新知识图谱
+[2025-12-07 22:13:17] [知识图谱] 数据加载成功: 336 实体, 183 事件
+[2025-12-07 22:13:20] [知识图谱] LLM API池初始化成功
+[2025-12-07 22:13:20] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:13:27] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 22:13:28] [LLM请求] 尝试 API [deepseek-chat] (第 2 次)
+[2025-12-07 22:16:21] [LLM请求] ❌ API [deepseek-chat] 失败: Request timed out.
+[2025-12-07 22:16:23] [LLM请求] 尝试 API [Aliyun-Qwen] (第 3 次)
+[2025-12-07 22:19:20] [LLM请求] ❌ API [Aliyun-Qwen] 失败: Request timed out.
+[2025-12-07 22:19:24] [LLM请求] 💥 所有 API 尝试均失败
+[2025-12-07 22:19:24] [知识图谱] ❌ LLM调用失败
+[2025-12-07 22:19:24] [知识图谱] 无重复项需要更新
+[2025-12-07 22:19:24] [知识图谱] 知识图谱刷新完成
+[2025-12-07 22:26:14] [知识图谱] 开始刷新知识图谱
+[2025-12-07 22:26:14] [知识图谱] 数据加载成功: 336 实体, 183 事件
+[2025-12-07 22:26:16] [知识图谱] LLM API池初始化成功
+[2025-12-07 22:26:16] [知识图谱] 处理实体批次 1/4 (大小: 100)
+[2025-12-07 22:26:16] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:26:25] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:26:25] [知识图谱] 处理实体批次 2/4 (大小: 100)
+[2025-12-07 22:26:25] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:26:32] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:26:32] [知识图谱] 处理实体批次 3/4 (大小: 100)
+[2025-12-07 22:26:32] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:26:37] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:26:37] [知识图谱] 处理实体批次 4/4 (大小: 36)
+[2025-12-07 22:26:37] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:26:38] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:26:38] [知识图谱] 处理事件批次 1/7 (大小: 30)
+[2025-12-07 22:26:38] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:26:40] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:26:40] [知识图谱] 处理事件批次 2/7 (大小: 30)
+[2025-12-07 22:26:40] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:26:42] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 22:26:43] [LLM请求] 尝试 API [Aliyun-Qwen] (第 2 次)
+[2025-12-07 22:26:50] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:26:50] [知识图谱] 处理事件批次 3/7 (大小: 30)
+[2025-12-07 22:26:50] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:26:57] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:26:57] [知识图谱] 处理事件批次 4/7 (大小: 30)
+[2025-12-07 22:26:57] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:27:02] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:27:02] [知识图谱] 处理事件批次 5/7 (大小: 30)
+[2025-12-07 22:27:02] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:27:03] [LLM请求] ❌ API [kimi-k2-turbo-preview] 失败: Error code: 400 - {'error': {'code': 400, 'message': 'The request was rejected because it was considered high risk', 'param': 'prompt', 'type': 'content_filter'}}
+[2025-12-07 22:27:04] [LLM请求] 尝试 API [Aliyun-Qwen] (第 2 次)
+[2025-12-07 22:27:08] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:27:08] [知识图谱] 处理事件批次 6/7 (大小: 30)
+[2025-12-07 22:27:08] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:27:19] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:27:19] [知识图谱] 处理事件批次 7/7 (大小: 3)
+[2025-12-07 22:27:19] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:27:24] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:29:05] [知识图谱] 开始刷新知识图谱
+[2025-12-07 22:29:05] [知识图谱] 数据加载成功: 336 实体, 183 事件
+[2025-12-07 22:29:08] [知识图谱] LLM API池初始化成功
+[2025-12-07 22:29:08] [知识图谱] 处理实体批次 1/4 (大小: 100)
+[2025-12-07 22:29:08] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:29:52] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:29:52] [知识图谱] 处理实体批次 2/4 (大小: 100)
+[2025-12-07 22:29:52] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:29:57] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:29:57] [知识图谱] 处理实体批次 3/4 (大小: 100)
+[2025-12-07 22:29:57] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:30:02] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:30:02] [知识图谱] 处理实体批次 4/4 (大小: 36)
+[2025-12-07 22:30:02] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:30:06] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:30:06] [知识图谱] 处理事件批次 1/7 (大小: 30)
+[2025-12-07 22:30:06] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:30:20] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:30:20] [知识图谱] 处理事件批次 2/7 (大小: 30)
+[2025-12-07 22:30:20] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:30:25] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:30:25] [知识图谱] 处理事件批次 3/7 (大小: 30)
+[2025-12-07 22:30:25] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:30:37] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:30:37] [知识图谱] 处理事件批次 4/7 (大小: 30)
+[2025-12-07 22:30:37] [LLM请求] 尝试 API [kimi-k2-turbo-preview] (第 1 次)
+[2025-12-07 22:30:40] [LLM请求] ✅ API [kimi-k2-turbo-preview] 成功返回
+[2025-12-07 22:30:40] [知识图谱] 处理事件批次 5/7 (大小: 30)
+[2025-12-07 22:30:40] [LLM请求] 尝试 API [Aliyun-Qwen] (第 1 次)
+[2025-12-07 22:30:52] [LLM请求] ✅ API [Aliyun-Qwen] 成功返回
+[2025-12-07 22:30:52] [知识图谱] 处理事件批次 6/7 (大小: 30)
+[2025-12-07 22:30:52] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:31:02] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:31:02] [知识图谱] 处理事件批次 7/7 (大小: 3)
+[2025-12-07 22:31:02] [LLM请求] 尝试 API [deepseek-chat] (第 1 次)
+[2025-12-07 22:31:04] [LLM请求] ✅ API [deepseek-chat] 成功返回
+[2025-12-07 22:31:04] [知识图谱] 合并实体: Amazon UK -> Amazon.com Inc.
+[2025-12-07 22:31:04] [知识图谱] 合并实体: BBC Scotland News -> BBC
+[2025-12-07 22:31:04] [知识图谱] 合并实体: BBC国际部 -> BBC
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 中华人民共和国 -> 中国
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 俄罗斯 -> 俄罗斯联邦
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 克列缅丘格 -> 克列缅丘格市
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 台湾 -> 台湾地区
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 帝奥微 -> 帝奥微电子股份有限公司
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 挪威 -> 挪威王国
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 巴黎圣日耳曼 -> 巴黎圣日耳曼足球俱乐部
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 美利坚合众国 -> 美国
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 法兰西共和国 -> 法国
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 日本国 -> 日本
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 欧洲联盟 -> 欧盟
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 澳门 -> 澳门特别行政区
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 澳门立法会 -> 澳门特别行政区立法会
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 温哥华白帽队 -> 温哥华白帽
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 荷兰政府 -> 荷兰看守政府
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 西南航空公司 -> 西南航空
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 达拉斯牛仔队 -> 达拉斯体育场
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 迈阿密 -> 迈阿密国际队
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 雷恩 -> 雷恩足球俱乐部
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 顿涅茨克州检察官办公室 -> 顿涅茨克州军事行政当局
+[2025-12-07 22:31:04] [知识图谱] 合并实体: 雅伊尔·博索纳罗 -> 路易斯·伊纳西奥·卢拉·达席尔瓦
+[2025-12-07 22:31:04] [知识图谱] 合并事件: Alphabet首席执行官Sundar Pichai警告若人工智能泡沫破裂将无公司幸免 -> Alphabet和Google首席执行官Sundar Pichai评论人工智能投资热潮
+[2025-12-07 22:31:04] [知识图谱] 合并事件: Alphabet首席执行官桑达尔·皮查伊在接受BBC采访时表示当前人工智能市场存在非理性泡沫风险 -> Alphabet和Google首席执行官Sundar Pichai评论人工智能投资热潮
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 《暗黑破壞神IV》为符合中国法规进行内容修改并获国家新闻出版署批准 -> 《暗黑破坏神IV》为符合中国法规进行内容修改并获得中国国家新闻出版署批准
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 乌克兰城市克列缅丘格与法斯蒂夫遭俄罗斯攻击引发爆炸与火灾 -> 乌克兰克列缅丘格市遭大规模联合打击导致水电热供应中断
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 俄罗斯于12月7日凌晨对克列缅丘格基础设施发动大规模联合打击 -> 乌克兰克列缅丘格市遭大规模联合打击导致水电热供应中断
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 印度果阿邦一家夜店发生火灾致23人死亡 -> 印度Goa邦一家夜店发生火灾造成至少23人死亡
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 印度果阿邦一家夜总会发生火灾致23人死亡 -> 印度Goa邦一家夜店发生火灾造成至少23人死亡
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 印度果阿邦北部夜总会火灾致至少23人死亡 -> 印度Goa邦一家夜店发生火灾造成至少23人死亡
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 台湾交通部规划2026年推出包含住宿补贴、游乐园优惠等五大国内旅游补助计划 -> 台湾交通部规划2026年五大国民旅游补助计划
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 帝奥微董事会决定终止收购荣湃半导体100%股权并停止配套募资 -> 帝奥微终止收购荣湃半导体100%股权并配套融资事项
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 美国交通部免除西南航空1100万美元剩余罚款 -> 特朗普政府免除西南航空公司因2022年假日旅行混乱而被处以的1100万美元罚款
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 澳门维持敬老金每年一万元、养老金每月3900元，并将结婚津贴调升至四千元 -> 澳门敬老金、养老金及结婚津贴等社会福利金额度获公布或调整
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 澳门现金分享计划规定合资格永久居民和非永久居民分别获发一万元和六千元 -> 澳门敬老金、养老金及结婚津贴等社会福利金额度获公布或调整
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 澳门行政长官岑浩辉在立法会发表2026年施政报告，宣布继续实施现金分享计划 -> 澳门敬老金、养老金及结婚津贴等社会福利金额度获公布或调整
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 澳门现金分享计划自2008年何厚铧开始实施至今已派发近千亿元 -> 澳门敬老金、养老金及结婚津贴等社会福利金额度获公布或调整
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 美国地质调查局报告阿拉斯加东南部发生7.0级地震 -> 美国地质调查局报告美加边境发生7级地震
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 荷兰经济事务大臣承认未预料到中方对芯片出口实施反制措施 -> 荷兰看守政府经济事务大臣卡雷曼斯在议会听证会上承认，未预料到中国会叫停芯片出口反制措施
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 荷兰经济事务大臣因未通知中美欧而强抢中资企业安世半导体遭议会批评 -> 荷兰看守政府经济事务大臣卡雷曼斯在议会就安世半导体问题接受质询
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 英格兰队被分入2026年世界杯L组，同组对手为克罗地亚、加纳和巴拿马 -> 英格兰队将于2026年6月17日在达拉斯对阵克罗地亚队，开启世界杯征程
+[2025-12-07 22:31:04] [知识图谱] 合并事件: 阿根廷门多萨省因持续暴雨维持橙色气象预警 -> 阿根廷气候应急管理局发布门多萨省橙色暴风雨警报
+[2025-12-07 22:31:04] [知识图谱] 数据保存完成
+[2025-12-07 22:31:04] [知识图谱] 实体和事件更新完成
+[2025-12-07 22:31:04] [知识图谱] 知识图谱刷新完成

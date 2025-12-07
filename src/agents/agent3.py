@@ -16,12 +16,15 @@ class KnowledgeGraph:
         self.events_file = self.tools.EVENTS_FILE
         self.abstract_map_file = self.tools.ABSTRACT_MAP_FILE
         self.kg_file = self.tools.KNOWLEDGE_GRAPH_FILE
+        self.merge_rules_file = self.tools.CONFIG_DIR / "entity_merge_rules.json" # 规则文件路径
+        self.merge_rules = {} # 内存中的规则缓存
         self.graph = {
             "entities": {},  # 实体ID -> 实体信息
             "events": {},   # 事件摘要 -> 事件信息
             "edges": []     # 边列表，连接实体和事件
         }
         self.llm_pool = None  # 延迟初始化
+        self._load_merge_rules() # 初始化时加载规则
         
     def _init_llm_pool(self):
         """初始化LLM API池"""
@@ -82,109 +85,223 @@ class KnowledgeGraph:
         """构建知识图谱"""
         return self.load_data()
     
+    def _load_merge_rules(self):
+        """加载实体合并规则"""
+        if self.merge_rules_file.exists():
+            try:
+                with open(self.merge_rules_file, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+                    self.merge_rules = data.get("merge_rules", {})
+                self.tools.log(f"[知识图谱] 已加载 {len(self.merge_rules)} 条实体合并规则")
+            except Exception as e:
+                self.tools.log(f"[知识图谱] ⚠️ 加载合并规则失败: {e}")
+        else:
+            self.merge_rules = {}
+
+    def _save_merge_rules(self):
+        """保存实体合并规则"""
+        try:
+            data = {
+                "merge_rules": self.merge_rules,
+                "last_updated": time.strftime("%Y-%m-%dT%H:%M:%S")
+            }
+            with open(self.merge_rules_file, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+            self.tools.log(f"[知识图谱] 已保存合并规则库 (共 {len(self.merge_rules)} 条)")
+        except Exception as e:
+            self.tools.log(f"[知识图谱] ❌ 保存合并规则失败: {e}")
+
+    def _apply_merge_rules(self) -> bool:
+        """
+        应用本地合并规则
+        返回: 是否有更新
+        """
+        updated = False
+        if not self.merge_rules:
+            return False
+            
+        # 遍历现有实体，看是否匹配规则
+        # 注意：需要在遍历时处理，避免字典大小变化问题，通常收集后再处理
+        to_merge = []
+        for entity in list(self.graph['entities'].keys()):
+            if entity in self.merge_rules:
+                target = self.merge_rules[entity]
+                # 只有当目标实体也存在，或者目标就是我们想要统一到的名称时（这里简化为如果目标在库里或我们决定改名）
+                # 为简单起见，我们假设规则是 A -> B，如果 A 存在，就尝试合并到 B。
+                # 如果 B 不在库里，就把 A 重命名为 B。
+                if target != entity:
+                    to_merge.append((target, entity))
+        
+        for primary, duplicate in to_merge:
+            # 如果目标实体不存在，先重命名
+            if primary not in self.graph['entities'] and duplicate in self.graph['entities']:
+                self.graph['entities'][primary] = self.graph['entities'][duplicate]
+                del self.graph['entities'][duplicate]
+                # 更新事件引用
+                for abstract, event in self.graph['events'].items():
+                    entities = event.get('entities', [])
+                    if duplicate in entities:
+                        event['entities'] = [primary if e == duplicate else e for e in entities]
+                self.tools.log(f"[知识图谱][规则] 重命名实体: {duplicate} -> {primary}")
+                updated = True
+            elif primary in self.graph['entities'] and duplicate in self.graph['entities']:
+                # 如果都存在，则合并
+                self._merge_entities(primary, duplicate)
+                updated = True
+                
+        return updated
+
     def compress_with_llm(self) -> Dict[str, List[str]]:
         """
         使用LLM分析压缩知识图谱，输出重复的实体和事件抽象。
-        返回格式: {"duplicate_entities": [实体列表], "duplicate_events": [事件摘要列表]}
+        分批处理以避免上下文超长。
+        集成规则优先策略。
         """
+        # 0. 首先应用本地规则
+        rule_applied = self._apply_merge_rules()
+        if rule_applied:
+            self._save_data() # 规则应用后先保存一次状态
+            
         self._init_llm_pool()
         if self.llm_pool is None:
             self.tools.log("[知识图谱] ❌ LLM不可用，跳过压缩")
             return {"duplicate_entities": [], "duplicate_events": []}
         
-        # 准备LLM提示
-        prompt = self._prepare_compression_prompt()
+        all_duplicate_entities = []
+        all_duplicate_events = []
         
-        max_retries = 2
-        raw_content = self.llm_pool.call(
+        # 1. 处理实体 (分批)
+        # 排序以增加相似实体相邻的概率
+        entities_list = sorted(list(self.graph['entities'].keys()))
+        BATCH_SIZE_ENT = 100
+        
+        for i in range(0, len(entities_list), BATCH_SIZE_ENT):
+            batch = entities_list[i:i+BATCH_SIZE_ENT]
+            # 过滤掉已经在规则库中的实体作为duplicate的情况，避免重复计算（可选优化）
+            
+            self.tools.log(f"[知识图谱] 处理实体批次 {i//BATCH_SIZE_ENT + 1}/{(len(entities_list)-1)//BATCH_SIZE_ENT + 1} (大小: {len(batch)})")
+            
+            prompt = self._prepare_entity_compression_prompt(batch)
+            response = self._call_llm(prompt, timeout=90)
+            if response:
+                batch_dupes = self._parse_entity_response(response)
+                if batch_dupes:
+                    # 更新规则库
+                    new_rules_count = 0
+                    for group in batch_dupes:
+                        if len(group) >= 2:
+                            primary = group[0]
+                            for duplicate in group[1:]:
+                                if duplicate not in self.merge_rules:
+                                    self.merge_rules[duplicate] = primary
+                                    new_rules_count += 1
+                    if new_rules_count > 0:
+                        self._save_merge_rules()
+                        
+                all_duplicate_entities.extend(batch_dupes)
+                
+        # 2. 处理事件 (分批)
+        # 简单按key排序，理想情况下应按内容聚类，这里暂用排序
+        events_list = sorted(list(self.graph['events'].keys()))
+        BATCH_SIZE_EVT = 30
+        
+        for i in range(0, len(events_list), BATCH_SIZE_EVT):
+            batch_keys = events_list[i:i+BATCH_SIZE_EVT]
+            batch_events = {k: self.graph['events'][k] for k in batch_keys}
+            self.tools.log(f"[知识图谱] 处理事件批次 {i//BATCH_SIZE_EVT + 1}/{(len(events_list)-1)//BATCH_SIZE_EVT + 1} (大小: {len(batch_keys)})")
+            
+            prompt = self._prepare_event_compression_prompt(batch_events)
+            response = self._call_llm(prompt, timeout=120)
+            if response:
+                batch_dupes = self._parse_event_response(response)
+                all_duplicate_events.extend(batch_dupes)
+
+        return {
+            "duplicate_entities": all_duplicate_entities, 
+            "duplicate_events": all_duplicate_events
+        }
+
+    def _call_llm(self, prompt: str, timeout: int) -> Optional[str]:
+        """统一LLM调用"""
+        return self.llm_pool.call(
             prompt=prompt,
-            max_tokens=8000,
-            timeout=55,
-            retries=max_retries
+            max_tokens=4000,
+            timeout=timeout,
+            retries=2
         )
-        
-        if not raw_content:
-            self.tools.log("[知识图谱] ❌ LLM调用失败")
-            return {"duplicate_entities": [], "duplicate_events": []}
-        
-        # 解析LLM响应
-        duplicates = self._parse_llm_response(raw_content)
-        return duplicates
-    
-    def _prepare_compression_prompt(self) -> str:
-        """准备LLM提示，用于检测重复实体和事件"""
-        entities_list = list(self.graph['entities'].keys())
-        events_list = list(self.graph['events'].keys())
-        
-        prompt = f"""你是一名知识图谱专家，负责检测重复的实体和事件。
+
+    def _prepare_entity_compression_prompt(self, entities_batch: List[str]) -> str:
+        prompt = f"""你是一名知识图谱专家。请分析以下实体列表，找出表示**同一真实世界主体**的重复项（如别名、缩写、中英文名）。
 
 【实体列表】
-{json.dumps(entities_list, ensure_ascii=False, indent=2)}
+{json.dumps(entities_batch, ensure_ascii=False, indent=2)}
+
+【实体定义参考】
+- 自然人、注册公司、政府机构、国际组织等。
+
+【输出格式】
+严格返回 JSON：
+{{
+  "duplicate_entities": [
+    ["实体A的全称", "实体A的缩写"], 
+    ["实体B中文名", "实体B英文名"]
+  ]
+}}
+如果没有重复，返回 {{ "duplicate_entities": [] }}。只输出JSON，不要其他废话。
+"""
+        return prompt
+
+    def _prepare_event_compression_prompt(self, events_batch: Dict) -> str:
+        prompt = f"""你是一名知识图谱专家。请分析以下事件列表，找出描述**同一具体事件**的重复项。
 
 【事件列表】
-每个事件格式: 摘要 | 实体 | 事件描述
+格式: 摘要 | 参与实体 | 事件描述
 """
-        for abstract, event in self.graph['events'].items():
+        for abstract, event in events_batch.items():
             entities = event.get('entities', [])
             summary = event.get('event_summary', '')
             prompt += f"{abstract} | {', '.join(entities)} | {summary}\n"
-        
+
         prompt += """
 【任务】
-1. 分析实体列表，找出可能表示同一实体的重复项（例如，别名、缩写、不同语言表述）。
-2. 分析事件列表，找出可能描述同一事件的重复项（基于实体重叠和描述相似性）。
-3. 输出JSON格式：
+找出语义上高度重叠、描述同一事实的事件。
+
+【输出格式】
+严格返回 JSON：
 {
-  "duplicate_entities": [
-    ["实体1", "实体2", ...],  // 第一组重复实体
-    ["实体3", "实体4", ...]   // 第二组重复实体
-  ],
   "duplicate_events": [
-    ["事件摘要1", "事件摘要2", ...],  // 第一组重复事件
-    ["事件摘要3", "事件摘要4", ...]   // 第二组重复事件
+    ["事件摘要1", "事件摘要2"],
+    ["事件摘要3", "事件摘要4", "事件摘要5"]
   ]
 }
-
-注意：
-- 只输出JSON，不要额外文本。
-- 每组重复项至少包含两个元素。
-- 如果没有重复，返回空数组。
-- 实体定义（满足以下任一条件）
-- 实体定义一：是自然人（如 Elon Musk、Cathie Wood、Warren Buffett）
-- 实体定义二：是注册公司（如 Apple Inc.、Goldman Sachs、中国工商银行、Volkswagen AG）
-- 实体定义三：是政府机构或部门（如 美国证券交易委员会、中国人民银行、欧盟委员会、日本金融厅）
-- 实体定义四：是主权国家或明确行政区（如 美国、新加坡、加利福尼亚州、香港特别行政区、德意志联邦共和国）
-- 实体定义五：是国际组织（如 国际货币基金组织、世界银行、联合国、金融稳定理事会）
-- 事件摘要定义：一个简洁、客观、无情绪的中文摘要（作为事件唯一标识）、该事件的本质描述（一句话说明“谁对谁做了什么”）
-
+如果没有重复，返回 { "duplicate_events": [] }。只输出JSON。
 """
         return prompt
-    
-    def _parse_llm_response(self, raw_content: str) -> Dict[str, List[List[str]]]:
-        """解析LLM响应，提取重复项"""
+
+    def _parse_entity_response(self, raw_content: str) -> List[List[str]]:
         try:
-            # 清理Markdown包裹
-            if raw_content.startswith("```json"):
-                raw_content = raw_content.split("```json", 1)[1].split("```")[0]
-            elif raw_content.startswith("```"):
-                raw_content = raw_content.split("```", 1)[1].split("```")[0]
-            
-            data = json.loads(raw_content)
-            duplicate_entities = data.get("duplicate_entities", [])
-            duplicate_events = data.get("duplicate_events", [])
-            
-            # 验证格式
-            if not isinstance(duplicate_entities, list) or not isinstance(duplicate_events, list):
-                raise ValueError("Invalid format")
-            
-            self.tools.log(f"[知识图谱] LLM检测到 {len(duplicate_entities)} 组重复实体, {len(duplicate_events)} 组重复事件")
-            return {
-                "duplicate_entities": duplicate_entities,
-                "duplicate_events": duplicate_events
-            }
-        except Exception as e:
-            self.tools.log(f"[知识图谱] ❌ 解析LLM响应失败: {e}")
-            return {"duplicate_entities": [], "duplicate_events": []}
+            data = self._extract_json(raw_content)
+            res = data.get("duplicate_entities", [])
+            return res if isinstance(res, list) else []
+        except Exception:
+            return []
+
+    def _parse_event_response(self, raw_content: str) -> List[List[str]]:
+        try:
+            data = self._extract_json(raw_content)
+            res = data.get("duplicate_events", [])
+            return res if isinstance(res, list) else []
+        except Exception:
+            return []
+
+    def _extract_json(self, text: str) -> Dict:
+        if "```json" in text:
+            text = text.split("```json", 1)[1].split("```")[0]
+        elif "```" in text:
+            text = text.split("```", 1)[1].split("```")[0]
+        return json.loads(text)
+    
+    # 旧方法保留或删除（这里替换旧的 _prepare_compression_prompt 和 _parse_llm_response）
     
     def update_entities_and_events(self, duplicates: Dict[str, List[List[str]]]):
         """根据重复检测结果更新实体库和事件库"""
@@ -225,15 +342,34 @@ class KnowledgeGraph:
         primary_data = self.graph['entities'][primary]
         duplicate_data = self.graph['entities'][duplicate]
         
-        # 合并sources
-        primary_sources = set(primary_data.get('sources', []))
-        duplicate_sources = set(duplicate_data.get('sources', []))
-        primary_data['sources'] = list(primary_sources.union(duplicate_sources))
+        # 合并sources (确保转换为可哈希的tuple或直接列表处理)
+        primary_sources = set()
+        for s in primary_data.get('sources', []):
+            if isinstance(s, list): primary_sources.add(tuple(s))
+            elif isinstance(s, dict): continue # 暂时忽略复杂结构
+            else: primary_sources.add(s)
+            
+        for s in duplicate_data.get('sources', []):
+            if isinstance(s, list): primary_sources.add(tuple(s))
+            elif isinstance(s, dict): continue 
+            else: primary_sources.add(s)
+            
+        # 转回list
+        primary_data['sources'] = list(primary_sources)
         
         # 合并original_forms
-        primary_forms = set(primary_data.get('original_forms', []))
-        duplicate_forms = set(duplicate_data.get('original_forms', []))
-        primary_data['original_forms'] = list(primary_forms.union(duplicate_forms))
+        primary_forms = set()
+        for f in primary_data.get('original_forms', []):
+            if isinstance(f, list): primary_forms.add(tuple(f))
+            elif isinstance(f, dict): continue
+            else: primary_forms.add(f)
+            
+        for f in duplicate_data.get('original_forms', []):
+            if isinstance(f, list): primary_forms.add(tuple(f))
+            elif isinstance(f, dict): continue
+            else: primary_forms.add(f)
+            
+        primary_data['original_forms'] = list(primary_forms)
         
         # 更新first_seen为更早的时间
         primary_first = primary_data.get('first_seen', '')
@@ -270,9 +406,18 @@ class KnowledgeGraph:
         duplicate_event = self.graph['events'][duplicate]
         
         # 合并sources
-        primary_sources = set(primary_event.get('sources', []))
-        duplicate_sources = set(duplicate_event.get('sources', []))
-        primary_event['sources'] = list(primary_sources.union(duplicate_sources))
+        primary_sources = set()
+        for s in primary_event.get('sources', []):
+            if isinstance(s, list): primary_sources.add(tuple(s))
+            elif isinstance(s, dict): continue
+            else: primary_sources.add(s)
+            
+        for s in duplicate_event.get('sources', []):
+            if isinstance(s, list): primary_sources.add(tuple(s))
+            elif isinstance(s, dict): continue
+            else: primary_sources.add(s)
+            
+        primary_event['sources'] = list(primary_sources)
         
         # 合并entities
         primary_entities = set(primary_event.get('entities', []))

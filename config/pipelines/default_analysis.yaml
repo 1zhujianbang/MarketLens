@@ -1,0 +1,35 @@
+name: "Daily Market Scan (Quick Test)"
+description: "Fetch a single news item and extract events to verify the pipeline."
+steps:
+  - id: "fetch_news"
+    tool: "fetch_news_stream"
+    inputs:
+      limit: 1 # 仅获取1条
+      sources: ["GNews-cn"] 
+    output: "raw_news_data"
+
+  - id: "process_news"
+    tool: "batch_process_news"
+    inputs:
+      news_list: "$raw_news_data"
+      limit: 1 # 再次限制
+    output: "extracted_events"
+
+  - id: "update_kg"
+    tool: "update_graph_data"
+    inputs:
+      events_list: "$extracted_events"
+    output: "update_status"
+    
+  # 暂时跳过 refresh_knowledge_graph，因为它会处理整个图谱，消耗大量Token
+  # - id: "refresh_kg"
+  #   tool: "refresh_knowledge_graph"
+  #   inputs: {}
+  #   output: "refresh_status"
+
+  - id: "generate_report"
+    tool: "generate_markdown_report"
+    inputs:
+      events_list: "$extracted_events"
+      title: "最新市场动态简报 (测试版)"
+    output: "final_report_md"

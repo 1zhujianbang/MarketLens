@@ -1,29 +1,28 @@
-# src/data/api_client.py （建议单独文件）
 import os
 import json
 from pathlib import Path
-from typing import Optional, Any, List
+from typing import Optional, Any, List, Dict
 
 from dotenv import load_dotenv
 from .news_collector import BlockbeatsNewsCollector, GNewsCollector, Language
 
-def get_apis_config() -> List[dict]:
+def get_apis_config(config_path: Path = None) -> List[dict]:
     """
-    api参数配置
+    获取默认API配置（硬编码作为默认值）
     """
     return [
-        {"name": "GNews-cn", "language": "zh", "country": "cn", "timeout": 30, "enabled": True},
-        {"name": "GNews-us", "language": "en", "country": "us", "timeout": 30, "enabled": True},
-        {"name": "GNews-fr", "language": "fr", "country": "fr", "timeout": 30, "enabled": True},
-        {"name": "GNews-gb", "language": "en", "country": "gb", "timeout": 30, "enabled": True},
-        {"name": "GNews-hk", "language": "zh", "country": "hk", "timeout": 30, "enabled": True},
-        {"name": "GNews-ru", "language": "ru", "country": "ru", "timeout": 30, "enabled": True},
-        {"name": "GNews-ua", "language": "uk", "country": "ua", "timeout": 30, "enabled": True},
-        {"name": "GNews-tw", "language": "zh", "country": "tw", "timeout": 30, "enabled": True},
-        {"name": "GNews-sg", "language": "en", "country": "sg", "timeout": 30, "enabled": True},
-        {"name": "GNews-jp", "language": "ja", "country": "jp", "timeout": 30, "enabled": True},
-        {"name": "GNews-br", "language": "pt", "country": "br", "timeout": 30, "enabled": True},
-        {"name": "GNews-ar", "language": "es", "country": "ar", "timeout": 30, "enabled": True}
+        {"name": "GNews-cn", "language": "zh", "country": "cn", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-us", "language": "en", "country": "us", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-fr", "language": "fr", "country": "fr", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-gb", "language": "en", "country": "gb", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-hk", "language": "zh", "country": "hk", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-ru", "language": "ru", "country": "ru", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-ua", "language": "uk", "country": "ua", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-tw", "language": "zh", "country": "tw", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-sg", "language": "en", "country": "sg", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-jp", "language": "ja", "country": "jp", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-br", "language": "pt", "country": "br", "timeout": 30, "enabled": True, "type": "gnews"},
+        {"name": "GNews-ar", "language": "es", "country": "ar", "timeout": 30, "enabled": True, "type": "gnews"}
     ]
 
 class DataAPIPool:
@@ -56,8 +55,8 @@ class DataAPIPool:
         加载API配置和API池
         """
         try:
-            # 从硬编码函数获取配置
-            print(f"[数据获取][DataAPIPool] 从硬编码函数获取DATA_APIS配置")
+            # 获取默认配置
+            print(f"[数据获取][DataAPIPool] 加载默认 API 配置")
             apis = get_apis_config()
             
             # 加载API密钥池
@@ -67,8 +66,11 @@ class DataAPIPool:
                 print(f"[数据获取][DataAPIPool] 加载GNEWS_APIS_POOL环境变量")
                 # 移除环境变量值可能存在的首尾单引号
                 gnews_apis_pool_clean = gnews_apis_pool.strip("'")
-                self.api_key_pool = json.loads(gnews_apis_pool_clean)
-                print(f"[数据获取][DataAPIPool] 已加载API池，包含 {len(self.api_key_pool)} 个API密钥")
+                try:
+                    self.api_key_pool = json.loads(gnews_apis_pool_clean)
+                    print(f"[数据获取][DataAPIPool] 已加载API池，包含 {len(self.api_key_pool)} 个API密钥")
+                except json.JSONDecodeError:
+                    print(f"[数据获取][DataAPIPool] Error: GNEWS_APIS_POOL 格式错误，应为 JSON 数组")
             else:
                 print(f"[数据获取][DataAPIPool] 警告: 未设置 GNEWS_APIS_POOL")
             
@@ -77,10 +79,13 @@ class DataAPIPool:
             for cfg in apis:
                 if cfg.get("enabled", True):
                     # 如果是GNews类型且没有api_key，则从API池分配
-                    if "GNews" in cfg["name"] and "api_key" not in cfg and self.api_key_pool:
+                    # 根据 type 或 name 判断
+                    is_gnews = cfg.get("type") == "gnews" or "GNews" in cfg.get("name", "")
+                    
+                    if is_gnews and "api_key" not in cfg and self.api_key_pool:
                         cfg["api_key"] = self.api_key_pool[api_key_index % len(self.api_key_pool)]
                         api_key_index += 1
-                        print(f"[数据获取][DataAPIPool] 为 {cfg['name']} 分配API密钥")
+                        # print(f"[数据获取][DataAPIPool] 为 {cfg['name']} 分配API密钥")
                     
                     self.configs.append(cfg)
         except Exception as e:
@@ -90,13 +95,13 @@ class DataAPIPool:
     def get_collector(self, name: str) -> Optional[Any]:
         """根据 name 返回对应的新闻收集器实例（单例）"""
         if name in self._collectors:
-            print(f"[数据获取][DataAPIPool] 复用已创建的 collector: {name}")
+            # print(f"[数据获取][DataAPIPool] 复用已创建的 collector: {name}")
             return self._collectors[name]
 
         # 查找配置
         config = None
         for cfg in self.configs:
-            if name in cfg["name"]:
+            if name == cfg["name"]:
                 config = cfg
                 break
 
@@ -104,13 +109,20 @@ class DataAPIPool:
             raise ValueError(f"[数据获取][DataAPIPool] 未找到名为 '{name}' 的数据源配置")
 
         # 创建对应 collector
-        print(f"[数据获取][DataAPIPool] 准备创建 collector: {name}, config={config}")
-        if "Blockbeats" in name:
+        # print(f"[数据获取][DataAPIPool] 准备创建 collector: {name}")
+        
+        source_type = config.get("type", "").lower()
+        if not source_type:
+            # 兼容旧配置：根据名字猜测
+            if "blockbeats" in name.lower(): source_type = "blockbeats"
+            elif "gnews" in name.lower(): source_type = "gnews"
+
+        if source_type == "blockbeats":
             collector = BlockbeatsNewsCollector(
                 language=Language.CN,  # 可从配置读取
                 timeout=config.get("timeout", 30),
             )
-        elif "GNews" in name:
+        elif source_type == "gnews":
             api_key = config.get("api_key") or os.getenv("GNEWS_API_KEY", "")
             if not api_key:
                 raise ValueError("GNews 数据源需要配置 api_key 或环境变量 GNEWS_API_KEY")
@@ -125,29 +137,11 @@ class DataAPIPool:
                 timeout=config.get("timeout", 30)
             )
         else:
-            raise NotImplementedError(f"不支持的数据源类型: {name}")
+            raise NotImplementedError(f"不支持的数据源类型: {source_type} ({name})")
 
         self._collectors[name] = collector
         return collector
         
-    def _create_collector(self, cfg: dict, name: str) -> GNewsCollector:
-        """
-        根据配置创建GNews收集器实例的辅助函数
-        
-        Args:
-            cfg: API配置
-            name: 收集器名称
-            
-        Returns:
-            GNewsCollector实例
-        """
-        return GNewsCollector(
-            api_key=cfg.get("api_key"),
-            language=cfg.get("language", "zh"),
-            country=cfg.get("country"),
-            timeout=cfg.get("timeout", 30)
-        )
-
     def list_available_sources(self) -> List[str]:
         """
         获取所有可用的数据源名称列表
