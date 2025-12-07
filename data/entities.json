@@ -1,27 +1,41 @@
 {
   "荷兰政府": {
-    "first_seen": "2025-12-06T15:11:00+00:00",
+    "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
+      "凤凰网",
+      "nikkansports.com",
+      "腾讯新闻",
       "qq news"
     ],
     "original_forms": [
-      "Dutch government"
+      "Dutch government",
+      "荷兰看守政府",
+      "オランダ",
+      "荷兰王国"
     ]
   },
   "中华人民共和国": {
-    "first_seen": "2025-11-11T02:30:04+00:00",
+    "first_seen": "2025-11-07T11:03:40+00:00",
     "sources": [
-      "qq news",
-      "china daily",
       "纽约时报中文网",
-      "ludens.com.tw",
+      "央视网",
       "大紀元",
-      "轉角國際udn global"
+      "奇摩新聞",
+      "轉角國際udn global",
+      "china daily",
+      "news.cnyes.com",
+      "qq news",
+      "ludens.com.tw",
+      "bbc",
+      "rfi",
+      "3dnews"
     ],
     "original_forms": [
+      "中共",
+      "Китая",
       "China",
       "中國",
-      "中共"
+      "中国"
     ]
   },
   "安世半导体": {
@@ -36,13 +50,15 @@
   "荷兰议会": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
-      "qq news",
       "凤凰网",
-      "腾讯新闻"
+      "腾讯新闻",
+      "le monde.fr",
+      "qq news"
     ],
     "original_forms": [
-      "Dutch parliament",
-      "荷兰议会"
+      "荷兰议会",
+      "commission d’enquête parlementaire",
+      "Dutch parliament"
     ]
   },
   "帝奥微": {
@@ -64,12 +80,14 @@
     ]
   },
   "澳门": {
-    "first_seen": "2025-12-06T09:42:31+00:00",
+    "first_seen": "2025-11-18T08:17:42+00:00",
     "sources": [
+      "yahoo news - hk",
       "东方财富"
     ],
     "original_forms": [
-      "澳门"
+      "澳门",
+      "澳門"
     ]
   },
   "南方财经": {
@@ -79,17 +97,6 @@
     ],
     "original_forms": [
       "南方财经"
-    ]
-  },
-  "荷兰王国": {
-    "first_seen": "2025-12-06T07:40:33+00:00",
-    "sources": [
-      "凤凰网",
-      "nikkansports.com"
-    ],
-    "original_forms": [
-      "荷兰王国",
-      "オランダ"
     ]
   },
   "文森特·卡雷曼斯": {
@@ -123,24 +130,6 @@
     "original_forms": [
       "Volkspartij voor Vrijheid en Democratie",
       "自由民主人民党（VVD）"
-    ]
-  },
-  "荷兰工党": {
-    "first_seen": "2025-12-06T07:40:33+00:00",
-    "sources": [
-      "凤凰网"
-    ],
-    "original_forms": [
-      "GroenLinks"
-    ]
-  },
-  "荷兰绿党": {
-    "first_seen": "2025-12-06T07:40:33+00:00",
-    "sources": [
-      "凤凰网"
-    ],
-    "original_forms": [
-      "GroenLinks"
     ]
   },
   "国际中学生体育联合会": {
@@ -199,22 +188,6 @@
       "Bulgaria"
     ]
   },
-  "中国": {
-    "first_seen": "2025-11-07T11:03:40+00:00",
-    "sources": [
-      "央视网",
-      "bbc",
-      "rfi",
-      "3dnews",
-      "奇摩新聞",
-      "news.cnyes.com"
-    ],
-    "original_forms": [
-      "中国",
-      "中國",
-      "Китая"
-    ]
-  },
   "新华社": {
     "first_seen": "2025-12-06T05:32:00+00:00",
     "sources": [
@@ -271,15 +244,6 @@
       "オランダ"
     ]
   },
-  "荷兰看守政府": {
-    "first_seen": "2025-12-06T03:37:00+00:00",
-    "sources": [
-      "腾讯新闻"
-    ],
-    "original_forms": [
-      "荷兰看守政府"
-    ]
-  },
   "经济事务大臣": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
@@ -292,18 +256,22 @@
   "工党": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
+      "凤凰网",
       "腾讯新闻"
     ],
     "original_forms": [
+      "GroenLinks",
       "工党（GL）"
     ]
   },
   "绿党": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
+      "凤凰网",
       "腾讯新闻"
     ],
     "original_forms": [
+      "GroenLinks",
       "绿党"
     ]
   },
@@ -415,17 +383,22 @@
     ]
   },
   "美国": {
-    "first_seen": "2025-11-17T09:30:03+00:00",
+    "first_seen": "2025-11-13T04:51:00+00:00",
     "sources": [
+      "infobae",
+      "franceinfo",
       "oregonlive.com",
-      "news.cnyes.com",
       "o globo",
-      "infobae"
+      "r7",
+      "news.cnyes.com",
+      "gnews"
     ],
     "original_forms": [
+      "New York",
       "Republican senators",
       "美國",
-      "Estados Unidos"
+      "Estados Unidos",
+      "美国"
     ]
   },
   "Jane Fonda": {
@@ -465,29 +438,34 @@
     ]
   },
   "埃隆·马斯克": {
-    "first_seen": "2025-12-06T18:18:03+00:00",
+    "first_seen": "2025-12-05T15:18:56+00:00",
     "sources": [
-      "le monde.fr"
+      "le monde.fr",
+      "gnews"
     ],
     "original_forms": [
       "Elon Musk"
     ]
   },
   "欧盟": {
-    "first_seen": "2025-12-06T18:18:03+00:00",
+    "first_seen": "2025-12-05T15:18:56+00:00",
     "sources": [
-      "le monde.fr"
+      "le monde.fr",
+      "gnews"
     ],
     "original_forms": [
-      "l’Union européenne"
+      "l’Union européenne",
+      "欧盟"
     ]
   },
   "X平台": {
-    "first_seen": "2025-12-06T18:18:03+00:00",
+    "first_seen": "2025-12-05T15:18:56+00:00",
     "sources": [
-      "le monde.fr"
+      "le monde.fr",
+      "gnews"
     ],
     "original_forms": [
+      "X",
       "le réseau X"
     ]
   },
@@ -517,15 +495,6 @@
     ],
     "original_forms": [
       "La France insoumise"
-    ]
-  },
-  "法国议会": {
-    "first_seen": "2025-12-06T18:02:46+00:00",
-    "sources": [
-      "le monde.fr"
-    ],
-    "original_forms": [
-      "commission d’enquête parlementaire"
     ]
   },
   "RC Lens": {
@@ -564,17 +533,6 @@
       "Lille"
     ]
   },
-  "法兰西共和国": {
-    "first_seen": "2025-12-06T17:14:00+00:00",
-    "sources": [
-      "franceinfo",
-      "fakty.com.ua"
-    ],
-    "original_forms": [
-      "la France",
-      "Франції"
-    ]
-  },
   "塞内加尔共和国": {
     "first_seen": "2025-12-06T17:46:38+00:00",
     "sources": [
@@ -593,17 +551,6 @@
       "la Norvège"
     ]
   },
-  "美利坚合众国": {
-    "first_seen": "2025-12-06T17:46:38+00:00",
-    "sources": [
-      "franceinfo",
-      "r7"
-    ],
-    "original_forms": [
-      "New York",
-      "Estados Unidos"
-    ]
-  },
   "华盛顿哥伦比亚特区": {
     "first_seen": "2025-12-06T17:46:38+00:00",
     "sources": [
@@ -616,13 +563,17 @@
   "法国": {
     "first_seen": "2025-11-07T11:03:40+00:00",
     "sources": [
-      "le parisien",
+      "franceinfo",
       "rfi",
-      "奇摩新聞"
+      "奇摩新聞",
+      "le parisien",
+      "fakty.com.ua"
     ],
     "original_forms": [
+      "法國",
+      "Франції",
       "France",
-      "法國"
+      "la France"
     ]
   },
   "安省": {
@@ -652,17 +603,6 @@
     "original_forms": [
       "Tower of London",
       "Лондонский Тауэр"
-    ]
-  },
-  "大不列颠及北爱尔兰联合王国": {
-    "first_seen": "2025-12-06T17:14:00+00:00",
-    "sources": [
-      "the telegraph",
-      "fakty.com.ua"
-    ],
-    "original_forms": [
-      "Britain",
-      "Великої Британії"
     ]
   },
   "菲利普·马蒂亚斯": {
@@ -784,15 +724,6 @@
       "帛琉"
     ]
   },
-  "澳门特别行政区": {
-    "first_seen": "2025-11-18T08:17:42+00:00",
-    "sources": [
-      "yahoo news - hk"
-    ],
-    "original_forms": [
-      "澳門"
-    ]
-  },
   "岑浩辉": {
     "first_seen": "2025-11-18T08:17:42+00:00",
     "sources": [
@@ -824,8 +755,10 @@
     "first_seen": "2025-11-14T03:27:42+00:00",
     "sources": [
       "纽约时报中文网",
+      "gekisaka.jp",
       "大紀元",
-      "gekisaka.jp"
+      "nikkansports.com",
+      "轉角國際udn global"
     ],
     "original_forms": [
       "日本"
@@ -886,31 +819,15 @@
       "中國海軍"
     ]
   },
-  "Alphabet Inc.": {
-    "first_seen": "2025-12-06T18:49:36+00:00",
-    "sources": [
-      "тарантас ньюс"
-    ],
-    "original_forms": [
-      "Alphabet"
-    ]
-  },
   "Waymo": {
-    "first_seen": "2025-12-06T18:49:36+00:00",
+    "first_seen": "2025-11-13T04:51:00+00:00",
     "sources": [
-      "тарантас ньюс"
+      "тарантас ньюс",
+      "gnews"
     ],
     "original_forms": [
-      "Waymo"
-    ]
-  },
-  "德克萨斯州": {
-    "first_seen": "2025-12-06T18:49:36+00:00",
-    "sources": [
-      "тарантас ньюс"
-    ],
-    "original_forms": [
-      "Техасе"
+      "Waymo",
+      "Waymo LLC"
     ]
   },
   "圣彼得堡泽尼特足球俱乐部": {
@@ -956,15 +873,6 @@
     ],
     "original_forms": [
       "Андрей Ермак"
-    ]
-  },
-  "泽连斯基": {
-    "first_seen": "2025-12-06T17:16:00+00:00",
-    "sources": [
-      "eadaily"
-    ],
-    "original_forms": [
-      "Зеленский"
     ]
   },
   "彼得·扬": {
@@ -1155,10 +1063,12 @@
   "弗拉基米尔·泽连斯基": {
     "first_seen": "2025-12-06T17:14:00+00:00",
     "sources": [
+      "eadaily",
       "fakty.com.ua"
     ],
     "original_forms": [
-      "Володимиром Зеленським"
+      "Володимиром Зеленським",
+      "Зеленский"
     ]
   },
   "基尔·斯塔默": {
@@ -1227,10 +1137,14 @@
   "英国": {
     "first_seen": "2025-12-04T00:27:42+00:00",
     "sources": [
-      "奇摩新聞"
+      "奇摩新聞",
+      "the telegraph",
+      "fakty.com.ua"
     ],
     "original_forms": [
-      "英國"
+      "英國",
+      "Великої Британії",
+      "Britain"
     ]
   },
   "台湾": {
@@ -1258,16 +1172,6 @@
     ],
     "original_forms": [
       "范冰冰"
-    ]
-  },
-  "日本国": {
-    "first_seen": "2025-11-19T09:35:26+00:00",
-    "sources": [
-      "轉角國際udn global",
-      "nikkansports.com"
-    ],
-    "original_forms": [
-      "日本"
     ]
   },
   "经济学人": {
@@ -1390,9 +1294,10 @@
     ]
   },
   "突尼斯": {
-    "first_seen": "2025-12-06T17:48:00+00:00",
+    "first_seen": "2025-12-06T13:43:29+00:00",
     "sources": [
-      "gekisaka.jp"
+      "gekisaka.jp",
+      "nikkansports.com"
     ],
     "original_forms": [
       "チュニジア"
@@ -1450,15 +1355,6 @@
     ],
     "original_forms": [
       "カリフォルニア工科大学"
-    ]
-  },
-  "突尼斯共和国": {
-    "first_seen": "2025-12-06T13:43:29+00:00",
-    "sources": [
-      "nikkansports.com"
-    ],
-    "original_forms": [
-      "チュニジア"
     ]
   },
   "株式会社メルカリ": {
@@ -1689,15 +1585,6 @@
       "Axel Kicillof"
     ]
   },
-  "José C. Paz 市": {
-    "first_seen": "2025-12-06T18:21:04+00:00",
-    "sources": [
-      "clarin.com"
-    ],
-    "original_forms": [
-      "José C. Paz"
-    ]
-  },
   "国际足联": {
     "first_seen": "2025-12-06T18:02:00+00:00",
     "sources": [
@@ -1737,10 +1624,389 @@
   "何塞·C·帕斯市": {
     "first_seen": "2025-12-06T17:02:52+00:00",
     "sources": [
-      "la nueva provincia"
+      "la nueva provincia",
+      "clarin.com"
     ],
     "original_forms": [
       "José C. Paz"
+    ]
+  },
+  "Pivotal Research": {
+    "first_seen": "2025-12-05T12:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Pivotal Research"
+    ]
+  },
+  "Michael Levine": {
+    "first_seen": "2025-12-05T12:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Michael Levine"
+    ]
+  },
+  "美国国家公路交通安全管理局": {
+    "first_seen": "2025-12-04T18:06:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国国家公路交通安全管理局"
+    ]
+  },
+  "Amit Mehta": {
+    "first_seen": "2025-12-05T22:24:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Amit Mehta"
+    ]
+  },
+  "美国司法部": {
+    "first_seen": "2025-12-05T22:24:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国司法部"
+    ]
+  },
+  "Jimmy Wales": {
+    "first_seen": "2025-12-05T18:25:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Jimmy Wales"
+    ]
+  },
+  "Wikipedia": {
+    "first_seen": "2025-12-05T18:25:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Wikipedia"
+    ]
+  },
+  "OpenAI": {
+    "first_seen": "2025-12-05T18:25:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "OpenAI"
+    ]
+  },
+  "唐纳德·特朗普": {
+    "first_seen": "2025-12-05T15:23:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "唐纳德·特朗普"
+    ]
+  },
+  "Pershing Square Capital Management": {
+    "first_seen": "2025-12-05T01:27:56+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Pershing Square Capital Management"
+    ]
+  },
+  "美国证券交易委员会": {
+    "first_seen": "2025-12-05T01:27:56+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国证券交易委员会"
+    ]
+  },
+  "得克萨斯州": {
+    "first_seen": "2025-12-04T18:06:18+00:00",
+    "sources": [
+      "тарантас ньюс",
+      "gnews"
+    ],
+    "original_forms": [
+      "得克萨斯州",
+      "Техасе"
+    ]
+  },
+  "乔治亚州": {
+    "first_seen": "2025-12-04T18:06:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "乔治亚州"
+    ]
+  },
+  "谷歌云": {
+    "first_seen": "2025-12-04T16:48:43+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "谷歌云"
+    ]
+  },
+  "Replit": {
+    "first_seen": "2025-12-04T16:48:43+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Replit"
+    ]
+  },
+  "巴尔的摩市": {
+    "first_seen": "2025-12-03T18:10:21+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "巴尔的摩市"
+    ]
+  },
+  "圣路易斯市": {
+    "first_seen": "2025-12-03T18:10:21+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "圣路易斯市"
+    ]
+  },
+  "匹兹堡市": {
+    "first_seen": "2025-12-03T18:10:21+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "匹兹堡市"
+    ]
+  },
+  "Anthropic": {
+    "first_seen": "2025-12-03T09:52:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Anthropic"
+    ]
+  },
+  "Wilson Sonsini Goodrich & Rosati": {
+    "first_seen": "2025-12-03T09:52:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Wilson Sonsini Goodrich & Rosati"
+    ]
+  },
+  "CG River Road US Large Cap Value Select基金": {
+    "first_seen": "2025-12-04T12:20:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "CG River Road US Large Cap Value Select基金"
+    ]
+  },
+  "伯克希尔·哈撒韦公司": {
+    "first_seen": "2025-11-15T09:36:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "伯克希尔·哈撒韦公司",
+      "Berkshire Hathaway",
+      "伯克希尔·哈撒韦"
+    ]
+  },
+  "BBC": {
+    "first_seen": "2025-11-18T08:17:15+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "BBC"
+    ]
+  },
+  "Amazon.com Inc.": {
+    "first_seen": "2025-12-02T15:48:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Amazon.com Inc."
+    ]
+  },
+  "Meta Platforms Inc.": {
+    "first_seen": "2025-11-25T14:41:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Meta Platforms Inc.",
+      "Meta Platforms, Inc."
+    ]
+  },
+  "Microsoft Corporation": {
+    "first_seen": "2025-12-02T15:48:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Microsoft Corporation"
+    ]
+  },
+  "Nvidia": {
+    "first_seen": "2025-11-25T14:41:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Nvidia Corporation",
+      "Nvidia"
+    ]
+  },
+  "加利福尼亚州": {
+    "first_seen": "2025-11-23T04:55:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "加利福尼亚州"
+    ]
+  },
+  "明尼阿波利斯": {
+    "first_seen": "2025-11-21T14:45:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "明尼阿波利斯"
+    ]
+  },
+  "坦帕": {
+    "first_seen": "2025-11-21T14:45:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "坦帕"
+    ]
+  },
+  "新奥尔良": {
+    "first_seen": "2025-11-21T14:45:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "新奥尔良"
+    ]
+  },
+  "桑达尔·皮查伊": {
+    "first_seen": "2025-11-18T08:17:15+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "桑达尔·皮查伊",
+      "Sundar Pichai"
+    ]
+  },
+  "沃伦·巴菲特": {
+    "first_seen": "2025-11-15T09:36:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Warren Buffett",
+      "沃伦·巴菲特"
+    ]
+  },
+  "美国银行": {
+    "first_seen": "2025-11-15T09:36:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国银行"
+    ]
+  },
+  "Apple Inc.": {
+    "first_seen": "2025-11-15T09:36:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Apple Inc."
+    ]
+  },
+  "澳大利亚": {
+    "first_seen": "2025-11-13T07:51:41+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "澳大利亚"
+    ]
+  },
+  "SUBCO": {
+    "first_seen": "2025-11-13T07:51:41+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "SUBCO"
+    ]
+  },
+  "路透社": {
+    "first_seen": "2025-11-13T07:51:41+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Reuters",
+      "路透社"
+    ]
+  },
+  "拉里·佩奇": {
+    "first_seen": "2025-12-01T16:09:08+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "拉里·佩奇"
+    ]
+  },
+  "福布斯": {
+    "first_seen": "2025-12-01T16:09:08+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "福布斯"
+    ]
+  },
+  "纳斯达克": {
+    "first_seen": "2025-11-25T12:25:39+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "纳斯达克"
     ]
   }
 }

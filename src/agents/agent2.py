@@ -374,17 +374,17 @@ async def main():
         processed_count = await process_expanded_news(expanded_news)
         tools.log(f"✅ 成功处理 {processed_count} 条拓展新闻")
         
-        # 在所有新闻处理完成后统一刷新知识图谱
-        if processed_count > 0:
-            try:
-                import threading
-                with tools._refresh_lock:
-                    threading.Thread(target=refresh_graph, daemon=True).start()
-                    tools.log("🔄 已启动知识图谱刷新线程")
-            except Exception as e:
-                tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
-        else:
-            tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
+        # # 在所有新闻处理完成后统一刷新知识图谱
+        # if processed_count > 0:
+        #     try:
+        #         import threading
+        #         with tools._refresh_lock:
+        #             threading.Thread(target=refresh_graph, daemon=True).start()
+        #             tools.log("🔄 已启动知识图谱刷新线程")
+        #     except Exception as e:
+        #         tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
+        # else:
+        #     tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
     
     tools.log("🎉 实体拓展新闻任务完成！")
 
