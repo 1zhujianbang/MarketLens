@@ -23,7 +23,8 @@ from dotenv import load_dotenv
 from ..utils.tool_function import tools
 from ..data.api_client import DataAPIPool
 from ..data.news_collector import NewsType
-from .agent1 import llm_extract_events, update_entities, update_abstract_map, NewsDeduplicator
+from .agent1 import llm_extract_events, NewsDeduplicator
+from ..utils.entity_updater import update_entities, update_abstract_map
 from .agent3 import refresh_graph  # 导入知识图谱刷新功能
 
 # 初始化工具
@@ -341,13 +342,6 @@ async def process_expanded_news(expanded_news: List[Dict]) -> int:
                     update_entities(all_entities, all_entities_original, source, published_at)
                     update_abstract_map(extracted, source, published_at)
                     
-                    # 异步更新知识图谱
-                    try:
-                        import threading
-                        threading.Thread(target=refresh_graph, daemon=True).start()
-                    except Exception as e:
-                        tools.log(f"⚠️ 异步更新知识图谱失败: {e}")
-                        
                     processed_count += 1
                     
         except Exception as e:
@@ -379,6 +373,18 @@ async def main():
         tools.log("📄 开始处理拓展的新闻...")
         processed_count = await process_expanded_news(expanded_news)
         tools.log(f"✅ 成功处理 {processed_count} 条拓展新闻")
+        
+        # 在所有新闻处理完成后统一刷新知识图谱
+        if processed_count > 0:
+            try:
+                import threading
+                with tools._refresh_lock:
+                    threading.Thread(target=refresh_graph, daemon=True).start()
+                    tools.log("🔄 已启动知识图谱刷新线程")
+            except Exception as e:
+                tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
+        else:
+            tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
     
     tools.log("🎉 实体拓展新闻任务完成！")
 

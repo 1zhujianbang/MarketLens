@@ -98,7 +98,7 @@ class KnowledgeGraph:
         max_retries = 2
         raw_content = self.llm_pool.call(
             prompt=prompt,
-            max_tokens=2000,
+            max_tokens=8000,
             timeout=55,
             retries=max_retries
         )

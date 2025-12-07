@@ -3,12 +3,22 @@ import sys
 import json
 import re
 import time
+import threading
 from typing import Set
 from datetime import datetime, timezone
 import hashlib
 from pathlib import Path
 
 class tools:
+    # 单例模式实现
+    _instance = None
+    _initialized = False
+    
+    def __new__(cls, *args, **kwargs):
+        if cls._instance is None:
+            cls._instance = super().__new__(cls)
+        return cls._instance
+    
     # ======================
     # 路径与配置（类变量，可通过类直接访问）
     # ======================
@@ -33,6 +43,8 @@ class tools:
     DEDUPE_THRESHOLD = int(os.getenv("AGENT1_DEDUPE_THRESHOLD", "3"))
     
     def __init__(self):
+        if self._initialized:
+            return
         # 确保目录存在
         for d in [self.DATA_DIR, self.RAW_NEWS_DIR, self.DEDUPED_NEWS_DIR, self.DATA_DIR / "logs"]:
             d.mkdir(parents=True, exist_ok=True)
@@ -46,6 +58,9 @@ class tools:
                     if word and not word.startswith("#"):
                         stop_words.add(word)
         self.STOP_WORDS = stop_words
+        # 初始化刷新锁
+        self._refresh_lock = threading.Lock()
+        self._initialized = True
 
     # ======================
     # 工具函数

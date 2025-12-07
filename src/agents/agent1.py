@@ -27,7 +27,8 @@ from dotenv import load_dotenv
 from ..utils.tool_function import tools
 tools = tools()
 from .api_client import LLMAPIPool
-from .agent3 import refresh_graph  # 导入知识图谱刷新功能
+from ..utils.entity_updater import update_entities, update_abstract_map
+from .agent3 import refresh_graph
 API_POOL = None
 
 def init_api_pool():
@@ -123,25 +124,25 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 
 【实体定义】
 ✅ 必须满足以下任一条件：
-- 是自然人（如 Elon Musk、Cathie Wood）
-- 是注册公司（如 Binance、Coinbase、Tesla）
-- 是政府机构或部门（如 美国证券交易委员会、中国人民银行、欧盟委员会）
-- 是主权国家或明确行政区（如 美国、新加坡、加利福尼亚州、香港特别行政区）
-- 是国际组织（如 国际货币基金组织、联合国）
+- 是自然人（如 Elon Musk、Cathie Wood、Warren Buffett）
+- 是注册公司（如 Apple Inc.、Goldman Sachs、中国工商银行、Volkswagen AG）
+- 是政府机构或部门（如 美国证券交易委员会、中国人民银行、欧盟委员会、日本金融厅）
+- 是主权国家或明确行政区（如 美国、新加坡、加利福尼亚州、香港特别行政区、德意志联邦共和国）
+- 是国际组织（如 国际货币基金组织、世界银行、联合国、金融稳定理事会）
 
 ❌ 以下内容**不得**视为实体：
-- 抽象概念（如 “去中心化”、“流动性”、“市场情绪”）
-- 技术术语（如 “智能合约”、“零知识证明”、“PoS”）
-- 代币/资产名称（如 “BTC”、“以太坊”、“Solana”）——除非指代其基金会或开发公司（如 “以太坊基金会”）
-- 泛称（如 “投资者”、“监管机构”、“某交易所”）
-- 情绪/行情描述（如 “牛市”、“暴跌”、“利好”）
+- 抽象概念（如 “市场波动”、“系统性风险”、“资本流动”）
+- 技术或金融术语（如 “期权定价”、“资产负债表”、“量化宽松”）
+- 金融工具或资产名称（如 “标普500指数”、“10年期美债”、“黄金期货”、“BTC”）——除非指代其发行方、管理方或关联法人（如 “标普道琼斯指数公司”）
+- 泛称（如 “投资者”、“监管机构”、“某银行”、“大型科技公司”）
+- 情绪/行情描述（如 “暴涨”、“抛售潮”、“经济衰退担忧”）
 
 【任务要求】
 1. 判断新闻是否包含一个或多个独立事件。
 2. 对每个事件，输出：
    - 一个简洁、客观、无情绪的中文摘要（作为事件唯一标识）
-   - 所有符合上述定义的实体（全称优先，避免缩写，使用中文或英文表述）
-   - 所有符合上述定义的实体的原始语言表述（保留新闻中实体的原始语言形式，原始语言实体数组的索引与实体数组索引对应）
+   - 所有符合上述定义的实体（全称优先，避免缩写；若原文使用英文名且无通用中文译名，则保留英文）
+   - 所有符合上述定义的实体的原始语言表述（保留新闻中实体的原始语言形式；原始语言实体数组的索引与实体数组索引一一对应）
    - 该事件的本质描述（一句话说明“谁对谁做了什么”）
 
 【输出格式】
@@ -149,9 +150,9 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 {{
   "events": [
     {{
-      "abstract": "美国证券交易委员会推迟对比特币ETF的最终决定",
+      "abstract": "美国证券交易委员会推迟对VanEck比特币ETF申请的决定",
       "entities": ["美国证券交易委员会", "VanEck"],
-      "entities_original": ["美国证券交易委员会", "VanEck"],
+      "entities_original": ["SEC", "VanEck"],
       "event_summary": "监管机构延长了对某资产管理公司比特币ETF申请的审查期"
     }}
   ]
@@ -208,116 +209,7 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
         tools.log(f"[LLM获取] ❌ LLM 返回内容解析失败: {e}")
         return []
     
-# ======================
-# 自动更新知识库
-# ======================
 
-def update_entities(entities: List[str], entities_original: List[str], source: str, published_at: Optional[str] = None):
-    """自动写入主实体库
-
-    时间刻使用新闻的发布时间（若提供），否则回退到当前时间。
-    支持实体的原始语言表述，entities和entities_original数组的索引对应。
-    """
-    now = datetime.now(timezone.utc).isoformat()
-    # 如果提供了发布时间，则优先使用该时间；否则使用当前时间
-    base_ts = published_at or now
-    existing = {}
-    if tools.ENTITIES_FILE.exists():
-        with open(tools.ENTITIES_FILE, "r", encoding="utf-8") as f:
-            existing = json.load(f)
-    
-    # 检查是否需要更新
-    needs_update = False
-    
-    # 确保两个数组长度一致
-    for ent, ent_original in zip(entities, entities_original):
-        if ent not in existing:
-            existing[ent] = {
-                "first_seen": base_ts,
-                "sources": [source],
-                "original_forms": [ent_original]  # 新增：保存原始语言表述
-            }
-            needs_update = True
-        else:
-            # 如果已有 first_seen，且新闻时间更早，则更新为更早的时间
-            try:
-                old_ts = existing[ent].get("first_seen")
-                if old_ts and base_ts and base_ts < old_ts:
-                    existing[ent]["first_seen"] = base_ts
-                    needs_update = True
-            except Exception:
-                # 异常时不强制更新，避免破坏已有数据
-                pass
-
-            if source not in existing[ent]["sources"]:
-                existing[ent]["sources"].append(source)
-                needs_update = True
-            
-            # 更新原始语言表述（去重）
-            if "original_forms" not in existing[ent]:
-                existing[ent]["original_forms"] = []
-            if ent_original not in existing[ent]["original_forms"]:
-                existing[ent]["original_forms"].append(ent_original)
-                needs_update = True
-    
-    if needs_update:
-        with open(tools.ENTITIES_FILE, "w", encoding="utf-8") as f:
-            json.dump(existing, f, ensure_ascii=False, indent=2)
-        
-        # 异步更新知识图谱（不阻塞主流程）
-        try:
-            import threading
-            threading.Thread(target=refresh_graph, daemon=True).start()
-        except Exception as e:
-            tools.log(f"⚠️ 异步更新知识图谱失败: {e}")
-
-def update_abstract_map(extracted_list: List[Dict], source: str, published_at: Optional[str] = None):
-    abstract_map = {}
-    if tools.ABSTRACT_MAP_FILE.exists():
-        with open(tools.ABSTRACT_MAP_FILE, "r", encoding="utf-8") as f:
-            abstract_map = json.load(f)
-    
-    now = datetime.now(timezone.utc).isoformat()
-    base_ts = published_at or now
-    
-    # 检查是否需要更新
-    needs_update = False
-    for item in extracted_list:
-        key = item["abstract"]
-        if key not in abstract_map:
-            abstract_map[key] = {
-                "entities": item["entities"],
-                "event_summary": item["event_summary"],
-                "sources": [source],
-                "first_seen": base_ts
-            }
-            needs_update = True
-        else:
-            # first_seen 取最早的发布时间
-            try:
-                old_ts = abstract_map[key].get("first_seen")
-                if old_ts and base_ts and base_ts < old_ts:
-                    abstract_map[key]["first_seen"] = base_ts
-                    needs_update = True
-            except Exception:
-                pass
-
-            s_set = set(abstract_map[key]["sources"])
-            if source not in s_set:
-                s_set.add(source)
-                abstract_map[key]["sources"] = sorted(s_set)
-                needs_update = True
-    
-    if needs_update:
-        with open(tools.ABSTRACT_MAP_FILE, "w", encoding="utf-8") as f:
-            json.dump(abstract_map, f, ensure_ascii=False, indent=2)
-        
-        # 异步更新知识图谱（不阻塞主流程）
-        try:
-            import threading
-            threading.Thread(target=refresh_graph, daemon=True).start()
-        except Exception as e:
-            tools.log(f"⚠️ 异步更新知识图谱失败: {e}")
 
 # ======================
 # 主处理流程
@@ -433,6 +325,17 @@ def process_news_stream():
                 tools.log(f"⚠️ 删除文件失败: {e}")
 
     tools.log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
+    
+    # 在所有新闻处理完成后统一刷新知识图谱
+    if total_processed > 0:
+        try:
+            with tools._refresh_lock:
+                threading.Thread(target=refresh_graph, daemon=True).start()
+                tools.log("🔄 已启动知识图谱刷新线程")
+        except Exception as e:
+            tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
+    else:
+        tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
 
 
 # ======================
