@@ -8,48 +8,6 @@
       "中国自行车协会"
     ]
   },
-  "美国": {
-    "first_seen": "2025-11-17T10:05:56+00:00",
-    "sources": [
-      "rfi",
-      "中国网新闻中心",
-      "cbs news",
-      "playbill",
-      "the guardian",
-      "yahoo",
-      "franceinfo",
-      "les echos",
-      "euronews.com",
-      "gnews"
-    ],
-    "original_forms": [
-      "美国",
-      "America",
-      "U.S.",
-      "US",
-      "américain",
-      "Etats-Unis",
-      "United States"
-    ]
-  },
-  "美国总统": {
-    "first_seen": "2025-12-05T12:02:01+00:00",
-    "sources": [
-      "rfi"
-    ],
-    "original_forms": [
-      "美国总统特朗普"
-    ]
-  },
-  "特朗普": {
-    "first_seen": "2025-12-05T12:02:01+00:00",
-    "sources": [
-      "rfi"
-    ],
-    "original_forms": [
-      "特朗普"
-    ]
-  },
   "白宫": {
     "first_seen": "2025-12-05T12:02:01+00:00",
     "sources": [
@@ -96,10 +54,10 @@
   "中国": {
     "first_seen": "2025-12-05T07:23:00+00:00",
     "sources": [
-      "rfi",
       "dw",
-      "al jazeera chinese",
-      "it之家"
+      "rfi",
+      "it之家",
+      "al jazeera chinese"
     ],
     "original_forms": [
       "中国",
@@ -113,15 +71,6 @@
     ],
     "original_forms": [
       "前总统拜登"
-    ]
-  },
-  "侵华日军南京大屠杀遇难同胞纪念馆": {
-    "first_seen": "2025-12-05T12:01:00+00:00",
-    "sources": [
-      "央视网"
-    ],
-    "original_forms": [
-      "侵华日军南京大屠杀遇难同胞纪念馆"
     ]
   },
   "央视网": {
@@ -151,24 +100,6 @@
       "村田芳夫"
     ]
   },
-  "中华人民共和国": {
-    "first_seen": "2025-12-05T11:04:10+00:00",
-    "sources": [
-      "dw"
-    ],
-    "original_forms": [
-      "中国"
-    ]
-  },
-  "法兰西共和国": {
-    "first_seen": "2025-12-05T11:04:10+00:00",
-    "sources": [
-      "dw"
-    ],
-    "original_forms": [
-      "法国"
-    ]
-  },
   "习近平": {
     "first_seen": "2025-12-05T07:52:30+00:00",
     "sources": [
@@ -188,24 +119,6 @@
       "彭丽媛"
     ]
   },
-  "埃马纽埃尔·马克龙": {
-    "first_seen": "2025-12-05T11:04:10+00:00",
-    "sources": [
-      "dw"
-    ],
-    "original_forms": [
-      "马克龙"
-    ]
-  },
-  "布丽吉特·马克龙": {
-    "first_seen": "2025-12-05T11:04:10+00:00",
-    "sources": [
-      "dw"
-    ],
-    "original_forms": [
-      "布丽吉特"
-    ]
-  },
   "四川省": {
     "first_seen": "2025-12-05T11:04:10+00:00",
     "sources": [
@@ -213,15 +126,6 @@
     ],
     "original_forms": [
       "四川省"
-    ]
-  },
-  "成都市": {
-    "first_seen": "2025-12-05T11:04:10+00:00",
-    "sources": [
-      "dw"
-    ],
-    "original_forms": [
-      "成都"
     ]
   },
   "都江堰": {
@@ -244,7 +148,7 @@
     ]
   },
   "布丽吉特": {
-    "first_seen": "2025-12-05T11:18:26+00:00",
+    "first_seen": "2025-12-05T11:04:10+00:00",
     "sources": [
       "dw"
     ],
@@ -256,8 +160,8 @@
     "first_seen": "2025-12-05T07:52:30+00:00",
     "sources": [
       "dw",
-      "al jazeera chinese",
-      "franceinfo"
+      "franceinfo",
+      "al jazeera chinese"
     ],
     "original_forms": [
       "法国",
@@ -303,6 +207,7 @@
   "成都": {
     "first_seen": "2025-12-05T07:52:30+00:00",
     "sources": [
+      "dw",
       "al jazeera chinese"
     ],
     "original_forms": [
@@ -346,33 +251,54 @@
     ]
   },
   "特朗普政府": {
-    "first_seen": "2025-12-05T14:13:19+00:00",
+    "first_seen": "2025-11-17T10:05:56+00:00",
     "sources": [
+      "playbill",
+      "euronews.com",
+      "les echos",
+      "yahoo",
+      "gnews",
+      "franceinfo",
+      "rfi",
       "cbs news",
-      "euronews.com"
+      "the guardian",
+      "中国网新闻中心"
     ],
     "original_forms": [
-      "Trump administration"
+      "US",
+      "Trump administration",
+      "美国",
+      "United States",
+      "américain",
+      "Donald Trump",
+      "U.S.",
+      "美国总统特朗普",
+      "America",
+      "Etats-Unis",
+      "特朗普"
     ]
   },
   "Santa Ragione": {
     "first_seen": "2025-11-25T20:31:53+00:00",
     "sources": [
-      "the guardian",
-      "gnews"
+      "gnews",
+      "the guardian"
     ],
     "original_forms": [
-      "Santa Ragione"
+      "Santa Ragione",
+      "Santa Ragio"
     ]
   },
   "Steam": {
     "first_seen": "2025-11-25T20:31:53+00:00",
     "sources": [
-      "the guardian",
-      "gnews"
+      "gnews",
+      "the guardian"
     ],
     "original_forms": [
-      "Steam"
+      "Steam",
+      "Valve",
+      "Valve Corporation"
     ]
   },
   "Jeremy O. Harris": {
@@ -400,15 +326,6 @@
     ],
     "original_forms": [
       "Reuters"
-    ]
-  },
-  "Donald Trump": {
-    "first_seen": "2025-12-05T14:37:00+00:00",
-    "sources": [
-      "the guardian"
-    ],
-    "original_forms": [
-      "Donald Trump"
     ]
   },
   "欧盟": {
@@ -465,15 +382,6 @@
     ],
     "original_forms": [
       "Somalia"
-    ]
-  },
-  "United States": {
-    "first_seen": "2025-12-05T14:37:00+00:00",
-    "sources": [
-      "the guardian"
-    ],
-    "original_forms": [
-      "US"
     ]
   },
   "Elon Musk": {
@@ -592,17 +500,6 @@
     ],
     "original_forms": [
       "Nathaniel Spencer"
-    ]
-  },
-  "Crown Prosecution Service": {
-    "first_seen": "2025-11-15T00:00:00+00:00",
-    "sources": [
-      "bbc",
-      "gnews"
-    ],
-    "original_forms": [
-      "Crown Prosecution Service (CPS)",
-      "Crown Prosecution Service"
     ]
   },
   "伯明翰": {
@@ -758,21 +655,13 @@
       "Somerset"
     ]
   },
-  "Epic Games": {
-    "first_seen": "2025-12-02T20:01:29+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "Epic Games"
-    ]
-  },
   "Epic Games Store": {
     "first_seen": "2025-11-25T20:31:53+00:00",
     "sources": [
       "gnews"
     ],
     "original_forms": [
+      "Epic Games",
       "Epic Games Store"
     ]
   },
@@ -782,25 +671,8 @@
       "gnews"
     ],
     "original_forms": [
-      "Humble Store"
-    ]
-  },
-  "Humble": {
-    "first_seen": "2025-12-03T10:07:29+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
+      "Humble Store",
       "Humble"
-    ]
-  },
-  "Valve": {
-    "first_seen": "2025-11-26T12:26:17+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "Valve"
     ]
   },
   "GOG": {
@@ -810,24 +682,6 @@
     ],
     "original_forms": [
       "GOG"
-    ]
-  },
-  "Santa Ragio": {
-    "first_seen": "2025-11-28T17:09:12+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "Santa Ragio"
-    ]
-  },
-  "Valve Corporation": {
-    "first_seen": "2025-11-28T17:09:12+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "Valve Corporation"
     ]
   },
   "意大利": {
@@ -878,9 +732,13 @@
   "英国皇家检察署": {
     "first_seen": "2025-11-08T14:30:57+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "bbc"
     ],
     "original_forms": [
+      "Crown Prosecution Service (CPS)",
+      "Crown Prosecution Service",
+      "皇家检察署",
       "英国皇家检察署"
     ]
   },
@@ -954,15 +812,6 @@
     ],
     "original_forms": [
       "爱德华·普特曼"
-    ]
-  },
-  "皇家检察署": {
-    "first_seen": "2025-11-15T15:00:00+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "皇家检察署"
     ]
   },
   "Max Hill KC": {

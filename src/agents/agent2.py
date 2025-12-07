@@ -24,7 +24,7 @@ from ..utils.tool_function import tools
 from ..data.api_client import DataAPIPool
 from ..data.news_collector import NewsType
 from .agent1 import llm_extract_events, update_entities, update_abstract_map, NewsDeduplicator
-from .kg_interface import refresh_graph  # 导入知识图谱刷新功能
+from .agent3 import refresh_graph  # 导入知识图谱刷新功能
 
 # 初始化工具
 tools = tools()

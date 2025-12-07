@@ -27,7 +27,7 @@ from dotenv import load_dotenv
 from ..utils.tool_function import tools
 tools = tools()
 from .api_client import LLMAPIPool
-from .kg_interface import refresh_graph  # 导入知识图谱刷新功能
+from .agent3 import refresh_graph  # 导入知识图谱刷新功能
 API_POOL = None
 
 def init_api_pool():
