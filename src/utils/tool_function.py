@@ -28,13 +28,18 @@ class tools:
     DATA_DIR = ROOT_DIR / "data"
     CONFIG_DIR = ROOT_DIR / "config"
     RAW_NEWS_DIR = DATA_DIR / "raw_news"
+    DATA_TMP_DIR = DATA_DIR / "tmp"
+    RAW_NEWS_TMP_DIR = DATA_TMP_DIR / "raw_news"
     DEDUPED_NEWS_DIR = DATA_DIR / "deduped_news"
+    DEDUPED_NEWS_TMP_DIR = DATA_TMP_DIR / "deduped_news"
     LOG_FILE = DATA_DIR / "logs" / "agent1.log"
     
     # 数据文件（类变量）
     ENTITIES_FILE = DATA_DIR / "entities.json"
     EVENTS_FILE = DATA_DIR / "events.json"
     ABSTRACT_MAP_FILE = DATA_DIR / "abstract_to_event_map.json"
+    ENTITIES_TMP_FILE = DATA_TMP_DIR / "entities_tmp.json"
+    ABSTRACT_TMP_FILE = DATA_TMP_DIR / "abstract_to_event_map_tmp.json"
     PROCESSED_IDS_FILE = DATA_DIR / "processed_ids.txt"
     STOP_WORDS_FILE = DATA_DIR / "stop_words.txt"
     KNOWLEDGE_GRAPH_FILE = DATA_DIR / "knowledge_graph.json"
@@ -46,7 +51,7 @@ class tools:
         if self._initialized:
             return
         # 确保目录存在
-        for d in [self.DATA_DIR, self.RAW_NEWS_DIR, self.DEDUPED_NEWS_DIR, self.DATA_DIR / "logs"]:
+        for d in [self.DATA_DIR, self.DATA_TMP_DIR, self.RAW_NEWS_DIR, self.RAW_NEWS_TMP_DIR, self.DEDUPED_NEWS_DIR, self.DEDUPED_NEWS_TMP_DIR, self.DATA_DIR / "logs"]:
             d.mkdir(parents=True, exist_ok=True)
 
         # 实例变量

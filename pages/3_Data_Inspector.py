@@ -15,6 +15,17 @@ st.set_page_config(page_title="Data Inspector - Market Lens", page_icon="🕵️
 st.title("🕵️ Data Inspector")
 st.caption("Explore extracted entities, events, and raw news data.")
 
+# 统一清洗列，避免 Arrow 混合类型报错
+def normalize_mixed(val):
+    if val is None:
+        return ""
+    if isinstance(val, (list, dict)):
+        try:
+            return json.dumps(val, ensure_ascii=False)
+        except Exception:
+            return str(val)
+    return str(val)
+
 # --- Tab 布局 ---
 tab_entities, tab_events, tab_news = st.tabs(["🧠 Entities", "🔗 Events", "📰 Raw News"])
 
@@ -30,6 +41,8 @@ with tab_entities:
         df_ent = pd.DataFrame.from_dict(entities_data, orient='index')
         df_ent.reset_index(inplace=True)
         df_ent.rename(columns={'index': 'Entity Name'}, inplace=True)
+        if 'sources' in df_ent.columns:
+            df_ent['sources'] = df_ent['sources'].apply(normalize_mixed)
         
         # 搜索过滤
         if entity_search:
@@ -69,6 +82,8 @@ with tab_events:
         cols = ['abstract', 'event_summary', 'entities', 'sources', 'first_seen']
         existing_cols = [c for c in cols if c in df_evt.columns]
         df_evt = df_evt[existing_cols]
+        if 'sources' in df_evt.columns:
+            df_evt['sources'] = df_evt['sources'].apply(normalize_mixed)
 
         if event_search:
             mask = df_evt['abstract'].str.contains(event_search, case=False, na=False) | \

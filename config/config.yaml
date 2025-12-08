@@ -300,6 +300,32 @@ advanced_config:
   # 随机种子（用于可重复性）
   random_seed: 996
 
+# agent3 压缩与分桶配置
+agent3_config:
+  # 实体分批大小
+  entity_batch_size: 80
+  # 实体预聚类最大数量与阈值（超出则跳过预聚类）
+  entity_precluster_limit: 500
+  entity_precluster_similarity: 0.93
+
+  # 事件批量与分桶
+  event_batch_size: 15
+  event_bucket_days: 7
+  event_bucket_entity_overlap: 1
+  event_bucket_max_size: 40
+
+  # 事件预聚类控制
+  event_precluster_limit: 300
+  event_precluster_similarity: 0.82
+
+  # prompt截断，防止过长
+  max_summary_chars: 360
+
+  # 并发与速率控制
+  entity_max_workers: 6
+  event_max_workers: 6
+  rate_limit_per_sec: 6
+
 # =============================================
 # 配置版本（勿修改）
 config_version: "1.0.0"

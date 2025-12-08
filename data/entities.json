@@ -1,18 +1,4 @@
 {
-  "安世半导体": {
-    "first_seen": "2025-12-06T07:40:33+00:00",
-    "sources": [
-      "qq news",
-      {
-        "id": "66fd0837e250c9d30a58a8fd32e63535",
-        "name": "凤凰网",
-        "url": "https://news.ifeng.com"
-      }
-    ],
-    "original_forms": [
-      "Nexperia"
-    ]
-  },
   "荷兰议会": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
@@ -45,15 +31,6 @@
     "original_forms": [
       "荣湃半导体 （上海）有限公司",
       "荣湃半导体"
-    ]
-  },
-  "南方财经": {
-    "first_seen": "2025-12-06T09:42:31+00:00",
-    "sources": [
-      "东方财富"
-    ],
-    "original_forms": [
-      "南方财经"
     ]
   },
   "文森特·卡雷曼斯": {
@@ -101,82 +78,35 @@
       "VVD"
     ]
   },
-  "国际中学生体育联合会": {
-    "first_seen": "2025-12-06T06:16:00+00:00",
-    "sources": [
-      "china daily",
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
-    ],
-    "original_forms": [
-      "International School Sport Federation"
-    ]
-  },
   "中国学生体育联合会": {
     "first_seen": "2025-12-06T06:16:00+00:00",
     "sources": [
-      "china daily",
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
+      "china daily"
     ],
     "original_forms": [
+      "International School Sport Federation",
       "Chinese Student Sports Federation"
-    ]
-  },
-  "商洛市人民政府": {
-    "first_seen": "2025-12-06T06:16:00+00:00",
-    "sources": [
-      "china daily",
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
-    ],
-    "original_forms": [
-      "Shangluo Municipal People's Government"
     ]
   },
   "巴西": {
     "first_seen": "2025-12-06T06:16:00+00:00",
     "sources": [
+      "o globo",
       "china daily",
-      "gazeta do povo",
-      {
-        "id": "c1afce591abdcd7a9a075fec0c5e7cbb",
-        "name": "Poder360",
-        "url": "https://www.poder360.com.br"
-      },
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
+      "cnn brasil",
+      "infomoney",
+      "gazeta do povo"
     ],
     "original_forms": [
-      "Brazil",
+      "巴西中央银行",
       "Brasil",
-      "Brasileira"
-    ]
-  },
-  "塞尔维亚": {
-    "first_seen": "2025-12-06T06:16:00+00:00",
-    "sources": [
-      "china daily",
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
-    ],
-    "original_forms": [
-      "Serbia"
+      "Brazil",
+      "Brasileira",
+      "巴西联邦共和国",
+      "Banco Central (BC)",
+      "Brasília",
+      "巴西",
+      "Tesouro"
     ]
   },
   "保加利亚": {
@@ -238,20 +168,30 @@
   "大兴安岭": {
     "first_seen": "2025-12-06T05:32:00+00:00",
     "sources": [
-      "央视网"
+      "央视网",
+      "qq news"
     ],
     "original_forms": [
-      "大兴安岭"
+      "大兴安岭",
+      "Nexperia",
+      "安世半导体"
     ]
   },
   "荷兰": {
     "first_seen": "2025-12-06T03:37:00+00:00",
     "sources": [
       "腾讯新闻",
-      "gekisaka.jp"
+      "凤凰网",
+      "nikkansports.com",
+      "gekisaka.jp",
+      "スポニチ sponichi annex",
+      "qq news"
     ],
     "original_forms": [
+      "荷兰看守政府",
+      "荷兰王国",
       "荷兰",
+      "Dutch government",
       "オランダ"
     ]
   },
@@ -262,23 +202,6 @@
     ],
     "original_forms": [
       "经济事务大臣"
-    ]
-  },
-  "工党": {
-    "first_seen": "2025-12-06T03:37:00+00:00",
-    "sources": [
-      "凤凰网",
-      "腾讯新闻",
-      {
-        "id": "66fd0837e250c9d30a58a8fd32e63535",
-        "name": "凤凰网",
-        "url": "https://news.ifeng.com"
-      }
-    ],
-    "original_forms": [
-      "GroenLinks",
-      "工党（GL）",
-      "GL"
     ]
   },
   "绿党": {
@@ -310,28 +233,30 @@
   "华纳兄弟": {
     "first_seen": "2025-12-06T18:38:53+00:00",
     "sources": [
+      "libération",
+      "g1",
       "techcrunch"
     ],
     "original_forms": [
-      "Warner Bros."
+      "Museu do Louvre",
+      "Warner Bros.",
+      "musée du Louvre",
+      "华纳兄弟",
+      "卢浮宫"
     ]
   },
   "南非": {
     "first_seen": "2025-12-06T18:37:00+00:00",
     "sources": [
+      "la nación",
       "nbc news"
     ],
     "original_forms": [
-      "South Africa"
-    ]
-  },
-  "南非警方": {
-    "first_seen": "2025-12-06T18:37:00+00:00",
-    "sources": [
-      "nbc news"
-    ],
-    "original_forms": [
-      "police"
+      "南非",
+      "South Africa",
+      "南非警方",
+      "police",
+      "Sudáfrica"
     ]
   },
   "Blumhouse": {
@@ -341,26 +266,6 @@
     ],
     "original_forms": [
       "Blumhouse"
-    ]
-  },
-  "委内瑞拉": {
-    "first_seen": "2025-12-06T18:27:51+00:00",
-    "sources": [
-      "the new york times",
-      {
-        "id": "2640b1411388f99ee05468bf9bd9a602",
-        "name": "La Nación",
-        "url": "https://www.lanacion.com.ar"
-      },
-      {
-        "id": "3daf2c423541788248c07645b7c634ca",
-        "name": "Clarin.com",
-        "url": "https://www.clarin.com"
-      }
-    ],
-    "original_forms": [
-      "Venezuela",
-      "Venezolano"
     ]
   },
   "联合国": {
@@ -375,83 +280,46 @@
   "国际原子能机构": {
     "first_seen": "2025-12-06T18:19:05+00:00",
     "sources": [
+      "abc news",
       "cnn",
       "franceinfo"
     ],
     "original_forms": [
+      "Secretary of Defense",
+      "国际原子能机构",
+      "l'Agence internationale de l'énergie atomique (AIEA)",
       "International Atomic Energy Agency (IAEA)",
-      "l'Agence internationale de l'énergie atomique (AIEA)"
+      "国防部长"
     ]
   },
   "乌克兰": {
     "first_seen": "2025-12-06T17:14:00+00:00",
     "sources": [
-      "cnn",
+      "ura.ru",
+      "24 канал",
       "franceinfo",
-      "korrespondent.net",
-      "уніан",
       "fakty.com.ua",
-      {
-        "id": "b7f8938851261c8403f75f40eb1d8645",
-        "name": "CNN",
-        "url": "https://www.cnn.com"
-      },
-      {
-        "id": "d4361862486677369ff2ae7719b8d313",
-        "name": "УНІАН",
-        "url": "https://www.unian.ua"
-      },
-      {
-        "id": "ae8b9c98d707754fca5e1ea622855c50",
-        "name": "ТСН",
-        "url": "https://tsn.ua"
-      },
-      {
-        "id": "c2cacf55d0edaaf766e3b03fb130e4f0",
-        "name": "Интерфакс",
-        "url": "https://www.interfax.ru"
-      }
+      "obozrevatel",
+      "cnn",
+      "економічна правда",
+      "європейська правда",
+      "уніан",
+      "tve24.ru",
+      "korrespondent.net"
     ],
     "original_forms": [
-      "Ukraine",
-      "України",
-      "Ukrainian",
+      "Украины",
+      "українськими",
       "Україна",
+      "Ukrainian",
+      "Украине",
+      "Умєров",
+      "Киеве",
+      "Ukraine",
+      "Зеленський",
+      "України",
       "Україні",
       "украинского"
-    ]
-  },
-  "印第安纳州": {
-    "first_seen": "2025-12-06T18:19:00+00:00",
-    "sources": [
-      "oregonlive.com"
-    ],
-    "original_forms": [
-      "Indiana"
-    ]
-  },
-  "美国": {
-    "first_seen": "2025-11-13T04:51:00+00:00",
-    "sources": [
-      "gnews",
-      "oregonlive.com",
-      "infobae",
-      "franceinfo",
-      "o globo",
-      "r7",
-      "news.cnyes.com"
-    ],
-    "original_forms": [
-      "Сполучених Штатів",
-      "США",
-      "Republican senators",
-      "美国",
-      "US",
-      "Estados Unidos",
-      "美國",
-      "New York",
-      "中美",
-      "米国"
     ]
   },
   "Jane Fonda": {
@@ -475,10 +343,14 @@
   "苹果公司": {
     "first_seen": "2025-12-06T18:11:53+00:00",
     "sources": [
-      "bloomberg.com"
+      "bloomberg.com",
+      "уніан",
+      "gnews"
     ],
     "original_forms": [
-      "Apple Inc."
+      "Apple Inc.",
+      "Apple",
+      "苹果公司"
     ]
   },
   "硅谷": {
@@ -493,21 +365,31 @@
   "埃隆·马斯克": {
     "first_seen": "2025-12-05T15:18:56+00:00",
     "sources": [
+      "腾讯新闻",
+      "gnews",
       "le monde.fr",
-      "gnews"
+      "凤凰网"
     ],
     "original_forms": [
+      "工党（GL）",
+      "GroenLinks",
+      "GL",
+      "工党",
+      "埃隆·马斯克",
       "Elon Musk"
     ]
   },
   "欧盟": {
     "first_seen": "2025-12-05T15:18:56+00:00",
     "sources": [
-      "gnews",
-      "le monde.fr"
+      "le monde.fr",
+      "eadaily",
+      "gnews"
     ],
     "original_forms": [
+      "欧洲联盟",
       "欧盟",
+      "ЕС",
       "EU",
       "l’Union européenne"
     ]
@@ -527,7 +409,8 @@
     "first_seen": "2025-12-06T18:02:46+00:00",
     "sources": [
       "l'humanité",
-      "le monde.fr"
+      "le monde.fr",
+      "libération"
     ],
     "original_forms": [
       "Jean-Luc Mélenchon"
@@ -536,10 +419,12 @@
   "法国国民议会": {
     "first_seen": "2025-12-06T18:05:41+00:00",
     "sources": [
-      "l'humanité"
+      "l'humanité",
+      "libération"
     ],
     "original_forms": [
-      "Assemblée nationale"
+      "Assemblée nationale",
+      "Assemblée"
     ]
   },
   "不屈法国": {
@@ -590,10 +475,16 @@
   "塞内加尔共和国": {
     "first_seen": "2025-12-06T17:46:38+00:00",
     "sources": [
-      "franceinfo"
+      "the new york times",
+      "franceinfo",
+      "clarin.com"
     ],
     "original_forms": [
-      "le Sénégal"
+      "le Sénégal",
+      "塞内加尔共和国",
+      "Venezolano",
+      "委内瑞拉",
+      "Venezuela"
     ]
   },
   "挪威王国": {
@@ -607,15 +498,6 @@
       "la Norvège"
     ]
   },
-  "华盛顿哥伦比亚特区": {
-    "first_seen": "2025-12-06T17:46:38+00:00",
-    "sources": [
-      "franceinfo"
-    ],
-    "original_forms": [
-      "Washington"
-    ]
-  },
   "法国": {
     "first_seen": "2025-11-07T11:03:40+00:00",
     "sources": [
@@ -623,7 +505,8 @@
       "rfi",
       "franceinfo",
       "le parisien",
-      "奇摩新聞"
+      "奇摩新聞",
+      "gnews"
     ],
     "original_forms": [
       "París",
@@ -631,16 +514,8 @@
       "Франции",
       "la France",
       "France",
-      "Франції"
-    ]
-  },
-  "安省": {
-    "first_seen": "2025-12-06T17:40:00+00:00",
-    "sources": [
-      "le parisien"
-    ],
-    "original_forms": [
-      "Ain"
+      "Франції",
+      "法国"
     ]
   },
   "Collonges": {
@@ -750,10 +625,14 @@
   "巴拿马": {
     "first_seen": "2025-12-06T18:01:08+00:00",
     "sources": [
-      "england football"
+      "england football",
+      "infobae"
     ],
     "original_forms": [
-      "Panama"
+      "墨西哥",
+      "Panama",
+      "México",
+      "巴拿马"
     ]
   },
   "帛琉": {
@@ -775,13 +654,12 @@
     "first_seen": "2025-11-18T08:17:42+00:00",
     "sources": [
       "yahoo news - hk",
-      {
-        "id": "054a48b826bb57c784770ab98b33e0d0",
-        "name": "Yahoo News - HK",
-        "url": "https://hk.news.yahoo.com"
-      }
+      "china daily"
     ],
     "original_forms": [
+      "商洛市人民政府",
+      "岑浩辉",
+      "Shangluo Municipal People's Government",
       "岑浩輝"
     ]
   },
@@ -802,16 +680,22 @@
   "日本": {
     "first_seen": "2025-11-14T03:27:42+00:00",
     "sources": [
-      "nikkansports.com",
       "轉角國際udn global",
-      "大紀元",
+      "dw",
+      "yahoo!ニュース",
       "纽约时报中文网",
-      "gekisaka.jp"
+      "gekisaka.jp",
+      "nikkansports.com",
+      "大紀元",
+      "the telegraph",
+      "gnews"
     ],
     "original_forms": [
-      "ジャパン",
+      "日本",
       "Japan",
-      "日本"
+      "ジャパン",
+      "Japanese",
+      "日本国"
     ]
   },
   "高市早苗": {
@@ -833,7 +717,8 @@
         "id": "9845ba8ad62e421b65009850185744e4",
         "name": "纽约时报中文网",
         "url": "https://cn.nytimes.com"
-      }
+      },
+      "gnews"
     ],
     "original_forms": [
       "高市早苗",
@@ -848,10 +733,12 @@
         "id": "9845ba8ad62e421b65009850185744e4",
         "name": "纽约时报中文网",
         "url": "https://cn.nytimes.com"
-      }
+      },
+      "gnews"
     ],
     "original_forms": [
-      "習近平"
+      "習近平",
+      "习近平"
     ]
   },
   "暴雪": {
@@ -911,15 +798,6 @@
       "Waymo LLC"
     ]
   },
-  "圣彼得堡泽尼特足球俱乐部": {
-    "first_seen": "2025-12-06T18:32:33+00:00",
-    "sources": [
-      "sportbox"
-    ],
-    "original_forms": [
-      "«Зенит»"
-    ]
-  },
   "阿克隆足球俱乐部": {
     "first_seen": "2025-12-06T18:32:33+00:00",
     "sources": [
@@ -950,10 +828,14 @@
   "安德烈·叶尔马克": {
     "first_seen": "2025-12-06T17:16:00+00:00",
     "sources": [
+      "poder360",
       "eadaily"
     ],
     "original_forms": [
-      "Андрей Ермак"
+      "Tarcísio de Freitas",
+      "Андрей Ермак",
+      "安德烈·叶尔马克",
+      "塔西西奥·德弗雷塔斯"
     ]
   },
   "彼得·扬": {
@@ -995,10 +877,13 @@
   "科睿唯安": {
     "first_seen": "2025-12-06T15:32:00+00:00",
     "sources": [
-      "3dnews"
+      "3dnews",
+      "gnews"
     ],
     "original_forms": [
-      "Clarivate"
+      "科睿唯安",
+      "Clarivate",
+      "科睿唯安公司"
     ]
   },
   "顿涅茨克州": {
@@ -1048,10 +933,14 @@
   "基辅迪纳摩": {
     "first_seen": "2025-12-06T17:56:00+00:00",
     "sources": [
+      "sportbox",
       "champion.com.ua"
     ],
     "original_forms": [
-      "Динамо"
+      "基辅迪纳摩",
+      "圣彼得堡泽尼特足球俱乐部",
+      "Динамо",
+      "«Зенит»"
     ]
   },
   "库德里夫卡": {
@@ -1063,28 +952,11 @@
       "Кудрівку"
     ]
   },
-  "Xiaomi Corporation": {
-    "first_seen": "2025-12-06T17:50:00+00:00",
-    "sources": [
-      "уніан"
-    ],
-    "original_forms": [
-      "Xiaomi"
-    ]
-  },
-  "Redmi 12C": {
-    "first_seen": "2025-12-06T17:50:00+00:00",
-    "sources": [
-      "уніан"
-    ],
-    "original_forms": [
-      "Redmi 12C"
-    ]
-  },
   "Poco C55": {
     "first_seen": "2025-12-06T17:50:00+00:00",
     "sources": [
-      "уніан"
+      "уніан",
+      "gnews"
     ],
     "original_forms": [
       "Poco C55"
@@ -1093,9 +965,12 @@
   "乌克兰国家电力公司": {
     "first_seen": "2025-12-06T17:45:00+00:00",
     "sources": [
-      "уніан"
+      "уніан",
+      "економічна правда"
     ],
     "original_forms": [
+      "乌克兰国家能源公司",
+      "乌克兰国家电力公司",
       "\"Укренерго\""
     ]
   },
@@ -1120,69 +995,35 @@
   "埃马纽埃尔·马克龙": {
     "first_seen": "2025-12-06T17:14:00+00:00",
     "sources": [
+      "la política online",
       "fakty.com.ua",
-      {
-        "id": "ce220ee834949cc829facb394da9f7b7",
-        "name": "RFI",
-        "url": "https://www.rfi.fr"
-      },
-      {
-        "id": "abcc9dfdb898078e73b888c37d35eba1",
-        "name": "EADaily",
-        "url": "https://eadaily.com"
-      }
+      "gnews"
     ],
     "original_forms": [
       "Еммануель Макрон",
+      "Эммануэль Макрон",
+      "Milei",
+      "埃马纽埃尔·马克龙",
       "Macron",
-      "Эммануэль Макрон"
+      "哈维尔·米莱"
     ]
   },
   "弗拉基米尔·泽连斯基": {
     "first_seen": "2025-12-06T17:14:00+00:00",
     "sources": [
-      "eadaily",
+      "tve24.ru",
       "fakty.com.ua",
-      {
-        "id": "abcc9dfdb898078e73b888c37d35eba1",
-        "name": "EADaily",
-        "url": "https://eadaily.com"
-      }
+      "європейська правда",
+      "eadaily"
     ],
     "original_forms": [
+      "Лондоні",
+      "Владимира Зеленского",
       "Володимиром Зеленським",
-      "Зеленский",
-      "Владимиром Зеленским"
-    ]
-  },
-  "基尔·斯塔默": {
-    "first_seen": "2025-12-06T17:14:00+00:00",
-    "sources": [
-      "fakty.com.ua"
-    ],
-    "original_forms": [
-      "Кіром Страмером"
-    ]
-  },
-  "德意志联邦共和国": {
-    "first_seen": "2025-12-06T17:14:00+00:00",
-    "sources": [
-      "fakty.com.ua",
-      {
-        "id": "5618c7c5e7276baddc4cc4d2dd6b963d",
-        "name": "ｄメニューニュース",
-        "url": "https://topics.smt.docomo.ne.jp"
-      },
-      {
-        "id": "f8bceab28da05bf9ed8678be4690bf64",
-        "name": "Le Monde.fr",
-        "url": "https://www.lemonde.fr"
-      }
-    ],
-    "original_forms": [
-      "Мерц",
-      "ドイツ",
-      "Allemagne"
+      "弗拉基米尔·泽连斯基",
+      "Владимиром Зеленским",
+      "泽连斯基",
+      "Зеленский"
     ]
   },
   "维尔纽斯机场": {
@@ -1221,41 +1062,39 @@
       "濱崎步"
     ]
   },
-  "上海": {
-    "first_seen": "2025-12-04T00:27:42+00:00",
-    "sources": [
-      "奇摩新聞"
-    ],
-    "original_forms": [
-      "上海"
-    ]
-  },
   "英国": {
     "first_seen": "2025-12-04T00:27:42+00:00",
     "sources": [
       "奇摩新聞",
       "the telegraph",
-      "fakty.com.ua"
+      "fakty.com.ua",
+      "スポニチ sponichi annex",
+      "gnews"
     ],
     "original_forms": [
       "英國",
       "Великої Британії",
-      "Britain"
+      "Britain",
+      "英国"
     ]
   },
   "马来西亚": {
     "first_seen": "2025-11-21T06:23:51+00:00",
     "sources": [
-      "bbc"
+      "bbc",
+      "大紀元",
+      "gnews"
     ],
     "original_forms": [
-      "馬來西亞"
+      "馬來西亞",
+      "马来西亚"
     ]
   },
   "范冰冰": {
     "first_seen": "2025-11-21T06:23:51+00:00",
     "sources": [
-      "bbc"
+      "bbc",
+      "大紀元"
     ],
     "original_forms": [
       "范冰冰"
@@ -1291,15 +1130,6 @@
     ],
     "original_forms": [
       "范瑋琪"
-    ]
-  },
-  "台湾交通部": {
-    "first_seen": "2025-11-14T03:45:40+00:00",
-    "sources": [
-      "今周刊"
-    ],
-    "original_forms": [
-      "交通部"
     ]
   },
   "Urwerk": {
@@ -1343,12 +1173,14 @@
         "id": "739b615c65becd670ee152cab7f8c439",
         "name": "The Straits Times",
         "url": "https://www.straitstimes.com"
-      }
+      },
+      "gnews"
     ],
     "original_forms": [
       "Singapore",
       "SINGAPORE",
-      "シンガポール"
+      "シンガポール",
+      "新加坡"
     ]
   },
   "东帝汶": {
@@ -1361,21 +1193,29 @@
     ]
   },
   "香港特别行政区": {
-    "first_seen": "2025-12-06T15:07:57+00:00",
+    "first_seen": "2025-12-06T14:21:17+00:00",
     "sources": [
-      "south china morning post"
+      "south china morning post",
+      "bbc",
+      "gnews"
     ],
     "original_forms": [
-      "Hong Kong"
+      "Hong Kong",
+      "香港",
+      "香港特别行政区"
     ]
   },
   "卫生署卫生防护中心": {
     "first_seen": "2025-12-06T15:07:57+00:00",
     "sources": [
+      "le parisien",
       "south china morning post"
     ],
     "original_forms": [
-      "Centre for Health Protection"
+      "卫生署卫生防护中心",
+      "Centre for Health Protection",
+      "安省",
+      "Ain"
     ]
   },
   "Dispatch": {
@@ -1505,22 +1345,17 @@
       "Suriname"
     ]
   },
-  "北大西洋公约组织": {
-    "first_seen": "2025-12-06T18:46:10+00:00",
-    "sources": [
-      "r7"
-    ],
-    "original_forms": [
-      "Otan"
-    ]
-  },
   "欧洲": {
     "first_seen": "2025-12-06T18:46:10+00:00",
     "sources": [
-      "r7"
+      "r7",
+      "la croix",
+      "gnews"
     ],
     "original_forms": [
-      "Europa"
+      "Europa",
+      "Europe",
+      "欧洲"
     ]
   },
   "Correios": {
@@ -1530,15 +1365,6 @@
     ],
     "original_forms": [
       "Correios"
-    ]
-  },
-  "巴西国家财政部": {
-    "first_seen": "2025-12-06T18:45:57+00:00",
-    "sources": [
-      "o globo"
-    ],
-    "original_forms": [
-      "Tesouro"
     ]
   },
   "Datafolha": {
@@ -1596,22 +1422,18 @@
       "Nova Jersey"
     ]
   },
-  "巴西中央银行": {
-    "first_seen": "2025-12-06T18:02:37+00:00",
-    "sources": [
-      "infomoney"
-    ],
-    "original_forms": [
-      "Banco Central (BC)"
-    ]
-  },
   "圣保罗州": {
     "first_seen": "2025-12-06T17:57:32+00:00",
     "sources": [
+      "cnn brasil",
+      "poder360",
       "g1"
     ],
     "original_forms": [
-      "SP"
+      "SP",
+      "São Paulo",
+      "圣保罗州",
+      "圣保罗市"
     ]
   },
   "圣保罗州公共安全部": {
@@ -1632,15 +1454,6 @@
       "batalhão dos policiais militares"
     ]
   },
-  "哈维尔·米莱": {
-    "first_seen": "2025-12-06T18:30:07+00:00",
-    "sources": [
-      "la política online"
-    ],
-    "original_forms": [
-      "Milei"
-    ]
-  },
   "路易斯·卡普托": {
     "first_seen": "2025-12-06T18:30:07+00:00",
     "sources": [
@@ -1651,12 +1464,19 @@
     ]
   },
   "阿根廷": {
-    "first_seen": "2025-12-06T18:30:07+00:00",
+    "first_seen": "2025-12-04T16:02:23+00:00",
     "sources": [
-      "la política online"
+      "gnews",
+      "la nación",
+      "la política online",
+      "tyc sports"
     ],
     "original_forms": [
-      "Argentina"
+      "Argentina",
+      "argentino",
+      "阿根廷共和国",
+      "阿根廷",
+      "Los Pumas 7s"
     ]
   },
   "La Libertad Avanza": {
@@ -1692,9 +1512,13 @@
   "国际足联": {
     "first_seen": "2025-12-06T18:02:00+00:00",
     "sources": [
+      "r7",
       "infobae"
     ],
     "original_forms": [
+      "北大西洋公约组织",
+      "Otan",
+      "国际足联",
       "FIFA"
     ]
   },
@@ -1716,22 +1540,14 @@
         "id": "f22da91c498603eb4d447ae38063cc99",
         "name": "Українська правда",
         "url": "https://www.pravda.com.ua"
-      }
+      },
+      "букви"
     ],
     "original_forms": [
       "Canadá",
       "カナダ",
       "Канадою",
       "Канади"
-    ]
-  },
-  "墨西哥": {
-    "first_seen": "2025-12-06T18:02:00+00:00",
-    "sources": [
-      "infobae"
-    ],
-    "original_forms": [
-      "México"
     ]
   },
   "阿根廷商业工会": {
@@ -1828,10 +1644,16 @@
   "唐纳德·特朗普": {
     "first_seen": "2025-12-05T15:23:18+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "fakty.com.ua",
+      "the guardian"
     ],
     "original_forms": [
-      "唐纳德·特朗普"
+      "唐纳德·特朗普",
+      "Trump",
+      "基尔·斯塔默",
+      "Donald Trump",
+      "Кіром Страмером"
     ]
   },
   "Pershing Square Capital Management": {
@@ -1856,11 +1678,13 @@
     "first_seen": "2025-12-04T18:06:18+00:00",
     "sources": [
       "тарантас ньюс",
-      "gnews"
+      "gnews",
+      "the guardian"
     ],
     "original_forms": [
       "得克萨斯州",
-      "Техасе"
+      "Техасе",
+      "Texas"
     ]
   },
   "乔治亚州": {
@@ -1890,22 +1714,16 @@
       "Replit"
     ]
   },
-  "巴尔的摩市": {
-    "first_seen": "2025-12-03T18:10:21+00:00",
-    "sources": [
-      "gnews"
-    ],
-    "original_forms": [
-      "巴尔的摩市"
-    ]
-  },
   "圣路易斯市": {
     "first_seen": "2025-12-03T18:10:21+00:00",
     "sources": [
+      "obozrevatel",
       "gnews"
     ],
     "original_forms": [
-      "圣路易斯市"
+      "圣路易斯市",
+      "Києва",
+      "基辅"
     ]
   },
   "匹兹堡市": {
@@ -1914,7 +1732,8 @@
       "gnews"
     ],
     "original_forms": [
-      "匹兹堡市"
+      "匹兹堡市",
+      "巴尔的摩市"
     ]
   },
   "Anthropic": {
@@ -1968,13 +1787,14 @@
     ]
   },
   "Amazon.com Inc.": {
-    "first_seen": "2025-12-02T15:48:00+00:00",
+    "first_seen": "2025-11-11T06:55:00+00:00",
     "sources": [
       "gnews"
     ],
     "original_forms": [
-      "Amazon.com Inc.",
-      "Amazon UK"
+      "Amazon UK",
+      "Amazon",
+      "Amazon.com Inc."
     ]
   },
   "Meta Platforms Inc.": {
@@ -2027,10 +1847,13 @@
   "坦帕": {
     "first_seen": "2025-11-21T14:45:17+00:00",
     "sources": [
-      "gnews"
+      "gnews",
+      "oregonlive.com"
     ],
     "original_forms": [
-      "坦帕"
+      "印第安纳州",
+      "坦帕",
+      "Indiana"
     ]
   },
   "新奥尔良": {
@@ -2077,7 +1900,8 @@
       "gnews"
     ],
     "original_forms": [
-      "Apple Inc."
+      "Apple Inc.",
+      "Apple"
     ]
   },
   "澳大利亚": {
@@ -2205,41 +2029,13 @@
       "Alabama"
     ]
   },
-  "佐治亚大学": {
-    "first_seen": "2025-12-07T00:47:01+00:00",
-    "sources": [
-      {
-        "id": "b356d47a35dfffa723fc8131b36c3ed1",
-        "name": "AP News",
-        "url": "https://apnews.com"
-      },
-      {
-        "id": "1213ab3f5e360256b89d3b205e3e8e48",
-        "name": "Yahoo Sports",
-        "url": "https://sports.yahoo.com"
-      }
-    ],
-    "original_forms": [
-      "Georgia"
-    ]
-  },
   "东南联盟": {
     "first_seen": "2025-12-07T00:47:01+00:00",
-    "sources": [
-      {
-        "id": "b356d47a35dfffa723fc8131b36c3ed1",
-        "name": "AP News",
-        "url": "https://apnews.com"
-      },
-      {
-        "id": "1213ab3f5e360256b89d3b205e3e8e48",
-        "name": "Yahoo Sports",
-        "url": "https://sports.yahoo.com"
-      }
-    ],
+    "sources": [],
     "original_forms": [
       "Southeastern Conference",
-      "SEC"
+      "SEC",
+      "Georgia"
     ]
   },
   "莫斯科24电视台": {
@@ -2258,69 +2054,29 @@
   "叶夫根尼娅·奥博拉什维利": {
     "first_seen": "2025-12-07T01:31:01+00:00",
     "sources": [
-      {
-        "id": "482e12558d35c87c58648546f9c7c873",
-        "name": "tve24.ru",
-        "url": "https://tve24.ru"
-      }
+      "eadaily"
     ],
     "original_forms": [
+      "叶夫根尼娅·奥博拉什维利",
+      "Кая Каллас",
+      "卡娅·卡拉斯",
       "Евгения Оболашвили"
     ]
   },
-  "中国": {
-    "first_seen": "2025-11-07T11:03:40+00:00",
-    "sources": [
-      "qq news",
-      "china daily",
-      "轉角國際udn global",
-      "大紀元",
-      "纽约时报中文网",
-      "rfi",
-      "3dnews",
-      "bbc",
-      "奇摩新聞",
-      "ludens.com.tw",
-      "央视网",
-      "news.cnyes.com"
-    ],
-    "original_forms": [
-      "中華人民共和國",
-      "China",
-      "Китая",
-      "中國",
-      "中国",
-      "中方",
-      "中共"
-    ]
-  },
   "印度": {
-    "first_seen": "2025-12-06T23:16:00+00:00",
+    "first_seen": "2025-12-04T11:12:24+00:00",
     "sources": [
-      {
-        "id": "92e7e89f421accb3d56cecfb428a7d20",
-        "name": "20 Minutes",
-        "url": "https://www.20minutes.fr"
-      },
-      {
-        "id": "776b9efe5cc2aef8ea8147e620e89dbb",
-        "name": "G1",
-        "url": "https://g1.globo.com"
-      },
-      {
-        "id": "f8bceab28da05bf9ed8678be4690bf64",
-        "name": "Le Monde.fr",
-        "url": "https://www.lemonde.fr"
-      },
-      {
-        "id": "558a003a7a0164e924408edec7e99f99",
-        "name": "The Guardian",
-        "url": "https://www.theguardian.com"
-      }
+      "the straits times",
+      "gnews"
     ],
     "original_forms": [
-      "Inde",
       "Índia",
+      "Directorate General of Civil Aviation",
+      "Inde",
+      "印度民航总局",
+      "印度消费者事务部",
+      "印度",
+      "Department of Consumer Affairs",
       "Indian"
     ]
   },
@@ -2341,7 +2097,8 @@
         "id": "558a003a7a0164e924408edec7e99f99",
         "name": "The Guardian",
         "url": "https://www.theguardian.com"
-      }
+      },
+      "midi libre"
     ],
     "original_forms": [
       "Goa"
@@ -2376,11 +2133,16 @@
   "台湾地区": {
     "first_seen": "2025-11-14T03:45:40+00:00",
     "sources": [
-      "bbc"
+      "bbc",
+      "china daily",
+      "gnews"
     ],
     "original_forms": [
+      "台灣",
       "台湾",
-      "台灣"
+      "台湾地区",
+      "塞尔维亚",
+      "Serbia"
     ]
   },
   "凤凰卫视": {
@@ -2438,24 +2200,23 @@
   "宫内庁": {
     "first_seen": "2025-12-07T01:00:00+00:00",
     "sources": [
-      {
-        "id": "a47c5803e915ad5cf0347bed8c5e1efb",
-        "name": "AERA DIGITAL",
-        "url": "https://dot.asahi.com"
-      }
+      "dw"
     ],
     "original_forms": [
-      "宮内庁"
+      "宫内庁",
+      "宮内庁",
+      "小泉进次郎"
     ]
   },
   "Samsung": {
-    "first_seen": "2025-12-07T01:00:00+00:00",
+    "first_seen": "2025-11-26T14:15:18+00:00",
     "sources": [
       {
         "id": "ae2bb5a606a3557c4126b9e3d2bf78ff",
         "name": "ITmedia",
         "url": "https://www.itmedia.co.jp"
-      }
+      },
+      "gnews"
     ],
     "original_forms": [
       "Samsung"
@@ -2639,14 +2400,13 @@
   "卡洛斯·博索纳罗": {
     "first_seen": "2025-12-07T00:39:00+00:00",
     "sources": [
-      {
-        "id": "24820cd0860b0047f982593e107c3b1b",
-        "name": "Estado de Minas",
-        "url": "https://www.em.com.br"
-      }
+      "bbc"
     ],
     "original_forms": [
-      "Carlos Bolsonaro"
+      "Nigel Farage",
+      "Carlos Bolsonaro",
+      "卡洛斯·博索纳罗",
+      "奈杰尔·法拉奇"
     ]
   },
   "美国交通部": {
@@ -2672,14 +2432,12 @@
   "特朗普政府": {
     "first_seen": "2025-12-07T00:32:47+00:00",
     "sources": [
-      {
-        "id": "2f580dc49292a1caf59cd86dd3c9e60b",
-        "name": "The New York Times",
-        "url": "https://www.nytimes.com"
-      }
+      "第一财经"
     ],
     "original_forms": [
-      "Trump administration"
+      "Trump administration",
+      "特朗普政府",
+      "美国白宫"
     ]
   },
   "波尔塔瓦州": {
@@ -2841,10 +2599,12 @@
         "id": "35b202766a96680354c8c6c906f23c39",
         "name": "天气网",
         "url": "http://news.weather.com.cn"
-      }
+      },
+      "gnews"
     ],
     "original_forms": [
-      "新疆乌鲁木齐、阿勒泰等地"
+      "新疆乌鲁木齐、阿勒泰等地",
+      "新疆维吾尔自治区"
     ]
   },
   "乌鲁木齐市人民政府": {
@@ -3153,22 +2913,6 @@
       "Фастів"
     ]
   },
-  "俄罗斯联邦": {
-    "first_seen": "2025-12-06T17:49:00+00:00",
-    "sources": [
-      "fakty.com.ua",
-      "новини live",
-      "korrespondent.net"
-    ],
-    "original_forms": [
-      "Russia",
-      "РФ",
-      "Росія",
-      "росіяни",
-      "російські окупанти",
-      "Російські війська"
-    ]
-  },
   "阿拉斯加州": {
     "first_seen": "2025-12-06T23:17:00+00:00",
     "sources": [
@@ -3221,27 +2965,6 @@
       "Lionel Messi"
     ]
   },
-  "迈阿密国际队": {
-    "first_seen": "2025-12-06T22:59:38+00:00",
-    "sources": [],
-    "original_forms": [
-      "Miami",
-      "Inter Miami"
-    ]
-  },
-  "大卫·贝克汉姆": {
-    "first_seen": "2025-12-06T22:59:38+00:00",
-    "sources": [
-      {
-        "id": "919eae98b6fa8a18ed8fab7d24375a1c",
-        "name": "talkSPORT",
-        "url": "https://talksport.com"
-      }
-    ],
-    "original_forms": [
-      "David Beckham"
-    ]
-  },
   "新埃斯帕塔州": {
     "first_seen": "2025-12-06T22:58:40+00:00",
     "sources": [
@@ -3271,13 +2994,12 @@
   "卡尔瓦多斯省": {
     "first_seen": "2025-12-06T22:56:00+00:00",
     "sources": [
-      {
-        "id": "4c1a44e6e0f469dc804ccacf842c3b6f",
-        "name": "Le Parisien",
-        "url": "https://www.leparisien.fr"
-      }
+      "metrópoles"
     ],
     "original_forms": [
+      "卡尔瓦多斯省",
+      "圣卡塔琳娜州",
+      "Santa Catarina",
       "Calvados"
     ]
   },
@@ -3309,15 +3031,15 @@
   },
   "国际迈阿密": {
     "first_seen": "2025-12-06T22:32:01+00:00",
-    "sources": [
-      {
-        "id": "91a31b7043c816d44f7312ccc21ff192",
-        "name": "sport-interfax.ru",
-        "url": "https://www.sport-interfax.ru"
-      }
-    ],
+    "sources": [],
     "original_forms": [
-      "\"Интер Майами\""
+      "大卫·贝克汉姆",
+      "Inter Miami",
+      "\"Интер Майами\"",
+      "David Beckham",
+      "迈阿密国际队",
+      "Miami",
+      "国际迈阿密"
     ]
   },
   "温哥华白帽": {
@@ -3343,28 +3065,10 @@
   },
   "丰田自动车株式会社": {
     "first_seen": "2025-12-06T22:10:27+00:00",
-    "sources": [
-      {
-        "id": "2aac4188d6c4df23d308071bf59f46ac",
-        "name": "VAGUE(ヴァーグ)",
-        "url": "https://vague.style"
-      }
-    ],
+    "sources": [],
     "original_forms": [
+      "豊田章男",
       "トヨタ自動車"
-    ]
-  },
-  "丰田章男": {
-    "first_seen": "2025-12-06T22:10:27+00:00",
-    "sources": [
-      {
-        "id": "2aac4188d6c4df23d308071bf59f46ac",
-        "name": "VAGUE(ヴァーグ)",
-        "url": "https://vague.style"
-      }
-    ],
-    "original_forms": [
-      "豊田章男"
     ]
   },
   "美联社": {
@@ -3487,13 +3191,12 @@
   "埃迪·豪": {
     "first_seen": "2025-12-06T21:00:00+00:00",
     "sources": [
-      {
-        "id": "4fe167fc8c4e91994a479ec9842bbc10",
-        "name": "Geordie Boot Boys",
-        "url": "https://www.geordiebootboys.com"
-      }
+      "autosport web"
     ],
     "original_forms": [
+      "Oscar Piastri",
+      "奥斯卡·皮亚斯特里",
+      "埃迪·豪",
       "Eddie Howe"
     ]
   },
@@ -3510,31 +3213,14 @@
       "Burnley"
     ]
   },
-  "荷兰看守政府": {
-    "first_seen": "2025-12-06T03:37:00+00:00",
-    "sources": [
-      "nikkansports.com",
-      "腾讯新闻",
-      "qq news",
-      "凤凰网"
-    ],
-    "original_forms": [
-      "荷兰看守政府",
-      "荷兰王国",
-      "オランダ",
-      "Dutch government"
-    ]
-  },
   "卡雷曼斯": {
     "first_seen": "2025-12-06T15:11:00+00:00",
     "sources": [
-      {
-        "id": "248c633c95475a2514a337f50872c740",
-        "name": "QQ News",
-        "url": "https://news.qq.com"
-      }
+      "tve24.ru"
     ],
     "original_forms": [
+      "Елену",
+      "叶莲娜",
       "卡雷曼斯"
     ]
   },
@@ -3550,14 +3236,13 @@
   "大阪观光局": {
     "first_seen": "2025-12-01T01:07:00+00:00",
     "sources": [
-      {
-        "id": "c6c58860d5157a4328fed63d53d6ed93",
-        "name": "大紀元",
-        "url": "https://www.epochtimes.com"
-      }
+      "yahoo!ニュース"
     ],
     "original_forms": [
-      "大阪觀光局"
+      "大岛优子",
+      "大島優子",
+      "大阪觀光局",
+      "大阪观光局"
     ]
   },
   "澳门特别行政区": {
@@ -3596,11 +3281,7 @@
   "交通部": {
     "first_seen": "2025-11-14T03:45:40+00:00",
     "sources": [
-      {
-        "id": "ea0aabea498d0f643893f16ad39e2aa8",
-        "name": "今周刊",
-        "url": "https://www.businesstoday.com.tw"
-      }
+      "今周刊"
     ],
     "original_forms": [
       "交通部"
@@ -3617,6 +3298,3219 @@
     ],
     "original_forms": [
       "《費加羅報》"
+    ]
+  },
+  "马迭尔文化旅游投资集团有限公司": {
+    "first_seen": "2025-12-07T15:06:26+00:00",
+    "sources": [
+      "hrbtv.net"
+    ],
+    "original_forms": [
+      "马迭尔文化旅游投资集团有限公司"
+    ]
+  },
+  "美国战略与国际问题研究中心": {
+    "first_seen": "2025-12-07T14:06:00+00:00",
+    "sources": [
+      "第一财经"
+    ],
+    "original_forms": [
+      "美国战略与国际问题研究中心（CSIS）"
+    ]
+  },
+  "美国外交关系协会": {
+    "first_seen": "2025-12-07T14:06:00+00:00",
+    "sources": [
+      "第一财经"
+    ],
+    "original_forms": [
+      "美国外交关系协会（CFR）"
+    ]
+  },
+  "布鲁金斯学会": {
+    "first_seen": "2025-12-07T14:06:00+00:00",
+    "sources": [
+      "第一财经"
+    ],
+    "original_forms": [
+      "布鲁金斯学会"
+    ]
+  },
+  "日本防卫省": {
+    "first_seen": "2025-12-06T23:36:15+00:00",
+    "sources": [
+      "dw",
+      "gnews"
+    ],
+    "original_forms": [
+      "日本防务省",
+      "日本防卫省"
+    ]
+  },
+  "中国共产党中央委员会": {
+    "first_seen": "2025-12-07T09:01:00+00:00",
+    "sources": [
+      "thepaper.cn"
+    ],
+    "original_forms": [
+      "中共中央"
+    ]
+  },
+  "中国民族声乐艺术研究会": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "中国民族声乐艺术研究会"
+    ]
+  },
+  "广州市文化广电旅游局": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "广州市文化广电旅游局"
+    ]
+  },
+  "中国音乐剧创演委员会": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "中国音乐剧创演委员会"
+    ]
+  },
+  "北京国韵艺术交流有限公司": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "北京国韵文化传媒集团有限公司",
+      "北京国韵艺术交流有限公司"
+    ]
+  },
+  "广州粤剧院有限公司": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "广州粤剧院有限公司"
+    ]
+  },
+  "红线女艺术中心": {
+    "first_seen": "2025-12-07T08:15:10+00:00",
+    "sources": [
+      "羊城晚报"
+    ],
+    "original_forms": [
+      "红线女艺术中心"
+    ]
+  },
+  "中国全国人民代表大会常务委员会": {
+    "first_seen": "2025-12-07T05:04:09+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "中国全国人大常委会"
+    ]
+  },
+  "香港特别行政区立法会": {
+    "first_seen": "2025-12-07T05:04:09+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "立法会"
+    ]
+  },
+  "香港特别行政区政府": {
+    "first_seen": "2025-12-07T05:04:09+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "港府"
+    ]
+  },
+  "李家超": {
+    "first_seen": "2025-12-07T05:04:09+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "李家超"
+    ]
+  },
+  "爱荷华州立大学": {
+    "first_seen": "2025-12-07T16:58:41+00:00",
+    "sources": [
+      "iowa state athletics"
+    ],
+    "original_forms": [
+      "Iowa State University"
+    ]
+  },
+  "Big 12 Conference": {
+    "first_seen": "2025-12-07T16:58:41+00:00",
+    "sources": [
+      "iowa state athletics"
+    ],
+    "original_forms": [
+      "Big 12 Conference"
+    ]
+  },
+  "美国食品药品监督管理局": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "FDA"
+    ]
+  },
+  "斯科特·戈特利布": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "Scott Gottlieb"
+    ]
+  },
+  "辉瑞公司": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "Pfizer"
+    ]
+  },
+  "联合健康集团": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "United Healthcare"
+    ]
+  },
+  "面向全国": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "Face the Nation"
+    ]
+  },
+  "玛格丽特·布伦南": {
+    "first_seen": "2025-12-07T16:49:00+00:00",
+    "sources": [
+      "cbs news"
+    ],
+    "original_forms": [
+      "Margaret Brennan"
+    ]
+  },
+  "众议院军事委员会": {
+    "first_seen": "2025-12-07T16:41:15+00:00",
+    "sources": [
+      "abc news"
+    ],
+    "original_forms": [
+      "House Armed Services Committee"
+    ]
+  },
+  "皮特·赫格塞斯": {
+    "first_seen": "2025-12-07T16:41:15+00:00",
+    "sources": [
+      "abc news"
+    ],
+    "original_forms": [
+      "Pete Hegseth"
+    ]
+  },
+  "亨利·奎拉尔": {
+    "first_seen": "2025-12-07T16:06:00+00:00",
+    "sources": [
+      "the guardian"
+    ],
+    "original_forms": [
+      "Henry Cuellar",
+      "Cuellar"
+    ]
+  },
+  "兰多·诺里斯": {
+    "first_seen": "2025-12-07T14:32:00+00:00",
+    "sources": [
+      "nbc news",
+      "autosport web"
+    ],
+    "original_forms": [
+      "Lando Norris"
+    ]
+  },
+  "迈凯伦": {
+    "first_seen": "2025-12-07T14:30:00+00:00",
+    "sources": [
+      "autosport web",
+      "スポニチ sponichi annex",
+      "nbc news"
+    ],
+    "original_forms": [
+      "マクラーレン",
+      "McLaren"
+    ]
+  },
+  "红牛": {
+    "first_seen": "2025-12-07T14:30:00+00:00",
+    "sources": [
+      "nbc news",
+      "スポニチ sponichi annex"
+    ],
+    "original_forms": [
+      "Red Bull",
+      "レッドブル"
+    ]
+  },
+  "马克斯·维斯塔潘": {
+    "first_seen": "2025-12-07T14:32:00+00:00",
+    "sources": [
+      "nbc news",
+      "autosport web"
+    ],
+    "original_forms": [
+      "Max Verstappen"
+    ]
+  },
+  "贝宁": {
+    "first_seen": "2025-12-07T16:30:00+00:00",
+    "sources": [
+      "20 minutes",
+      "dw"
+    ],
+    "original_forms": [
+      "Bénin",
+      "Benín"
+    ]
+  },
+  "Patrice Talon": {
+    "first_seen": "2025-12-07T16:30:00+00:00",
+    "sources": [
+      "20 minutes"
+    ],
+    "original_forms": [
+      "Patrice Talon"
+    ]
+  },
+  "苏格兰": {
+    "first_seen": "2025-12-07T17:13:11+00:00",
+    "sources": [
+      "the scottish sun",
+      "bbc"
+    ],
+    "original_forms": [
+      "Scots",
+      "Scotland"
+    ]
+  },
+  "NHS艾尔郡与阿兰": {
+    "first_seen": "2025-12-07T17:20:00+00:00",
+    "sources": [
+      "the scottish sun"
+    ],
+    "original_forms": [
+      "NHS Ayrshire & Arran"
+    ]
+  },
+  "南安普顿": {
+    "first_seen": "2025-12-07T17:16:00+00:00",
+    "sources": [
+      "the telegraph"
+    ],
+    "original_forms": [
+      "埃塞克斯郡",
+      "Southampton",
+      "南安普顿",
+      "Essex"
+    ]
+  },
+  "Henry Nowak": {
+    "first_seen": "2025-12-07T17:13:37+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Henry Nowak"
+    ]
+  },
+  "Essex": {
+    "first_seen": "2025-12-07T17:13:37+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Essex"
+    ]
+  },
+  "Southampton": {
+    "first_seen": "2025-12-07T17:13:37+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Southampton"
+    ]
+  },
+  "Chafford Hundred": {
+    "first_seen": "2025-12-07T17:13:37+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Chafford Hundred"
+    ]
+  },
+  "改革英国": {
+    "first_seen": "2025-12-07T17:13:11+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Reform UK"
+    ]
+  },
+  "福尔柯克": {
+    "first_seen": "2025-12-07T17:13:11+00:00",
+    "sources": [
+      "bbc"
+    ],
+    "original_forms": [
+      "Falkirk"
+    ]
+  },
+  "中华人民共和国": {
+    "first_seen": "2025-11-07T11:03:40+00:00",
+    "sources": [
+      "bbc",
+      "轉角國際udn global",
+      "dw",
+      "央视网",
+      "china daily",
+      "news.cnyes.com",
+      "ludens.com.tw",
+      "纽约时报中文网",
+      "rfi",
+      "大紀元",
+      "奇摩新聞",
+      "qq news",
+      "the telegraph",
+      "3dnews",
+      "gnews"
+    ],
+    "original_forms": [
+      "中華人民共和國",
+      "Chinese",
+      "中國",
+      "Китая",
+      "中国",
+      "中方",
+      "China",
+      "中共",
+      "中华人民共和国"
+    ]
+  },
+  "冲绳": {
+    "first_seen": "2025-12-07T01:26:34+00:00",
+    "sources": [
+      "the telegraph",
+      "gnews"
+    ],
+    "original_forms": [
+      "冲绳县",
+      "Okinawa",
+      "冲绳"
+    ]
+  },
+  "Zulma Guzman Castro": {
+    "first_seen": "2025-12-07T16:56:53+00:00",
+    "sources": [
+      "the mirror"
+    ],
+    "original_forms": [
+      "Zulma Guzman Castro"
+    ]
+  },
+  "弗拉基米尔·普京": {
+    "first_seen": "2025-12-07T15:17:00+00:00",
+    "sources": [
+      "ura.ru",
+      "eadaily"
+    ],
+    "original_forms": [
+      "Владимиру Путину",
+      "Владимира Путина",
+      "Владимиром Путиным"
+    ]
+  },
+  "德国社会正义与...联盟党": {
+    "first_seen": "2025-12-07T16:17:00+00:00",
+    "sources": [
+      "ura.ru"
+    ],
+    "original_forms": [
+      "немецкой партии «Союз социальная справедливость и..."
+    ]
+  },
+  "慕尼黑安全会议": {
+    "first_seen": "2025-12-07T16:15:00+00:00",
+    "sources": [
+      "ura.ru"
+    ],
+    "original_forms": [
+      "Мюнхенской конференции по безопасности"
+    ]
+  },
+  "Neue Zürcher Zeitung": {
+    "first_seen": "2025-12-07T16:15:00+00:00",
+    "sources": [
+      "ura.ru"
+    ],
+    "original_forms": [
+      "Neue Zurcher Zeitung"
+    ]
+  },
+  "乌克兰最高拉达": {
+    "first_seen": "2025-12-07T15:21:12+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "Верховной рады"
+    ]
+  },
+  "亚历山大·杜宾斯基": {
+    "first_seen": "2025-12-07T15:21:12+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "Александр Дубинский"
+    ]
+  },
+  "俄罗斯": {
+    "first_seen": "2025-12-03T21:53:13+00:00",
+    "sources": [
+      "українська правда",
+      "korrespondent.net",
+      "fakty.com.ua",
+      "новини live",
+      "ura.ru",
+      "gnews",
+      "eadaily"
+    ],
+    "original_forms": [
+      "Russia",
+      "росіяни",
+      "РФ",
+      "俄罗斯联邦",
+      "російські окупанти",
+      "Російські війська",
+      "俄罗斯",
+      "России",
+      "Росія"
+    ]
+  },
+  "英国《每日电讯报》": {
+    "first_seen": "2025-12-07T15:17:00+00:00",
+    "sources": [
+      "eadaily"
+    ],
+    "original_forms": [
+      "The Telegraph"
+    ]
+  },
+  "Хасанби Биджиев": {
+    "first_seen": "2025-12-07T14:53:01+00:00",
+    "sources": [
+      "sportbox"
+    ],
+    "original_forms": [
+      "Хасанби Биджиев"
+    ]
+  },
+  "马哈奇卡拉迪纳摩足球俱乐部": {
+    "first_seen": "2025-12-07T14:53:01+00:00",
+    "sources": [
+      "sportbox"
+    ],
+    "original_forms": [
+      "махачкалинского «Динамо»"
+    ]
+  },
+  "ЦСКА": {
+    "first_seen": "2025-12-07T14:52:41+00:00",
+    "sources": [
+      "khl"
+    ],
+    "original_forms": [
+      "ЦСКА"
+    ]
+  },
+  "Салават Юлаев": {
+    "first_seen": "2025-12-07T14:52:41+00:00",
+    "sources": [
+      "khl"
+    ],
+    "original_forms": [
+      "«Салавата Юлаева»"
+    ]
+  },
+  "Сибирь": {
+    "first_seen": "2025-12-07T14:52:41+00:00",
+    "sources": [
+      "khl"
+    ],
+    "original_forms": [
+      "«Сибирь»"
+    ]
+  },
+  "Барыс": {
+    "first_seen": "2025-12-07T14:52:41+00:00",
+    "sources": [
+      "khl"
+    ],
+    "original_forms": [
+      "«Барыс»"
+    ]
+  },
+  "美利坚合众国": {
+    "first_seen": "2025-11-13T04:51:00+00:00",
+    "sources": [
+      "українська правда",
+      "o globo",
+      "r7",
+      "infobae",
+      "news.cnyes.com",
+      "abc news",
+      "tve24.ru",
+      "la croix",
+      "oregonlive.com",
+      "європейська правда",
+      "the guardian",
+      "ura.ru",
+      "franceinfo",
+      "gnews",
+      "clarin.com",
+      "24 канал"
+    ],
+    "original_forms": [
+      "美國",
+      "Сполучених Штатів",
+      "美国",
+      "US",
+      "U.S.",
+      "America",
+      "米国",
+      "美利坚合众国",
+      "Estados Unidos",
+      "New York",
+      "США",
+      "Republican senators",
+      "中美"
+    ]
+  },
+  "Владимир Зеленский": {
+    "first_seen": "2025-12-07T14:36:00+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "Владимира Зеленского"
+    ]
+  },
+  "РИА Новости": {
+    "first_seen": "2025-12-07T14:36:00+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "РИА Новости"
+    ]
+  },
+  "Пол Стейган": {
+    "first_seen": "2025-12-07T14:36:00+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "Пола Стейгана"
+    ]
+  },
+  "Дональд Трамп": {
+    "first_seen": "2025-12-07T14:36:00+00:00",
+    "sources": [
+      "tve24.ru"
+    ],
+    "original_forms": [
+      "президента США Дональда Трампа"
+    ]
+  },
+  "凯蒂·佩里": {
+    "first_seen": "2025-12-07T17:20:00+00:00",
+    "sources": [
+      "букви"
+    ],
+    "original_forms": [
+      "Кеті Перрі"
+    ]
+  },
+  "贾斯廷·特鲁多": {
+    "first_seen": "2025-12-07T17:20:00+00:00",
+    "sources": [
+      "букви"
+    ],
+    "original_forms": [
+      "Джастін Трюдо"
+    ]
+  },
+  "克里姆林宫": {
+    "first_seen": "2025-12-07T17:19:00+00:00",
+    "sources": [
+      "українська правда"
+    ],
+    "original_forms": [
+      "Кремлі",
+      "Кремля"
+    ]
+  },
+  "俄罗斯联邦安全会议": {
+    "first_seen": "2025-12-07T17:19:00+00:00",
+    "sources": [
+      "українська правда"
+    ],
+    "original_forms": [
+      "Радбезу РФ"
+    ]
+  },
+  "德米特里·佩斯科夫": {
+    "first_seen": "2025-12-07T17:19:00+00:00",
+    "sources": [
+      "українська правда"
+    ],
+    "original_forms": [
+      "Дмитро Пєсков"
+    ]
+  },
+  "俄罗斯-1": {
+    "first_seen": "2025-12-07T17:19:00+00:00",
+    "sources": [
+      "українська правда"
+    ],
+    "original_forms": [
+      "\"Россия 1\""
+    ]
+  },
+  "德米特里·梅德韦杰夫": {
+    "first_seen": "2025-12-07T17:19:00+00:00",
+    "sources": [
+      "українська правда"
+    ],
+    "original_forms": [
+      "Дмитро Медведєв"
+    ]
+  },
+  "乌克兰驻美国大使馆": {
+    "first_seen": "2025-12-07T17:10:55+00:00",
+    "sources": [
+      "24 канал"
+    ],
+    "original_forms": [
+      "посольство України в США"
+    ]
+  },
+  "乌克兰公共广播公司": {
+    "first_seen": "2025-12-07T17:10:55+00:00",
+    "sources": [
+      "24 канал"
+    ],
+    "original_forms": [
+      "Суспільному"
+    ]
+  },
+  "S-GAME": {
+    "first_seen": "2025-12-07T17:04:27+00:00",
+    "sources": [
+      "players.com.ua"
+    ],
+    "original_forms": [
+      "S-GAME"
+    ]
+  },
+  "The Game Awards": {
+    "first_seen": "2025-12-07T17:04:27+00:00",
+    "sources": [
+      "players.com.ua"
+    ],
+    "original_forms": [
+      "The Game Awards 2025"
+    ]
+  },
+  "乌梅罗夫": {
+    "first_seen": "2025-12-07T17:00:22+00:00",
+    "sources": [
+      "європейська правда"
+    ],
+    "original_forms": [
+      "Гнатов"
+    ]
+  },
+  "布达诺夫": {
+    "first_seen": "2025-12-07T17:00:22+00:00",
+    "sources": [
+      "європейська правда"
+    ],
+    "original_forms": [
+      "Маямі"
+    ]
+  },
+  "迈阿密": {
+    "first_seen": "2025-12-07T17:00:22+00:00",
+    "sources": [
+      "європейська правда"
+    ],
+    "original_forms": [
+      "Лондоні"
+    ]
+  },
+  "乌克兰铁路公司": {
+    "first_seen": "2025-12-07T16:24:00+00:00",
+    "sources": [
+      "obozrevatel"
+    ],
+    "original_forms": [
+      "\"Укрзалізниці\""
+    ]
+  },
+  "美国劳工统计局": {
+    "first_seen": "2025-12-07T16:00:00+00:00",
+    "sources": [
+      "vctr.media"
+    ],
+    "original_forms": [
+      "Бюро статистики праці США"
+    ]
+  },
+  "贾斯汀·比伯": {
+    "first_seen": "2025-12-07T15:23:00+00:00",
+    "sources": [
+      "уніан"
+    ],
+    "original_forms": [
+      "Джастін Бібер"
+    ]
+  },
+  "丹戎巴葛地铁站": {
+    "first_seen": "2025-12-07T16:01:49+00:00",
+    "sources": [
+      "the straits times"
+    ],
+    "original_forms": [
+      "Tanjong Pagar MRT station"
+    ]
+  },
+  "Lando Norris": {
+    "first_seen": "2025-12-07T14:35:00+00:00",
+    "sources": [
+      "cna"
+    ],
+    "original_forms": [
+      "Lando Norris"
+    ]
+  },
+  "Max Verstappen": {
+    "first_seen": "2025-12-07T14:35:00+00:00",
+    "sources": [
+      "cna"
+    ],
+    "original_forms": [
+      "Max Verstappen"
+    ]
+  },
+  "McLaren": {
+    "first_seen": "2025-12-07T14:35:00+00:00",
+    "sources": [
+      "cna"
+    ],
+    "original_forms": [
+      "McLaren"
+    ]
+  },
+  "Red Bull": {
+    "first_seen": "2025-12-07T14:35:00+00:00",
+    "sources": [
+      "cna"
+    ],
+    "original_forms": [
+      "Red Bull"
+    ]
+  },
+  "深圳科技馆": {
+    "first_seen": "2025-12-07T14:24:38+00:00",
+    "sources": [
+      "guangdong news"
+    ],
+    "original_forms": [
+      "Shenzhen Science & Technology Museum"
+    ]
+  },
+  "Singapore police": {
+    "first_seen": "2025-12-07T13:51:00+00:00",
+    "sources": [
+      "the star"
+    ],
+    "original_forms": [
+      "Singapore police"
+    ]
+  },
+  "SRS Auto": {
+    "first_seen": "2025-12-07T13:51:00+00:00",
+    "sources": [
+      "the star"
+    ],
+    "original_forms": [
+      "SRS Auto"
+    ]
+  },
+  "新加坡警察部队": {
+    "first_seen": "2025-12-07T13:31:53+00:00",
+    "sources": [
+      "stomp"
+    ],
+    "original_forms": [
+      "police"
+    ]
+  },
+  "Boon Lay Drive": {
+    "first_seen": "2025-12-07T13:31:53+00:00",
+    "sources": [
+      "stomp"
+    ],
+    "original_forms": [
+      "Boon Lay Drive"
+    ]
+  },
+  "靛蓝航空": {
+    "first_seen": "2025-12-07T13:13:30+00:00",
+    "sources": [
+      "the straits times"
+    ],
+    "original_forms": [
+      "IndiGo"
+    ]
+  },
+  "角田裕毅": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "autosport web",
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "Yuki Tsunoda",
+      "角田裕毅"
+    ]
+  },
+  "红牛车队": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "autosport web",
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "Red Bull",
+      "レッドブル"
+    ]
+  },
+  "阿布扎比酋长国": {
+    "first_seen": "2025-12-07T14:32:00+00:00",
+    "sources": [
+      "autosport web"
+    ],
+    "original_forms": [
+      "Abu Dhabi"
+    ]
+  },
+  "阿联酋": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "アラブ首長国連邦"
+    ]
+  },
+  "F1": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "F1"
+    ]
+  },
+  "诺里斯": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "ノリス"
+    ]
+  },
+  "皮亚斯特里": {
+    "first_seen": "2025-12-07T14:31:04+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "ピアストリ"
+    ]
+  },
+  "NHK": {
+    "first_seen": "2025-12-04T05:35:50+00:00",
+    "sources": [
+      "crea web",
+      "gnews"
+    ],
+    "original_forms": [
+      "NHK"
+    ]
+  },
+  "AKB48": {
+    "first_seen": "2025-12-07T11:43:01+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "AKB48"
+    ]
+  },
+  "前田敦子": {
+    "first_seen": "2025-12-07T11:43:01+00:00",
+    "sources": [
+      "yahoo!ニュース"
+    ],
+    "original_forms": [
+      "前田敦子"
+    ]
+  },
+  "日本放送协会": {
+    "first_seen": "2025-12-07T11:10:36+00:00",
+    "sources": [
+      "ステラnet"
+    ],
+    "original_forms": [
+      "NHK"
+    ]
+  },
+  "生田斗真": {
+    "first_seen": "2025-12-07T11:10:36+00:00",
+    "sources": [
+      "ステラnet"
+    ],
+    "original_forms": [
+      "生田斗真"
+    ]
+  },
+  "自由党": {
+    "first_seen": "2025-12-07T15:35:06+00:00",
+    "sources": [
+      "poder360",
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "PL"
+    ]
+  },
+  "里约热内卢州": {
+    "first_seen": "2025-12-07T17:12:13+00:00",
+    "sources": [
+      "poder360"
+    ],
+    "original_forms": [
+      "RJ"
+    ]
+  },
+  "共和党": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "poder360",
+      "gnews"
+    ],
+    "original_forms": [
+      "Republicanos",
+      "共和党"
+    ]
+  },
+  "Henri Matisse": {
+    "first_seen": "2025-12-07T17:11:56+00:00",
+    "sources": [
+      "cbn"
+    ],
+    "original_forms": [
+      "Henri Matisse"
+    ]
+  },
+  "Cândido Portinari": {
+    "first_seen": "2025-12-07T17:11:56+00:00",
+    "sources": [
+      "cbn"
+    ],
+    "original_forms": [
+      "Cândido Portinari"
+    ]
+  },
+  "Biblioteca Mário de Andrade": {
+    "first_seen": "2025-12-07T17:11:56+00:00",
+    "sources": [
+      "cbn"
+    ],
+    "original_forms": [
+      "Biblioteca Mário de Andrade"
+    ]
+  },
+  "São Paulo": {
+    "first_seen": "2025-12-07T17:11:56+00:00",
+    "sources": [
+      "cbn"
+    ],
+    "original_forms": [
+      "São Paulo"
+    ]
+  },
+  "马里奥·德·安德拉德图书馆": {
+    "first_seen": "2025-12-07T16:47:15+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "Biblioteca Mário de Andrade"
+    ]
+  },
+  "巴西军事警察": {
+    "first_seen": "2025-12-07T16:47:15+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "Polícia Militar"
+    ]
+  },
+  "Rayssa Leal": {
+    "first_seen": "2025-12-07T16:35:07+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "Rayssa Leal"
+    ]
+  },
+  "SLS Super Crown": {
+    "first_seen": "2025-12-07T16:35:07+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "SLS Super Crown"
+    ]
+  },
+  "Brena": {
+    "first_seen": "2025-12-07T16:34:48+00:00",
+    "sources": [
+      "uol"
+    ],
+    "original_forms": [
+      "Brena"
+    ]
+  },
+  "Palmeiras": {
+    "first_seen": "2025-12-07T16:34:48+00:00",
+    "sources": [
+      "uol"
+    ],
+    "original_forms": [
+      "Palmeiras"
+    ]
+  },
+  "Corinthians": {
+    "first_seen": "2025-12-07T16:34:48+00:00",
+    "sources": [
+      "uol"
+    ],
+    "original_forms": [
+      "Corinthians"
+    ]
+  },
+  "巴西联邦警察": {
+    "first_seen": "2025-12-07T15:44:00+00:00",
+    "sources": [
+      "metrópoles"
+    ],
+    "original_forms": [
+      "Polícia Federal (PF)"
+    ]
+  },
+  "Itapema": {
+    "first_seen": "2025-12-07T15:44:00+00:00",
+    "sources": [
+      "metrópoles"
+    ],
+    "original_forms": [
+      "Itapema"
+    ]
+  },
+  "弗拉维奥·博尔索纳罗": {
+    "first_seen": "2025-12-07T15:35:06+00:00",
+    "sources": [
+      "poder360",
+      "cnn brasil",
+      "o globo"
+    ],
+    "original_forms": [
+      "Flávio Bolsonaro"
+    ]
+  },
+  "雅伊尔·博索纳罗": {
+    "first_seen": "2025-12-07T15:35:06+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "Jair Bolsonaro"
+    ]
+  },
+  "高原宫": {
+    "first_seen": "2025-12-07T15:35:06+00:00",
+    "sources": [
+      "cnn brasil"
+    ],
+    "original_forms": [
+      "Palácio do Planalto"
+    ]
+  },
+  "Nicolás Maduro": {
+    "first_seen": "2025-12-07T17:16:53+00:00",
+    "sources": [
+      "clarin.com"
+    ],
+    "original_forms": [
+      "Nicolás Maduro"
+    ]
+  },
+  "贝宁国家广播电视台": {
+    "first_seen": "2025-12-07T16:40:20+00:00",
+    "sources": [
+      "dw"
+    ],
+    "original_forms": [
+      "RTB"
+    ]
+  },
+  "科托努": {
+    "first_seen": "2025-12-07T16:40:20+00:00",
+    "sources": [
+      "dw"
+    ],
+    "original_forms": [
+      "Cotonú"
+    ]
+  },
+  "阿根廷卫生部": {
+    "first_seen": "2025-12-07T16:28:33+00:00",
+    "sources": [
+      "clarin.com"
+    ],
+    "original_forms": [
+      "El Ministerio de Salud de la Nación"
+    ]
+  },
+  "恩特雷里奥斯省": {
+    "first_seen": "2025-12-07T16:28:33+00:00",
+    "sources": [
+      "clarin.com"
+    ],
+    "original_forms": [
+      "Entre Ríos"
+    ]
+  },
+  "阿根廷汽车商会": {
+    "first_seen": "2025-12-07T16:28:00+00:00",
+    "sources": [
+      "rosario3"
+    ],
+    "original_forms": [
+      "La Cámara del Comercio Automotor (CCA)"
+    ]
+  },
+  "开普敦": {
+    "first_seen": "2025-12-07T16:21:00+00:00",
+    "sources": [
+      "la nación"
+    ],
+    "original_forms": [
+      "Ciudad del Cabo"
+    ]
+  },
+  "阿尔派车队": {
+    "first_seen": "2025-12-07T15:34:22+00:00",
+    "sources": [
+      "tyc sports"
+    ],
+    "original_forms": [
+      "Alpine"
+    ]
+  },
+  "Franco Colapinto": {
+    "first_seen": "2025-12-07T15:27:00+00:00",
+    "sources": [
+      "infobae"
+    ],
+    "original_forms": [
+      "Franco Colapinto"
+    ]
+  },
+  "Xiaomi 15T Pro": {
+    "first_seen": "2025-12-07T11:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi 15T Pro"
+    ]
+  },
+  "Xiaomi 15T": {
+    "first_seen": "2025-12-07T11:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi 15T"
+    ]
+  },
+  "Xiaomi Band 9": {
+    "first_seen": "2025-12-05T04:18:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi Band 9"
+    ]
+  },
+  "三星": {
+    "first_seen": "2025-12-04T15:46:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "三星",
+      "三星电子",
+      "三星集团"
+    ]
+  },
+  "Huawei": {
+    "first_seen": "2025-12-04T16:12:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Huawei"
+    ]
+  },
+  "Galaxy Z TriFold": {
+    "first_seen": "2025-12-04T16:12:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Galaxy Z TriFold"
+    ]
+  },
+  "Mate XTs": {
+    "first_seen": "2025-12-04T16:12:42+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Mate XTs"
+    ]
+  },
+  "Redmi Note 14 Pro": {
+    "first_seen": "2025-12-07T18:22:37+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Note 14 Pro"
+    ]
+  },
+  "MKBHD": {
+    "first_seen": "2025-12-07T17:34:08+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "MKBHD"
+    ]
+  },
+  "Xiaomi SU7": {
+    "first_seen": "2025-11-18T17:12:40+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi SU7"
+    ]
+  },
+  "AliExpress": {
+    "first_seen": "2025-12-07T06:45:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "AliExpress"
+    ]
+  },
+  "Redmi Watch 5 Lite": {
+    "first_seen": "2025-12-07T07:23:47+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Watch 5 Lite"
+    ]
+  },
+  "Redmi 15": {
+    "first_seen": "2025-12-07T06:45:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi 15"
+    ]
+  },
+  "Darty": {
+    "first_seen": "2025-12-06T14:30:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Darty"
+    ]
+  },
+  "Redmi 15C 5G": {
+    "first_seen": "2025-12-06T14:30:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi 15C 5G"
+    ]
+  },
+  "Redmi Buds 6 Play": {
+    "first_seen": "2025-12-06T14:30:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Buds 6 Play"
+    ]
+  },
+  "Redmi Note 13": {
+    "first_seen": "2025-12-06T11:27:36+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Note 13"
+    ]
+  },
+  "Auchan": {
+    "first_seen": "2025-12-06T10:30:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Auchan"
+    ]
+  },
+  "Redmi 15 5G": {
+    "first_seen": "2025-12-06T10:30:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi 15 5G"
+    ]
+  },
+  "GSMA": {
+    "first_seen": "2025-12-04T23:00:38+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "GSMA"
+    ]
+  },
+  "Leica": {
+    "first_seen": "2025-12-02T13:17:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Leica"
+    ]
+  },
+  "黑鲨": {
+    "first_seen": "2025-12-01T10:14:51+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "黑鲨"
+    ]
+  },
+  "Galaxy S26 Ultra": {
+    "first_seen": "2025-11-26T14:15:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Galaxy S26 Ultra"
+    ]
+  },
+  "17 Pro Max": {
+    "first_seen": "2025-11-26T14:15:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "17 Pro Max"
+    ]
+  },
+  "泰国": {
+    "first_seen": "2025-11-18T05:46:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "泰国"
+    ]
+  },
+  "Xiaomi TV A Pro 32 2026": {
+    "first_seen": "2025-12-06T09:56:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi TV A Pro 32 2026"
+    ]
+  },
+  "华为技术有限公司": {
+    "first_seen": "2025-12-04T23:00:38+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "华为",
+      "华为技术有限公司"
+    ]
+  },
+  "М.Видео": {
+    "first_seen": "2025-12-04T22:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "М.Видео"
+    ]
+  },
+  "Redmi": {
+    "first_seen": "2025-12-04T22:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi"
+    ]
+  },
+  "Monitor A24i 2026": {
+    "first_seen": "2025-12-03T13:52:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Monitor A24i 2026"
+    ]
+  },
+  "雷军": {
+    "first_seen": "2025-12-01T08:43:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "雷军"
+    ]
+  },
+  "Poco M7": {
+    "first_seen": "2025-11-28T11:23:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Poco M7"
+    ]
+  },
+  "Redmi Note 14": {
+    "first_seen": "2025-11-28T11:23:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Note 14"
+    ]
+  },
+  "Realme": {
+    "first_seen": "2025-11-28T10:22:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Realme"
+    ]
+  },
+  "МТС": {
+    "first_seen": "2025-11-28T10:22:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "МТС"
+    ]
+  },
+  "diHouse": {
+    "first_seen": "2025-11-26T12:35:34+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "diHouse"
+    ]
+  },
+  "Poco Pad M1": {
+    "first_seen": "2025-11-26T12:35:34+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Poco Pad M1"
+    ]
+  },
+  "Poco F8 Pro": {
+    "first_seen": "2025-11-26T09:15:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Poco F8 Pro"
+    ]
+  },
+  "F8 Ultra": {
+    "first_seen": "2025-11-26T10:03:16+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "F8 Ultra"
+    ]
+  },
+  "Bose": {
+    "first_seen": "2025-11-26T09:15:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Bose"
+    ]
+  },
+  "GSMArena": {
+    "first_seen": "2025-11-26T10:03:16+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "GSMArena"
+    ]
+  },
+  "Poco": {
+    "first_seen": "2025-11-26T09:15:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Poco"
+    ]
+  },
+  "Snapdragon 8 Elite": {
+    "first_seen": "2025-11-26T09:15:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Snapdragon 8 Elite"
+    ]
+  },
+  "Poco F8 Ultra": {
+    "first_seen": "2025-11-26T09:15:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Poco F8 Ultra"
+    ]
+  },
+  "Redmi Note 15": {
+    "first_seen": "2025-12-03T08:47:12+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi Note 15"
+    ]
+  },
+  "安兔兔": {
+    "first_seen": "2025-12-01T12:17:00+00:00",
+    "sources": [
+      "gnews",
+      "东方财富"
+    ],
+    "original_forms": [
+      "安兔兔",
+      "南方财经"
+    ]
+  },
+  "Qualcomm": {
+    "first_seen": "2025-12-01T12:17:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Qualcomm"
+    ]
+  },
+  "MediaTek": {
+    "first_seen": "2025-12-01T12:17:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "MediaTek"
+    ]
+  },
+  "北京日报": {
+    "first_seen": "2025-12-01T11:27:00+00:00",
+    "sources": [
+      "gnews",
+      "українська правда"
+    ],
+    "original_forms": [
+      "国际文传电讯社",
+      "北京日报",
+      "\"Интерфакс\""
+    ]
+  },
+  "HyperOS 3": {
+    "first_seen": "2025-11-30T13:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "HyperOS 3",
+      "HyperOS"
+    ]
+  },
+  "Android 16": {
+    "first_seen": "2025-11-30T13:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Android 16",
+      "Android"
+    ]
+  },
+  "联想集团": {
+    "first_seen": "2025-11-21T15:49:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "联想集团"
+    ]
+  },
+  "杨元庆": {
+    "first_seen": "2025-11-21T15:49:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "杨元庆"
+    ]
+  },
+  "Lenovo": {
+    "first_seen": "2025-11-21T11:19:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Lenovo"
+    ]
+  },
+  "Google TV": {
+    "first_seen": "2025-11-29T01:22:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Google TV"
+    ]
+  },
+  "亚马逊": {
+    "first_seen": "2025-11-28T06:55:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "亚马逊"
+    ]
+  },
+  "Xiaomi 18W Power Bank 30000mAh": {
+    "first_seen": "2025-11-24T06:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi 18W Power Bank 30000mAh"
+    ]
+  },
+  "小米科技有限公司": {
+    "first_seen": "2025-11-11T06:55:00+00:00",
+    "sources": [
+      "уніан",
+      "gnews"
+    ],
+    "original_forms": [
+      "Redmi 12C",
+      "小米国际互联网业务部",
+      "Xiaomi",
+      "小米公司",
+      "Xiaomi Corporation",
+      "小米",
+      "小米科技有限公司",
+      "小米集团"
+    ]
+  },
+  "Weibo": {
+    "first_seen": "2025-12-06T13:42:26+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Weibo"
+    ]
+  },
+  "小米17 Ultra": {
+    "first_seen": "2025-12-04T10:21:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "小米17 Ultra",
+      "Xiaomi 17 Ultra",
+      "小米14"
+    ]
+  },
+  "Xiaomi 14 Ultra": {
+    "first_seen": "2025-12-06T13:34:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Xiaomi 14 Ultra"
+    ]
+  },
+  "北京": {
+    "first_seen": "2025-12-03T02:09:10+00:00",
+    "sources": [
+      "franceinfo",
+      "gnews"
+    ],
+    "original_forms": [
+      "华盛顿哥伦比亚特区",
+      "Washington",
+      "北京"
+    ]
+  },
+  "Mijia Diffuse Reflection Ceiling Light": {
+    "first_seen": "2025-12-05T14:20:07+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Mijia Diffuse Reflection Ceiling Light"
+    ]
+  },
+  "摩托罗拉": {
+    "first_seen": "2025-12-04T18:03:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "摩托罗拉"
+    ]
+  },
+  "Omdia": {
+    "first_seen": "2025-12-04T18:03:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Omdia"
+    ]
+  },
+  "微博": {
+    "first_seen": "2025-12-04T13:18:46+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "微博"
+    ]
+  },
+  "美国国会众议院科学、太空与技术委员会航空航天小组委员会": {
+    "first_seen": "2025-12-05T21:37:33+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国国会众议院科学、太空与技术委员会航空航天小组委员会"
+    ]
+  },
+  "中国共产党": {
+    "first_seen": "2025-12-05T20:21:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国共产党"
+    ]
+  },
+  "中小学": {
+    "first_seen": "2025-12-05T20:21:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中小学"
+    ]
+  },
+  "福特汽车公司": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "福特汽车公司"
+    ]
+  },
+  "福特汽车销售服务有限公司": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "福特汽车销售服务有限公司"
+    ]
+  },
+  "福特中国": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "福特中国"
+    ]
+  },
+  "长安福特": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "长安福特"
+    ]
+  },
+  "江铃福特": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "江铃福特"
+    ]
+  },
+  "福特纵横": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "福特纵横"
+    ]
+  },
+  "蒙迪欧": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "蒙迪欧"
+    ]
+  },
+  "锐界": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "锐界"
+    ]
+  },
+  "F-150猛禽": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "F-150猛禽"
+    ]
+  },
+  "游骑侠Ranger": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "游骑侠Ranger"
+    ]
+  },
+  "21世纪经济报道": {
+    "first_seen": "2025-12-05T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "21世纪经济报道"
+    ]
+  },
+  "广州": {
+    "first_seen": "2025-12-03T09:00:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "广州市",
+      "广州"
+    ]
+  },
+  "民主党": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "民主党"
+    ]
+  },
+  "美国众议院": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国众议院",
+      "美国国会众议院"
+    ]
+  },
+  "汤姆·基恩": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "汤姆·基恩"
+    ]
+  },
+  "朱莉·约翰逊": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "朱莉·约翰逊"
+    ]
+  },
+  "美国商务部产业与安全局": {
+    "first_seen": "2025-12-04T15:57:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国商务部产业与安全局"
+    ]
+  },
+  "马克龙": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "马克龙"
+    ]
+  },
+  "北京首都国际机场": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "北京首都国际机场"
+    ]
+  },
+  "对外经济贸易大学法国经济研究中心": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "对外经济贸易大学法国经济研究中心"
+    ]
+  },
+  "赵永升": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "赵永升"
+    ]
+  },
+  "南方财经21世纪经济报道": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "南方财经21世纪经济报道"
+    ]
+  },
+  "郑青亭": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "郑青亭"
+    ]
+  },
+  "陈俊康": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "陈俊康"
+    ]
+  },
+  "中国德国商会": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国德国商会"
+    ]
+  },
+  "霍飞明": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "霍飞明"
+    ]
+  },
+  "Martin Hofmann": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Martin Hofmann"
+    ]
+  },
+  "德国": {
+    "first_seen": "2025-12-03T08:41:50+00:00",
+    "sources": [
+      "fakty.com.ua",
+      "ura.ru",
+      "gnews"
+    ],
+    "original_forms": [
+      "Мерц",
+      "Allemagne",
+      "Германии",
+      "ドイツ",
+      "德国",
+      "德意志联邦共和国"
+    ]
+  },
+  "商务部": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "商务部"
+    ]
+  },
+  "财政部": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "财政部"
+    ]
+  },
+  "北京市": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "北京市"
+    ]
+  },
+  "上海市": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "奇摩新聞",
+      "gnews"
+    ],
+    "original_forms": [
+      "上海",
+      "上海市"
+    ]
+  },
+  "天津市": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "天津市"
+    ]
+  },
+  "重庆市": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "重庆市"
+    ]
+  },
+  "深圳证券交易所": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "深圳证券交易所"
+    ]
+  },
+  "法兰克福": {
+    "first_seen": "2025-12-04T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "法兰克福"
+    ]
+  },
+  "美国参议员": {
+    "first_seen": "2025-12-03T20:00:35+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国参议员"
+    ]
+  },
+  "美国国会参议院外交关系委员会东亚、太平洋与国际网络安全政策小组委员会": {
+    "first_seen": "2025-12-03T20:00:35+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国国会参议院外交关系委员会东亚、太平洋与国际网络安全政策小组委员会"
+    ]
+  },
+  "皮特·里基茨": {
+    "first_seen": "2025-12-03T20:00:35+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "皮特·里基茨"
+    ]
+  },
+  "国家卫生健康委": {
+    "first_seen": "2025-12-03T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "国家卫生健康委"
+    ]
+  },
+  "郭燕红": {
+    "first_seen": "2025-12-03T00:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "郭燕红"
+    ]
+  },
+  "国会": {
+    "first_seen": "2025-12-07T18:35:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "国会"
+    ]
+  },
+  "东京": {
+    "first_seen": "2025-12-07T18:35:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "东京"
+    ]
+  },
+  "特朗普": {
+    "first_seen": "2025-12-07T18:26:46+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "特朗普"
+    ]
+  },
+  "韩国": {
+    "first_seen": "2025-12-05T12:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "韩国"
+    ]
+  },
+  "美国贸易代表": {
+    "first_seen": "2025-12-07T18:20:23+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "美国贸易代表",
+      "美国贸易代表办公室"
+    ]
+  },
+  "高盛集团": {
+    "first_seen": "2025-12-07T18:03:22+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "高盛集团"
+    ]
+  },
+  "巴基斯坦": {
+    "first_seen": "2025-12-07T17:55:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "巴基斯坦"
+    ]
+  },
+  "南亚区域合作联盟": {
+    "first_seen": "2025-12-07T17:55:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "南亚区域合作联盟"
+    ]
+  },
+  "孟加拉人民共和国": {
+    "first_seen": "2025-12-07T17:55:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "孟加拉人民共和国"
+    ]
+  },
+  "巴基斯坦外交部": {
+    "first_seen": "2025-12-07T17:55:19+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "巴基斯坦外交部"
+    ]
+  },
+  "富国银行": {
+    "first_seen": "2025-12-07T17:42:51+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "富国银行"
+    ]
+  },
+  "越南": {
+    "first_seen": "2025-12-07T17:42:51+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "越南"
+    ]
+  },
+  "再鼎医药": {
+    "first_seen": "2025-12-07T17:35:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "再鼎医药"
+    ]
+  },
+  "中国国家医疗保障局": {
+    "first_seen": "2025-12-07T17:35:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国国家医疗保障局"
+    ]
+  },
+  "OnePlus": {
+    "first_seen": "2025-12-07T17:30:03+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "OnePlus"
+    ]
+  },
+  "力拓集团": {
+    "first_seen": "2025-12-05T04:56:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "力拓集团"
+    ]
+  },
+  "中铝集团": {
+    "first_seen": "2025-12-05T04:56:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中铝集团"
+    ]
+  },
+  "中国中铁": {
+    "first_seen": "2025-12-05T04:50:12+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国中铁"
+    ]
+  },
+  "Blacksheep": {
+    "first_seen": "2025-12-03T14:34:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Blacksheep"
+    ]
+  },
+  "巴黎": {
+    "first_seen": "2025-12-03T14:34:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "巴黎"
+    ]
+  },
+  "Fortescue": {
+    "first_seen": "2025-12-03T10:55:41+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Fortescue"
+    ]
+  },
+  "墨卡托中国研究所": {
+    "first_seen": "2025-12-03T08:41:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "墨卡托中国研究所"
+    ]
+  },
+  "中国东方航空": {
+    "first_seen": "2025-12-03T02:09:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国东方航空"
+    ]
+  },
+  "马斯喀特": {
+    "first_seen": "2025-12-03T02:09:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "马斯喀特"
+    ]
+  },
+  "特斯拉": {
+    "first_seen": "2025-12-03T01:53:14+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "特斯拉"
+    ]
+  },
+  "中国北方稀土集团高科技股份有限公司": {
+    "first_seen": "2025-12-02T12:54:02+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国北方稀土集团高科技股份有限公司"
+    ]
+  },
+  "中华人民共和国政府": {
+    "first_seen": "2025-12-07T14:19:55+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中华人民共和国政府"
+    ]
+  },
+  "Mcslots": {
+    "first_seen": "2025-12-07T16:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Mcslots"
+    ]
+  },
+  "Temu": {
+    "first_seen": "2025-12-07T16:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Temu"
+    ]
+  },
+  "北爱尔兰": {
+    "first_seen": "2025-12-07T11:05:05+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "北爱尔兰"
+    ]
+  },
+  "中国人民解放军": {
+    "first_seen": "2025-12-07T09:23:31+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国人民解放军"
+    ]
+  },
+  "日本自卫队": {
+    "first_seen": "2025-12-07T09:23:31+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本自卫队"
+    ]
+  },
+  "加拿大安全情报局": {
+    "first_seen": "2025-12-07T09:00:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "加拿大安全情报局"
+    ]
+  },
+  "David Vigneault": {
+    "first_seen": "2025-12-07T09:00:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "David Vigneault"
+    ]
+  },
+  "海南岛": {
+    "first_seen": "2025-12-07T15:44:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "海南岛"
+    ]
+  },
+  "三亚市": {
+    "first_seen": "2025-12-07T15:44:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "三亚市"
+    ]
+  },
+  "Global Times": {
+    "first_seen": "2025-12-07T15:44:18+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Global Times"
+    ]
+  },
+  "河南省": {
+    "first_seen": "2025-12-07T15:24:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "河南省"
+    ]
+  },
+  "三门峡市": {
+    "first_seen": "2025-12-07T15:24:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "三门峡市"
+    ]
+  },
+  "中国中央电视台": {
+    "first_seen": "2025-12-07T15:24:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国中央电视台"
+    ]
+  },
+  "四川省": {
+    "first_seen": "2025-12-07T13:31:53+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "四川省"
+    ]
+  },
+  "China Daily": {
+    "first_seen": "2025-12-07T13:31:53+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "China Daily"
+    ]
+  },
+  "法兰西共和国": {
+    "first_seen": "2025-12-07T12:50:05+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "法兰西共和国"
+    ]
+  },
+  "Emmanuel Macron": {
+    "first_seen": "2025-12-07T11:48:30+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Emmanuel Macron"
+    ]
+  },
+  "洛坤大伯公庙": {
+    "first_seen": "2025-12-07T10:30:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "洛坤大伯公庙"
+    ]
+  },
+  "马来西亚华人公会": {
+    "first_seen": "2025-12-07T06:10:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "马来西亚华人公会"
+    ]
+  },
+  "安瓦尔·易卜拉欣": {
+    "first_seen": "2025-12-07T06:10:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "安瓦尔·易卜拉欣"
+    ]
+  },
+  "中华人民共和国国防部": {
+    "first_seen": "2025-12-07T03:36:27+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中华人民共和国国防部"
+    ]
+  },
+  "中国战斗机": {
+    "first_seen": "2025-12-07T00:41:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国战斗机"
+    ]
+  },
+  "日本飞机": {
+    "first_seen": "2025-12-07T00:41:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本飞机"
+    ]
+  },
+  "香港国家安全公署": {
+    "first_seen": "2025-12-06T14:21:17+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "香港国家安全公署",
+      "香港国安公署"
+    ]
+  },
+  "自民党": {
+    "first_seen": "2025-12-07T03:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "自民党"
+    ]
+  },
+  "微信": {
+    "first_seen": "2025-12-07T03:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "微信"
+    ]
+  },
+  "环球时报": {
+    "first_seen": "2025-12-07T03:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "环球时报"
+    ]
+  },
+  "中国国际问题研究院": {
+    "first_seen": "2025-12-07T03:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国国际问题研究院"
+    ]
+  },
+  "日本经济产业省": {
+    "first_seen": "2025-12-05T23:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本经济产业省"
+    ]
+  },
+  "Lapidus": {
+    "first_seen": "2025-12-05T23:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Lapidus"
+    ]
+  },
+  "ispace": {
+    "first_seen": "2025-12-05T23:00:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "ispace"
+    ]
+  },
+  "ITTF混合団体ワールドカップ2025": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "ITTF混合団体ワールドカップ2025"
+    ]
+  },
+  "中国・成都": {
+    "first_seen": "2025-12-05T12:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国・成都"
+    ]
+  },
+  "戸上隼輔": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "戸上隼輔"
+    ]
+  },
+  "早田ひな": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "早田ひな"
+    ]
+  },
+  "張本美和": {
+    "first_seen": "2025-12-05T12:54:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "張本美和"
+    ]
+  },
+  "瑞典": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "瑞典"
+    ]
+  },
+  "成都": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "成都"
+    ]
+  },
+  "井村屋グループ": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "井村屋グループ"
+    ]
+  },
+  "日本生命": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本生命"
+    ]
+  },
+  "伊藤美誠": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "伊藤美誠"
+    ]
+  },
+  "スターツ": {
+    "first_seen": "2025-12-04T12:50:00+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "スターツ"
+    ]
+  },
+  "aespa": {
+    "first_seen": "2025-12-04T05:35:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "aespa"
+    ]
+  },
+  "NINGNING": {
+    "first_seen": "2025-12-04T05:35:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "NINGNING"
+    ]
+  },
+  "红白歌合战": {
+    "first_seen": "2025-12-04T05:35:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "红白歌合战"
+    ]
+  },
+  "产经新闻": {
+    "first_seen": "2025-12-04T05:35:50+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "产经新闻"
+    ]
+  },
+  "株式会社oricon ME": {
+    "first_seen": "2025-12-04T03:01:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "株式会社oricon ME"
+    ]
+  },
+  "宇部進学教室": {
+    "first_seen": "2025-12-04T03:01:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "宇部進学教室"
+    ]
+  },
+  "個別指導塾サクラサクセス": {
+    "first_seen": "2025-12-04T03:01:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "個別指導塾サクラサクセス"
+    ]
+  },
+  "島根県松江市": {
+    "first_seen": "2025-12-04T03:01:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "島根県松江市"
+    ]
+  },
+  "CLOSE YOUR EYES": {
+    "first_seen": "2025-12-04T01:31:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "CLOSE YOUR EYES"
+    ]
+  },
+  "Kenshin": {
+    "first_seen": "2025-12-04T01:31:11+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Kenshin"
+    ]
+  },
+  "Donald Trump": {
+    "first_seen": "2025-12-03T21:53:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Donald Trump"
+    ]
+  },
+  "Reuters": {
+    "first_seen": "2025-12-07T17:26:31+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Reuters"
+    ]
+  },
+  "日本政府": {
+    "first_seen": "2025-12-07T14:19:55+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本国政府",
+      "日本政府"
+    ]
+  },
+  "日本自由民主党": {
+    "first_seen": "2025-12-07T14:19:55+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本自由民主党"
+    ]
+  },
+  "日本航空自卫队": {
+    "first_seen": "2025-12-07T14:19:55+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "日本航空自卫队"
+    ]
+  },
+  "中国人民解放军空军": {
+    "first_seen": "2025-12-07T14:19:55+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "中国人民解放军空军"
+    ]
+  },
+  "Les Echos": {
+    "first_seen": "2025-12-07T13:45:31+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Les Echos"
+    ]
+  },
+  "百度": {
+    "first_seen": "2025-12-07T13:23:37+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "百度"
+    ]
+  },
+  "株洲市": {
+    "first_seen": "2025-12-07T13:23:37+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "株洲市"
+    ]
+  },
+  "回声报": {
+    "first_seen": "2025-12-07T13:06:14+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "回声报"
+    ]
+  },
+  "阿塞拜疆": {
+    "first_seen": "2025-12-07T13:00:37+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "阿塞拜疆"
+    ]
+  },
+  "Javier Milei": {
+    "first_seen": "2025-12-07T10:46:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Javier Milei"
+    ]
+  },
+  "Mercado Libre": {
+    "first_seen": "2025-12-07T10:46:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Mercado Libre"
+    ]
+  },
+  "Techint": {
+    "first_seen": "2025-12-07T10:46:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "Techint"
+    ]
+  },
+  "阿根廷-中国商会": {
+    "first_seen": "2025-12-05T17:23:39+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "阿根廷-中国商会"
+    ]
+  },
+  "阿根廷种子协会": {
+    "first_seen": "2025-12-05T17:23:39+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "阿根廷种子协会"
+    ]
+  },
+  "布宜诺斯艾利斯谷物交易所": {
+    "first_seen": "2025-12-05T17:23:39+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "布宜诺斯艾利斯谷物交易所"
+    ]
+  },
+  "奥克兰": {
+    "first_seen": "2025-12-04T16:02:23+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "奥克兰"
+    ]
+  },
+  "布宜诺斯艾利斯": {
+    "first_seen": "2025-12-04T16:02:23+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "布宜诺斯艾利斯"
+    ]
+  },
+  "委内瑞拉": {
+    "first_seen": "2025-12-03T21:53:13+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "委内瑞拉"
+    ]
+  },
+  "南沙区": {
+    "first_seen": "2025-12-03T09:00:10+00:00",
+    "sources": [
+      "gnews"
+    ],
+    "original_forms": [
+      "南沙区"
     ]
   }
 }

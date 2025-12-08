@@ -17,8 +17,10 @@ import json
 import re
 import time
 import hashlib
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from typing import List, Dict, Set, Optional
+from typing import List, Dict, Set, Optional, Tuple
 from datetime import datetime, timezone
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
@@ -30,11 +32,30 @@ from .api_client import LLMAPIPool
 from ..utils.entity_updater import update_entities, update_abstract_map
 from .agent3 import refresh_graph
 API_POOL = None
+MAX_WORKERS = int(os.getenv("AGENT1_MAX_WORKERS", "4"))
+RATE_LIMIT_PER_SEC = float(os.getenv("AGENT1_RATE_LIMIT_PER_SEC", "1.5"))
 
 def init_api_pool():
     global API_POOL
     if API_POOL is None:
         API_POOL = LLMAPIPool()
+
+
+class RateLimiter:
+    """简单的线程安全令牌桶（固定速率），控制 LLM QPS"""
+    def __init__(self, rate_per_sec: float):
+        self.interval = 1.0 / rate_per_sec if rate_per_sec > 0 else 0
+        self._lock = threading.Lock()
+        self._next = 0.0
+
+    def acquire(self):
+        if self.interval <= 0:
+            return
+        with self._lock:
+            now = time.time()
+            if now < self._next:
+                time.sleep(self._next - now)
+            self._next = max(self._next, now) + self.interval
 
 
 # ======================
@@ -124,24 +145,25 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 
 【实体定义】
 ✅ 必须满足以下任一条件：
-- 是自然人（如 Elon Musk、Cathie Wood、Warren Buffett）
-- 是注册公司（如 Apple Inc.、Goldman Sachs、中国工商银行、Volkswagen AG）
-- 是政府机构或部门（如 美国证券交易委员会、中国人民银行、欧盟委员会、日本金融厅）
-- 是主权国家或明确行政区（如 美国、新加坡、加利福尼亚州、香港特别行政区、德意志联邦共和国）
-- 是国际组织（如 国际货币基金组织、世界银行、联合国、金融稳定理事会）
+- 自然人（如 Elon Musk、Cathie Wood、Warren Buffett）
+- 注册公司（如 Apple Inc.、Goldman Sachs、中国工商银行、Volkswagen AG）
+- 政府机构或部门（如 美国证券交易委员会、中国人民银行、欧盟委员会、日本金融厅）
+- 主权国家或明确行政区（如 美国、新加坡、加利福尼亚州、香港特别行政区、德意志联邦共和国）
+- 国际组织（如 国际货币基金组织、世界银行、联合国、金融稳定理事会）
+- 重要产品/品牌/型号（由明确主体生产/提供的具体产品或品牌，如 iPhone 15 Pro、Tesla Model 3、ChatGPT、Windows 11、Redmi 12C）
 
 ❌ 以下内容**不得**视为实体：
 - 抽象概念（如 “市场波动”、“系统性风险”、“资本流动”）
 - 技术或金融术语（如 “期权定价”、“资产负债表”、“量化宽松”）
 - 金融工具或资产名称（如 “标普500指数”、“10年期美债”、“黄金期货”、“BTC”）——除非指代其发行方、管理方或关联法人（如 “标普道琼斯指数公司”）
-- 泛称（如 “投资者”、“监管机构”、“某银行”、“大型科技公司”）
+- 泛称（如 “投资者”、“监管机构”、“某银行”、“大型科技公司”、“智能手机”）
 - 情绪/行情描述（如 “暴涨”、“抛售潮”、“经济衰退担忧”）
 
 【任务要求】
 1. 判断新闻是否包含一个或多个独立事件。
 2. 对每个事件，输出：
    - 一个简洁、客观、无情绪的中文摘要（作为事件唯一标识）
-   - 所有符合上述定义的实体（全称优先，避免缩写；若原文使用英文名且无通用中文译名，则保留英文）
+   - 所有符合上述定义的实体（全称优先，避免缩写；若原文使用英文名且无通用中文译名，则保留英文；产品/品牌名称保留原文或通用译名）
    - 所有符合上述定义的实体的原始语言表述（保留新闻中实体的原始语言形式；原始语言实体数组的索引与实体数组索引一一对应）
    - 该事件的本质描述（一句话说明“谁对谁做了什么”）
 
@@ -216,23 +238,32 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 # ======================
 
 def get_unprocessed_news_files() -> List[Path]:
+    """
+    仅使用 tmp 目录的去重与处理。
+    tmp 用于新抓取的待处理数据，处理完成后会删除对应 raw/deduped。
+    """
     processed_ids = set()
     if tools.PROCESSED_IDS_FILE.exists():
-        with open(tools.PROCESSED_IDS_FILE, "r") as f:
+        with open(tools.PROCESSED_IDS_FILE, "r", encoding="utf-8", errors="ignore") as f:
             processed_ids = set(line.strip() for line in f if line.strip())
     
-    unprocessed = []
-    for raw_file in sorted(tools.RAW_NEWS_DIR.glob("*.jsonl")):
-        deduped_file = tools.DEDUPED_NEWS_DIR / f"{raw_file.stem}_deduped.jsonl"
+    unprocessed: List[Path] = []
+    # 只处理 tmp/raw_news -> tmp/deduped_news
+    raw_dir = tools.RAW_NEWS_TMP_DIR
+    dedup_dir = tools.DEDUPED_NEWS_TMP_DIR
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    dedup_dir.mkdir(parents=True, exist_ok=True)
+
+    for raw_file in sorted(raw_dir.glob("*.jsonl")):
+        deduped_file = dedup_dir / f"{raw_file.stem}_deduped.jsonl"
         if not deduped_file.exists():
             deduper = NewsDeduplicator(threshold=tools.DEDUPE_THRESHOLD)
-            # 先用 processed_ids 过滤“历史已处理新闻”，再写入去重文件
             deduper.dedupe_file(raw_file, deduped_file, processed_ids)
         unprocessed.append(deduped_file)
     return unprocessed
 
 def process_news_stream():
-    tools.log("🚀 启动 Agent1：流式事件与真实实体提取...")
+    tools.log(f"🚀 启动 Agent1：并发实体提取 | workers={MAX_WORKERS}, rate={RATE_LIMIT_PER_SEC}/s")
     files = get_unprocessed_news_files()
     if not files:
         tools.log("📭 无可处理新闻文件")
@@ -240,102 +271,125 @@ def process_news_stream():
 
     processed_ids = set()
     if tools.PROCESSED_IDS_FILE.exists():
-        with open(tools.PROCESSED_IDS_FILE, "r") as f:
+        with open(tools.PROCESSED_IDS_FILE, "r", encoding="utf-8", errors="ignore") as f:
             processed_ids = set(line.strip() for line in f if line.strip())
 
+    limiter = RateLimiter(RATE_LIMIT_PER_SEC)
     total_processed = 0
+
+    def build_published_at(ts: Optional[str]) -> Optional[str]:
+        if not ts:
+            return None
+        try:
+            return ts if isinstance(ts, str) else str(ts)
+        except Exception:
+            return None
+
+    def extract_task(global_id: str, title: str, content: str, source: str, published_at: Optional[str]) -> Tuple[str, str, Optional[str], List[Dict]]:
+        try:
+            limiter.acquire()
+            extracted = llm_extract_events(title, content)
+            return global_id, source, published_at, extracted
+        except Exception as e:
+            tools.log(f"⚠️ 任务 {global_id} 提取失败: {e}")
+            return global_id, source, published_at, []
+
     with open(tools.PROCESSED_IDS_FILE, "a") as id_log:
         for file_path in files:
             tools.log(f"📄 处理文件: {file_path.name}")
-            with open(file_path, "r", encoding="utf-8") as f:
+            futures = []
+            with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor, \
+                 open(file_path, "r", encoding="utf-8") as f:
                 for line in f:
                     try:
                         news = json.loads(line)
                         raw_id = str(news.get("id", "")).strip()
                         source = news.get("source", "unknown").strip().lower()
-                        
+
                         if not raw_id or not source:
                             tools.log("⚠️ 跳过无 ID 或无 source 的新闻")
                             continue
 
-                        global_id = f"{source}:{raw_id}"  # 👈 关键：带前缀的全局唯一 ID
-
+                        global_id = f"{source}:{raw_id}"
                         if global_id in processed_ids:
                             continue
 
                         title = news.get("title", "")
                         content = news.get("content", "")
-
-                        # 为避免超长正文导致 LLM 超出 token 或返回异常 JSON，这里对正文做长度截断
-                        MAX_CONTENT_CHARS = 2000  # 可调，比如 1500 / 3000
+                        MAX_CONTENT_CHARS = 2000
                         if isinstance(content, str) and len(content) > MAX_CONTENT_CHARS:
                             content = content[:MAX_CONTENT_CHARS] + "……【后文已截断】"
 
-                        extracted = llm_extract_events(title, content)
-
-                        if extracted:
-                            all_entities = []
-                            all_entities_original = []
-                            for ev in extracted:
-                                all_entities.extend(ev["entities"])
-                                all_entities_original.extend(ev["entities_original"])
-                            if all_entities and len(all_entities) == len(all_entities_original):
-                                # 优先使用新闻自身的时间戳（由采集器提供），否则使用当前时间
-                                ts = news.get("timestamp")
-                                # 部分旧数据可能是 datetime 对象或其他类型，统一转为字符串
-                                published_at = None
-                                if ts:
-                                    try:
-                                        published_at = (
-                                            ts if isinstance(ts, str) else str(ts)
-                                        )
-                                    except Exception:
-                                        published_at = None
-
-                                update_entities(all_entities, all_entities_original, source, published_at)
-                                update_abstract_map(extracted, source, published_at)
-                                total_processed += 1
-
-                                id_log.write(global_id + "\n")  # 👈 写入带前缀的 ID
-                                processed_ids.add(global_id)
-                            else:
-                                tools.log(f"🔍 新闻 {global_id}：LLM 返回事件但无有效实体，暂不标记")
-                        else:
-                            tools.log(f"⏳ 新闻 {global_id}：LLM 未返回有效事件，保留重试机会")
-
+                        published_at = build_published_at(news.get("timestamp"))
+                        futures.append(
+                            executor.submit(
+                                extract_task,
+                                global_id,
+                                title,
+                                content,
+                                source,
+                                published_at
+                            )
+                        )
                     except Exception as e:
-                        tools.log(f"⚠️ 处理单条新闻失败: {e}")
-            
-            # 处理完文件后删除对应的raw_news文件和该deduped_news文件
+                        tools.log(f"⚠️ 解析新闻行失败: {e}")
+
+                for fut in as_completed(futures):
+                    try:
+                        global_id, source, published_at, extracted = fut.result()
+                        if not extracted:
+                            tools.log(f"⏳ 新闻 {global_id}：LLM 未返回有效事件，保留重试机会")
+                            continue
+
+                        all_entities = []
+                        all_entities_original = []
+                        for ev in extracted:
+                            all_entities.extend(ev["entities"])
+                            all_entities_original.extend(ev["entities_original"])
+
+                        if all_entities and len(all_entities) == len(all_entities_original):
+                            update_entities(all_entities, all_entities_original, source, published_at)
+                            update_abstract_map(extracted, source, published_at)
+                            total_processed += 1
+                            id_log.write(global_id + "\n")
+                            processed_ids.add(global_id)
+                        else:
+                            tools.log(f"🔍 新闻 {global_id}：LLM 返回事件但无有效实体，暂不标记")
+                    except Exception as e:
+                        tools.log(f"⚠️ 处理提取结果失败: {e}")
+
             try:
-                # 找到对应的raw_news文件（去掉"_deduped"后缀）
+                is_tmp = False
+                try:
+                    file_path.relative_to(tools.DEDUPED_NEWS_TMP_DIR)
+                    is_tmp = True
+                except Exception:
+                    is_tmp = False
+
+                raw_dir = tools.RAW_NEWS_TMP_DIR if is_tmp else tools.RAW_NEWS_DIR
                 raw_file_name = file_path.stem.replace("_deduped", "") + ".jsonl"
-                raw_file_path = tools.RAW_NEWS_DIR / raw_file_name
-                
-                # 删除raw_news文件
+                raw_file_path = raw_dir / raw_file_name
                 if raw_file_path.exists():
                     raw_file_path.unlink()
-                    tools.log(f"🗑️ 删除原始新闻文件: {raw_file_path.name}")
-                
-                # 删除deduped_news文件
+                    tools.log(f"🗑️ 删除原始新闻文件: {raw_file_path}")
                 if file_path.exists():
                     file_path.unlink()
-                    tools.log(f"🗑️ 删除去重新闻文件: {file_path.name}")
+                    tools.log(f"🗑️ 删除去重新闻文件: {file_path}")
             except Exception as e:
                 tools.log(f"⚠️ 删除文件失败: {e}")
 
     tools.log(f"✅ 完成！共处理 {total_processed} 条含有效实体的新闻")
     
-    # 在所有新闻处理完成后统一刷新知识图谱
-    if total_processed > 0:
-        try:
-            with tools._refresh_lock:
-                threading.Thread(target=refresh_graph, daemon=True).start()
-                tools.log("🔄 已启动知识图谱刷新线程")
-        except Exception as e:
-            tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
-    else:
-        tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
+    # # 在所有新闻处理完成后统一刷新知识图谱
+    # if total_processed > 0:
+    #     try:
+    #         with tools._refresh_lock:
+    #             threading.Thread(target=refresh_graph, daemon=True).start()
+    #             tools.log("🔄 已启动知识图谱刷新线程")
+    #     except Exception as e:
+    #         tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
+    # else:
+    #     tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
 
 
 # ======================

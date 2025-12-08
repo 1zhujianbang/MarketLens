@@ -13,6 +13,9 @@ import os
 import sys
 import json
 import asyncio
+import time
+import argparse
+from collections import defaultdict
 from pathlib import Path
 from typing import List, Dict, Set, Optional
 from datetime import datetime, timezone, timedelta
@@ -349,44 +352,184 @@ async def process_expanded_news(expanded_news: List[Dict]) -> int:
     
     return processed_count
 
-async def main():
+
+def persist_expanded_news_to_tmp(expanded_news: List[Dict], processed_ids: Set[str]) -> Optional[Path]:
     """
-    主函数
+    将拓展新闻写入 tmp 原始文件并做去重，返回去重后的文件路径。
+    """
+    if not expanded_news:
+        return None
+    tools.RAW_NEWS_TMP_DIR.mkdir(parents=True, exist_ok=True)
+    tools.DEDUPED_NEWS_TMP_DIR.mkdir(parents=True, exist_ok=True)
+
+    ts = time.strftime("%Y%m%d%H%M%S")
+    raw_path = tools.RAW_NEWS_TMP_DIR / f"expanded_{ts}.jsonl"
+    deduped_path = tools.DEDUPED_NEWS_TMP_DIR / f"expanded_{ts}_deduped.jsonl"
+
+    def _sanitize(item: Dict) -> Dict:
+        clean = {}
+        for k, v in item.items():
+            if isinstance(v, datetime):
+                clean[k] = v.isoformat()
+            else:
+                clean[k] = v
+        return clean
+
+    with open(raw_path, "w", encoding="utf-8") as f:
+        for news in expanded_news:
+            safe_news = _sanitize(news)
+            f.write(json.dumps(safe_news, ensure_ascii=False) + "\n")
+
+    deduper = NewsDeduplicator(threshold=tools.DEDUPE_THRESHOLD if hasattr(tools, 'DEDUPE_THRESHOLD') else 3)
+    deduper.dedupe_file(raw_path, deduped_path, processed_ids)
+    return deduped_path
+
+
+def load_merge_rules(path: Path) -> Dict[str, str]:
+    if not path.exists():
+        return {}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data.get("merge_rules", {})
+    except Exception:
+        return {}
+
+
+def build_equiv_index(entities_file: Path, merge_rules_file: Path) -> Dict[str, Set[str]]:
+    """
+    构建实体等价词索引：实体名/原始词/合并规则别名互相指向。
+    """
+    idx: Dict[str, Set[str]] = defaultdict(set)
+    entities = {}
+    if entities_file.exists():
+        try:
+            entities = json.loads(entities_file.read_text(encoding="utf-8"))
+        except Exception as e:
+            tools.log(f"⚠️ 加载实体库失败: {e}")
+
+    merge_rules = load_merge_rules(merge_rules_file)
+    # 建反向索引 primary -> duplicates
+    rev_rules: Dict[str, Set[str]] = defaultdict(set)
+    for dup, primary in merge_rules.items():
+        rev_rules[primary].add(dup)
+
+    for name, data in entities.items():
+        forms = set()
+        if name:
+            forms.add(name)
+        for f in data.get("original_forms", []):
+            if isinstance(f, str) and f.strip():
+                forms.add(f.strip())
+        if name in merge_rules:  # name 是别名
+            forms.add(merge_rules[name])
+        if name in rev_rules:    # 有别名指向 name
+            forms.update(rev_rules[name])
+        for f in forms:
+            idx[f].update(forms)
+
+    # 规则里出现但未在实体库的别名/主名
+    for dup, primary in merge_rules.items():
+        idx[dup].add(primary)
+        idx[dup].add(dup)
+        idx[primary].add(primary)
+        idx[primary].add(dup)
+    return idx
+
+
+def expand_keywords_with_equivs(keywords: List[str], idx: Dict[str, Set[str]]) -> List[Dict[str, List[str]]]:
+    """
+    将输入关键词扩展为实体及其原始形态列表，供 OR 合并使用。
+    """
+    expanded = []
+    for kw in keywords:
+        kw_norm = kw.strip()
+        if not kw_norm:
+            continue
+        forms = set([kw_norm])
+        if kw_norm in idx:
+            forms.update(idx[kw_norm])
+        expanded.append({
+            "name": kw_norm,
+            "original_forms": [f for f in forms if f != kw_norm]
+        })
+    return expanded
+
+async def main(args: Optional[argparse.Namespace] = None):
+    """
+    主函数，可通过命令行参数指定关键词、时间窗口、数量等。
     """
     tools.log("🚀 启动 Agent2：实体拓展新闻...")
+    processed_ids = set()
+    if tools.PROCESSED_IDS_FILE.exists():
+        with open(tools.PROCESSED_IDS_FILE, "r", encoding="utf-8", errors="ignore") as f:
+            processed_ids = set(line.strip() for line in f if line.strip())
     
-    # 1. 获取最近的实体
-    recent_entities = get_recent_entities(time_window_days=30, limit=1)
-    
-    if not recent_entities:
-        tools.log("📭 没有可用的实体进行新闻拓展")
-        return
+    # 1. 获取实体来源：命令行关键词或最近实体
+    if args and args.keywords:
+        merge_rules_file = tools.CONFIG_DIR / "entity_merge_rules.json"
+        idx = build_equiv_index(tools.ENTITIES_FILE, merge_rules_file)
+        recent_entities = expand_keywords_with_equivs(args.keywords, idx)
+        tools.log(f"🔖 使用命令行关键词 {len(recent_entities)} 个作为实体（含等价词扩展）")
+    else:
+        entity_limit = args.entity_limit if args else 1
+        window_days = args.time_window_days if args else 30
+        recent_entities = get_recent_entities(time_window_days=window_days, limit=entity_limit)
+        if not recent_entities:
+            tools.log("📭 没有可用的实体进行新闻拓展")
+            return
     
     # 2. 使用实体搜索相关新闻
-    # 默认只搜索最近30天的新闻，设置full_search=True可进行全面检索
+    limit_per_entity = args.limit_per_entity if args else 120
+    window_days = args.time_window_days if args else 30
+    full_search = args.full_search if args else False
     tools.log(f"🔍 开始搜索 {len(recent_entities)} 个实体的相关新闻...")
-    expanded_news = await expand_news_by_entities(recent_entities, limit_per_entity=120, time_window_days=30, full_search=False)
+    expanded_news = await expand_news_by_entities(
+        recent_entities,
+        limit_per_entity=limit_per_entity,
+        time_window_days=window_days,
+        full_search=full_search
+    )
     tools.log(f"✅ 共搜索到 {len(expanded_news)} 条相关新闻")
     
     # 3. 处理搜索到的新闻
     if expanded_news:
-        tools.log("📄 开始处理拓展的新闻...")
-        processed_count = await process_expanded_news(expanded_news)
+        deduped_path = persist_expanded_news_to_tmp(expanded_news, processed_ids)
+        processed_count = 0
+        if deduped_path and deduped_path.exists():
+            tools.log(f"📄 开始处理拓展的新闻 (deduped: {deduped_path.name}) ...")
+            news_list = []
+            with open(deduped_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        news_list.append(json.loads(line))
+                    except Exception as e:
+                        tools.log(f"⚠️ 跳过无效行: {e}")
+            processed_count = await process_expanded_news(news_list)
+            # 清理 tmp 文件
+            try:
+                raw_file = tools.RAW_NEWS_TMP_DIR / deduped_path.name.replace("_deduped", "")
+                if raw_file.exists():
+                    raw_file.unlink()
+                    tools.log(f"🗑️ 删除临时原始文件: {raw_file}")
+                deduped_path.unlink()
+                tools.log(f"🗑️ 删除临时去重文件: {deduped_path}")
+            except Exception as e:
+                tools.log(f"⚠️ 删除临时文件失败: {e}")
         tools.log(f"✅ 成功处理 {processed_count} 条拓展新闻")
-        
-        # # 在所有新闻处理完成后统一刷新知识图谱
-        # if processed_count > 0:
-        #     try:
-        #         import threading
-        #         with tools._refresh_lock:
-        #             threading.Thread(target=refresh_graph, daemon=True).start()
-        #             tools.log("🔄 已启动知识图谱刷新线程")
-        #     except Exception as e:
-        #         tools.log(f"⚠️ 启动知识图谱刷新失败: {e}")
-        # else:
-        #     tools.log("📭 未处理任何新闻，跳过知识图谱刷新")
     
     tools.log("🎉 实体拓展新闻任务完成！")
 
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Agent2 实体拓展新闻")
+    parser.add_argument("--keywords", "-k", nargs="+", help="指定实体关键词列表，替代最近实体")
+    parser.add_argument("--entity-limit", type=int, default=1, help="从最近实体库选择的数量（未指定关键词时生效）")
+    parser.add_argument("--time-window-days", type=int, default=30, help="最近实体时间窗口 / 搜索时间窗口（天）")
+    parser.add_argument("--limit-per-entity", type=int, default=120, help="每个实体搜索新闻数量上限")
+    parser.add_argument("--full-search", action="store_true", help="是否全面检索至2020年")
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    args = parse_args()
+    asyncio.run(main(args))
