@@ -10,7 +10,6 @@ user_config:
   - GBP/JPY
   - GOLD
   - OIL
-  risk_preference: moderate
 models_config:
   model_name: placeholder
   model_type: transformer
@@ -19,16 +18,22 @@ models_config:
   prediction_horizon: 24
 data_config:
   data_source: exchange
-  proxy: ''
   timeframe: 1H
   historical_days: 30
   update_interval: 60
 config_version: 1.0.0
+agent1_config:
+  max_workers: 7
+  rate_limit_per_sec: 20.0
+  dedupe_threshold: 4
+agent2_config:
+  max_workers: 7
+  rate_limit_per_sec: 20.0
 agent3_config:
   entity_batch_size: 80
   event_batch_size: 15
   event_bucket_days: 7
-  event_bucket_entity_overlap: 1
+  event_bucket_entity_overlap: 2
   event_bucket_max_size: 40
   event_precluster_similarity: 0.92
   event_precluster_limit: 300
@@ -40,10 +45,3 @@ agent3_config:
   rate_limit_per_sec: 6.0
   entity_evidence_per_entity: 2
   entity_evidence_max_chars: 400
-agent1_config:
-  max_workers: 7
-  rate_limit_per_sec: 6.0
-  dedupe_threshold: 4
-agent2_config:
-  max_workers: 7
-  rate_limit_per_sec: 6.0

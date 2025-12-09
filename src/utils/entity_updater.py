@@ -54,8 +54,15 @@ def update_entities(entities: List[str], entities_original: List[str], source: s
                 needs_update = True
     
     if needs_update:
+        tools.DATA_TMP_DIR.mkdir(parents=True, exist_ok=True)
         with open(tools.ENTITIES_FILE, "w", encoding="utf-8") as f:
             json.dump(existing, f, ensure_ascii=False, indent=2)
+        # 同步写入 tmp 缓存，供前端 Maintenance 使用
+        try:
+            with open(tools.ENTITIES_TMP_FILE, "w", encoding="utf-8") as f_tmp:
+                json.dump(existing, f_tmp, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
         
         # 知识图谱刷新将在上层流程统一触发
 
@@ -112,7 +119,14 @@ def update_abstract_map(extracted_list: List[Dict], source: str, published_at: O
                 needs_update = True
     
     if needs_update:
+        tools.DATA_TMP_DIR.mkdir(parents=True, exist_ok=True)
         with open(tools.ABSTRACT_MAP_FILE, "w", encoding="utf-8") as f:
             json.dump(abstract_map, f, ensure_ascii=False, indent=2)
+        # 同步写入 tmp 缓存，供前端 Maintenance 使用
+        try:
+            with open(tools.ABSTRACT_TMP_FILE, "w", encoding="utf-8") as f_tmp:
+                json.dump(abstract_map, f_tmp, ensure_ascii=False, indent=2)
+        except Exception:
+            pass
         
         # 知识图谱刷新将在上层流程统一触发

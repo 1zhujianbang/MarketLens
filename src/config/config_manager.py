@@ -18,12 +18,11 @@ class ModelConfig(BaseModel):
     data_window: int = Field(..., ge=10, le=10000, description="数据窗口大小必须在10-10000之间")
     prediction_target: str = Field(..., min_length=1, description="预测目标不能为空")
     prediction_horizon: int = Field(..., ge=1, le=100, description="预测范围必须在1-100之间")
-    features: List[str] = Field(..., min_length=1, description="至少需要一个特征")
+    
 
 # 数据配置（精简至当前使用字段）
 class DataConfig(BaseModel):
     data_source: str = Field(..., pattern="^(exchange|database|csv)$", description="数据源必须是 exchange/database/csv")
-    proxy: Optional[str] = Field(None, description="代理设置（如有需要）")
     timeframe: str = Field(..., pattern="^(1m|5m|15m|1h|4h|1d|1M|5M|15M|1H|4H|1D)$", description="时间框架必须是 1m/5m/15m/1h/4h/1d/1M/5M/15M/1H/4H/1D")
     historical_days: int = Field(..., ge=1, le=3650, description="历史天数必须在1-3650之间")
     update_interval: int = Field(..., ge=1, le=3600, description="更新间隔必须在1-3600秒之间")

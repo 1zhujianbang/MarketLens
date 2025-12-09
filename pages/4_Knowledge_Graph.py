@@ -36,6 +36,7 @@ with st.sidebar:
         index=0,
         help="Select an entity to view its specific connections."
     )
+    hop_depth = st.slider("Hop Depth (聚焦模式)", 1, 4, 1, help="从选定实体出发，最多拓展的边数（实体-事件-实体-...）。")
     
     st.divider()
     
@@ -66,19 +67,23 @@ for evt_abstract, evt_data in events.items():
 
 # --- 过滤逻辑 ---
 target_nodes = set()
+from collections import defaultdict, deque
+adj = defaultdict(set)
+for u, v, _ in edge_list:
+    adj[u].add(v)
+    adj[v].add(u)
 
 if search_query != "(All / Top Nodes)":
-    # 1. 聚焦模式：找到目标实体及其邻居
+    # 1. 聚焦模式：从选定实体出发，按 hop_depth 做 BFS（实体-事件交替）
     target_nodes.add(search_query)
-    
-    # 找到所有涉及该实体的事件
-    related_events = []
-    for u, v, attr in edge_list:
-        if u == search_query or v == search_query:
-            neighbor = v if u == search_query else u
-            target_nodes.add(neighbor)
-            # 如果 neighbor 是事件，还得把事件的其他实体加进来（可选，2-hop）
-            # 这里暂时只做 1-hop: Entity -> Event
+    frontier = {search_query}
+    for _ in range(hop_depth):
+        next_frontier = set()
+        for node in frontier:
+            next_frontier |= adj.get(node, set())
+        next_frontier -= target_nodes
+        target_nodes |= next_frontier
+        frontier = next_frontier
 else:
     # 2. 全局模式：按度数（连接数）取 Top N 实体 + 相关事件
     # 简单起见，先统计实体出现频率

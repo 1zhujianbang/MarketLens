@@ -334,7 +334,7 @@ async def process_expanded_news(expanded_news: List[Dict]) -> int:
     sem = asyncio.Semaphore(AGENT2_MAX_WORKERS if AGENT2_MAX_WORKERS > 0 else 1)
     limiter_interval = 1.0 / AGENT2_RATE_LIMIT if AGENT2_RATE_LIMIT > 0 else 0
     limiter_lock = asyncio.Lock()
-
+    
     async def rate_limit():
         if limiter_interval <= 0:
             return

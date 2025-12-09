@@ -83,7 +83,6 @@ class MarketAnalysisAgent:
         structured_news = self.news_data.get('structured', pd.DataFrame())
         return {
             "is_ready": self.is_ready,
-            "risk_preference": self.config.user_config.risk_preference,
             "model_used": self.config.models_config.model_name,
             "market_sentiment": self.market_sentiment.get('sentiment', 'neutral'),
             "news_count": len(structured_news),
@@ -338,32 +337,3 @@ class MarketAnalysisAgent:
         await self._initialize_news_data()
         print("✅ 新闻数据更新完成")
     
-    # ======================
-    # 🧠 智能体2 & 知识图谱 占位区
-    # ======================
-
-    async def _expand_news_with_kg(self, df: pd.DataFrame) -> pd.DataFrame:
-        """
-        【占位】智能体2：基于知识图谱扩展相关新闻
-        输入：含 entities 的 DataFrame
-        输出：增强后的 DataFrame（含 expanded_entities, related_news_ids 等）
-        """
-        # TODO: 实现基于 Neo4j / 内存图的关联扩展
-        print("🚧 智能体2（KG扩展）尚未实现")
-        return df
-
-    def _build_temporal_knowledge_graph(self):
-        """
-        【占位】构建时序知识图谱（用于路径推理）
-        """
-        print("🚧 知识图谱构建模块尚未实现")
-        pass
-
-    async def update_knowledge_graph(self):
-        """
-        【占位】主入口：更新知识图谱
-        """
-        if not self.is_ready or self.news_data.get('structured') is None:
-            return
-        await self._expand_news_with_kg(self.news_data['structured'])
-        self._build_temporal_knowledge_graph()

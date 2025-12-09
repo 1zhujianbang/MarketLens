@@ -704,37 +704,6 @@ class KnowledgeGraph:
         duplicates = [n for n in group if n != best]
         return best, duplicates
 
-    def _prepare_entity_compression_prompt(self, entities_batch: List[str]) -> str:
-        prompt = f"""你是一名知识图谱专家。任务：仅在有充分证据时认定实体为同一主体（别名/缩写/中英文/法定全称差异）。不要因为行业相似、上下级关系或地域相似而合并。
-
-【实体列表】
-{json.dumps(entities_batch, ensure_ascii=False, indent=2)}
-
-【高风险误判示例】
-- “大学” 与 “联盟/协会/部门/央行” 不是同一主体
-- 不同国家/地区的同名机构，不可合并
-- 上市公司 vs 子公司/控股股东，不可合并
-- 政府部门 vs 上级政府，不可合并
-
-【要求】
-- 只输出确定为同一主体的组合；不确定就返回空。
-- 优先严格匹配：同名、明显译名、缩写展开。
-- 不要改写名称格式（不要添加书名号/引号/括号等标点）。
-- 语言优先级：主实体请使用中文名称；仅当没有通用中文译名或中文表述不达意时，才保留英文/其它语言；避免把已有中文实体合并到其它语言名称（如 英文/俄文/日文 等）。
-- 如果没有重复，返回空列表。
-
-【输出格式】
-严格返回 JSON：
-{{
-  "duplicate_entities": [
-    ["实体A的全称", "实体A的缩写"], 
-    ["实体B中文名", "实体B英文名"]
-  ]
-}}
-如果没有重复，返回 {{ "duplicate_entities": [] }}。只输出JSON，不要其他废话。
-"""
-        return prompt
-
     def _prepare_entity_compression_prompt_strict(self, entities_batch: List[str]) -> str:
         evidence_map = self._collect_entity_evidence(entities_batch)
         evidence_lines = []
@@ -746,6 +715,8 @@ class KnowledgeGraph:
         prompt = f"""你是一名知识图谱专家。任务：仅在有充分证据时认定实体为同一主体（别名/缩写/中英文/法定全称差异）。不要因为行业相似、上下级关系或地域相似而合并。
 
 【高风险误判示例】
+- 实体具有特化职能或功效或用途，不可合并
+- 行使职能的组织、机构与其下辖的更具体职能的组织、机构不可合并
 - “大学” 与 “联盟/协会/部门/央行” 不是同一主体
 - 不同国家/地区的同名机构，不可合并
 - 上市公司 vs 子公司/控股股东，不可合并
@@ -753,8 +724,8 @@ class KnowledgeGraph:
 - 国家/省州/城市/区县 之间不得互并，也不得跨国合并
 - 公司/机构 ≠ 产品/品牌/型号，不得互并
 - 人名 ≠ 公司/机构/地理/产品，不得互并
- - 媒体名称 ≠ 地点/政府/企业/人名
- - 体育俱乐部/赛事 ≠ 城市/国家/政府/个人
+- 媒体名称 ≠ 地点/政府/企业/人名
+- 体育俱乐部/赛事 ≠ 城市/国家/政府/个人
 
 【实体列表】
 {json.dumps(entities_batch, ensure_ascii=False, indent=2)}
@@ -764,6 +735,7 @@ class KnowledgeGraph:
 {chr(10).join(evidence_lines) if evidence_lines else "（无可用事件，谨慎合并）"}
 
 【要求】
+- 主实体优先更通用（或更倾向中国人表达）、更详细、更精确、更学术（“更XX”按优先级顺序）
 - 只输出确定为同一主体的组合；不确定就返回空。
 - 优先严格匹配：同名、明显译名、缩写展开。
 - 不要改写名称格式（不要添加书名号/引号/括号等标点）。
@@ -789,6 +761,8 @@ class KnowledgeGraph:
 - 行业相似但主体不同的事件
 - 上游/下游/监管/联盟关系 ≠ 同一事件
 - 时间间隔明显不同的多次事件
+- 事件具有连续发生或一前一后的关系
+- 对于相同实体，不同时间点发生的事件
 
 【事件列表】
 格式: 摘要 | 参与实体 | 事件描述

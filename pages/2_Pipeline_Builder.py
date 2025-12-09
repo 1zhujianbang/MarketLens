@@ -625,7 +625,7 @@ def render_expansion_tab():
                 "id": f"persist_{kw.replace(' ', '_')}_{idx}",
                 "tool": "persist_expanded_news_tmp",
                 "inputs": {
-                    "expanded_news": f"results_{idx}"
+                    "expanded_news": f"$results_{idx}"
                 },
                 "output": f"persist_result_{idx}"
             })
@@ -671,7 +671,26 @@ def render_maintenance_tab():
     with st.expander("查看临时实体 / 事件示例", expanded=False):
         if entities_tmp:
             df_ent = pd.DataFrame(
-                [{"name": k, "first_seen": v.get("first_seen", ""), "sources": ",".join(v.get("sources", []))[:80]} for k, v in list(entities_tmp.items())[:50]]
+                [
+                    {
+                        "name": k,
+                        "first_seen": v.get("first_seen", ""),
+                        "sources": ",".join(
+                            [
+                                (
+                                    s.get("name")
+                                    or s.get("id")
+                                    or s.get("url")
+                                    or str(s)
+                                )
+                                if isinstance(s, dict)
+                                else str(s)
+                                for s in v.get("sources", [])
+                            ]
+                        )[:80],
+                    }
+                    for k, v in list(entities_tmp.items())[:50]
+                ]
             )
             st.write("临时实体（最多50条预览）")
             st.dataframe(df_ent, use_container_width=True)

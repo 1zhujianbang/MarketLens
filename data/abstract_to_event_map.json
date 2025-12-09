@@ -1,4056 +1,1075 @@
 {
-  "帝奥微终止收购荣湃半导体100%股权并配套融资事项": {
+  "美国总统特朗普收回对公布第二次打击涉嫌委内瑞拉毒品船只视频的支持": {
     "entities": [
-      "帝奥微电子股份有限公司",
-      "荣湃半导体（上海）有限公司"
+      "特朗普",
+      "委内瑞拉",
+      "美国"
     ],
-    "event_summary": "一家上市公司决定终止对另一家半导体公司的收购及配套融资计划",
-    "sources": [
-      "东方财富"
-    ],
-    "first_seen": "2025-12-06T13:33:37+00:00"
+    "event_summary": "美国国家元首改变了其先前关于公开某次军事行动视频的立场",
+    "sources": [],
+    "first_seen": "2025-12-08T22:44:27+00:00"
   },
-  "AIE澳门展区上演‘百镜大战’，AI眼镜参展商表示外销占比超80%并寻求拓宽海外合作": {
+  "乌克兰武装部队在波克罗夫斯克和米尔诺格勒地区后撤以调整战线": {
     "entities": [
-      "澳门特别行政区",
-      "安兔兔"
+      "米尔诺格勒",
+      "乌克兰国防军",
+      "顿涅茨克州",
+      "波克罗夫斯克"
     ],
-    "event_summary": "某参展商在展会上透露其业务高度依赖海外市场，并计划进一步拓展国际客户",
-    "sources": [
-      "东方财富"
-    ],
-    "first_seen": "2025-12-06T09:42:31+00:00"
+    "event_summary": "乌克兰武装部队从顿涅茨克州的波克罗夫斯克与米尔诺格勒地区后撤至更有利阵地以优化后勤并整平前线",
+    "sources": [],
+    "first_seen": "2025-12-08T22:48:00+00:00"
   },
-  "荷兰看守政府经济事务大臣卡雷曼斯在议会就安世半导体问题接受质询": {
+  "AC米兰在意甲联赛中逆转都灵队，凭借普利西奇的梅开二度重登积分榜首": {
     "entities": [
-      "США",
-      "荷兰",
-      "文森特·卡雷曼斯",
-      "大兴安岭",
-      "绿党",
-      "欧盟",
-      "荷兰自由党",
-      "埃隆·马斯克",
-      "经济事务大臣",
-      "中华人民共和国",
-      "荷兰议会",
-      "自由民主人民党"
+      "克里斯蒂安·普利西奇",
+      "都灵足球俱乐部",
+      "AC米兰",
+      "意大利足球甲级联赛"
     ],
-    "event_summary": "荷兰经济事务大臣因对中资安世半导体的措施在议会遭多党派集体批评",
-    "sources": [
-      "凤凰网",
-      "腾讯新闻",
-      "qq news"
-    ],
-    "first_seen": "2025-12-06T03:37:00+00:00"
+    "event_summary": "一支足球俱乐部在联赛中击败另一支足球俱乐部，凭借球员的表现重返积分榜首位",
+    "sources": [],
+    "first_seen": "2025-12-08T22:36:00+00:00"
   },
-  "2025年U15世界中学生排球锦标赛在陕西省商洛市开幕": {
+  "Nvidia发布2025年12月Studio驱动程序更新": {
     "entities": [
-      "中国学生体育联合会",
-      "岑浩辉",
-      "中华人民共和国",
+      "Nvidia",
+      "FLUX.2",
+      "Topaz Video AI",
+      "ComfyUI",
+      "Topaz Photo AI",
+      "Blender"
+    ],
+    "event_summary": "一家科技公司发布了其面向创意应用的最新图形驱动程序",
+    "sources": [],
+    "first_seen": "2025-12-08T22:42:00+00:00"
+  },
+  "美国最高法院就特朗普诉斯劳特案听取口头辩论，该案涉及总统豁免权争议": {
+    "entities": [
+      "特朗普",
+      "美国最高法院",
+      "斯劳特"
+    ],
+    "event_summary": "美国最高法院审理前总统特朗普就总统豁免权提起的诉讼",
+    "sources": [],
+    "first_seen": "2025-12-08T22:47:00+00:00"
+  },
+  "唐纳德·特朗普宣布将动用关税收入向美国农民提供120亿美元援助": {
+    "entities": [
+      "唐纳德·特朗普",
+      "美国"
+    ],
+    "event_summary": "国家前领导人宣布由主权国家利用关税收入向本国农业群体提供财政援助",
+    "sources": [],
+    "first_seen": "2025-12-08T22:34:59+00:00"
+  },
+  "宾夕法尼亚州阿尔图纳警方在麦当劳逮捕涉嫌杀害CEO的Luigi Mangione时发现枪支": {
+    "entities": [
+      "宾夕法尼亚州",
+      "阿尔图纳警察局",
+      "麦当劳",
+      "Luigi Mangione"
+    ],
+    "event_summary": "地方执法机构在逮捕一名嫌疑人过程中于其随身物品中发现武器",
+    "sources": [],
+    "first_seen": "2025-12-08T22:34:59+00:00"
+  },
+  "弗拉门戈俱乐部主席Bap保证将在圣诞节前完成菲利佩·路易斯的续约": {
+    "entities": [
+      "弗拉门戈",
+      "Filipe Luís",
+      "Luiz Eduardo Baptista"
+    ],
+    "event_summary": "俱乐部主席承诺将在节日前与球员完成续约合同签署",
+    "sources": [],
+    "first_seen": "2025-12-08T22:32:19+00:00"
+  },
+  "布鲁诺·费尔南德斯梅开二度助曼联取胜，狼队主场失利": {
+    "entities": [
+      "伍尔弗汉普顿流浪者足球俱乐部",
+      "曼彻斯特联足球俱乐部",
+      "莫利纽球场",
+      "布鲁诺·费尔南德斯"
+    ],
+    "event_summary": "一支足球俱乐部在主场比赛中输给了另一支足球俱乐部",
+    "sources": [],
+    "first_seen": "2025-12-08T22:30:30+00:00"
+  },
+  "Paulinho da Força rejeita incluir anistia em parecer sobre projeto de lei relacionado ao 8 de Janeiro": {
+    "entities": [
+      "Paulinho da Força",
+      "CartaCapital",
+      "projeto de lei que pode reduzir as penas de condenados por envolvimento no 8 de Janeiro"
+    ],
+    "event_summary": "O deputado federal Paulinho da Força, em contato com a revista CartaCapital, descarta incluir anistia no seu parecer sobre um projeto de lei ligado aos eventos de 8 de janeiro",
+    "sources": [],
+    "first_seen": "2025-12-08T22:33:00+00:00"
+  },
+  "参议院多数党领袖约翰·图恩未承诺本周就共和党医疗提案进行投票，而平价医疗法案的关键补贴即将到期": {
+    "entities": [
+      "参议院",
+      "约翰·图恩",
+      "美国",
+      "共和党"
+    ],
+    "event_summary": "美国参议院共和党领袖未承诺就本党医疗提案安排投票，民主党则计划推动延长补贴的提案表决",
+    "sources": [],
+    "first_seen": "2025-12-08T22:34:17+00:00"
+  },
+  "一名退休人员在与配偶因节日计划发生争执后自杀身亡": {
+    "entities": [
+      "María Venegas",
+      "Pedro Gómez",
+      "Prefectura Naval Argentina"
+    ],
+    "event_summary": "一名阿根廷海警退休人员在与配偶发生争执后自杀",
+    "sources": [],
+    "first_seen": "2025-12-08T22:26:17+00:00"
+  },
+  "阿根廷布宜诺斯艾利斯省参议院副主席职位因庇隆主义内部未达成协议而由Carlos Kikuchi继续担任至三月": {
+    "entities": [
+      "布宜诺斯艾利斯省参议院",
+      "Carlos Kikuchi",
+      "Verónica Magar"
+    ],
+    "event_summary": "一名政治人物因党内未达成继任协议，继续担任省级参议院副主席职务",
+    "sources": [],
+    "first_seen": "2025-12-08T22:28:40+00:00"
+  },
+  "美国总统特朗普否认其五天前在镜头前的言论，并对记者发起人身攻击": {
+    "entities": [
+      "Donald Trump",
+      "美国"
+    ],
+    "event_summary": "美国前总统否认自己过往的公开言论并攻击提问记者",
+    "sources": [],
+    "first_seen": "2025-12-08T22:29:27+00:00"
+  },
+  "阿根廷外交部长回应前驻国际货币基金组织代表对政府购买F-16战机的批评": {
+    "entities": [
+      "阿根廷",
+      "F-16",
+      "国际货币基金组织"
+    ],
+    "event_summary": "阿根廷外交部长公开回应了其前驻国际货币基金组织代表对政府军购决策的批评",
+    "sources": [],
+    "first_seen": "2025-12-08T22:29:00+00:00"
+  },
+  "Estudiantes在拉普拉塔德比战中以1比0战胜Gimnasia": {
+    "entities": [
+      "Gimnasia",
+      "Eduardo Domínguez",
+      "Estudiantes"
+    ],
+    "event_summary": "足球俱乐部Estudiantes在主教练Eduardo Domínguez带领下于正式比赛中击败对手Gimnasia",
+    "sources": [],
+    "first_seen": "2025-12-08T22:26:14+00:00"
+  },
+  "巴西交通部长Renan Filho宣布启动国家驾驶执照签发与更新流程现代化改革方案": {
+    "entities": [
+      "巴西民主运动党",
       "巴西",
-      "台湾地区",
-      "保加利亚"
+      "Renan Filho",
+      "交通部"
     ],
-    "event_summary": "多个主权国家和具有行政或组织职能的实体共同参与或主办一项国际中学生体育赛事; 多个主权国家和具有行政职能的组织共同参与或主办一项国际中学生体育赛事",
-    "sources": [
-      "china daily",
-      {
-        "id": "a558c473d98ea7ec101113e3dbe9db4d",
-        "name": "China Daily",
-        "url": "https://shx.chinadaily.com.cn"
-      }
-    ],
-    "first_seen": "2025-12-06T06:16:00+00:00"
+    "event_summary": "巴西交通部长宣布了一项旨在简化和现代化国家驾驶执照管理流程的改革方案",
+    "sources": [],
+    "first_seen": "2025-12-08T22:26:23+00:00"
   },
-  "中国发布'十五五'规划建议部署建设美丽中国": {
+  "阿根廷政府提出劳动改革法案，拟降低企业所得税、豁免租金税并取消电子产品和豪华汽车税": {
     "entities": [
-      "中华人民共和国"
+      "阿根廷政府"
     ],
-    "event_summary": "主权国家通过其规划文件部署国家发展战略目标",
-    "sources": [
-      "央视网"
-    ],
-    "first_seen": "2025-12-06T05:32:00+00:00"
+    "event_summary": "政府在劳动改革法案中提出多项税收减免措施以争取企业支持",
+    "sources": [],
+    "first_seen": "2025-12-08T22:25:36+00:00"
   },
-  "新华社记者在内蒙古牙克石市绰河源镇拍摄大兴安岭林海日出": {
+  "Bruno Fernandes 随曼联客场4-1击败狼队并跻身英超前六": {
     "entities": [
-      "新华社",
-      "内蒙古自治区",
-      "牙克石市",
-      "绰河源镇",
-      "大兴安岭"
+      "Wolverhampton Wanderers Football Club",
+      "Bruno Fernandes",
+      "Manchester United"
     ],
-    "event_summary": "新闻机构在特定行政区划的地理区域进行新闻拍摄活动",
-    "sources": [
-      "央视网"
-    ],
-    "first_seen": "2025-12-06T05:32:00+00:00"
+    "event_summary": "Bruno Fernandes 帮助 Manchester United 在客场战胜 Wolves 并升至英超第六",
+    "sources": [],
+    "first_seen": "2025-12-08T22:23:22+00:00"
   },
-  "南非警方通报一起大规模枪击事件造成至少12人死亡": {
+  "英国政府公布大不列颠铁路公司新标识，采用复古设计": {
     "entities": [
-      "南非"
+      "大不列颠铁路公司",
+      "英国政府"
     ],
-    "event_summary": "主权国家的执法机构通报了在其境内发生的大规模枪击事件及伤亡情况",
-    "sources": [
-      "nbc news"
-    ],
-    "first_seen": "2025-12-06T18:37:00+00:00"
+    "event_summary": "英国政府为其即将成立的国家铁路公司公布了新的品牌标识",
+    "sources": [],
+    "first_seen": "2025-12-08T22:30:00+00:00"
   },
-  "Blumhouse发行的电影《Five Nights at Freddy’s 2》首周末在北美3412家影院获得约5660万美元票房": {
+  "Google在The Android Show活动上发布XR眼镜Xreal Project Aura及PC Connect技术": {
     "entities": [
-      "Blumhouse"
+      "PC Connect",
+      "Xreal Project Aura",
+      "Google"
     ],
-    "event_summary": "电影制作公司Blumhouse推出的续集电影取得高首周末票房",
-    "sources": [
-      "the hollywood reporter"
-    ],
-    "first_seen": "2025-12-06T18:34:11+00:00"
+    "event_summary": "科技公司发布了由其开发的XR眼镜和软件技术",
+    "sources": [],
+    "first_seen": "2025-12-08T22:18:00+00:00"
   },
-  "委内瑞拉反对派领导人将前往挪威接受诺贝尔和平奖": {
+  "Luigi Mangione在宾夕法尼亚州一家麦当劳被捕，警方在其背包中发现装有子弹的弹匣": {
     "entities": [
-      "阿尔弗雷多·迪亚斯",
-      "塞内加尔共和国",
-      "新埃斯帕塔州",
-      "挪威王国"
+      "宾夕法尼亚州",
+      "麦当劳",
+      "Luigi Mangione"
     ],
-    "event_summary": "一位挪威官员称，据信藏匿在委内瑞拉国内的反对派领导人将前往挪威领取诺贝尔和平奖。",
-    "sources": [
-      "the new york times"
-    ],
-    "first_seen": "2025-12-06T18:27:51+00:00"
+    "event_summary": "警方在宾夕法尼亚州麦当劳逮捕Luigi Mangione并搜出弹匣",
+    "sources": [],
+    "first_seen": "2025-12-08T22:15:00+00:00"
   },
-  "联合国核监督机构称切尔诺贝利防护罩因无人机袭击无法再有效限制辐射": {
+  "美国国会通过年度国防政策法案要求国防部提供美军在国际水域打击船只的具体命令": {
     "entities": [
-      "联合国",
-      "乌克兰",
-      "国际原子能机构"
+      "美国国会",
+      "美国国防部",
+      "美国",
+      "美国军队"
     ],
-    "event_summary": "国际组织报告称，主权国家境内的核事故遗址防护结构因军事行动受损，功能失效",
-    "sources": [
-      "cnn",
-      "franceinfo"
-    ],
-    "first_seen": "2025-12-06T18:19:05+00:00"
+    "event_summary": "美国立法机构通过法案强制要求其国防行政部门向其提供军事行动的命令详情",
+    "sources": [],
+    "first_seen": "2025-12-08T22:19:19+00:00"
   },
-  "印第安纳州共和党参议员因中期选区重划问题收到威胁": {
+  "《Прямой разговор》节目播出对后贝加尔边疆区区长亚历山大·奥西波夫的访谈": {
     "entities": [
-      "坦帕",
-      "США"
+      "亚历山大·奥西波夫",
+      "后贝加尔边疆区"
     ],
-    "event_summary": "美国印第安纳州的共和党参议员因在中期选区重划问题上立场未定而遭到人身威胁",
-    "sources": [
-      "oregonlive.com"
-    ],
-    "first_seen": "2025-12-06T18:19:00+00:00"
+    "event_summary": "后贝加尔边疆区区长参加《Прямой разговор》节目并接受访谈",
+    "sources": [],
+    "first_seen": "2025-12-08T22:14:32+00:00"
   },
-  "Jane Fonda批评Netflix收购华纳兄弟探索公司的交易": {
+  "阿根廷政府向参议院提交劳动现代化法案，拟通过调整解雇赔偿和降低雇主缴费减少退休基金来源": {
     "entities": [
-      "华纳兄弟",
+      "阿根廷参议院",
+      "阿根廷政府"
+    ],
+    "event_summary": "阿根廷政府向立法机构提交劳动改革法案以改变退休基金筹资结构",
+    "sources": [],
+    "first_seen": "2025-12-08T22:09:51+00:00"
+  },
+  "全国第十二届残疾人运动会暨第九届特殊奥林匹克运动会赛事全面展开": {
+    "entities": [
+      "全国第十二届残疾人运动会",
+      "第九届特殊奥林匹克运动会",
+      "粤港澳",
+      "全国34个代表团",
+      "福建队",
+      "河南队"
+    ],
+    "event_summary": "全国性体育赛事组织在粤港澳地区启动，多个代表团参与比赛",
+    "sources": [],
+    "first_seen": "2025-12-08T22:17:00+00:00"
+  },
+  "福建队在盲人足球项目男子组小组赛中战胜河南队": {
+    "entities": [
+      "福建队",
+      "河南队",
+      "盲人足球项目"
+    ],
+    "event_summary": "福建队在残特奥会盲人足球比赛中击败河南队",
+    "sources": [],
+    "first_seen": "2025-12-08T22:17:00+00:00"
+  },
+  "新加坡国家档案馆公布前副总理吴庆瑞博士关于新马分离的手写笔记与解密文件": {
+    "entities": [
+      "马来西亚",
+      "新加坡",
+      "吴庆瑞",
+      "新加坡国家档案馆"
+    ],
+    "event_summary": "一国档案馆公布了前政府官员关于历史政治事件的个人记录与政府文件",
+    "sources": [],
+    "first_seen": "2025-12-08T22:15:00+00:00"
+  },
+  "Paramount Skydance对华纳兄弟探索公司发起敌意收购要约": {
+    "entities": [
+      "Skydance Media",
+      "David Ellison",
       "Netflix",
-      "Jane Fonda",
-      "Warner Bros. Discovery"
+      "华纳兄弟探索"
     ],
-    "event_summary": "一位自然人公开批评两家公司之间的收购交易",
-    "sources": [
-      "variety",
-      "techcrunch"
-    ],
-    "first_seen": "2025-12-06T18:19:00+00:00"
+    "event_summary": "一家媒体公司对另一家媒体公司发起了敌意收购",
+    "sources": [],
+    "first_seen": "2025-12-08T22:21:48+00:00"
   },
-  "苹果公司近期经历重大人事变动，多名高管和关键工程师离职": {
+  "Netflix以830亿美元协议收购华纳兄弟探索公司": {
+    "entities": [
+      "Netflix",
+      "华纳兄弟探索"
+    ],
+    "event_summary": "一家流媒体服务公司与一家媒体集团达成了收购协议",
+    "sources": [],
+    "first_seen": "2025-12-08T22:21:48+00:00"
+  },
+  "电视明星维多利亚·邦亚就保护其荣誉和商业声誉的诉求诉诸法庭": {
+    "entities": [
+      "维多利亚·邦亚"
+    ],
+    "event_summary": "一位自然人因名誉受损对相关方提起了诉讼",
+    "sources": [],
+    "first_seen": "2025-12-08T22:14:19+00:00"
+  },
+  "阿根廷卫生部因一户未接种疫苗的俄罗斯家庭旅行引发麻疹疑似疫情而启动流行病警报": {
+    "entities": [
+      "俄罗斯联邦",
+      "阿根廷卫生部",
+      "玻利维亚",
+      "乌拉圭"
+    ],
+    "event_summary": "阿根廷政府卫生部门因来自俄罗斯、居住于乌拉圭的家庭经由玻利维亚入境并疑似传播麻疹而启动流行病警报",
+    "sources": [],
+    "first_seen": "2025-12-08T22:08:00+00:00"
+  },
+  "纽约外汇市场美元对主要货币升值，受美联储FOMC会议预期影响": {
+    "entities": [
+      "美联储",
+      "美联储联邦公开市场委员会"
+    ],
+    "event_summary": "市场因预期美联储将启动温和降息周期而推高美元汇率",
+    "sources": [],
+    "first_seen": "2025-12-08T22:08:23+00:00"
+  },
+  "日本东北地区发生强震触发海啸警报与居民疏散": {
+    "entities": [
+      "日本东北地方"
+    ],
+    "event_summary": "自然灾害导致地方政府发布海啸警报并组织居民疏散",
+    "sources": [],
+    "first_seen": "2025-12-08T22:08:23+00:00"
+  },
+  "阿根廷政府内部因劳动改革中一项限制工会‘基金’的条款而产生分歧": {
+    "entities": [
+      "CGT",
+      "阿根廷政府"
+    ],
+    "event_summary": "阿根廷政府在劳动改革中因是否保留限制工会经费的条款，受到内部压力并重新考虑原已删除的内容",
+    "sources": [],
+    "first_seen": "2025-12-08T22:06:00+00:00"
+  },
+  "苹果与谷歌宣布合作以简化用户在Android与iPhone设备间的数据迁移": {
     "entities": [
       "苹果公司",
-      "硅谷"
+      "谷歌公司",
+      "iPhone",
+      "Android"
     ],
-    "event_summary": "一家科技公司内部发生了高级管理人员和工程师的离职潮",
-    "sources": [
-      "bloomberg.com"
-    ],
-    "first_seen": "2025-12-06T18:11:53+00:00"
+    "event_summary": "两家科技公司宣布合作开发新功能，以优化跨平台设备间的数据迁移流程",
+    "sources": [],
+    "first_seen": "2025-12-08T22:06:58+00:00"
   },
-  "欧盟对X平台处以1.2亿欧元罚款后，埃隆·马斯克呼吁废除欧盟": {
+  "唐纳德·特朗普警告欧洲在移民政策上正走向错误方向": {
     "entities": [
-      "埃隆·马斯克",
-      "欧盟",
-      "X平台"
+      "欧洲",
+      "唐纳德·特朗普",
+      "美国",
+      "华盛顿"
     ],
-    "event_summary": "一位企业家因旗下社交媒体平台被罚款而公开呼吁废除一个国际组织",
-    "sources": [
-      "le monde.fr"
-    ],
-    "first_seen": "2025-12-06T18:18:03+00:00"
+    "event_summary": "前国家领导人公开批评某地区在移民政策上的做法，并援引其本国新发布的安全战略作为依据",
+    "sources": [],
+    "first_seen": "2025-12-08T22:07:45+00:00"
   },
-  "法国国民议会调查委员会就政治势力与伊斯兰网络关系听证让-吕克·梅朗雄": {
+  "CBS News报道Friends主演Matthew Perry去世消息": {
     "entities": [
-      "法国国民议会",
-      "荷兰议会",
-      "让-吕克·梅朗雄",
-      "不屈法国"
+      "Matthew Perry",
+      "CBS News"
     ],
-    "event_summary": "法国国民议会调查委员会传唤梅朗雄，询问其政党与伊斯兰网络是否存在关联",
-    "sources": [
-      "libération",
-      "le monde.fr",
-      "l'humanité"
-    ],
-    "first_seen": "2025-12-06T18:02:46+00:00"
+    "event_summary": "新闻机构报道了一位演员的死讯",
+    "sources": [],
+    "first_seen": "2025-12-08T22:02:00+00:00"
   },
-  "RC Lens 击败 FC Nantes 并继续领跑 Ligue 1 积分榜": {
+  "《哪吒2》和《疯狂动物城2》在中国电影市场引发观影热潮": {
     "entities": [
-      "RC Lens",
-      "FC Nantes",
-      "Olympique de Marseille",
-      "Lille"
+      "《哪吒2》",
+      "《疯狂动物城2》",
+      "中国电影"
     ],
-    "event_summary": "RC Lens 在对阵 FC Nantes 的比赛中取胜，巩固其在 Ligue 1 积分榜的领先地位",
-    "sources": [
-      "foot mercato"
-    ],
-    "first_seen": "2025-12-06T17:54:37+00:00"
+    "event_summary": "两部动画电影在中国电影市场相继热映，推动票房增长并引发观众讨论",
+    "sources": [],
+    "first_seen": "2025-12-08T22:03:00+00:00"
   },
-  "2026年世界杯小组赛赛程公布，法国队将在纽约对阵塞内加尔，最后一场对阵挪威": {
+  "利物浦门将阿利松在欧冠赛前发布会上谈及萨拉赫与主帅斯洛特的球队危机": {
     "entities": [
-      "北京",
-      "塞内加尔共和国",
-      "国际足联",
-      "США",
-      "法国",
-      "加拿大",
-      "巴拿马",
-      "挪威王国"
+      "阿利松",
+      "国际米兰",
+      "阿尔内·斯洛特",
+      "利物浦",
+      "萨拉赫"
     ],
-    "event_summary": "国际足联赛事安排中，主权国家代表队被分配在特定地点进行比赛",
-    "sources": [
-      "franceinfo",
-      "infobae"
-    ],
-    "first_seen": "2025-12-06T17:46:38+00:00"
+    "event_summary": "一名俱乐部球员在公开场合评论了涉及另一名球员和主教练的内部问题",
+    "sources": [],
+    "first_seen": "2025-12-08T22:00:54+00:00"
   },
-  "法国安省Collonges发生单车事故致两对年轻情侣死亡": {
+  "Flamengo向巴西足球联合会提交全国球场标准化技术提案": {
     "entities": [
-      "法国",
-      "卫生署卫生防护中心",
-      "Collonges"
+      "巴西足球联合会",
+      "Flamengo"
     ],
-    "event_summary": "一起发生在法国安省Collonges市的单车交通事故导致四人死亡",
-    "sources": [
-      "le parisien"
-    ],
-    "first_seen": "2025-12-06T17:40:00+00:00"
+    "event_summary": "足球俱乐部向国家足球管理机构提交改善与标准化球场的技术建议",
+    "sources": [],
+    "first_seen": "2025-12-08T22:00:00+00:00"
   },
-  "英国前海军少将菲利普·马蒂亚斯批评英国核潜艇项目已无法有效运行": {
+  "Caixa Econômica Federal进行Quina彩票第6897期开奖": {
     "entities": [
-      "英国",
-      "菲利普·马蒂亚斯"
+      "Caixa Econômica Federal",
+      "Quina"
     ],
-    "event_summary": "一名自然人公开批评主权国家的军事项目已不具备运行能力",
-    "sources": [
-      "the telegraph"
-    ],
-    "first_seen": "2025-12-06T18:17:00+00:00"
+    "event_summary": "巴西联邦储蓄银行对名为Quina的彩票游戏进行了第6897期开奖",
+    "sources": [],
+    "first_seen": "2025-12-08T21:57:06+00:00"
   },
-  "英格兰队将于2026年6月17日在达拉斯对阵克罗地亚队，开启世界杯征程": {
+  "俄罗斯总统普京与政府讨论净化经济的措施": {
     "entities": [
-      "巴拿马",
-      "达拉斯",
-      "加纳",
-      "达拉斯体育场",
-      "克罗地亚",
-      "英格兰",
-      "美国国家橄榄球联盟"
+      "俄罗斯政府",
+      "弗拉基米尔·普京"
     ],
-    "event_summary": "一支国家足球队将在另一支国家足球队的主场进行一场国际体育赛事",
-    "sources": [
-      "england football",
-      "the guardian"
-    ],
-    "first_seen": "2025-12-06T18:01:08+00:00"
+    "event_summary": "国家元首与行政机构就推动经济正规化议题举行会议",
+    "sources": [],
+    "first_seen": "2025-12-08T21:56:03+00:00"
   },
-  "演员Sydney Sweeney承认其沉默加剧了美国鹰牌牛仔裤广告引发的争议": {
+  "Ceará, Fortaleza, Juventude e Sport foram rebaixados na Série A do Campeonato Brasileiro 2025": {
     "entities": [
-      "Sydney Sweeney",
-      "美国鹰牌服饰公司"
+      "Campeonato Brasileiro",
+      "Ceará",
+      "Juventude",
+      "Fortaleza",
+      "Sport"
     ],
-    "event_summary": "一位自然人承认其个人行为加剧了由某公司广告引发的社会争议",
-    "sources": [
-      "the telegraph"
-    ],
-    "first_seen": "2025-12-06T18:05:00+00:00"
+    "event_summary": "四支足球俱乐部在巴西足球甲级联赛2025赛季结束后被降级",
+    "sources": [],
+    "first_seen": "2025-12-08T22:00:53+00:00"
   },
-  "BBC国际部记者在帛琉报道该国旅游业受地缘政治影响的变化": {
+  "日本气象厅向北海道太平洋沿岸中部、青森县太平洋沿岸及岩手县发布海啸警报并于9日凌晨2时45分降为海啸注意报": {
     "entities": [
-      "中华人民共和国",
-      "BBC",
-      "帛琉",
-      "США"
+      "青森县",
+      "岩手县",
+      "日本气象厅",
+      "北海道"
     ],
-    "event_summary": "新闻媒体描述了太平洋岛国旅游业因特定国家游客数量变化而经历的兴衰",
-    "sources": [
-      "bbc"
-    ],
-    "first_seen": "2025-11-25T04:53:30+00:00"
+    "event_summary": "日本气象厅对北海道、青森县、岩手县的太平洋沿岸区域发布并调整海啸警报等级",
+    "sources": [],
+    "first_seen": "2025-12-08T21:39:00+00:00"
   },
-  "澳门敬老金、养老金及结婚津贴等社会福利金额度获公布或调整": {
+  "唐纳德·特朗普在白宫会议上评论其政府与乔·拜登政府对乌克兰提供的财政和军事援助规模": {
     "entities": [
-      "澳门特别行政区",
-      "何厚铧",
-      "澳门特别行政区立法会",
-      "岑浩辉"
-    ],
-    "event_summary": "澳门特别行政区政府公布了多项社会福利金的发放标准",
-    "sources": [
-      "yahoo news - hk"
-    ],
-    "first_seen": "2025-11-18T08:17:42+00:00"
-  },
-  "法国媒体《费加罗报》报道中国海军在一天内接收多艘军舰入役": {
-    "entities": [
-      "中华人民共和国",
-      "中国海军",
-      "费加罗报",
-      "法国"
-    ],
-    "event_summary": "一家法国媒体报道了中国海军舰艇接收与部署的情况",
-    "sources": [
-      "rfi"
-    ],
-    "first_seen": "2025-11-07T11:03:40+00:00"
-  },
-  "Alphabet旗下Waymo在德州因无人驾驶出租车多次违规驶过校车停靠点而自愿召回软件": {
-    "entities": [
-      "Alphabet Inc.",
-      "Waymo",
-      "得克萨斯州"
-    ],
-    "event_summary": "Alphabet子公司Waymo因无人车违规行驶问题在德州启动软件自愿召回",
-    "sources": [
-      "тарантас ньюс"
-    ],
-    "first_seen": "2025-12-06T18:49:36+00:00"
-  },
-  "圣彼得堡泽尼特足球俱乐部在俄罗斯足球超级联赛中战胜阿克隆足球俱乐部": {
-    "entities": [
-      "基辅迪纳摩",
-      "阿克隆足球俱乐部",
-      "俄罗斯足球超级联赛"
-    ],
-    "event_summary": "一家足球俱乐部在国家级职业足球联赛中战胜了另一家足球俱乐部",
-    "sources": [
-      "sportbox"
-    ],
-    "first_seen": "2025-12-06T18:32:33+00:00"
-  },
-  "乌克兰总统办公室前主任安德烈·叶尔马克制定针对惠特科夫的应对计划但未获泽连斯基支持": {
-    "entities": [
-      "乌克兰总统办公室",
-      "安德烈·叶尔马克",
-      "弗拉基米尔·泽连斯基"
-    ],
-    "event_summary": "一名前政府官员制定计划应对某人，但未获得国家元首支持",
-    "sources": [
-      "eadaily"
-    ],
-    "first_seen": "2025-12-06T17:16:00+00:00"
-  },
-  "彼得·扬在UFC 323比赛中负于梅拉布·德瓦利什维利": {
-    "entities": [
-      "彼得·扬",
-      "梅拉布·德瓦利什维利",
-      "UFC"
-    ],
-    "event_summary": "俄罗斯选手彼得·扬在UFC组织的比赛中败给格鲁吉亚选手梅拉布·德瓦利什维利",
-    "sources": [
-      "sportbox"
-    ],
-    "first_seen": "2025-12-06T17:00:06+00:00"
-  },
-  "演员费奥多尔·多布罗纳拉沃夫脊柱手术后重返电影拍摄工作": {
-    "entities": [
-      "费奥多尔·多布罗纳拉沃夫"
-    ],
-    "event_summary": "一位自然人在经历健康治疗后恢复了其职业活动",
-    "sources": [
-      "кино mail"
-    ],
-    "first_seen": "2025-12-06T16:35:00+00:00"
-  },
-  "伦敦塔因针对展示英国王冠珠宝橱窗的袭击事件而关闭": {
-    "entities": [
-      "伦敦塔"
-    ],
-    "event_summary": "伦敦塔因抗议者袭击展示英国王冠珠宝的橱窗而暂停开放",
-    "sources": [
-      "itvx",
-      "новости zakon.kz"
-    ],
-    "first_seen": "2025-12-06T15:37:32+00:00"
-  },
-  "科睿唯安与中国研究人员发布《2025研究前沿》报告，显示中美在11个关键科研领域领先全球": {
-    "entities": [
-      "中华人民共和国",
-      "科睿唯安"
-    ],
-    "event_summary": "一家分析公司与一个国家的研究人员合作发布了一份关于科研前沿的年度报告",
-    "sources": [
-      "gnews",
-      "3dnews"
-    ],
-    "first_seen": "2025-12-06T15:32:00+00:00"
-  },
-  "俄罗斯军队空袭顿涅茨克州斯洛维扬斯克市造成人员伤亡": {
-    "entities": [
-      "乌克兰",
-      "斯洛维扬斯克市",
-      "俄罗斯",
-      "顿涅茨克州",
-      "顿涅茨克州军事行政当局",
-      "瓦迪姆·菲拉什金"
-    ],
-    "event_summary": "一国的军事力量对另一国的城市发动了空袭，造成平民伤亡，地方行政与司法机构随后通报了袭击后果",
-    "sources": [
-      "новини live",
-      "fakty.com.ua"
-    ],
-    "first_seen": "2025-12-06T18:13:00+00:00"
-  },
-  "乌克兰足球超级联赛第15轮，基辅迪纳摩客场2:1战胜库德里夫卡，终结五轮不胜": {
-    "entities": [
-      "乌克兰足球超级联赛",
-      "基辅迪纳摩",
-      "库德里夫卡"
-    ],
-    "event_summary": "基辅迪纳摩在乌克兰足球超级联赛中击败库德里夫卡",
-    "sources": [
-      "champion.com.ua"
-    ],
-    "first_seen": "2025-12-06T17:56:00+00:00"
-  },
-  "Xiaomi公司更新其设备终止支持名单，Redmi 12C与Poco C55将不再获得Android版本及安全补丁更新": {
-    "entities": [
-      "小米科技有限公司",
-      "Poco C55"
-    ],
-    "event_summary": "Xiaomi停止为旗下两款手机提供软件更新支持",
-    "sources": [
-      "уніан",
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T17:50:00+00:00"
-  },
-  "俄罗斯袭击乌克兰能源基础设施导致乌克兰核电站被迫降低发电功率": {
-    "entities": [
-      "俄罗斯",
+      "白宫",
+      "乔·拜登",
+      "唐纳德·特朗普",
+      "美国",
       "乌克兰"
     ],
-    "event_summary": "一个国家对另一个国家的能源基础设施发动攻击，导致其核电站发电能力下降",
-    "sources": [
-      "korrespondent.net"
-    ],
-    "first_seen": "2025-12-06T17:49:00+00:00"
+    "event_summary": "一国前总统在官方场所对比自己与现任总统对另一主权国家的援助政策",
+    "sources": [],
+    "first_seen": "2025-12-08T21:44:34+00:00"
   },
-  "乌克兰国家电力公司发布全国范围停电时间表": {
+  "美国股市主要指数下跌，投资者关注美联储联邦公开市场委员会会议": {
     "entities": [
-      "乌克兰",
-      "乌克兰国家电力公司"
+      "美国",
+      "美联储联邦公开市场委员会"
     ],
-    "event_summary": "一家国家电力公司发布了其所在国家全境的停电计划",
-    "sources": [
-      "уніан"
-    ],
-    "first_seen": "2025-12-06T17:45:00+00:00"
+    "event_summary": "美国股市因投资者关注美联储会议而下跌",
+    "sources": [],
+    "first_seen": "2025-12-08T21:54:04+00:00"
   },
-  "蒂姆·凯恩重返Obsidian Entertainment并参与新游戏开发": {
+  "环球小姐组织更新牙买加代表健康状况": {
     "entities": [
-      "蒂姆·凯恩",
-      "Obsidian Entertainment"
+      "Gabrielle Henry",
+      "牙买加",
+      "环球小姐组织"
     ],
-    "event_summary": "自然人重新加入一家注册游戏公司以参与新项目开发",
-    "sources": [
-      "players.com.ua"
-    ],
-    "first_seen": "2025-12-06T17:35:46+00:00"
+    "event_summary": "一个国际选美组织通报了其选美比赛中一名参赛者的健康状况",
+    "sources": [],
+    "first_seen": "2025-12-08T21:39:21+00:00"
   },
-  "维尔纽斯机场因白俄罗斯方向气象气球威胁暂停运营": {
+  "Montereau-Fault-Yonne发生一起针对警察伴侣的绑架未遂事件": {
     "entities": [
-      "维尔纽斯机场",
-      "白俄罗斯",
-      "欧洲真理"
+      "Seine-et-Marne",
+      "Montereau-Fault-Yonne"
     ],
-    "event_summary": "机场运营方因邻国领空出现安全威胁而临时中止机场运作",
-    "sources": [
-      "європейська правда"
-    ],
-    "first_seen": "2025-12-06T17:13:07+00:00"
+    "event_summary": "在法国塞纳-马恩省Montereau-Fault-Yonne市，一名警察的伴侣在其住所遭遇绑架未遂",
+    "sources": [],
+    "first_seen": "2025-12-08T21:33:00+00:00"
   },
-  "日本歌手滨崎步上海演唱会在前一天遭取消，其仍对空座位完成演出并录制": {
+  "特朗普宣布120亿美元农业援助计划以应对关税影响": {
     "entities": [
-      "滨崎步",
-      "中华人民共和国",
-      "上海市",
-      "法国",
-      "英国"
+      "唐纳德·特朗普",
+      "美国"
     ],
-    "event_summary": "某国政府机构取消了某艺人在某城市的演出，该艺人仍坚持完成表演，引发多国媒体关注",
-    "sources": [
-      "奇摩新聞"
-    ],
-    "first_seen": "2025-12-04T00:27:42+00:00"
+    "event_summary": "美国前总统宣布将动用关税收入为该国农民提供经济援助",
+    "sources": [],
+    "first_seen": "2025-12-08T21:35:00+00:00"
   },
-  "滨崎步上海主题咖啡厅内照片被清空": {
+  "刚果民主共和国总统齐塞克迪就卢旺达、安全与主权问题向全国发表讲话": {
     "entities": [
-      "滨崎步",
-      "上海市"
+      "齐塞克迪",
+      "卢旺达",
+      "刚果民主共和国"
     ],
-    "event_summary": "某实体（可能为商业运营方或管理方）清除了某艺人在某城市主题店内的相关物料",
-    "sources": [
-      "奇摩新聞"
-    ],
-    "first_seen": "2025-12-04T00:27:42+00:00"
+    "event_summary": "一国元首就国家安全、主权及与邻国关系问题向全国发表政策讲话",
+    "sources": [],
+    "first_seen": "2025-12-08T21:35:21+00:00"
   },
-  "中华人民共和国政府敦促公民避免赴日旅行以回应日本首相涉台言论": {
+  "2岁幼童Hariel Lucas Santos de Melo在Santa Luzia被少年驾车撞亡，遗体将于Belo Vale社区举行告别仪式": {
     "entities": [
-      "中华人民共和国",
-      "习近平",
-      "高市早苗",
+      "Santa Luzia",
+      "Belo Vale",
+      "Hariel Lucas Santos de Melo",
+      "Belo Horizonte"
+    ],
+    "event_summary": "幼童Hariel Lucas Santos de Melo在Santa Luzia遭遇车祸身亡，家属将在Belo Horizonte大都会区Belo Vale社区为其举行葬礼",
+    "sources": [],
+    "first_seen": "2025-12-08T21:28:56+00:00"
+  },
+  "阿恩·斯洛特对穆罕默德·萨拉赫是否继续为利物浦效力表示不确定": {
+    "entities": [
+      "Arne Slot",
+      "Mohamed Salah",
+      "Liverpool"
+    ],
+    "event_summary": "主教练表达了对前锋是否留队的不确定性",
+    "sources": [],
+    "first_seen": "2025-12-08T21:27:00+00:00"
+  },
+  "Netflix联合首席执行官评论派拉蒙Skydance试图收购华纳兄弟探索公司": {
+    "entities": [
+      "Paramount",
+      "Skydance",
+      "Netflix",
+      "Warner Bros. Discovery",
+      "Ted Sarandos"
+    ],
+    "event_summary": "一家流媒体服务公司的联合首席执行官对另一家制片公司与一家媒体集团之间的潜在收购交易发表了评论",
+    "sources": [],
+    "first_seen": "2025-12-08T21:32:00+00:00"
+  },
+  "日本气象厅解除北海道及东北地区沿岸海啸注意警报": {
+    "entities": [
+      "日本海沟",
+      "北海道",
+      "东北地方",
+      "日本气象厅",
+      "三陆冲",
+      "千叶县",
+      "千岛海沟",
       "日本"
     ],
-    "event_summary": "主权国家通过发布旅游限制措施对另一主权国家的政治人物言论实施经济施压",
-    "sources": [
-      "纽约时报中文网",
-      "大紀元"
-    ],
-    "first_seen": "2025-11-14T03:27:42+00:00"
+    "event_summary": "政府机构解除了对特定行政区域发布的海啸预警，并要求相关地区做好防震准备",
+    "sources": [],
+    "first_seen": "2025-12-08T21:22:55+00:00"
   },
-  "第62届台湾电影金马奖举行，马来西亚导演张吉安作品《地母》入围八项大奖": {
+  "巴黎圣日耳曼足球俱乐部球员卢卡斯·谢瓦利耶因伤可能缺席对阵毕尔巴鄂竞技的比赛": {
     "entities": [
-      "台湾地区",
-      "马来西亚"
+      "卢卡斯·谢瓦利耶",
+      "巴黎圣日耳曼足球俱乐部",
+      "毕尔巴鄂竞技"
     ],
-    "event_summary": "一个主权行政区举办电影颁奖活动，另一主权国家的导演作品获得多项提名",
-    "sources": [
-      "bbc"
-    ],
-    "first_seen": "2025-11-21T06:23:51+00:00"
+    "event_summary": "足球运动员因脚踝受伤可能无法代表俱乐部参加与另一俱乐部的赛事",
+    "sources": [],
+    "first_seen": "2025-12-08T21:30:47+00:00"
   },
-  "中国宣布全面暂停进口日本水产品": {
+  "卢卡斯·谢瓦利耶因在对阵摩纳哥的比赛中脚踝受伤而缺席里尔对阵雷恩的法甲比赛": {
     "entities": [
-      "中华人民共和国",
-      "日本"
+      "法国足球甲级联赛",
+      "摩纳哥足球俱乐部",
+      "里尔",
+      "雷恩足球俱乐部",
+      "卢卡斯·谢瓦利耶"
     ],
-    "event_summary": "主权国家对另一主权国家实施水产品进口禁令作为外交反制措施",
-    "sources": [
-      "轉角國際udn global",
-      {
-        "id": "774df57c10a6cd3d89e908ef7f03044e",
-        "name": "轉角國際udn Global",
-        "url": "https://global.udn.com"
-      }
-    ],
-    "first_seen": "2025-11-19T09:35:26+00:00"
+    "event_summary": "球员在与一支球队比赛后受伤，导致其未能参与另一场由俱乐部参与的联赛赛事",
+    "sources": [],
+    "first_seen": "2025-12-08T21:30:47+00:00"
   },
-  "《经济学人》与GlobeScan联合发布全球对中国与美国软实力评价的民调结果": {
+  "派拉蒙环球旗下Skydance Media在埃里森家族支持下，对华纳兄弟探索公司发起敌意收购": {
     "entities": [
-      "中华人民共和国",
-      "经济学人",
-      "GlobeScan",
-      "США"
+      "派拉蒙环球",
+      "Skydance Media",
+      "埃里森家族",
+      "华纳兄弟探索"
     ],
-    "event_summary": "《经济学人》与GlobeScan发布民调，显示中国全球支持率上升而美国下降",
-    "sources": [
-      "news.cnyes.com"
-    ],
-    "first_seen": "2025-11-17T09:30:03+00:00"
+    "event_summary": "一家媒体娱乐公司在特定家族财团支持下，试图强行收购另一家媒体娱乐公司",
+    "sources": [],
+    "first_seen": "2025-12-08T21:19:07+00:00"
   },
-  "歌手范瑋琪在中国获得“最受瞩目歌手”奖项": {
+  "乌克兰实施12月9日轮流停电计划，涉及基辅及其他地区": {
     "entities": [
-      "范瑋琪",
-      "中华人民共和国"
+      "基辅",
+      "乌克兰"
     ],
-    "event_summary": "台湾艺人范瑋琪在中国获得音乐奖项",
-    "sources": [
-      "奇摩新聞"
-    ],
-    "first_seen": "2025-11-16T02:37:30+00:00"
+    "event_summary": "主权国家在其首都及多个行政区执行电力供应中断的调度安排",
+    "sources": [],
+    "first_seen": "2025-12-08T21:07:54+00:00"
   },
-  "Urwerk推出以卫星小时显示为特色的全新宇宙主题腕表": {
+  "派拉蒙首席执行官David Ellison向华纳兄弟探索首席执行官David Zaslav就潜在交易进行最后个人恳求": {
     "entities": [
-      "Urwerk",
-      "Felix Baumgartner",
-      "Martin Frei"
+      "派拉蒙",
+      "David Ellison",
+      "华纳兄弟探索",
+      "David Zaslav"
     ],
-    "event_summary": "Urwerk发布由Felix Baumgartner与Martin Frei创立品牌的新款腕表",
-    "sources": [
-      "robb report"
-    ],
-    "first_seen": "2025-12-06T16:00:00+00:00"
+    "event_summary": "一家娱乐公司的负责人向另一家娱乐公司的负责人就一项重大交易进行了直接沟通",
+    "sources": [],
+    "first_seen": "2025-12-08T21:13:51+00:00"
   },
-  "新加坡U22男足主教练Firdaus Kassim就东南亚运动会失利向球迷致歉": {
-    "entities": [
-      "新加坡",
-      "东帝汶"
-    ],
-    "event_summary": "一位国家U22足球队主教练就比赛失利向本国球迷致歉",
-    "sources": [
-      "cna"
-    ],
-    "first_seen": "2025-12-06T15:35:00+00:00"
-  },
-  "香港确认第十例本地感染的基孔肯雅热病例": {
-    "entities": [
-      "香港特别行政区",
-      "卫生署卫生防护中心"
-    ],
-    "event_summary": "香港特别行政区的卫生防护中心通报了新增一例本地感染的基孔肯雅热病例，使今年累计达十例",
-    "sources": [
-      "south china morning post"
-    ],
-    "first_seen": "2025-12-06T15:07:57+00:00"
-  },
-  "新加坡武吉巴督巴士车厂外发生摩托车与行人事故致行人死亡": {
-    "entities": [
-      "新加坡"
-    ],
-    "event_summary": "一名行人在与摩托车发生事故后于医院死亡",
-    "sources": [
-      "the straits times"
-    ],
-    "first_seen": "2025-12-06T14:15:00+00:00"
-  },
-  "韩国媒体Dispatch曝光演员赵震雄过去涉嫌抢劫和强奸的犯罪指控": {
-    "entities": [
-      "Dispatch",
-      "赵震雄"
-    ],
-    "event_summary": "媒体机构披露了某自然人过往的严重犯罪指控",
-    "sources": [
-      "koreaboo"
-    ],
-    "first_seen": "2025-12-06T14:09:35+00:00"
-  },
-  "演员赵震雄的经纪公司就Dispatch的报道发布声明": {
-    "entities": [
-      "赵震雄"
-    ],
-    "event_summary": "某自然人的关联方就媒体报道发布声明",
-    "sources": [
-      "koreaboo"
-    ],
-    "first_seen": "2025-12-06T14:09:35+00:00"
-  },
-  "北中米世界杯比赛日程公布，日本队小组赛首战对阵荷兰队时间确定": {
+  "法国女子手球队在世界杯小组赛中负于荷兰队，将在四分之一决赛中对阵丹麦队": {
     "entities": [
       "荷兰",
-      "日本",
-      "突尼斯"
-    ],
-    "event_summary": "赛事组织方公布了日本国家足球队在世界杯小组赛阶段的具体赛程安排",
-    "sources": [
-      "gekisaka.jp",
-      "nikkansports.com"
-    ],
-    "first_seen": "2025-12-06T13:43:29+00:00"
-  },
-  "新日本职业摔角1月4日东京巨蛋大会将在电视朝日系全国播出，并公布有田哲平与中村狮童担任嘉宾": {
-    "entities": [
-      "新日本职业摔角",
-      "东京巨蛋",
-      "电视朝日"
-    ],
-    "event_summary": "一家职业摔角联盟的年度赛事将在特定电视台播出，并邀请特定艺人担任节目嘉宾",
-    "sources": [
-      "東スポweb"
-    ],
-    "first_seen": "2025-12-06T16:30:00+00:00"
-  },
-  "美国国家航空航天局发布詹姆斯·韦伯太空望远镜对Apep恒星系的观测图像": {
-    "entities": [
-      "美国国家航空航天局",
-      "詹姆斯·韦伯太空望远镜",
-      "加利福尼亚理工学院"
-    ],
-    "event_summary": "政府航天机构发布了由太空望远镜拍摄的遥远恒星系统图像，相关研究涉及一所大学",
-    "sources": [
-      "ギズモード・ジャパン"
-    ],
-    "first_seen": "2025-12-06T14:30:00+00:00"
-  },
-  "Mercari集团旗下足球俱乐部鹿岛鹿角队赢得2025年明治安田J1联赛冠军": {
-    "entities": [
-      "株式会社メルカリ",
-      "鹿島アントラーズ",
-      "明治安田生命保険相互会社"
-    ],
-    "event_summary": "一家日本上市公司宣布其集团运营的足球俱乐部赢得了由一家保险公司冠名的职业足球联赛冠军",
-    "sources": [
-      "株式会社メルカリ"
-    ],
-    "first_seen": "2025-12-06T12:54:24+00:00"
-  },
-  "All About编辑部分享关于\"不易损坏的笔记本电脑\"的问卷调查结果，并由专家进行解读": {
-    "entities": [
-      "All About"
-    ],
-    "event_summary": "一个媒体部门发布了一项关于笔记本电脑耐用性的消费者调查结果",
-    "sources": [
-      "yahoo!ニュース"
-    ],
-    "first_seen": "2025-12-06T12:50:00+00:00"
-  },
-  "美国军方官员向参议员通报称，9月2日遭美军空袭的船只当时正前往与另一艘驶往苏里南的船只会合": {
-    "entities": [
-      "США",
-      "苏里南"
-    ],
-    "event_summary": "一国军方人员向本国立法机构成员通报了其军事行动中涉及的另一国家信息",
-    "sources": [
-      "o globo"
-    ],
-    "first_seen": "2025-12-06T18:49:11+00:00"
-  },
-  "美国设定2027年由欧洲主导北约常规防御能力的目标": {
-    "entities": [
-      "США",
-      "国际足联",
-      "欧洲"
-    ],
-    "event_summary": "美国要求欧洲在2027年前承担北约大部分常规防御职责",
-    "sources": [
-      "r7"
-    ],
-    "first_seen": "2025-12-06T18:46:10+00:00"
-  },
-  "巴西邮政（Correios）拟在10天内获得国家财政部紧急注资至多60亿雷亚尔，并将自愿离职计划规模上调至1.5万人": {
-    "entities": [
-      "Correios",
-      "巴西"
-    ],
-    "event_summary": "国有邮政公司寻求财政部紧急注资并扩大裁员规模",
-    "sources": [
-      "o globo"
-    ],
-    "first_seen": "2025-12-06T18:45:57+00:00"
-  },
-  "巴西民调机构Datafolha发布2026年总统选举第二轮模拟投票结果": {
-    "entities": [
-      "巴西",
-      "Datafolha",
-      "路易斯·伊纳西奥·卢拉·达席尔瓦"
-    ],
-    "event_summary": "一家民调机构发布了关于特定国家未来总统选举的模拟投票结果",
-    "sources": [
-      "gazeta do povo"
-    ],
-    "first_seen": "2025-12-06T18:27:00+00:00"
-  },
-  "巴西国家足球队将在2026年世界杯小组赛首战对阵摩洛哥国家队": {
-    "entities": [
-      "巴西国家足球队",
-      "摩洛哥国家队",
-      "MetLife Stadium",
-      "新泽西州"
-    ],
-    "event_summary": "巴西国家足球队将在新泽西州MetLife Stadium与摩洛哥国家队进行世界杯小组赛首场比赛",
-    "sources": [
-      "agência brasil"
-    ],
-    "first_seen": "2025-12-06T18:06:00+00:00"
-  },
-  "巴西央行宣布其实时支付系统Pix创下单日交易量与金额新纪录": {
-    "entities": [
-      "巴西"
-    ],
-    "event_summary": "巴西中央银行宣布其管理的支付系统创下交易纪录",
-    "sources": [
-      "infomoney"
-    ],
-    "first_seen": "2025-12-06T18:02:37+00:00"
-  },
-  "圣保罗州三名军事警察因杀害已投降且无武装的嫌疑人被逮捕": {
-    "entities": [
-      "圣保罗州",
-      "圣保罗州公共安全部",
-      "军事警察营"
-    ],
-    "event_summary": "地方执法部门对涉嫌非法使用致命武力的军事警察展开内部调查并实施逮捕",
-    "sources": [
-      "g1"
-    ],
-    "first_seen": "2025-12-06T17:57:32+00:00"
-  },
-  "阿根廷总统米莱与经济部长卡普托宣布阿根廷重返自愿债务市场": {
-    "entities": [
-      "马克龙",
-      "路易斯·卡普托",
-      "阿根廷"
-    ],
-    "event_summary": "国家领导人及其财政官员宣布该国重新进入国际自愿债务融资市场",
-    "sources": [
-      "la política online"
-    ],
-    "first_seen": "2025-12-06T18:30:07+00:00"
-  },
-  "La Libertad Avanza 要求布宜诺斯艾利斯省省长 Axel Kicillof 就 José C. Paz 市议会冲突事件发声": {
-    "entities": [
-      "布宜诺斯艾利斯省",
-      "Axel Kicillof",
-      "何塞·C·帕斯市",
-      "La Libertad Avanza"
-    ],
-    "event_summary": "政党要求省级行政首长就地方议会冲突公开表态",
-    "sources": [
-      "clarin.com",
-      "la nueva provincia"
-    ],
-    "first_seen": "2025-12-06T17:02:52+00:00"
-  },
-  "阿根廷商业工会与商业部门企业家达成新的集体协议": {
-    "entities": [
-      "阿根廷商业工会"
-    ],
-    "event_summary": "工会与商业部门企业家就薪酬调整达成协议",
-    "sources": [
-      "tn"
-    ],
-    "first_seen": "2025-12-06T17:54:57+00:00"
-  },
-  "Pivotal Research 分析师 Michael Levine 将 Alphabet 目标价上调至 400 美元": {
-    "entities": [
-      "Michael Levine",
-      "Alphabet Inc.",
-      "Pivotal Research"
-    ],
-    "event_summary": "Pivotal Research 的分析师 Michael Levine 把 Alphabet 的目标价从 350 美元提高到 400 美元",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T12:54:00+00:00"
-  },
-  "联邦法官裁定Google必须每年重新谈判默认搜索及AI应用合同": {
-    "entities": [
-      "Alphabet Inc.",
-      "Amit Mehta",
-      "美国司法部"
-    ],
-    "event_summary": "华盛顿联邦法官支持美国司法部，要求Alphabet Inc.的Google每年重新谈判其搜索和AI应用的默认合同",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T22:24:42+00:00"
-  },
-  "维基百科联合创始人Jimmy Wales在纽约Reuters NEXT峰会上透露，维基百科正与多家科技公司就内容付费使用进行谈判": {
-    "entities": [
-      "Jimmy Wales",
-      "Wikipedia",
-      "路透社",
-      "OpenAI"
-    ],
-    "event_summary": "维基百科与AI公司就内容使用收费进行谈判",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T18:25:42+00:00"
-  },
-  "欧盟对Alphabet旗下谷歌和埃隆·马斯克旗下X处以罚款并开启新调查": {
-    "entities": [
-      "欧盟",
-      "X平台",
-      "埃隆·马斯克",
-      "Alphabet Inc."
-    ],
-    "event_summary": "欧盟监管机构对两家美国科技公司采取了罚款和调查的执法行动",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T15:18:56+00:00"
-  },
-  "美国总统特朗普对欧盟的科技监管行动表示不满": {
-    "entities": [
-      "США",
-      "唐纳德·特朗普",
-      "欧盟"
-    ],
-    "event_summary": "美国国家元首对另一政治实体的监管政策表达了反对立场",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T15:23:18+00:00"
-  },
-  "Pershing Square Capital Management向美国SEC披露2025年第三季度13F持仓": {
-    "entities": [
-      "Pershing Square Capital Management",
-      "美国证券交易委员会"
-    ],
-    "event_summary": "Pershing Square Capital Management向美国证券交易委员会提交了第三季度持仓报告",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T01:27:56+00:00"
-  },
-  "美国国家公路交通安全管理局就Waymo自动驾驶汽车在得克萨斯州涉嫌19次非法超越校车一事展开调查": {
-    "entities": [
-      "美国国家公路交通安全管理局",
-      "得克萨斯州",
-      "Waymo",
-      "乔治亚州"
-    ],
-    "event_summary": "联邦交通监管机构对一家自动驾驶技术公司在两个州涉嫌违反校车停车法规的行为启动正式调查",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T18:06:18+00:00"
-  },
-  "谷歌云与人工智能辅助编码初创公司Replit达成多年期战略合作伙伴关系": {
-    "entities": [
-      "Alphabet Inc.",
-      "谷歌云",
-      "Replit"
-    ],
-    "event_summary": "一家科技公司的云服务部门与一家人工智能辅助编码初创公司建立了商业合作关系",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T16:48:43+00:00"
-  },
-  "Alphabet旗下Waymo在巴尔的摩、圣路易斯和匹兹堡启动人工驾驶模式的自动驾驶出租车测试": {
-    "entities": [
-      "Alphabet Inc.",
-      "Waymo",
-      "匹兹堡市",
-      "圣路易斯市"
-    ],
-    "event_summary": "Alphabet子公司Waymo在三个美国城市开展自动驾驶出租车人工驾驶测试",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T18:10:21+00:00"
-  },
-  "人工智能公司Anthropic聘请Wilson Sonsini律师事务所为2026年可能的首次公开募股做准备": {
-    "entities": [
-      "Anthropic",
-      "Wilson Sonsini Goodrich & Rosati"
-    ],
-    "event_summary": "一家公司聘请了一家律师事务所为其未来的首次公开募股计划提供法律服务",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T09:52:00+00:00"
-  },
-  "谷歌与美国多州总检察长达成7亿美元和解协议": {
-    "entities": [
-      "Alphabet Inc.",
-      "США"
-    ],
-    "event_summary": "一家科技公司与多个美国州级司法机构就法律纠纷达成和解",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-02T18:19:26+00:00"
-  },
-  "CG River Road US Large Cap Value Select基金出售Alphabet并增持铁路股和伯克希尔·哈撒韦": {
-    "entities": [
-      "CG River Road US Large Cap Value Select基金",
-      "Alphabet Inc.",
-      "伯克希尔·哈撒韦公司"
-    ],
-    "event_summary": "一家美国基金调整了其投资组合，出售了一家科技公司股票并增持了一家多元化投资集团及铁路相关资产",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T12:20:00+00:00"
-  },
-  "谷歌宣传其新模型在医疗、内容创作和工业维护方面的应用": {
-    "entities": [
-      "Alphabet Inc."
-    ],
-    "event_summary": "一家科技公司宣传其人工智能模型的多领域应用能力",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-27T17:30:14+00:00"
-  },
-  "Alphabet、Amazon、Meta、Microsoft 等科技巨头本财年合计资本支出将超过 3800 亿美元，主要用于人工智能投资": {
-    "entities": [
-      "Alphabet Inc.",
-      "Amazon.com Inc.",
-      "Meta Platforms Inc.",
-      "Microsoft Corporation"
-    ],
-    "event_summary": "四家大型科技公司集体大幅增加资本支出以投入人工智能领域",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-02T15:48:00+00:00"
-  },
-  "Nvidia股价因传闻Meta考虑采用Google的AI芯片而下跌": {
-    "entities": [
-      "Nvidia",
-      "Meta Platforms Inc.",
-      "Alphabet Inc."
-    ],
-    "event_summary": "一家科技公司因市场传闻另一家科技公司可能转向竞争对手的AI芯片而导致其股价下跌",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-25T14:41:00+00:00"
-  },
-  "Waymo获准在加利福尼亚州南部扩大无人驾驶出租车服务范围": {
-    "entities": [
-      "Waymo",
-      "Alphabet Inc.",
-      "加利福尼亚州",
-      "США"
-    ],
-    "event_summary": "一家隶属于Alphabet Inc.的公司获准在美国加利福尼亚州南部扩展其无人驾驶出租车运营区域",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-23T04:55:00+00:00"
-  },
-  "Alphabet和Google首席执行官Sundar Pichai评论人工智能投资热潮": {
-    "entities": [
-      "BBC",
-      "Alphabet Inc.",
-      "桑达尔·皮查伊"
-    ],
-    "event_summary": "某公司高管对当前人工智能领域的投资趋势发表了看法",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-18T08:17:15+00:00"
-  },
-  "Waymo在美国三个地区高速公路推出无人驾驶出租车服务": {
-    "entities": [
-      "新奥尔良",
-      "明尼阿波利斯",
-      "США",
-      "Waymo",
-      "Alphabet Inc.",
-      "坦帕"
-    ],
-    "event_summary": "一家隶属于Alphabet Inc.的美国公司在美国三个地区启动了高速公路无人驾驶出租车服务",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-13T04:51:00+00:00"
-  },
-  "伯克希尔·哈撒韦公司在第三季度购入Alphabet股票并减持美国银行和苹果公司股份": {
-    "entities": [
-      "美国银行",
-      "伯克希尔·哈撒韦公司",
-      "Apple Inc.",
-      "Alphabet Inc.",
-      "沃伦·巴菲特"
-    ],
-    "event_summary": "一家投资公司增持某科技公司股份，同时减持另外两家公司的持股",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-15T09:36:42+00:00"
-  },
-  "谷歌和SUBCO计划铺设三条新海底互联网电缆连接澳大利亚AUKUS潜艇舰队基地": {
-    "entities": [
-      "澳大利亚",
-      "Alphabet Inc.",
-      "SUBCO",
-      "路透社"
-    ],
-    "event_summary": "两家公司计划为某军事基地铺设海底通信电缆",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-13T07:51:41+00:00"
-  },
-  "拉里·佩奇因Alphabet股价上涨成为全球第二富豪": {
-    "entities": [
-      "拉里·佩奇",
-      "Alphabet Inc.",
-      "福布斯"
-    ],
-    "event_summary": "自然人因所持公司股价上涨而财富增加，被媒体机构列为全球第二富豪",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-01T16:09:08+00:00"
-  },
-  "美国七巨头科技公司强劲财报超预期，提振投资者信心并维持市场上行势头": {
-    "entities": [
-      "США"
-    ],
-    "event_summary": "主权国家境内的科技公司公布强劲业绩，推动市场情绪向好",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-27T13:27:21+00:00"
-  },
-  "Alphabet股价创历史新高，受华尔街对其AI芯片进展乐观情绪推动": {
-    "entities": [
-      "Alphabet Inc."
-    ],
-    "event_summary": "Alphabet公司股价因市场对其AI芯片业务前景看好而上涨",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-23T11:32:00+00:00"
-  },
-  "Alphabet旗下Gemini 3挑战人工智能泡沫叙事": {
-    "entities": [
-      "Alphabet Inc."
-    ],
-    "event_summary": "一家母公司通过其子公司发布人工智能产品以回应市场对其行业存在泡沫的质疑",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-26T16:45:02+00:00"
-  },
-  "Nvidia称赞Alphabet旗下Google在人工智能方面取得进展，并强调自家芯片在AI领域的优势": {
-    "entities": [
-      "Nvidia",
-      "Alphabet Inc."
-    ],
-    "event_summary": "Nvidia公开赞扬Alphabet旗下Google的AI进展，同时宣称其芯片更适合AI应用",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-25T20:17:00+00:00"
-  },
-  "纳斯达克指数创下自5月以来最大单日涨幅": {
-    "entities": [
-      "纳斯达克"
-    ],
-    "event_summary": "某证券交易所指数录得显著上涨",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-25T12:25:39+00:00"
-  },
-  "全球主要科技公司通过债务市场筹集近1000亿美元以资助运营和扩张": {
-    "entities": [
-      "Alphabet Inc."
-    ],
-    "event_summary": "科技公司通过债务市场进行大规模融资",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-25T03:40:00+00:00"
-  },
-  "巴黎警方逮捕四名涉嫌在KFC餐厅卫生间性侵13岁少女的男子": {
-    "entities": [
-      "巴黎警方",
-      "KFC",
+      "丹麦",
       "法国"
     ],
-    "event_summary": "执法机构对涉嫌在某跨国快餐连锁店场所内实施性侵犯罪的个人采取了逮捕行动",
-    "sources": [
-      {
-        "id": "4dd8afdc7b03a2d1467b017017423bca",
-        "name": "MinutoUno",
-        "url": "https://www.minutouno.com"
-      }
-    ],
-    "first_seen": "2025-12-07T01:48:00+00:00"
+    "event_summary": "法国女子手球队在小组赛中输给荷兰队，晋级后将在淘汰赛对阵丹麦队",
+    "sources": [],
+    "first_seen": "2025-12-08T21:04:07+00:00"
   },
-  "Francis Ford Coppola的F.P. Journe腕表在拍卖会上以1100万美元售出": {
+  "音乐家Matthieu Chedid向其已故摄影师朋友Martin Parr致敬": {
     "entities": [
-      "Francis Ford Coppola",
-      "F.P. Journe"
+      "Matthieu Chedid",
+      "Martin Parr"
     ],
-    "event_summary": "一名自然人拥有的由注册公司制造的腕表在拍卖中被售出",
-    "sources": [
-      {
-        "id": "2f580dc49292a1caf59cd86dd3c9e60b",
-        "name": "The New York Times",
-        "url": "https://www.nytimes.com"
-      }
-    ],
-    "first_seen": "2025-12-07T01:46:22+00:00"
+    "event_summary": "一位音乐家公开悼念一位已故的摄影师朋友",
+    "sources": [],
+    "first_seen": "2025-12-08T21:04:05+00:00"
   },
-  "莫斯科24电视台解雇编辑叶夫根尼娅·奥博拉什维利因其对遇险飞机发表不当言论": {
+  "电影《MATCHING》续作《MATCHING TRUE LOVE》将于2026年上映，主演为土屋太凤与佐久间大介": {
     "entities": [
-      "莫斯科24电视台",
-      "叶夫根尼娅·奥博拉什维利"
+      "佐久間大介",
+      "土屋太凤",
+      "Snow Man"
     ],
-    "event_summary": "电视台解雇一名编辑因其在个人频道发表针对遇险飞机的不当言论",
-    "sources": [
-      {
-        "id": "482e12558d35c87c58648546f9c7c873",
-        "name": "tve24.ru",
-        "url": "https://tve24.ru"
-      }
-    ],
-    "first_seen": "2025-12-07T01:31:01+00:00"
+    "event_summary": "电影制作方宣布由特定演员主演的续集电影将于特定年份上映",
+    "sources": [],
+    "first_seen": "2025-12-08T21:00:00+00:00"
   },
-  "美国与乌克兰谈判代表在迈阿密就拟议的对俄和平协议举行会谈": {
+  "投资者关注美联储本周会议可能宣布降息": {
     "entities": [
-      "США",
+      "美联储",
+      "美国财政部"
+    ],
+    "event_summary": "投资者预期中央银行将在货币政策会议上决定降低利率",
+    "sources": [],
+    "first_seen": "2025-12-08T20:32:43+00:00"
+  },
+  "F1车手兰多·诺里斯因赢得世界冠军而在萨默塞特郡购物中心获命名街道": {
+    "entities": [
+      "萨默塞特郡",
+      "Abu Dhabi Grand Prix",
+      "Lando Norris"
+    ],
+    "event_summary": "一名F1车手在其家乡郡的购物中心因其在阿布扎比大奖赛中获得积分并赢得世界冠军而被授予命名街道的荣誉",
+    "sources": [],
+    "first_seen": "2025-12-08T20:42:43+00:00"
+  },
+  "验尸官裁定16岁少女Leah Bedford在约克乌斯河溺亡，无第三方参与": {
+    "entities": [
+      "约克"
+    ],
+    "event_summary": "验尸官对一名少女的死亡原因做出了裁定",
+    "sources": [],
+    "first_seen": "2025-12-08T20:45:05+00:00"
+  },
+  "电影《Matching》续集《Matching TRUE LOVE》定于2026年上映": {
+    "entities": [
+      "内田英治",
+      "佐久間大介",
+      "土屋太凤",
+      "Snow Man"
+    ],
+    "event_summary": "某演员和某偶像团体成员主演的电影续集确定了上映时间",
+    "sources": [],
+    "first_seen": "2025-12-08T21:00:00+00:00"
+  },
+  "俄罗斯对乌克兰捷尔诺波尔市的袭击导致死亡人数上升至38人": {
+    "entities": [
+      "捷尔诺波尔市",
+      "俄罗斯联邦",
+      "捷尔诺波尔州警察局",
+      "乌克兰"
+    ],
+    "event_summary": "一个国家对另一个国家的一个行政区发动了军事袭击，造成人员伤亡，并由当地执法机构报告",
+    "sources": [],
+    "first_seen": "2025-12-08T20:45:00+00:00"
+  },
+  "乌克兰第7空中突击军确认国防军从米尔诺格勒附近两个村庄撤出": {
+    "entities": [
+      "米尔诺格勒",
+      "乌克兰第7空中突击军",
       "乌克兰",
-      "俄罗斯",
-      "国际迈阿密"
+      "利西夫卡",
+      "乌克兰国防军",
+      "苏希亚尔"
     ],
-    "event_summary": "主权国家之间就和平协议进行谈判",
-    "sources": [
-      {
-        "id": "b7f8938851261c8403f75f40eb1d8645",
-        "name": "CNN",
-        "url": "https://www.cnn.com"
-      }
-    ],
-    "first_seen": "2025-12-07T01:20:00+00:00"
+    "event_summary": "乌克兰军方确认其国防部队从两个特定村庄进行了有组织的撤离",
+    "sources": [],
+    "first_seen": "2025-12-08T21:03:59+00:00"
   },
-  "日本共产党委员长志位和夫就高市早苗关于台湾的言论发表评论": {
+  "TikTok宣布推出三项新功能：共同收藏、共同信息流和节日视频保存": {
     "entities": [
-      "日本共产党",
-      "志位和夫",
+      "TikTok"
+    ],
+    "event_summary": "一家社交媒体公司推出了新的用户协作和内容保存功能",
+    "sources": [],
+    "first_seen": "2025-12-08T20:23:00+00:00"
+  },
+  "苹果公司可能在iPhone 18 Pro中采用屏下Face ID传感器技术": {
+    "entities": [
+      "苹果公司",
+      "Face ID",
+      "iPhone 18 Pro"
+    ],
+    "event_summary": "某科技公司计划在其未来智能手机型号中应用新的屏下传感器技术",
+    "sources": [],
+    "first_seen": "2025-12-08T20:30:35+00:00"
+  },
+  "足球教练哈茨克维奇批评裁判丹尼斯拉夫·列兹尼科夫在波利西亚对阵鲁赫的比赛中破坏比赛": {
+    "entities": [
+      "丹尼斯拉夫·列兹尼科夫",
+      "波利西亚足球俱乐部",
+      "鲁赫足球俱乐部",
+      "哈茨克维奇"
+    ],
+    "event_summary": "教练指责裁判主导比赛结果并破坏比赛公平性",
+    "sources": [],
+    "first_seen": "2025-12-08T20:10:00+00:00"
+  },
+  "朝日电视台综艺节目《炎之挑战者》时隔25年复活，南原清隆与菊池风磨担任主持": {
+    "entities": [
+      "朝日电视台",
+      "timelesz",
+      "南原清隆",
+      "菊池风磨"
+    ],
+    "event_summary": "某电视台宣布其经典综艺节目时隔多年以特别节目形式复活，并公布了新的主持阵容。",
+    "sources": [],
+    "first_seen": "2025-12-08T20:18:39+00:00"
+  },
+  "冯德莱恩就俄罗斯资产发表情绪化言论": {
+    "entities": [
+      "俄罗斯联邦",
+      "冯德莱恩"
+    ],
+    "event_summary": "欧盟领导人对俄罗斯的资产处置问题发表了公开表态",
+    "sources": [],
+    "first_seen": "2025-12-08T19:44:30+00:00"
+  },
+  "中国军机对日本自卫队飞机进行雷达照射引发欧洲安全专家关切": {
+    "entities": [
+      "德意志联邦共和国",
+      "自衛隊",
+      "日本",
+      "中国",
+      "法国"
+    ],
+    "event_summary": "中国军方对日本自卫队采取了被认为危险的军事行动，引发欧洲安全专家的分析与评论",
+    "sources": [],
+    "first_seen": "2025-12-08T20:18:02+00:00"
+  },
+  "光明日报记者报道2025年中国乡村发展情况": {
+    "entities": [
+      "陈晨",
+      "光明日报"
+    ],
+    "event_summary": "记者通过光明日报对中国2025年乡村建设与文化活动进行报道",
+    "sources": [],
+    "first_seen": "2025-12-08T19:35:00+00:00"
+  },
+  "Jonny Evans 卸任曼联贷款与发展主管职务": {
+    "entities": [
+      "Jonny Evans",
+      "Manchester United"
+    ],
+    "event_summary": "Jonny Evans 辞去了 Manchester United 的贷款与发展主管职位",
+    "sources": [],
+    "first_seen": "2025-12-08T19:35:35+00:00"
+  },
+  "演员陈晓与成毅在2012年电视剧《王的女人》中合作，陈晓为男配角，成毅饰演其跟班": {
+    "entities": [
+      "成毅",
+      "陈晓"
+    ],
+    "event_summary": "两位演员在早年一部电视剧中存在合作与角色上的从属关系",
+    "sources": [],
+    "first_seen": "2025-12-08T20:16:22+00:00"
+  },
+  "2023年尖叫之夜荣誉榜单上出现成毅的名字": {
+    "entities": [
+      "成毅"
+    ],
+    "event_summary": "一位演员在某娱乐活动中获得荣誉认可",
+    "sources": [],
+    "first_seen": "2025-12-08T20:16:22+00:00"
+  },
+  "中共中央召开党外人士座谈会讨论经济形势与政策": {
+    "entities": [
+      "李强",
+      "中国",
+      "习近平",
+      "蔡奇",
+      "丁薛祥",
+      "中共"
+    ],
+    "event_summary": "执政党中央委员会召集党外人士举行座谈，由国家领导人主持并通报经济工作情况",
+    "sources": [],
+    "first_seen": "2025-12-08T19:35:00+00:00"
+  },
+  "韩国足球运动员孙兴慜遭勒索，勒索者已被判入狱": {
+    "entities": [
+      "孙兴慜",
+      "韩国",
+      "洛杉矶足球俱乐部"
+    ],
+    "event_summary": "勒索者因对一名效力于特定俱乐部和国家队的足球运动员进行勒索而被判刑",
+    "sources": [],
+    "first_seen": "2025-12-08T19:27:08+00:00"
+  },
+  "俄罗斯网球运动员因更换国籍引发争议": {
+    "entities": [
+      "俄罗斯联邦"
+    ],
+    "event_summary": "一名俄罗斯网球运动员因放弃俄罗斯国籍而作出解释",
+    "sources": [],
+    "first_seen": "2025-12-08T18:55:09+00:00"
+  },
+  "守门员康斯坦丁·沃尔科夫在28岁时决定结束球员生涯，其经纪人宣布此消息": {
+    "entities": [
+      "亚历山大·切尔内赫",
+      "康斯坦丁·沃尔科夫"
+    ],
+    "event_summary": "一名职业运动员通过其代理人宣布结束个人职业生涯",
+    "sources": [],
+    "first_seen": "2025-12-08T19:25:00+00:00"
+  },
+  "冰球俱乐部西伯利亚宣布与守门员康斯坦丁·沃尔科夫解除合同": {
+    "entities": [
+      "西伯利亚"
+    ],
+    "event_summary": "一家体育俱乐部终止了与一名运动员的雇佣合同",
+    "sources": [],
+    "first_seen": "2025-12-08T19:25:00+00:00"
+  },
+  "Nomos推出Club Sport Neomatic Worldtimer 'Roam'和'Reverie'限量版腕表": {
+    "entities": [
+      "Nomos"
+    ],
+    "event_summary": "一家公司推出了其特定系列的两款限量版产品",
+    "sources": [],
+    "first_seen": "2025-12-08T19:00:00+00:00"
+  },
+  "欧洲理事会主席科斯塔批评美国新国家安全战略干涉欧洲政治生活": {
+    "entities": [
+      "António Costa",
+      "欧洲",
+      "美国",
+      "欧洲理事会"
+    ],
+    "event_summary": "欧洲理事会主席公开指责美国国家安全战略对欧洲政党与言论自由发表不当评论",
+    "sources": [],
+    "first_seen": "2025-12-08T14:47:40+00:00"
+  },
+  "美国总统特朗普宣布本周将签署行政命令限制各州自行制定人工智能法规的权力": {
+    "entities": [
+      "唐纳德·特朗普",
+      "美国"
+    ],
+    "event_summary": "国家元首宣布将通过行政命令限制其国内次级行政区的特定领域立法权",
+    "sources": [],
+    "first_seen": "2025-12-08T18:33:30+00:00"
+  },
+  "足总杯第三轮抽签结果公布，卫冕冠军水晶宫将客场对阵第六级别球队麦克尔斯菲尔德，曼联和雷克瑟姆则抽中英超对手": {
+    "entities": [
+      "英格兰足球总会",
+      "麦克尔斯菲尔德足球俱乐部",
+      "曼彻斯特联足球俱乐部",
+      "英格兰足球超级联赛",
+      "水晶宫足球俱乐部",
+      "雷克瑟姆足球俱乐部"
+    ],
+    "event_summary": "英格兰足球总会组织的足总杯赛事抽签决定了多支参赛足球俱乐部在第三轮的对阵关系",
+    "sources": [],
+    "first_seen": "2025-12-08T19:18:45+00:00"
+  },
+  "广东清远连南瑶族自治县举办第十五届盘王节瑶族文化艺术活动": {
+    "entities": [
+      "唐桥辛二公",
+      "连南瑶族自治县"
+    ],
+    "event_summary": "连南瑶族自治县政府举办瑶族盘王节文化活动，国家级非遗传承人唐桥辛二公参与表演",
+    "sources": [],
+    "first_seen": "2025-12-08T14:10:02+00:00"
+  },
+  "德国外长在北京呼吁中国利用其对俄罗斯的影响力推动和谈": {
+    "entities": [
+      "北京",
+      "德意志联邦共和国",
+      "中国",
+      "俄罗斯联邦",
+      "安娜莱娜·贝尔伯克",
+      "弗拉基米尔·普京",
+      "德国驻华大使馆"
+    ],
+    "event_summary": "德国政府高级官员在中国首都公开呼吁中国政府运用其影响力，促使俄罗斯政府重返谈判桌以结束战争",
+    "sources": [],
+    "first_seen": "2025-12-08T16:09:04+00:00"
+  },
+  "陈慧娴、草蜢、陈豪、唐诗咏、许靖韵和陈宗泽现身马场出席活动": {
+    "entities": [
+      "草蜢",
+      "唐诗咏",
+      "许靖韵",
+      "陈宗泽",
+      "陈慧娴",
+      "陈豪"
+    ],
+    "event_summary": "多位艺人共同出席了一场位于马场的公开活动",
+    "sources": [],
+    "first_seen": "2025-11-23T12:56:52+00:00"
+  },
+  "Niantic公布Pokémon GO 2025年11月24日至30日游戏活动安排": {
+    "entities": [
+      "Pokémon GO",
+      "Niantic"
+    ],
+    "event_summary": "一家游戏开发商公布了其旗下手机游戏在特定时间段内的活动计划",
+    "sources": [],
+    "first_seen": "2025-11-23T09:00:25+00:00"
+  },
+  "联合国人道主义事务协调厅宣布2026年人道援助募款目标为230亿美元": {
+    "entities": [
+      "联合国",
+      "联合国人道主义事务协调厅"
+    ],
+    "event_summary": "联合国下属机构宣布了其未来年度的人道主义援助资金募集目标",
+    "sources": [],
+    "first_seen": "2025-12-08T14:53:01+00:00"
+  },
+  "美国大幅削减对国际援助与发展的资金": {
+    "entities": [
+      "美国"
+    ],
+    "event_summary": "一个主权国家减少了其对外援助的财政拨款",
+    "sources": [],
+    "first_seen": "2025-12-08T14:53:01+00:00"
+  },
+  "范瑋琪在中国获得“中国最受瞩目歌手”奖并公开致谢杭州": {
+    "entities": [
+      "范瑋琪",
+      "中国",
+      "杭州"
+    ],
+    "event_summary": "台湾艺人范瑋琪在中国获奖并公开致谢杭州市",
+    "sources": [],
+    "first_seen": "2025-11-16T02:37:30+00:00"
+  },
+  "中国宣布暂停进口日本水产品以反制日本外交言论": {
+    "entities": [
+      "日本",
+      "中国",
       "高市早苗",
-      "中华人民共和国",
-      "台湾地区"
+      "福岛第一核电站"
     ],
-    "event_summary": "日本政党领导人对日本政治人物涉及台湾的言论表达关切，并指其导致中日关系恶化",
-    "sources": [
-      {
-        "id": "3cee2edd0f758b50809a812acea93131",
-        "name": "jcp.or.jp",
-        "url": "https://www.jcp.or.jp"
-      }
-    ],
-    "first_seen": "2025-12-07T01:09:14+00:00"
+    "event_summary": "中国政府因应日本政治人物涉台言论，以核处理水监测为由暂停进口日本水产品",
+    "sources": [],
+    "first_seen": "2025-11-19T09:35:26+00:00"
   },
-  "凤凰卫视香港总部东京分局长李淼采访志位和夫": {
+  "第62届台湾电影金马奖举行，范冰冰凭《地母》角逐影后": {
     "entities": [
-      "凤凰卫视",
-      "李淼",
-      "志位和夫"
+      "马来西亚",
+      "金马奖",
+      "范冰冰",
+      "台湾电影金马奖",
+      "张吉安"
     ],
-    "event_summary": "媒体机构代表对日本政党领导人进行专访",
-    "sources": [
-      {
-        "id": "3cee2edd0f758b50809a812acea93131",
-        "name": "jcp.or.jp",
-        "url": "https://www.jcp.or.jp"
-      }
-    ],
-    "first_seen": "2025-12-07T01:09:14+00:00"
+    "event_summary": "一位被中国封杀的女演员凭借在马来西亚导演作品中的表演参与台湾电影奖项角逐",
+    "sources": [],
+    "first_seen": "2025-11-21T06:23:51+00:00"
   },
-  "日本女子冰壶队フォルティウス在加拿大Kelowna举行的奥运最终预选赛中8-6击败德国队": {
+  "日本首相高市早苗发表涉台言论引发中共实施经济报复，包括敦促公民避免赴日旅游": {
     "entities": [
+      "台湾",
       "日本",
-      "德国",
-      "加拿大",
-      "Kelowna"
+      "高市早苗",
+      "中共"
     ],
-    "event_summary": "日本国家女子冰壶队战胜德国队",
-    "sources": [
-      {
-        "id": "5618c7c5e7276baddc4cc4d2dd6b963d",
-        "name": "ｄメニューニュース",
-        "url": "https://topics.smt.docomo.ne.jp"
-      }
-    ],
-    "first_seen": "2025-12-07T01:08:00+00:00"
-  },
-  "日本中京竞马场举办冠军杯泥地赛，回顾赛事历史及雌马战绩": {
-    "entities": [
-      "日本"
-    ],
-    "event_summary": "新闻提及日本举办了一场赛马赛事并回顾其历史",
-    "sources": [
-      {
-        "id": "63b326044fd3351e1370b2dcbfa810f4",
-        "name": "競馬ラボ",
-        "url": "https://www.keibalab.jp"
-      }
-    ],
-    "first_seen": "2025-12-07T01:00:00+00:00"
-  },
-  "皇居东御苑销售特定钱包引发日本民众清晨排队购买": {
-    "entities": [
-      "皇居东御苑",
-      "宫内庁"
-    ],
-    "event_summary": "日本民众为购买特定商品在皇居东御苑外排队，宫内庁相关人员对此现象发表评论",
-    "sources": [
-      {
-        "id": "a47c5803e915ad5cf0347bed8c5e1efb",
-        "name": "AERA DIGITAL",
-        "url": "https://dot.asahi.com"
-      }
-    ],
-    "first_seen": "2025-12-07T01:00:00+00:00"
-  },
-  "Samsung在欧洲推广其Galaxy Xcover系列智能手机": {
-    "entities": [
-      "Samsung"
-    ],
-    "event_summary": "Samsung面向欧洲市场主推其B2B用坚固型智能手机Galaxy Xcover系列",
-    "sources": [
-      {
-        "id": "ae2bb5a606a3557c4126b9e3d2bf78ff",
-        "name": "ITmedia",
-        "url": "https://www.itmedia.co.jp"
-      }
-    ],
-    "first_seen": "2025-12-07T01:00:00+00:00"
-  },
-  "巴西士兵Kelvin Barros da Silva因杀害军人Maria de Lourdes Freire被转为预防性羁押": {
-    "entities": [
-      "Kelvin Barros da Silva",
-      "Maria de Lourdes Freire",
-      "Exército"
-    ],
-    "event_summary": "一名自然人因涉嫌杀害另一名自然人，其临时拘留被司法程序转为预防性羁押，涉事人员均隶属于军队这一具有行政职能的国家机构",
-    "sources": [
-      {
-        "id": "0acd7d674efdf6162b71da20a779f415",
-        "name": "Correio Braziliense",
-        "url": "https://www.correiobraziliense.com.br"
-      }
-    ],
-    "first_seen": "2025-12-07T00:59:00+00:00"
-  },
-  "巴西前部长若泽·迪尔塞乌呼吁在巴西利亚举行支持女性、反对杀害女性的集会": {
-    "entities": [
-      "若泽·迪尔塞乌",
-      "巴西利亚",
-      "巴西"
-    ],
-    "event_summary": "一位前政府官员呼吁在首都举行由社会运动组织的集会",
-    "sources": [
-      {
-        "id": "c1afce591abdcd7a9a075fec0c5e7cbb",
-        "name": "Poder360",
-        "url": "https://www.poder360.com.br"
-      }
-    ],
-    "first_seen": "2025-12-07T00:53:38+00:00"
-  },
-  "佐治亚大学在东南联盟橄榄球冠军赛中击败阿拉巴马大学": {
-    "entities": [
-      "阿拉巴马大学",
-      "东南联盟"
-    ],
-    "event_summary": "佐治亚大学在东南联盟冠军赛中大胜阿拉巴马大学，可能影响季后赛资格",
-    "sources": [],
-    "first_seen": "2025-12-07T00:47:01+00:00"
-  },
-  "俄罗斯航空监管机构宣布五座机场暂停运营": {
-    "entities": [
-      "俄罗斯联邦航空运输署",
-      "弗拉季高加索（别斯兰）机场",
-      "格罗兹尼机场",
-      "马加斯机场"
-    ],
-    "event_summary": "俄罗斯联邦航空运输署代表宣布三座机场实施临时飞行限制",
-    "sources": [
-      {
-        "id": "abcc9dfdb898078e73b888c37d35eba1",
-        "name": "EADaily",
-        "url": "https://eadaily.com"
-      }
-    ],
-    "first_seen": "2025-12-07T00:45:00+00:00"
-  },
-  "Inter Miami 在 MLS 杯决赛中 3-1 击败 Vancouver Whitecaps，首次夺冠": {
-    "entities": [
-      "Lionel Andrés Messi",
-      "Inter Miami",
-      "Vancouver Whitecaps"
-    ],
-    "event_summary": "球员 Lionel Andrés Messi 贡献两次助攻，帮助俱乐部 Inter Miami 战胜俱乐部 Vancouver Whitecaps 赢得 MLS 杯",
-    "sources": [
-      {
-        "id": "2640b1411388f99ee05468bf9bd9a602",
-        "name": "La Nación",
-        "url": "https://www.lanacion.com.ar"
-      }
-    ],
-    "first_seen": "2025-12-07T00:41:00+00:00"
-  },
-  "卡洛斯·博索纳罗批评其父雅伊尔·博索纳罗的监禁构成酷刑": {
-    "entities": [
-      "卡洛斯·博索纳罗",
-      "路易斯·伊纳西奥·卢拉·达席尔瓦"
-    ],
-    "event_summary": "一名地方议员公开批评前国家元首的监禁条件",
-    "sources": [
-      {
-        "id": "24820cd0860b0047f982593e107c3b1b",
-        "name": "Estado de Minas",
-        "url": "https://www.em.com.br"
-      }
-    ],
-    "first_seen": "2025-12-07T00:39:00+00:00"
-  },
-  "特朗普政府免除西南航空公司因2022年假日旅行混乱而被处以的1100万美元罚款": {
-    "entities": [
-      "特朗普政府",
-      "美国交通部",
-      "西南航空"
-    ],
-    "event_summary": "美国联邦行政机构免除了对一家航空公司因运营中断所处的罚款",
-    "sources": [],
-    "first_seen": "2025-12-07T00:32:47+00:00"
-  },
-  "印度Goa邦一家夜店发生火灾造成至少23人死亡": {
-    "entities": [
-      "Goa",
-      "果阿邦",
-      "印度"
-    ],
-    "event_summary": "印度Goa邦政府报告当地夜店火灾造成重大人员伤亡",
-    "sources": [
-      "midi libre"
-    ],
-    "first_seen": "2025-12-06T23:16:00+00:00"
-  },
-  "Amazon UK 向 BBC Scotland News 表示复古主题产品在黑色星期五期间销量激增": {
-    "entities": [
-      "Amazon.com Inc.",
-      "BBC"
-    ],
-    "event_summary": "Amazon UK 向 BBC Scotland News 透露其复古主题产品在黑色星期五销量上升",
-    "sources": [
-      {
-        "id": "da05009467a13bbcc84557ea09d86db3",
-        "name": "BBC",
-        "url": "https://www.bbc.co.uk"
-      }
-    ],
-    "first_seen": "2025-12-07T00:24:09+00:00"
-  },
-  "乌克兰克列缅丘格市遭大规模联合打击导致水电热供应中断": {
-    "entities": [
-      "乌克兰",
-      "维塔利·马莱茨基",
-      "Віталій Малецький",
-      "波尔塔瓦州",
-      "克列缅丘格市",
-      "俄罗斯",
-      "法斯蒂夫"
-    ],
-    "event_summary": "乌克兰克列缅丘格市市长报告该市基础设施遭攻击后水电热供应受阻",
-    "sources": [],
-    "first_seen": "2025-12-06T23:23:00+00:00"
-  },
-  "爵士歌手Billie van der Westhuizen在Vinted平台销售二手衣物后收到税务相关通知": {
-    "entities": [
-      "Billie van der Westhuizen",
-      "Vinted"
-    ],
-    "event_summary": "一名自然人在某二手交易平台销售物品后，收到了与税务相关的平台通知",
-    "sources": [
-      {
-        "id": "da05009467a13bbcc84557ea09d86db3",
-        "name": "BBC",
-        "url": "https://www.bbc.co.uk"
-      }
-    ],
-    "first_seen": "2025-12-07T00:14:59+00:00"
-  },
-  "Maxi López前往瑞士与伴侣Daniela Christiansson团聚": {
-    "entities": [
-      "Maxi López",
-      "Suiza",
-      "Daniela Christiansson"
-    ],
-    "event_summary": "阿根廷足球运动员Maxi López赴瑞士陪伴怀孕伴侣",
-    "sources": [
-      {
-        "id": "4dd8afdc7b03a2d1467b017017423bca",
-        "name": "MinutoUno",
-        "url": "https://www.minutouno.com"
-      }
-    ],
-    "first_seen": "2025-12-07T00:13:00+00:00"
-  },
-  "Maxi López透露与Wanda Nara的对话改善了双方关系": {
-    "entities": [
-      "Maxi López",
-      "Wanda Nara"
-    ],
-    "event_summary": "Maxi López与前妻Wanda Nara通过对话修复关系",
-    "sources": [
-      {
-        "id": "4dd8afdc7b03a2d1467b017017423bca",
-        "name": "MinutoUno",
-        "url": "https://www.minutouno.com"
-      }
-    ],
-    "first_seen": "2025-12-07T00:13:00+00:00"
-  },
-  "里约热内卢市政府重新点亮拉戈亚圣诞彩灯": {
-    "entities": [
-      "里约热内卢市"
-    ],
-    "event_summary": "里约热内卢市政府在五年中断后重新点亮拉戈亚圣诞彩灯",
-    "sources": [
-      {
-        "id": "3cf5a75bcb0bc7bec02eca895594ed0c",
-        "name": "O Globo",
-        "url": "https://oglobo.globo.com"
-      }
-    ],
-    "first_seen": "2025-12-07T00:11:02+00:00"
-  },
-  "新疆乌鲁木齐、阿勒泰及吉林省推出“雪假”政策": {
-    "entities": [
-      "新疆维吾尔自治区",
-      "乌鲁木齐市人民政府"
-    ],
-    "event_summary": "新疆乌鲁木齐、阿勒泰及吉林省的政府宣布实行雪假政策",
-    "sources": [
-      {
-        "id": "35b202766a96680354c8c6c906f23c39",
-        "name": "天气网",
-        "url": "http://news.weather.com.cn"
-      }
-    ],
-    "first_seen": "2025-12-07T00:00:00+00:00"
-  },
-  "阿根廷门多萨省将暴风雨警报提升至橙色": {
-    "entities": [
-      "门多萨省",
-      "阿根廷气候应急管理局"
-    ],
-    "event_summary": "门多萨省因暴风雨将天气警报级别上调至橙色",
-    "sources": [],
-    "first_seen": "2025-12-06T23:55:00+00:00"
-  },
-  "美国地质调查局报告美加边境发生7级地震": {
-    "entities": [
-      "阿拉斯加州",
-      "美国地质调查局",
-      "США",
-      "加拿大"
-    ],
-    "event_summary": "美国地质调查局发布关于美国与加拿大边境地震的监测报告",
-    "sources": [],
-    "first_seen": "2025-12-06T23:17:00+00:00"
-  },
-  "阿根廷中央银行发布2025年11月市场预期调查，汇总46家机构对阿根廷主要经济变量的预测": {
-    "entities": [
-      "阿根廷中央银行"
-    ],
-    "event_summary": "阿根廷中央银行汇总并发布了多家咨询公司和金融机构对本国经济的预测数据",
-    "sources": [
-      {
-        "id": "fac223a2b529c0dcafa01c7a1f0a50fd",
-        "name": "Diario El Sol Mendoza",
-        "url": "https://www.elsol.com.ar"
-      }
-    ],
-    "first_seen": "2025-12-06T23:47:53+00:00"
-  },
-  "巴拿马城提及委内瑞拉前官员Hugo “el Pollo” Carvajal与已故总统Hugo Chávez的关系": {
-    "entities": [
-      "Hugo “el Pollo” Carvajal",
-      "Hugo Chávez",
-      "塞内加尔共和国",
-      "巴拿马城"
-    ],
-    "event_summary": "新闻报道提及委内瑞拉前官员Hugo “el Pollo” Carvajal在Hugo Chávez执政时期的政治影响力，并在巴拿马城被报道",
-    "sources": [
-      {
-        "id": "2640b1411388f99ee05468bf9bd9a602",
-        "name": "La Nación",
-        "url": "https://www.lanacion.com.ar"
-      }
-    ],
-    "first_seen": "2025-12-06T23:43:00+00:00"
-  },
-  "德国总理弗里德里希·默茨访问以色列，在耶路撒冷会见以色列总统艾萨克·赫尔佐格，重申德国对以色列的坚定支持": {
-    "entities": [
-      "德国",
-      "以色列国",
-      "弗里德里希·默茨",
-      "艾萨克·赫尔佐格",
-      "耶路撒冷"
-    ],
-    "event_summary": "德国政府首脑在访问期间向以色列国家元首重申了本国的外交支持立场",
-    "sources": [
-      {
-        "id": "f8bceab28da05bf9ed8678be4690bf64",
-        "name": "Le Monde.fr",
-        "url": "https://www.lemonde.fr"
-      }
-    ],
-    "first_seen": "2025-12-06T23:39:27+00:00"
-  },
-  "西米德兰兹郡警察局长为声称犹太社区支持禁止马卡比球迷的言论道歉": {
-    "entities": [
-      "西米德兰兹郡警察局",
-      "英国议会",
-      "伯明翰市",
-      "马卡比特拉维夫足球俱乐部",
-      "阿斯顿维拉足球俱乐部"
-    ],
-    "event_summary": "一名地方警察局长就其向议会发表的关于某地犹太居民支持禁止某足球俱乐部球迷的言论，向该地犹太居民道歉",
-    "sources": [
-      {
-        "id": "558a003a7a0164e924408edec7e99f99",
-        "name": "The Guardian",
-        "url": "https://www.theguardian.com"
-      }
-    ],
-    "first_seen": "2025-12-06T23:38:00+00:00"
-  },
-  "移民Adam Ahmed因噪音和嘲笑纠纷持刀袭击两名邻居": {
-    "entities": [
-      "Adam Ahmed",
-      "Leon Askew",
-      "Robert Graham"
-    ],
-    "event_summary": "一名自然人因邻里纠纷持刀袭击了另外两名自然人",
-    "sources": [
-      {
-        "id": "8312b3960d99553247ab475ee7eeed9a",
-        "name": "The Sun",
-        "url": "https://www.thesun.co.uk"
-      }
-    ],
-    "first_seen": "2025-12-06T23:32:00+00:00"
-  },
-  "美国内政部调整国家公园免费开放日，新增特朗普生日，取消马丁·路德·金日和六月节": {
-    "entities": [
-      "США",
-      "美国内政部"
-    ],
-    "event_summary": "美国联邦政府部门修改了其管理的国家公园的免费入场日清单",
-    "sources": [
-      {
-        "id": "896bbd67b1fce1e7e97122b9a4345dab",
-        "name": "Sky News",
-        "url": "https://news.sky.com"
-      }
-    ],
-    "first_seen": "2025-12-06T23:23:04+00:00"
-  },
-  "巴黎圣日耳曼5-0战胜雷恩，Kvaratskhelia表现突出": {
-    "entities": [
-      "Habib Beye",
-      "雷恩足球俱乐部",
-      "巴黎圣日耳曼足球俱乐部"
-    ],
-    "event_summary": "巴黎圣日耳曼在法甲比赛中大胜雷恩",
-    "sources": [],
-    "first_seen": "2025-12-06T23:15:16+00:00"
-  },
-  "法国总统马克龙访华期间与中方就乌克兰问题及经贸合作进行讨论": {
-    "entities": [
-      "法兰克福汇报",
-      "马克龙",
-      "中华人民共和国",
-      "俄罗斯",
-      "空客公司"
-    ],
-    "event_summary": "一国元首访问另一主权国家，双方就国际冲突立场及双边经贸合作展开磋商但未达成实质性共识",
-    "sources": [
-      {
-        "id": "ce220ee834949cc829facb394da9f7b7",
-        "name": "RFI",
-        "url": "https://www.rfi.fr"
-      }
-    ],
-    "first_seen": "2025-12-06T23:03:00+00:00"
-  },
-  "法国卡尔瓦多斯省某企业因滥用电话推销被处以近7万欧元罚款": {
-    "entities": [
-      "法国",
-      "卡尔瓦多斯省",
-      "人口保护省级局"
-    ],
-    "event_summary": "法国地方行政机构对辖区内一家企业因违规电话推销行为处以罚款",
-    "sources": [
-      {
-        "id": "4c1a44e6e0f469dc804ccacf842c3b6f",
-        "name": "Le Parisien",
-        "url": "https://www.leparisien.fr"
-      }
-    ],
-    "first_seen": "2025-12-06T22:56:00+00:00"
-  },
-  "法国总统埃马纽埃尔·马克龙与弗拉基米尔·泽连斯基通话": {
-    "entities": [
-      "法国",
-      "马克龙",
-      "弗拉基米尔·泽连斯基"
-    ],
-    "event_summary": "法国国家元首与乌克兰国家元首进行了电话交谈",
-    "sources": [
-      {
-        "id": "abcc9dfdb898078e73b888c37d35eba1",
-        "name": "EADaily",
-        "url": "https://eadaily.com"
-      }
-    ],
-    "first_seen": "2025-12-06T22:45:00+00:00"
-  },
-  "国际迈阿密队赢得MLS总决赛冠军": {
-    "entities": [
-      "США",
-      "国际迈阿密",
-      "温哥华白帽",
-      "莱昂内尔·梅西"
-    ],
-    "event_summary": "一支职业足球俱乐部在决赛中击败另一支俱乐部，赢得了北美职业足球大联盟的冠军",
-    "sources": [],
-    "first_seen": "2025-12-06T22:32:01+00:00"
-  },
-  "中国和新加坡当局加强监管导致在新加坡的中国超高净值人群减少炫耀性消费": {
-    "entities": [
-      "中华人民共和国",
-      "新加坡",
-      "Bentley Motors Limited"
-    ],
-    "event_summary": "两个主权国家的监管行动促使特定人群改变消费行为，影响了某豪华汽车制造商的产品销售",
-    "sources": [
-      {
-        "id": "31280eb773ec58b2d5348fe891a1cb8d",
-        "name": "Reuters",
-        "url": "https://jp.reuters.com"
-      }
-    ],
-    "first_seen": "2025-12-06T22:18:17+00:00"
-  },
-  "丰田汽车公司会长丰田章男推动雷克萨斯LFA超级跑车电动化项目，与GR GT及GR GT3共同开发": {
-    "entities": [
-      "丰田自动车株式会社",
-      "США",
-      "日本"
-    ],
-    "event_summary": "自然人基于其理念主导注册公司推进特定车型的联合开发项目",
-    "sources": [
-      {
-        "id": "2aac4188d6c4df23d308071bf59f46ac",
-        "name": "VAGUE(ヴァーグ)",
-        "url": "https://vague.style"
-      }
-    ],
-    "first_seen": "2025-12-06T22:10:27+00:00"
-  },
-  "受损油轮Kairos在保加利亚海岸附近搁浅": {
-    "entities": [
-      "乌克兰",
-      "保加利亚",
-      "美联社"
-    ],
-    "event_summary": "一艘此前被乌克兰无人艇袭击的油轮在保加利亚附近海域发生搁浅",
-    "sources": [
-      {
-        "id": "c2cacf55d0edaaf766e3b03fb130e4f0",
-        "name": "Интерфакс",
-        "url": "https://www.interfax.ru"
-      }
-    ],
-    "first_seen": "2025-12-06T21:57:48+00:00"
-  },
-  "美国一名肾移植受者因供体携带狂犬病病毒而死亡": {
-    "entities": [
-      "США",
-      "Centers for Disease Control and Prevention"
-    ],
-    "event_summary": "主权国家境内发生器官移植传播狂犬病致死事件，由联邦公共卫生机构通报",
-    "sources": [
-      {
-        "id": "739b615c65becd670ee152cab7f8c439",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com"
-      }
-    ],
-    "first_seen": "2025-12-06T21:30:30+00:00"
-  },
-  "前斯巴达克球员亚历山大·莫斯托沃伊认为裁判伊纳尔·塔纳舍夫在斯巴达克与莫斯科迪纳摩的比赛中漏判了康斯坦丁·秋卡文的一粒进球": {
-    "entities": [
-      "亚历山大·莫斯托沃伊",
-      "伊纳尔·塔纳舍夫",
-      "莫斯科迪纳摩足球俱乐部",
-      "斯巴达克足球俱乐部"
-    ],
-    "event_summary": "前球员公开批评裁判未判给莫斯科迪纳摩前锋秋卡文进球",
-    "sources": [
-      {
-        "id": "a6f85df2748a309623a54ff58c93d20a",
-        "name": "Sportbox",
-        "url": "https://news.sportbox.ru"
-      }
-    ],
-    "first_seen": "2025-12-06T21:19:18+00:00"
-  },
-  "新加坡足球负责人Forrest Li在启德体育场向国家队发表讲话": {
-    "entities": [
-      "新加坡",
-      "Forrest Li"
-    ],
-    "event_summary": "一名自然人（某国足球协会负责人）在某体育场向该国国家队发表讲话",
-    "sources": [
-      {
-        "id": "739b615c65becd670ee152cab7f8c439",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com"
-      }
-    ],
-    "first_seen": "2025-12-06T21:01:07+00:00"
-  },
-  "足球运动员Yoane Wissa在纽卡斯尔联队对阵伯恩利的英超联赛中完成首秀": {
-    "entities": [
-      "Yoane Wissa",
-      "纽卡斯尔联足球俱乐部",
-      "埃迪·豪",
-      "伯恩利足球俱乐部"
-    ],
-    "event_summary": "一名足球运动员在特定俱乐部的一场正式比赛中首次出场。",
-    "sources": [
-      {
-        "id": "4fe167fc8c4e91994a479ec9842bbc10",
-        "name": "Geordie Boot Boys",
-        "url": "https://www.geordiebootboys.com"
-      }
-    ],
-    "first_seen": "2025-12-06T21:00:00+00:00"
-  },
-  "日本首相高市早苗发表涉台言论引发中方实施旅游限制": {
-    "entities": [
-      "中华人民共和国",
-      "大阪观光局",
-      "日本",
-      "高市早苗"
-    ],
-    "event_summary": "一国政府首脑的言论引发另一国政府实施针对性的旅游限制措施",
+    "event_summary": "一国政府首脑的言论引发另一国政府采取包括旅游限制在内的经济反制措施",
     "sources": [],
     "first_seen": "2025-12-01T01:07:00+00:00"
   },
-  "台湾交通部规划2026年五大国民旅游补助计划": {
+  "中共发布针对日本的旅游限制令后，日本关西地区出现中国旅行团退订": {
     "entities": [
-      "台湾地区",
-      "交通部"
+      "中共",
+      "关西地区",
+      "日本"
     ],
-    "event_summary": "某政府部门宣布未来将推出多项国内旅游补贴措施",
-    "sources": [
-      "今周刊"
-    ],
-    "first_seen": "2025-11-14T03:45:40+00:00"
+    "event_summary": "一国政府发布的旅游限制令导致另一国特定地区的旅游订单被取消",
+    "sources": [],
+    "first_seen": "2025-12-01T01:07:00+00:00"
   },
-  "《暗黑破坏神IV》为符合中国法规进行内容修改并获得中国国家新闻出版署批准": {
+  "日本产经新闻报道称中国游客减少未使日本旅游业产生危机感，因其他国家游客增多": {
+    "entities": [
+      "日本",
+      "日本产经新闻"
+    ],
+    "event_summary": "一家新闻媒体就特定国家游客变化对另一国家旅游业的影响进行了报道",
+    "sources": [],
+    "first_seen": "2025-12-01T01:07:00+00:00"
+  },
+  "大阪观光局提供相关旅游数据资料": {
+    "entities": [
+      "大阪观光局"
+    ],
+    "event_summary": "一个地方行政机构提供了其管辖范围内的旅游统计数据",
+    "sources": [],
+    "first_seen": "2025-12-01T01:07:00+00:00"
+  },
+  "经济学人联合GlobeScan在32国进行民调显示中国全球支持率上升而美国下滑": {
+    "entities": [
+      "GlobeScan",
+      "中国",
+      "美国",
+      "经济学人"
+    ],
+    "event_summary": "一家媒体与一家民调公司合作进行了一项关于中美两国全球影响力的民意调查",
+    "sources": [],
+    "first_seen": "2025-11-17T09:30:03+00:00"
+  },
+  "暴雪为符合中国法规对《暗黑破坏神IV》游戏内容进行视觉修改": {
     "entities": [
       "中国国家新闻出版署",
       "暴雪",
-      "中华人民共和国"
+      "中国"
     ],
-    "event_summary": "一家游戏公司为遵守某主权国家的法规对其产品进行修改，并获得该国行政主管部门的批准",
-    "sources": [
-      "ludens.com.tw"
-    ],
+    "event_summary": "游戏开发商为使其产品符合某国监管机构的内容规定，对游戏视觉内容进行了调整",
+    "sources": [],
     "first_seen": "2025-11-11T02:30:04+00:00"
   },
-  "马迭尔文化旅游投资集团有限公司总经理周巍在哈尔滨采冰节开幕式上发言": {
+  "澳门特别行政区行政长官岑浩辉宣布2026年现金分享计划向合资格永久居民发放一万元": {
     "entities": [
-      "马迭尔文化旅游投资集团有限公司"
+      "岑浩辉",
+      "澳门特别行政区"
     ],
-    "event_summary": "某公司高管在地方文化节庆活动中发表关于冰雪经济的讲话",
-    "sources": [
-      "hrbtv.net"
-    ],
-    "first_seen": "2025-12-07T15:06:26+00:00"
-  },
-  "美国白宫发布新版《国家安全战略》文件": {
-    "entities": [
-      "特朗普政府"
-    ],
-    "event_summary": "美国行政机构发布了指导其外交与安全政策的纲领性文件",
-    "sources": [
-      "第一财经"
-    ],
-    "first_seen": "2025-12-07T14:06:00+00:00"
-  },
-  "美国战略与国际问题研究中心等智库分析美国国家安全战略转变": {
-    "entities": [
-      "美国战略与国际问题研究中心",
-      "美国外交关系协会",
-      "布鲁金斯学会"
-    ],
-    "event_summary": "多个研究机构对美国政府发布的国家安全战略文件进行了分析与评论",
-    "sources": [
-      "第一财经"
-    ],
-    "first_seen": "2025-12-07T14:06:00+00:00"
-  },
-  "中共中央印发修订后的《中国共产党工作机关条例》并要求各地区各部门执行": {
-    "entities": [
-      "中国共产党中央委员会"
-    ],
-    "event_summary": "执政党最高领导机构发布了关于其内部工作机关运行规范的文件并要求下级单位实施",
-    "sources": [
-      "thepaper.cn"
-    ],
-    "first_seen": "2025-12-07T09:01:00+00:00"
-  },
-  "“民族魂”全国高等艺术院校第二届音乐剧演唱展演暨中国音乐剧教学与创作研讨会开幕": {
-    "entities": [
-      "中国民族声乐艺术研究会",
-      "广州市文化广电旅游局",
-      "中国音乐剧创演委员会",
-      "北京国韵艺术交流有限公司",
-      "广州粤剧院有限公司",
-      "红线女艺术中心"
-    ],
-    "event_summary": "多个艺术机构联合主办并承办了第二届全国高等艺术院校音乐剧演唱展演及学术研讨会",
-    "sources": [
-      "羊城晚报"
-    ],
-    "first_seen": "2025-12-07T08:15:10+00:00"
-  },
-  "香港立法会选举在宏福苑火灾后如期举行，港府强调支援灾民需立法会配合监督": {
-    "entities": [
-      "香港特别行政区",
-      "中国全国人民代表大会常务委员会",
-      "香港特别行政区立法会",
-      "香港特别行政区政府",
-      "李家超"
-    ],
-    "event_summary": "香港特别行政区政府宣布立法会选举按计划进行，并指出灾后支援工作需要立法会的协作与监督",
-    "sources": [
-      "bbc"
-    ],
-    "first_seen": "2025-12-07T05:04:09+00:00"
-  },
-  "爱荷华州立大学宣布其橄榄球队将不参加季后赛": {
-    "entities": [
-      "爱荷华州立大学",
-      "Big 12 Conference"
-    ],
-    "event_summary": "一所大学通知其所属体育联盟，其橄榄球队将不参加碗赛",
-    "sources": [
-      "iowa state athletics"
-    ],
-    "first_seen": "2025-12-07T16:58:41+00:00"
-  },
-  "前FDA局长斯科特·戈特利布在《面向全国》节目中接受采访": {
-    "entities": [
-      "美国食品药品监督管理局",
-      "斯科特·戈特利布",
-      "辉瑞公司",
-      "联合健康集团",
-      "面向全国",
-      "玛格丽特·布伦南"
-    ],
-    "event_summary": "一位前政府官员在媒体节目中谈论其当前在企业的任职情况",
-    "sources": [
-      "cbs news"
-    ],
-    "first_seen": "2025-12-07T16:49:00+00:00"
-  },
-  "众议院军事委员会高级民主党人称9月2日美军打击视频将反驳国防部长及共和党人的描述": {
-    "entities": [
-      "США",
-      "众议院军事委员会",
-      "国际原子能机构",
-      "皮特·赫格塞斯"
-    ],
-    "event_summary": "一位国会委员会成员声称，一段军事行动录像将证明政府官员对事件的描述不实",
-    "sources": [
-      "abc news"
-    ],
-    "first_seen": "2025-12-07T16:41:15+00:00"
-  },
-  "特朗普赦免面临贿赂指控的众议员奎拉尔及其妻子": {
-    "entities": [
-      "得克萨斯州",
-      "唐纳德·特朗普",
-      "亨利·奎拉尔",
-      "США"
-    ],
-    "event_summary": "一位前国家元首对面临刑事指控的立法者及其配偶行使了赦免权",
-    "sources": [
-      "the guardian"
-    ],
-    "first_seen": "2025-12-07T16:06:00+00:00"
-  },
-  "特朗普政府宣称在欧洲行使所谓‘文明干涉权’": {
-    "entities": [
-      "США",
-      "欧洲"
-    ],
-    "event_summary": "主权国家对其定义的文明区域主张干涉权利",
-    "sources": [
-      "la croix"
-    ],
-    "first_seen": "2025-12-07T16:50:24+00:00"
-  },
-  "贝宁当局宣布挫败一起政变图谋": {
-    "entities": [
-      "科托努",
-      "贝宁",
-      "Patrice Talon"
-    ],
-    "event_summary": "贝宁政府挫败了针对总统Patrice Talon的政变企图",
-    "sources": [
-      "20 minutes",
-      "dw"
-    ],
-    "first_seen": "2025-12-07T16:30:00+00:00"
-  },
-  "卢浮宫因漏水导致数百件作品受损": {
-    "entities": [
-      "华纳兄弟"
-    ],
-    "event_summary": "某博物馆因设施问题导致其藏品受损",
-    "sources": [
-      "libération",
-      "g1"
-    ],
-    "first_seen": "2025-12-07T16:26:00+00:00"
-  },
-  "苏格兰NHS艾尔郡与阿兰地区因冬季病毒激增禁止医院访客": {
-    "entities": [
-      "苏格兰",
-      "NHS艾尔郡与阿兰"
-    ],
-    "event_summary": "某地区公共卫生机构因病毒传播压力对其管辖医院实施了访客禁令",
-    "sources": [
-      "the scottish sun"
-    ],
-    "first_seen": "2025-12-07T17:20:00+00:00"
-  },
-  "一名18岁大学生在南安普顿夜出时被刺身亡": {
-    "entities": [
-      "南安普顿"
-    ],
-    "event_summary": "一名来自埃塞克斯郡的18岁大学生在南安普顿市夜出时遭遇暴力事件身亡",
-    "sources": [
-      "the telegraph"
-    ],
-    "first_seen": "2025-12-07T17:16:00+00:00"
-  },
-  "18岁埃塞克斯学生Henry Nowak在南安普顿夜出时被刺身亡": {
-    "entities": [
-      "Henry Nowak",
-      "Essex",
-      "Southampton",
-      "Chafford Hundred"
-    ],
-    "event_summary": "一名来自埃塞克斯郡Chafford Hundred的18岁学生在南安普顿夜出时被刺身亡",
-    "sources": [
-      "bbc"
-    ],
-    "first_seen": "2025-12-07T17:13:37+00:00"
-  },
-  "改革党在苏格兰福尔柯克举行集会，奈杰尔·法拉奇和改革英国参与其中": {
-    "entities": [
-      "卡洛斯·博索纳罗",
-      "改革英国",
-      "苏格兰",
-      "福尔柯克"
-    ],
-    "event_summary": "一名政治人物与一个注册政党在英国的一个行政区举行政治集会",
-    "sources": [
-      "bbc"
-    ],
-    "first_seen": "2025-12-07T17:13:11+00:00"
-  },
-  "女商人Zulma Guzman Castro被控用覆盆子谋杀两名少女": {
-    "entities": [
-      "Zulma Guzman Castro"
-    ],
-    "event_summary": "自然人Zulma Guzman Castro被指控以水果投毒方式杀害两名未成年女性",
-    "sources": [
-      "the mirror"
-    ],
-    "first_seen": "2025-12-07T16:56:53+00:00"
-  },
-  "范冰冰凭马来西亚电影《地母》获第62届金马奖影后": {
-    "entities": [
-      "范冰冰",
-      "中华人民共和国",
-      "马来西亚"
-    ],
-    "event_summary": "一位自然人演员凭借其参演的电影作品获得了某电影奖项",
-    "sources": [
-      "bbc",
-      "大紀元"
-    ],
-    "first_seen": "2025-11-21T06:23:51+00:00"
-  },
-  "德国新政党联合主席提议德国应联系俄罗斯总统普京以恢复俄天然气供应，促进乌克兰停火": {
-    "entities": [
-      "德国",
-      "俄罗斯",
-      "弗拉基米尔·普京",
-      "乌克兰",
-      "德国社会正义与...联盟党"
-    ],
-    "event_summary": "德国某政党官员提议本国政府应联系俄罗斯国家元首，以恢复能源供应作为推动乌克兰冲突停火的条件",
-    "sources": [
-      "ura.ru"
-    ],
-    "first_seen": "2025-12-07T16:17:00+00:00"
-  },
-  "美国发布新国家安全战略，被指回应普京2007年慕尼黑安全会议演讲": {
-    "entities": [
-      "弗拉基米尔·普京",
-      "克里姆林宫",
-      "俄罗斯",
-      "США",
-      "慕尼黑安全会议",
-      "Neue Zürcher Zeitung"
-    ],
-    "event_summary": "主权国家发布政策文件，被媒体解读为对另一国领导人过往公开演讲的回应",
-    "sources": [
-      "ura.ru",
-      "українська правда"
-    ],
-    "first_seen": "2025-12-07T16:15:00+00:00"
-  },
-  "乌克兰总统弗拉基米尔·泽连斯基的妻子叶莲娜被指控参与乌克兰腐败丑闻": {
-    "entities": [
-      "乌克兰",
-      "弗拉基米尔·泽连斯基",
-      "文森特·卡雷曼斯",
-      "乌克兰最高拉达",
-      "亚历山大·杜宾斯基"
-    ],
-    "event_summary": "一名乌克兰议会议员在社交媒体上指控乌克兰总统妻子涉及腐败案件",
-    "sources": [
-      "tve24.ru"
-    ],
-    "first_seen": "2025-12-07T15:21:12+00:00"
-  },
-  "英国《每日电讯报》称欧盟外交与安全政策高级代表卡娅·卡拉斯对俄强硬立场反而成为俄罗斯的“礼物”": {
-    "entities": [
-      "叶夫根尼娅·奥博拉什维利",
-      "欧盟",
-      "俄罗斯",
-      "英国《每日电讯报》",
-      "弗拉基米尔·普京"
-    ],
-    "event_summary": "英国媒体评论欧盟高级代表拒绝与俄总统谈判的立场使俄罗斯受益",
-    "sources": [
-      "eadaily"
-    ],
-    "first_seen": "2025-12-07T15:17:00+00:00"
-  },
-  "Хасанби Биджиев因球队无成绩辞去马哈奇卡拉“迪纳摩”主教练职务": {
-    "entities": [
-      "Хасанби Биджиев",
-      "马哈奇卡拉迪纳摩足球俱乐部"
-    ],
-    "event_summary": "主教练因球队成绩不佳向俱乐部辞职",
-    "sources": [
-      "sportbox"
-    ],
-    "first_seen": "2025-12-07T14:53:01+00:00"
-  },
-  "中央陆军在乌法客场对阵萨拉瓦特·尤拉耶夫并成功复仇": {
-    "entities": [
-      "ЦСКА",
-      "Салават Юлаев"
-    ],
-    "event_summary": "中央陆军体育俱乐部在比赛中击败萨拉瓦特·尤拉耶夫体育俱乐部",
-    "sources": [
-      "khl"
-    ],
-    "first_seen": "2025-12-07T14:52:41+00:00"
-  },
-  "西伯利亚队在点球大战中战胜巴里士队": {
-    "entities": [
-      "Сибирь",
-      "Барыс"
-    ],
-    "event_summary": "西伯利亚冰球俱乐部通过点球大战击败巴里士冰球俱乐部",
-    "sources": [
-      "khl"
-    ],
-    "first_seen": "2025-12-07T14:52:41+00:00"
-  },
-  "俄罗斯媒体援引记者报道指美国计划更换乌克兰领导人": {
-    "entities": [
-      "США",
-      "Владимир Зеленский",
-      "РИА Новости",
-      "Пол Стейган",
-      "乌克兰",
-      "Дональд Трамп"
-    ],
-    "event_summary": "有报道称美国意图推动更换乌克兰领导人以支持其政治立场",
-    "sources": [
-      "tve24.ru"
-    ],
-    "first_seen": "2025-12-07T14:36:00+00:00"
-  },
-  "歌手凯蒂·佩里与前加拿大总理贾斯廷·特鲁多通过社交媒体照片确认恋情": {
-    "entities": [
-      "凯蒂·佩里",
-      "贾斯廷·特鲁多",
-      "加拿大"
-    ],
-    "event_summary": "一位自然人歌手通过发布照片，公开了与一位前政府首脑的自然人的恋情关系",
-    "sources": [
-      "букви"
-    ],
-    "first_seen": "2025-12-07T17:20:00+00:00"
-  },
-  "克里姆林宫发言人佩斯科夫在俄罗斯-1频道发表评论": {
-    "entities": [
-      "克里姆林宫",
-      "德米特里·佩斯科夫"
-    ],
-    "event_summary": "一位政府官员通过国家媒体渠道传达了官方立场",
-    "sources": [
-      "українська правда"
-    ],
-    "first_seen": "2025-12-07T17:19:00+00:00"
-  },
-  "国际文传电讯社报道俄罗斯联邦安全会议副主席梅德韦杰夫言论": {
-    "entities": [
-      "北京日报",
-      "俄罗斯",
-      "德米特里·梅德韦杰夫"
-    ],
-    "event_summary": "一家新闻机构引用了另一位政府高级官员的声明",
-    "sources": [
-      "українська правда"
-    ],
-    "first_seen": "2025-12-07T17:19:00+00:00"
-  },
-  "Phantom Blade Zero的发布日期和游戏玩法细节将在The Game Awards 2025上公布": {
-    "entities": [
-      "S-GAME",
-      "The Game Awards"
-    ],
-    "event_summary": "游戏开发商计划在The Game Awards 2025活动上披露其新作的游戏信息",
-    "sources": [
-      "players.com.ua"
-    ],
-    "first_seen": "2025-12-07T17:04:27+00:00"
-  },
-  "乌克兰与美国继续讨论和平计划": {
-    "entities": [
-      "США",
-      "乌克兰公共广播公司",
-      "乌克兰",
-      "乌克兰驻美国大使馆"
-    ],
-    "event_summary": "主权国家之间就和平计划进行持续讨论",
-    "sources": [
-      "європейська правда",
-      "24 канал"
-    ],
-    "first_seen": "2025-12-07T17:00:22+00:00"
-  },
-  "乌克兰总统泽连斯基计划在伦敦会见欧洲领导人": {
-    "entities": [
-      "乌克兰",
-      "弗拉基米尔·泽连斯基"
-    ],
-    "event_summary": "一国元首计划在特定行政区与多国领导人举行会晤",
-    "sources": [
-      "європейська правда"
-    ],
-    "first_seen": "2025-12-07T17:00:22+00:00"
-  },
-  "乌克兰国防部长乌梅罗夫和情报总局局长布达诺夫从迈阿密前往伦敦汇报谈判情况": {
-    "entities": [
-      "乌克兰",
-      "乌梅罗夫",
-      "布达诺夫",
-      "迈阿密"
-    ],
-    "event_summary": "一国政府官员从一城市前往另一城市进行工作汇报",
-    "sources": [
-      "європейська правда"
-    ],
-    "first_seen": "2025-12-07T17:00:22+00:00"
-  },
-  "乌克兰铁路公司宣布伯利恒和平之火抵达基辅并将分发至其他城市": {
-    "entities": [
-      "乌克兰铁路公司",
-      "圣路易斯市",
-      "乌克兰"
-    ],
-    "event_summary": "一家国有铁路公司宣布一项宗教象征物已抵达该国首都并将分发至其国内其他城市",
-    "sources": [
-      "obozrevatel"
-    ],
-    "first_seen": "2025-12-07T16:24:00+00:00"
-  },
-  "美国劳工统计局发布2026至2036年就业市场增长预测": {
-    "entities": [
-      "美国劳工统计局"
-    ],
-    "event_summary": "政府统计机构发布了未来十年就业需求增长最快的行业预测",
-    "sources": [
-      "vctr.media"
-    ],
-    "first_seen": "2025-12-07T16:00:00+00:00"
-  },
-  "乌克兰国家能源公司宣布12月8日在乌克兰全境实施停电计划": {
-    "entities": [
-      "乌克兰",
-      "乌克兰国家电力公司"
-    ],
-    "event_summary": "一家国家能源公司宣布在其所在国全境执行停电计划",
-    "sources": [
-      "економічна правда"
-    ],
-    "first_seen": "2025-12-07T15:45:00+00:00"
-  },
-  "贾斯汀·比伯批评苹果信息应用界面设计": {
-    "entities": [
-      "贾斯汀·比伯",
-      "苹果公司"
-    ],
-    "event_summary": "一位自然人对一家科技公司的产品界面设计公开表达了不满",
-    "sources": [
-      "уніан"
-    ],
-    "first_seen": "2025-12-07T15:23:00+00:00"
-  },
-  "新加坡丹戎巴葛地铁站因乘客充电宝冒烟引导乘客下车": {
-    "entities": [
-      "新加坡",
-      "丹戎巴葛地铁站"
-    ],
-    "event_summary": "地铁站因乘客个人物品故障启动安全疏散程序",
-    "sources": [
-      "the straits times"
-    ],
-    "first_seen": "2025-12-07T16:01:49+00:00"
-  },
-  "Lando Norris赢得一级方程式赛车冠军，Max Verstappen赢得阿布扎比大奖赛": {
-    "entities": [
-      "诺里斯",
-      "Max Verstappen",
-      "McLaren",
-      "Red Bull"
-    ],
-    "event_summary": "车手Lando Norris代表迈凯伦车队获得F1年度总冠军，车手Max Verstappen代表红牛车队赢得阿布扎比赛事",
-    "sources": [
-      "cna"
-    ],
-    "first_seen": "2025-12-07T14:35:00+00:00"
-  },
-  "深圳科技馆举办“拥抱月球——中国探月成就展”": {
-    "entities": [
-      "深圳科技馆"
-    ],
-    "event_summary": "深圳科技馆展出嫦娥探测器模型及中国太空计划吉祥物",
-    "sources": [
-      "guangdong news"
-    ],
-    "first_seen": "2025-12-07T14:24:38+00:00"
-  },
-  "新加坡善牧主教座堂举办圣诞音乐会": {
-    "entities": [
-      "新加坡"
-    ],
-    "event_summary": "一个地点（教堂）举办了一场文化活动",
-    "sources": [
-      "the straits times"
-    ],
-    "first_seen": "2025-12-07T14:15:00+00:00"
-  },
-  "新加坡警方对SRS Auto发出121项禁止处置车辆命令，以扩大对汽车租赁公司洗钱活动的调查": {
-    "entities": [
-      "Singapore police",
-      "SRS Auto"
-    ],
-    "event_summary": "新加坡警方禁止SRS Auto处置其名下车辆，以配合多机构对汽车租赁业洗钱的调查",
-    "sources": [
-      "the star"
-    ],
-    "first_seen": "2025-12-07T13:51:00+00:00"
-  },
-  "一名男子在文礼道发生持刀伤人事件后被送往医院，警方正在寻找嫌疑人": {
-    "entities": [
-      "新加坡警察部队",
-      "Boon Lay Drive"
-    ],
-    "event_summary": "执法机构对发生在文礼道的持刀伤人事件展开调查并搜寻嫌疑人",
-    "sources": [
-      "stomp"
-    ],
-    "first_seen": "2025-12-07T13:31:53+00:00"
-  },
-  "印度民航总局对靛蓝航空处以罚款": {
-    "entities": [
-      "印度",
-      "靛蓝航空"
-    ],
-    "event_summary": "印度民航监管机构因航班延误问题对一家航空公司进行处罚",
-    "sources": [
-      "the straits times"
-    ],
-    "first_seen": "2025-12-07T13:13:30+00:00"
-  },
-  "角田裕毅在F1阿布扎比大奖赛中以第14名完赛，结束赛季并失去下赛季正式车手席位": {
-    "entities": [
-      "马克斯·维斯塔潘",
-      "迈凯伦",
-      "兰多·诺里斯",
-      "阿联酋",
-      "红牛",
-      "英国",
-      "角田裕毅",
-      "国际足联",
-      "阿布扎比酋长国",
-      "荷兰",
-      "诺里斯",
-      "埃迪·豪"
-    ],
-    "event_summary": "日本车手角田裕毅代表红牛车队在F1阿布扎比赛事中以第14名完赛，确认失去下赛季正式车手资格",
-    "sources": [
-      "yahoo!ニュース",
-      "スポニチ sponichi annex",
-      "nbc news",
-      "autosport web"
-    ],
-    "first_seen": "2025-12-07T14:30:00+00:00"
-  },
-  "皮亚斯特里在F1阿布扎比大奖赛首圈超越队友诺里斯": {
-    "entities": [
-      "皮亚斯特里",
-      "诺里斯",
-      "国际足联",
-      "阿联酋"
-    ],
-    "event_summary": "车手皮亚斯特里在F1阿布扎比大奖赛第一圈对队友诺里斯完成超越",
-    "sources": [
-      "yahoo!ニュース"
-    ],
-    "first_seen": "2025-12-07T14:31:04+00:00"
-  },
-  "AKB48在东京举办20周年演唱会，前田敦子等前成员与现役成员同台演出": {
-    "entities": [
-      "AKB48",
-      "前田敦子",
-      "大阪观光局",
-      "日本"
-    ],
-    "event_summary": "一个偶像团体在特定地点举办了周年纪念演唱会，部分前成员参与演出",
-    "sources": [
-      "yahoo!ニュース"
-    ],
-    "first_seen": "2025-12-07T11:43:01+00:00"
-  },
-  "演员生田斗真就其在NHK大河剧《べらぼう》中饰演的角色斋藤十郎兵卫发表评论": {
-    "entities": [
-      "生田斗真",
-      "日本放送协会"
-    ],
-    "event_summary": "一位演员就其在一部由公共广播机构制作的电视剧中扮演的角色发表了看法",
-    "sources": [
-      "ステラnet",
-      "crea web"
-    ],
-    "first_seen": "2025-12-07T11:10:36+00:00"
-  },
-  "巴西参议员弗拉维奥·博索纳罗称圣保罗州州长塔西西奥·德弗雷塔斯是当前右翼的主要人物": {
-    "entities": [
-      "弗拉维奥·博尔索纳罗",
-      "自由党",
-      "里约热内卢州",
-      "安德烈·叶尔马克",
-      "共和党",
-      "圣保罗州"
-    ],
-    "event_summary": "一位来自特定政党的参议员公开评价另一位来自特定政党的州长在当前政治光谱中的地位",
-    "sources": [
-      "poder360"
-    ],
-    "first_seen": "2025-12-07T17:12:13+00:00"
-  },
-  "八幅马蒂斯和五幅波尔蒂纳里画作从圣保罗马里奥·德·安德拉德图书馆被盗": {
-    "entities": [
-      "Henri Matisse",
-      "Cândido Portinari",
-      "Biblioteca Mário de Andrade",
-      "São Paulo"
-    ],
-    "event_summary": "自然人艺术家的作品被从地方政府管理的公共图书馆中盗走",
-    "sources": [
-      "cbn"
-    ],
-    "first_seen": "2025-12-07T17:11:56+00:00"
-  },
-  "两名武装男子在圣保罗市中心的马里奥·德·安德拉德图书馆抢劫十三件艺术品": {
-    "entities": [
-      "马里奥·德·安德拉德图书馆",
-      "圣保罗州",
-      "巴西军事警察"
-    ],
-    "event_summary": "两名武装人员袭击了位于圣保罗市的图书馆，劫走艺术品并制服安保人员",
-    "sources": [
-      "cnn brasil"
-    ],
-    "first_seen": "2025-12-07T16:47:15+00:00"
-  },
-  "Rayssa Leal赢得SLS Super Crown四连冠": {
-    "entities": [
-      "Rayssa Leal",
-      "SLS Super Crown"
-    ],
-    "event_summary": "运动员Rayssa Leal在SLS Super Crown赛事中获胜，成为四届冠军",
-    "sources": [
-      "cnn brasil"
-    ],
-    "first_seen": "2025-12-07T16:35:07+00:00"
-  },
-  "球员Brena在赛后采访中谈及比赛心态": {
-    "entities": [
-      "Brena",
-      "Palmeiras",
-      "Corinthians"
-    ],
-    "event_summary": "一名球员在赛后采访中评论了其所属俱乐部在比赛中的心态",
-    "sources": [
-      "uol"
-    ],
-    "first_seen": "2025-12-07T16:34:48+00:00"
-  },
-  "巴西联邦警察开展“Mors Futuri行动”逮捕“幽灵银行”负责人": {
-    "entities": [
-      "巴西联邦警察",
-      "卡尔瓦多斯省",
-      "Itapema"
-    ],
-    "event_summary": "执法机构在特定行政区逮捕了一名涉嫌运营非法金融机构的自然人",
-    "sources": [
-      "metrópoles"
-    ],
-    "first_seen": "2025-12-07T15:44:00+00:00"
-  },
-  "巴西参议员弗拉维奥·博索纳罗表示其总统竞选存在‘代价’": {
-    "entities": [
-      "高原宫",
-      "自由党",
-      "巴西",
-      "雅伊尔·博索纳罗",
-      "弗拉维奥·博尔索纳罗"
-    ],
-    "event_summary": "一位参议员就其可能的总统竞选发表了关于坚持到底所需‘代价’的言论",
-    "sources": [
-      "o globo",
-      "cnn brasil"
-    ],
-    "first_seen": "2025-12-07T15:35:06+00:00"
-  },
-  "美国谴责委内瑞拉政府因一名反对派前州长在狱中死亡": {
-    "entities": [
-      "США",
-      "塞内加尔共和国",
-      "Nicolás Maduro"
-    ],
-    "event_summary": "主权国家对另一主权国家政府就政治犯死亡事件提出谴责",
-    "sources": [
-      "clarin.com"
-    ],
-    "first_seen": "2025-12-07T17:16:53+00:00"
-  },
-  "阿根廷卫生部确认恩特雷里奥斯省新增一例两岁儿童麻疹病例": {
-    "entities": [
-      "阿根廷卫生部",
-      "恩特雷里奥斯省"
-    ],
-    "event_summary": "阿根廷卫生部通报恩特雷里奥斯省发现一例两岁儿童麻疹感染病例",
-    "sources": [
-      "clarin.com"
-    ],
-    "first_seen": "2025-12-07T16:28:33+00:00"
-  },
-  "阿根廷汽车商会报告2025年11月二手车销量同比下降12.62%": {
-    "entities": [
-      "阿根廷汽车商会"
-    ],
-    "event_summary": "行业组织发布了关于二手车销量同比下降的统计数据",
-    "sources": [
-      "rosario3"
-    ],
-    "first_seen": "2025-12-07T16:28:00+00:00"
-  },
-  "阿根廷七人制橄榄球队在南非开普敦七人制橄榄球赛中获得亚军": {
-    "entities": [
-      "阿根廷",
-      "南非",
-      "开普敦"
-    ],
-    "event_summary": "一支国家体育队在另一国家城市举办的国际体育赛事中获得第二名",
-    "sources": [
-      "la nación"
-    ],
-    "first_seen": "2025-12-07T16:21:00+00:00"
-  },
-  "阿根廷车手Colapinto在F1阿布扎比大奖赛以最后一名完赛，并展望2026赛季": {
-    "entities": [
-      "阿根廷",
-      "阿尔派车队"
-    ],
-    "event_summary": "一名赛车手在特定赛事中完成比赛后，对未来的赛事表达了期待",
-    "sources": [
-      "tyc sports"
-    ],
-    "first_seen": "2025-12-07T15:34:22+00:00"
-  },
-  "车手Franco Colapinto在阿布扎比F1大奖赛赛后发表赛季结束感想": {
-    "entities": [
-      "Franco Colapinto"
-    ],
-    "event_summary": "一名自然人对刚结束的F1赛季发表了个人评论",
-    "sources": [
-      "infobae"
-    ],
-    "first_seen": "2025-12-07T15:27:00+00:00"
-  },
-  "小米手机中预装的不必要应用程序可能影响设备性能": {
-    "entities": [
-      "小米科技有限公司"
-    ],
-    "event_summary": "某智能手机制造商生产的设备因预装应用可能导致运行缓慢、耗电加快和存储不足",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T12:18:00+00:00"
-  },
-  "小米公司确认其新款手机Xiaomi 15T Pro和Xiaomi 15T将获得长期软件更新支持": {
-    "entities": [
-      "小米科技有限公司",
-      "Xiaomi 15T Pro",
-      "Xiaomi 15T"
-    ],
-    "event_summary": "一家科技公司宣布其即将发布的两款智能手机产品将获得超乎寻常的长期软件更新支持",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T11:54:00+00:00"
-  },
-  "Xiaomi发布第九代健身手环": {
-    "entities": [
-      "小米科技有限公司",
-      "Xiaomi Band 9"
-    ],
-    "event_summary": "一家科技公司推出其新一代可穿戴健身产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T04:18:00+00:00"
-  },
-  "印度政府撤销网络安全应用强制预装规定": {
-    "entities": [
-      "印度"
-    ],
-    "event_summary": "印度政府因多方反对，撤销了对某国家支持应用的强制预装要求",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T11:12:24+00:00"
-  },
-  "2025年第三季度全球可折叠智能手机市场出货量创历史新高，但小米出货量同比下降54%": {
-    "entities": [
-      "小米科技有限公司"
-    ],
-    "event_summary": "市场数据显示，某智能手机制造商在可折叠手机市场整体增长时出货量大幅下滑",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T08:30:00+00:00"
-  },
-  "小米 Redmi Note 14 Pro 在法国售价低于 185 欧元": {
-    "entities": [
-      "小米科技有限公司",
-      "Redmi Note 14 Pro"
-    ],
-    "event_summary": "小米公司将其 Redmi Note 14 Pro 手机定价低于 185 欧元",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:22:37+00:00"
-  },
-  "科技YouTuber MKBHD评测小米SU7电动汽车并给予高度评价": {
-    "entities": [
-      "MKBHD",
-      "小米科技有限公司",
-      "Xiaomi SU7"
-    ],
-    "event_summary": "知名科技内容创作者对小米公司推出的电动汽车产品进行了评测并发表积极结论",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:34:08+00:00"
-  },
-  "小米14智能手机本周末在法国市场进行促销活动": {
-    "entities": [
-      "三星",
-      "苹果公司",
-      "小米科技有限公司",
-      "小米17 Ultra",
-      "法国"
-    ],
-    "event_summary": "一家科技媒体在法国报道了某中国智能手机品牌对其新款旗舰手机进行促销",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T07:32:36+00:00"
-  },
-  "AliExpress对Xiaomi Redmi Watch 5 Lite智能手表进行限时促销": {
-    "entities": [
-      "AliExpress",
-      "小米科技有限公司",
-      "Redmi Watch 5 Lite"
-    ],
-    "event_summary": "电商平台对其销售的小米旗下智能手表Redmi Watch 5 Lite提供限时折扣",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T07:23:47+00:00"
-  },
-  "小米在圣诞节前进行库存清理并提供大量新优惠": {
-    "entities": [
-      "小米科技有限公司"
-    ],
-    "event_summary": "一家科技公司为其产品推出了促销活动",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T06:37:36+00:00"
-  },
-  "Darty推出包含Xiaomi Redmi 15C 5G智能手机和Redmi Buds 6 Play耳机的优惠套装": {
-    "entities": [
-      "Darty",
-      "小米科技有限公司",
-      "Redmi 15C 5G",
-      "Redmi Buds 6 Play"
-    ],
-    "event_summary": "零售商为特定智能手机及耳机产品组合提供了促销优惠",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T14:30:11+00:00"
-  },
-  "小米Redmi Note 13手机在法国市场降价促销": {
-    "entities": [
-      "小米科技有限公司",
-      "Redmi Note 13"
-    ],
-    "event_summary": "某科技公司对其特定型号智能手机产品进行降价销售",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T11:27:36+00:00"
-  },
-  "Auchan周末促销Xiaomi Redmi 15 5G智能手机": {
-    "entities": [
-      "Redmi 15",
-      "Auchan",
-      "小米科技有限公司",
-      "Redmi 15 5G",
-      "AliExpress"
-    ],
-    "event_summary": "零售商Auchan对小米公司旗下的Redmi 15 5G智能手机进行周末降价促销",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T10:30:00+00:00"
-  },
-  "小米17 Ultra泄露信息显示其将搭载徕卡品牌镜头并提升摄影性能": {
-    "entities": [
-      "微博",
-      "小米17 Ultra",
-      "小米科技有限公司",
-      "中华人民共和国",
-      "Weibo",
-      "Leica"
-    ],
-    "event_summary": "一家智能手机制造商被曝将在其新机型中使用另一家公司品牌的镜头以提升摄影功能",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-02T13:17:00+00:00"
-  },
-  "黑鲨发布新款户外智能手表GS3 Ultra": {
-    "entities": [
-      "黑鲨",
-      "小米科技有限公司"
-    ],
-    "event_summary": "一个与某科技公司有关联的游戏硬件品牌发布了一款新的智能手表产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-01T10:14:51+00:00"
-  },
-  "新闻对比三星Galaxy S26 Ultra与小米17 Pro Max的新颖功能": {
-    "entities": [
-      "Samsung",
-      "Galaxy S26 Ultra",
-      "小米科技有限公司",
-      "17 Pro Max"
-    ],
-    "event_summary": "媒体对两家科技公司即将推出的旗舰智能手机型号及其功能进行对比分析",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-26T14:15:18+00:00"
-  },
-  "小米国际互联网业务部在泰国举办2026年小米互联网合作伙伴大会": {
-    "entities": [
-      "小米科技有限公司",
-      "泰国"
-    ],
-    "event_summary": "小米的国际互联网业务部门在泰国组织了一场面向全球合作伙伴的年度会议",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-18T05:46:00+00:00"
-  },
-  "小米发布全球最实惠的QLED电视之一：Xiaomi TV A Pro 32 2026": {
-    "entities": [
-      "小米科技有限公司",
-      "Xiaomi TV A Pro 32 2026"
-    ],
-    "event_summary": "小米公司推出了一款新型号的QLED电视产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T09:56:00+00:00"
-  },
-  "小米公司计划推出三折折叠屏智能手机": {
-    "entities": [
-      "Huawei",
-      "GSMA",
-      "Samsung",
-      "Galaxy Z TriFold",
-      "华为技术有限公司",
-      "Mate XTs",
-      "小米科技有限公司",
-      "三星"
-    ],
-    "event_summary": "一家科技公司据称将跟随其他两家科技公司之后，推出一款新型折叠手机",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T15:46:00+00:00"
-  },
-  "М.Видео опубликовала итоги продаж планшетов в России за сентябрь–ноябрь 2025 года": {
-    "entities": [
-      "М.Видео",
-      "Apple Inc.",
-      "Samsung",
-      "小米科技有限公司",
-      "Redmi"
-    ],
-    "event_summary": "Розничная компания представила статистику по популярным брендам планшетов на российском рынке за указанный период",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T22:00:00+00:00"
-  },
-  "小米发布新款23.8英寸基础显示器Monitor A24i 2026": {
-    "entities": [
-      "小米科技有限公司",
-      "Monitor A24i 2026"
-    ],
-    "event_summary": "小米公司推出了其基础型号的更新版显示器Monitor A24i 2026",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T13:52:00+00:00"
-  },
-  "小米公司创始人雷军谈及人形机器人将开始进入公司生产设施": {
-    "entities": [
-      "小米科技有限公司",
-      "北京日报",
-      "雷军"
-    ],
-    "event_summary": "公司创始人透露人形机器人将逐步部署至企业生产场景",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-01T08:43:00+00:00"
-  },
-  "小米公司推出新款智能手机Poco M7和Redmi Note 14": {
-    "entities": [
-      "小米科技有限公司",
-      "Poco M7",
-      "Redmi Note 14"
-    ],
-    "event_summary": "一家科技公司向市场推出了两款由其生产的新型号智能手机",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-28T11:23:00+00:00"
-  },
-  "俄罗斯消费者在更换智能手机时倾向于选择原品牌，偏好Apple、Realme、Xiaomi和Samsung": {
-    "entities": [
-      "Apple Inc.",
-      "Realme",
-      "小米科技有限公司",
-      "Samsung",
-      "МТС"
-    ],
-    "event_summary": "数据分析机构指出多数俄罗斯用户更换手机时继续选择原有品牌，主要品牌包括Apple、Realme、Xiaomi和Samsung",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-28T10:22:00+00:00"
-  },
-  "diHouse在俄罗斯开始销售Poco Pad M1平板电脑": {
-    "entities": [
-      "diHouse",
-      "小米科技有限公司",
-      "Poco Pad M1"
-    ],
-    "event_summary": "分销商diHouse在俄罗斯市场推出由Xiaomi关联品牌Poco生产的平板电脑Poco Pad M1",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-26T12:35:34+00:00"
-  },
-  "小米旗下品牌Poco发布搭载Snapdragon 8 Elite芯片的旗舰手机Poco F8 Pro与F8 Ultra": {
-    "entities": [
-      "F8 Ultra",
-      "Poco F8 Ultra",
-      "GSMArena",
-      "Bose",
-      "Poco F8 Pro",
-      "Snapdragon 8 Elite",
-      "小米科技有限公司",
-      "Poco"
-    ],
-    "event_summary": "小米旗下的Poco品牌发布了两款搭载高通芯片并集成Bose音频技术的新款旗舰智能手机",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-26T09:15:00+00:00"
-  },
-  "Redmi Note 15系列手机在欧洲网络曝光，包含三款已知型号和一款新型号": {
-    "entities": [
-      "Redmi Note 15",
-      "小米科技有限公司"
-    ],
-    "event_summary": "小米公司的一款手机系列产品在欧洲网络上被提前曝光",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T08:47:12+00:00"
-  },
-  "安兔兔发布2025年11月安卓手机性能排行榜，榜首为搭载骁龙8 Elite Gen 5或天玑9500处理器的机型": {
-    "entities": [
-      "安兔兔",
-      "Qualcomm",
-      "MediaTek"
-    ],
-    "event_summary": "一个基准测试平台发布了基于特定移动处理器平台的智能手机性能排名",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-01T12:17:00+00:00"
-  },
-  "小米公司公布HyperOS 3操作系统在12月的推送计划": {
-    "entities": [
-      "小米科技有限公司",
-      "HyperOS 3",
-      "Android 16"
-    ],
-    "event_summary": "小米公司宣布将向其设备推送基于Android 16的新版HyperOS 3操作系统",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-30T13:50:00+00:00"
-  },
-  "联想集团CEO杨元庆解释因人工智能技术快速普及导致零部件供应短缺及价格上涨": {
-    "entities": [
-      "联想集团",
-      "杨元庆"
-    ],
-    "event_summary": "公司高管说明人工智能推动需求增长，引发供应链紧张与成本上升",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-21T15:49:00+00:00"
-  },
-  "联想与小米因内存芯片短缺和涨价而提高设备价格": {
-    "entities": [
-      "Lenovo",
-      "小米科技有限公司"
-    ],
-    "event_summary": "两家中国电子制造商因内存芯片成本上升而上调其智能手机、平板电脑和笔记本电脑的价格",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-21T11:19:00+00:00"
-  },
-  "小米SU7更新车型被拍到在测试中，公司同时清仓旧款型号": {
-    "entities": [
-      "小米科技有限公司",
-      "Xiaomi SU7"
-    ],
-    "event_summary": "科技公司对其电动车型进行迭代测试并清理前代库存",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-18T17:12:40+00:00"
-  },
-  "小米推出30000mAh容量、售价2580日元的移动电源产品": {
-    "entities": [
-      "小米科技有限公司",
-      "Xiaomi 18W Power Bank 30000mAh"
-    ],
-    "event_summary": "一家科技公司发布了一款高容量、低价格的移动电源产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-24T06:00:00+00:00"
-  },
-  "Xiaomi在黑色星期五促销活动中对多款Android手机进行大幅折扣": {
-    "entities": [
-      "Google TV",
-      "Amazon.com Inc.",
-      "亚马逊",
-      "小米科技有限公司"
-    ],
-    "event_summary": "Xiaomi在其线上商店对其多款Android智能手机实施最高达51%的折扣",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-12T11:30:00+00:00"
-  },
-  "小米平板Xiaomi Pad Mini在亚马逊限时促销中降价销售": {
-    "entities": [
-      "小米科技有限公司",
-      "Amazon.com Inc."
-    ],
-    "event_summary": "小米在亚马逊平台对其Xiaomi Pad Mini产品进行限时促销降价",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-11T06:55:00+00:00"
-  },
-  "小米向全球版Xiaomi 14 Ultra推送基于Android 16的HyperOS 3.0稳定版系统更新": {
-    "entities": [
-      "小米科技有限公司",
-      "Android 16",
-      "HyperOS 3",
-      "Xiaomi 14 Ultra"
-    ],
-    "event_summary": "一家科技公司向其特定型号的智能手机推送了新版操作系统",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T13:34:00+00:00"
-  },
-  "小米17 Ultra在北京街头测试时被拍到，预计本月在中国发布": {
-    "entities": [
-      "小米科技有限公司",
-      "小米17 Ultra",
-      "中华人民共和国",
-      "北京"
-    ],
-    "event_summary": "小米公司即将发布的新旗舰手机在北京被提前拍到",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T16:54:40+00:00"
-  },
-  "小米在中国正式更新米家超节能柜式空调系列": {
-    "entities": [
-      "小米科技有限公司",
-      "中华人民共和国"
-    ],
-    "event_summary": "一家科技公司在其总部所在国发布了升级版的家用电器产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T14:26:48+00:00"
-  },
-  "小米推出Mijia Diffuse Reflection Ceiling Light智能灯具": {
-    "entities": [
-      "小米科技有限公司",
-      "Mijia Diffuse Reflection Ceiling Light"
-    ],
-    "event_summary": "小米公司发布了一款名为Mijia Diffuse Reflection Ceiling Light的智能照明产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T14:20:07+00:00"
-  },
-  "摩托罗拉在拉丁美洲智能手机市场份额下滑，被小米超越失去第二位置": {
-    "entities": [
-      "摩托罗拉",
-      "小米科技有限公司",
-      "Omdia"
-    ],
-    "event_summary": "市场研究机构发布报告显示，某手机制造商在特定区域市场的份额被另一制造商超越",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T18:03:00+00:00"
-  },
-  "小米推出多款智能手机作为圣诞购物季推荐机型": {
-    "entities": [
-      "小米科技有限公司"
-    ],
-    "event_summary": "一家科技公司提供其生产的智能手机作为节日购物季的推荐产品",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T05:06:34+00:00"
-  },
-  "美国国会众议院航空航天小组委员会举行听证会评估中国太空项目对美国领导地位的威胁": {
-    "entities": [
-      "美国国会众议院科学、太空与技术委员会航空航天小组委员会",
-      "中华人民共和国",
-      "习近平"
-    ],
-    "event_summary": "美国国会下属委员会就中国国家太空计划及其对美国全球领导地位构成的潜在风险举行听证会",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T21:37:33+00:00"
-  },
-  "美国国会众议院通过三项法案以阻止中国共产党对美国中小学课堂的影响": {
-    "entities": [
-      "美利坚合众国",
-      "中国共产党",
-      "中小学"
-    ],
-    "event_summary": "美国立法机构通过多项法案以限制某外国政治组织对本国基础教育的影响",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T20:21:19+00:00"
-  },
-  "福特中国整合长安福特与江铃福特销售网络，成立新公司统一运营在华业务": {
-    "entities": [
-      "福特汽车公司",
-      "福特汽车销售服务有限公司",
-      "福特中国",
-      "长安福特",
-      "江铃福特",
-      "福特纵横",
-      "蒙迪欧",
-      "锐界",
-      "F-150猛禽",
-      "游骑侠Ranger",
-      "21世纪经济报道",
-      "广州"
-    ],
-    "event_summary": "福特汽车公司通过其新成立的中国销售服务公司，整合了在华两大合资伙伴的销售网络，以统一品牌形象和业务运营。",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T00:00:00+00:00"
-  },
-  "美国两党议员推出《停止窃取我们的芯片法案》以打击向中国走私AI芯片": {
-    "entities": [
-      "美利坚合众国",
-      "共和党",
-      "民主党",
-      "汤姆·基恩",
-      "朱莉·约翰逊",
-      "美国商务部产业与安全局",
-      "中华人民共和国"
-    ],
-    "event_summary": "美国国会两党议员联合提出一项法案，旨在通过设立举报人项目来阻止美国制造的AI芯片等敏感技术被非法出口至中国。",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T15:57:03+00:00"
-  },
-  "法国总统马克龙抵达北京进行国事访问": {
-    "entities": [
-      "法国",
-      "马克龙",
-      "北京首都国际机场",
-      "中华人民共和国",
-      "对外经济贸易大学法国经济研究中心",
-      "赵永升",
-      "南方财经21世纪经济报道",
-      "郑青亭",
-      "陈俊康"
-    ],
-    "event_summary": "法国国家元首对中国进行正式访问，相关学者接受媒体采访进行解读。",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T00:00:00+00:00"
-  },
-  "中国德国商会华北及东北地区董事会主席霍飞明接受21世纪经济报道专访，谈及中国创新速度及中德经济合作": {
-    "entities": [
-      "中国德国商会",
-      "霍飞明",
-      "Martin Hofmann",
-      "南方财经21世纪经济报道",
-      "郑青亭",
-      "北京",
-      "中华人民共和国",
-      "德国"
-    ],
-    "event_summary": "某商会地区负责人接受媒体采访，评价中国市场的创新速度并讨论两国经济合作",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T00:00:00+00:00"
-  },
-  "商务部和财政部公布新一批国际化消费环境建设试点城市名单": {
-    "entities": [
-      "商务部",
-      "财政部",
-      "北京",
-      "上海市",
-      "广州",
-      "天津市",
-      "重庆市"
-    ],
-    "event_summary": "中国政府主管部门公布了新增的国际化消费环境建设试点城市，包括首批5座城市",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T00:00:00+00:00"
-  },
-  "深圳证券交易所组织深市上市公司在德国法兰克福举办路演交流会": {
-    "entities": [
-      "深圳证券交易所",
-      "德国",
-      "法兰克福"
-    ],
-    "event_summary": "证券交易所组织上市公司在主权国家的明确行政区举办境外路演活动以促进投资合作",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T00:00:00+00:00"
-  },
-  "美国参议员警告中国在人工智能领域的进展对美国构成挑战并呼吁加强应对措施": {
-    "entities": [
-      "美国参议员",
-      "中华人民共和国",
-      "美国国会参议院外交关系委员会东亚、太平洋与国际网络安全政策小组委员会",
-      "皮特·里基茨",
-      "美利坚合众国"
-    ],
-    "event_summary": "美国立法机构成员指出中国在人工智能领域的快速发展对美国形成战略竞争，并建议采取包括技术管制和联盟合作在内的多项应对措施",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T20:00:35+00:00"
-  },
-  "第十八届中国健康教育与健康促进大会暨健康体重专题培训在北京举办，国家卫生健康委副主任郭燕红出席并讲话": {
-    "entities": [
-      "国家卫生健康委",
-      "郭燕红"
-    ],
-    "event_summary": "政府官员在国家级健康教育会议上发表讲话，部署未来工作重点",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T00:00:00+00:00"
+    "event_summary": "澳门特别行政区行政长官宣布向合资格居民发放现金补贴",
+    "sources": [],
+    "first_seen": "2025-11-18T08:17:42+00:00"
   },
-  "日本首相高市早苗在国会暗示若北京攻击台湾东京可能军事介入": {
+  "中国外交官因日本首相高市早苗涉台言论发表激烈言辞": {
     "entities": [
+      "习近平",
       "日本",
-      "高市早苗",
-      "国会",
-      "北京",
-      "台湾地区",
-      "东京"
+      "中国",
+      "高市早苗"
     ],
-    "event_summary": "日本政府首脑在立法机构就台湾问题发表可能军事干预的言论",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:35:17+00:00"
-  },
-  "中国共产党领导的中国在外交上努力孤立日本": {
-    "entities": [
-      "中国共产党",
-      "中华人民共和国",
-      "日本"
-    ],
-    "event_summary": "一国政府对另一国政府采取外交施压行动",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:35:17+00:00"
-  },
-  "美国前总统特朗普执政时期中美贸易摩擦加速全球供应链从中国、香港和韩国工厂转移": {
-    "entities": [
-      "美利坚合众国",
-      "特朗普",
-      "中华人民共和国",
-      "香港特别行政区",
-      "韩国"
-    ],
-    "event_summary": "在特朗普领导下的美国与中国的贸易冲突促使企业将供应链从中国、香港和韩国的工厂转移",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:26:46+00:00"
-  },
-  "高盛发布报告警告欧洲经济可能承受全球贸易竞争加剧的冲击": {
-    "entities": [
-      "高盛集团",
-      "欧洲"
-    ],
-    "event_summary": "一家投资银行发布研究报告，就特定地区的经济风险提出警告",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:03:22+00:00"
-  },
-  "中国推行出口导向型复苏政策": {
-    "entities": [
-      "中华人民共和国"
-    ],
-    "event_summary": "一个国家政府推行了以出口刺激经济复苏的政策",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T18:03:22+00:00"
-  },
-  "巴基斯坦希望排除印度并组建新的区域合作机制，中国和孟加拉国将参与": {
-    "entities": [
-      "巴基斯坦",
-      "印度",
-      "南亚区域合作联盟",
-      "中华人民共和国",
-      "孟加拉人民共和国",
-      "巴基斯坦外交部"
-    ],
-    "event_summary": "巴基斯坦提议排除印度，并联合中国和孟加拉国建立替代南亚区域合作联盟的新合作机制",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:55:19+00:00"
-  },
-  "富国银行报告显示过去十年美国供应商从中国、香港和韩国的采购份额下降": {
-    "entities": [
-      "富国银行",
-      "中华人民共和国",
-      "香港特别行政区",
-      "韩国"
-    ],
-    "event_summary": "一家金融机构报告了美国进口来源地结构的变化趋势",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:42:51+00:00"
-  },
-  "美国进口商因供应链转向越南、印度和泰国而面临关税影响": {
-    "entities": [
-      "美利坚合众国",
-      "越南",
-      "印度",
-      "泰国"
-    ],
-    "event_summary": "新闻报道了美国进口商因贸易转移而承受的关税成本变化",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:42:51+00:00"
-  },
-  "再鼎医药宣布其药物及适应症被纳入中国2025年国家医保药品目录": {
-    "entities": [
-      "再鼎医药",
-      "中国国家医疗保障局"
-    ],
-    "event_summary": "一家生物制药公司宣布其产品被某国家医疗保障机构更新的药品目录所纳入",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:35:11+00:00"
-  },
-  "OnePlus 回应其 AI 功能被用户指存在针对中国政府敏感话题的政治审查": {
-    "entities": [
-      "OnePlus"
-    ],
-    "event_summary": "OnePlus 就其 AI 功能被指进行政治审查的争议作出回应",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:30:03+00:00"
-  },
-  "力拓集团首席执行官表示正与中铝集团合作以解决股权限制问题": {
-    "entities": [
-      "力拓集团",
-      "中铝集团"
-    ],
-    "event_summary": "一家矿业公司首席执行官表示正与一家中国国有金属企业合作解决股权结构问题",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T04:56:10+00:00"
-  },
-  "中国中铁在注销股份后修订其中期股息金额": {
-    "entities": [
-      "中国中铁"
-    ],
-    "event_summary": "一家公司调整了其股息分配方案",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T04:50:12+00:00"
-  },
-  "Blacksheep 于12月3日在巴黎开设首家眼镜门店": {
-    "entities": [
-      "Blacksheep",
-      "巴黎"
-    ],
-    "event_summary": "Blacksheep 在巴黎开设其第一家低价眼镜零售店",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T14:34:00+00:00"
-  },
-  "Fortescue与中国钢铁制造商合作开发绿色铁技术": {
-    "entities": [
-      "Fortescue"
-    ],
-    "event_summary": "一家矿业公司宣布与一家中国钢铁制造商合作开发新的绿色炼铁技术",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T10:55:41+00:00"
-  },
-  "墨卡托中国研究所警告台海局势升级将对德国造成重大经济后果": {
-    "entities": [
-      "墨卡托中国研究所",
-      "德国",
-      "台湾地区"
-    ],
-    "event_summary": "一家研究机构就特定地区紧张局势升级对某主权国家经济影响的潜在风险发出警告",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T08:41:50+00:00"
-  },
-  "中国东方航空开通北京至马斯喀特直飞航线": {
-    "entities": [
-      "中国东方航空",
-      "北京",
-      "马斯喀特"
-    ],
-    "event_summary": "航空公司开通了连接中国首都与阿曼首都的直飞航班",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T02:09:10+00:00"
-  },
-  "特斯拉在中国制造的电动汽车11月销量同比增长9.9%": {
-    "entities": [
-      "特斯拉",
-      "中华人民共和国"
-    ],
-    "event_summary": "某汽车制造商在其重要市场区域的特定产品销量实现同比增长",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T01:53:14+00:00"
-  },
-  "中国北方稀土集团高科技股份有限公司获准发行中期票据和超短期融资券": {
-    "entities": [
-      "中国北方稀土集团高科技股份有限公司"
-    ],
-    "event_summary": "某公司获得了发行特定金融工具的监管许可",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-02T12:54:02+00:00"
-  },
-  "日本和澳大利亚谴责中国军机锁定雷达行为并要求采取预防措施": {
-    "entities": [
-      "中华人民共和国",
-      "日本防卫省",
-      "日本",
-      "冲绳",
-      "澳大利亚"
-    ],
-    "event_summary": "日本与澳大利亚对中国的军事行为提出抗议并要求其采取预防措施",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:47:00+00:00"
-  },
-  "日本政府就雷达锁定事件向中国政府提出正式抗议": {
-    "entities": [
-      "冲绳",
-      "日本",
-      "中华人民共和国",
-      "路透社",
-      "中华人民共和国国防部",
-      "日本政府"
-    ],
-    "event_summary": "一国政府就军事事件向另一国政府表达了官方不满并寻求交涉",
-    "sources": [
-      "the telegraph",
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:11:00+00:00"
-  },
-  "英国康沃尔家族玩具企业Mcslots借助中国零售应用Temu摆脱困境": {
-    "entities": [
-      "Temu",
-      "Mcslots"
-    ],
-    "event_summary": "中国零售商Temu成为英国家族玩具公司Mcslots的救命稻草",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T16:00:00+00:00"
-  },
-  "中国汽车品牌凭借技术配置和价格优势进入英国市场并受到欢迎": {
-    "entities": [
-      "英国"
-    ],
-    "event_summary": "新闻报道描述了中国汽车品牌进入英国市场并受到消费者欢迎的现象",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T12:00:00+00:00"
-  },
-  "北爱尔兰经济部长将出访中国以加强经贸联系": {
-    "entities": [
-      "北爱尔兰",
-      "中华人民共和国"
-    ],
-    "event_summary": "北爱尔兰的政府官员计划访问中国以促进双边经贸关系",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T11:05:05+00:00"
-  },
-  "加拿大安全情报局前局长称敌对势力向西方的大学派遣间谍": {
-    "entities": [
-      "加拿大安全情报局",
-      "David Vigneault"
-    ],
-    "event_summary": "加拿大安全情报局前局长指出敌对情报机构正大规模渗透西方大学与企业",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T09:00:17+00:00"
-  },
-  "法国总统马克龙威胁对中国与欧盟贸易顺差采取强硬措施": {
-    "entities": [
-      "马克龙",
-      "中华人民共和国",
-      "欧盟",
-      "美利坚合众国"
-    ],
-    "event_summary": "一国元首表示若对方不回应，其所在区域组织将效仿另一主权国家对中国产品加征关税",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T16:38:00+00:00"
-  },
-  "一名男子在中国海南岛三亚市大东海海滩制造袭击事件": {
-    "entities": [
-      "中华人民共和国",
-      "海南岛",
-      "三亚市",
-      "Global Times"
-    ],
-    "event_summary": "一名男子在中国海南省三亚市的旅游海滩实施了暴力袭击",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T15:44:18+00:00"
-  },
-  "中国河南省三门峡市地下通道施工发生事故致五人死亡": {
-    "entities": [
-      "中华人民共和国",
-      "河南省",
-      "三门峡市",
-      "中国中央电视台"
-    ],
-    "event_summary": "中国中央电视台报道了河南省三门峡市一处地下通道施工项目发生致命事故",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T15:24:00+00:00"
-  },
-  "中国古生物学家在四川省发现恐龙足迹化石": {
-    "entities": [
-      "中华人民共和国",
-      "四川省",
-      "China Daily"
-    ],
-    "event_summary": "中国古生物学家在中国四川省的岩石上发现了恐龙足迹化石",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T13:31:53+00:00"
-  },
-  "中国新疆维吾尔自治区G30连霍高速发生连环交通事故致9死7伤": {
-    "entities": [
-      "中华人民共和国",
-      "新疆维吾尔自治区"
-    ],
-    "event_summary": "中国新疆维吾尔自治区境内发生交通事故造成人员伤亡",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T03:40:00+00:00"
-  },
-  "特朗普政府发布新的美国国家安全战略，将布鲁塞尔定位为主要问题来源": {
-    "entities": [
-      "德国",
-      "美利坚合众国",
-      "唐纳德·特朗普"
-    ],
-    "event_summary": "美国总统领导的行政当局在国家安全战略文件中将欧盟核心所在地布鲁塞尔描述为主要问题制造者",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T11:46:25+00:00"
-  },
-  "中国成功完成新型微型涡轮喷气发动机的首次飞行测试": {
-    "entities": [
-      "中华人民共和国"
-    ],
-    "event_summary": "主权国家对其自主研发的航空发动机产品进行了首次飞行试验",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-11-14T19:02:33+00:00"
-  },
-  "法国总统马克龙威胁对中国加征关税以应对对欧贸易顺差": {
-    "entities": [
-      "Emmanuel Macron",
-      "马克龙",
-      "欧盟",
-      "中华人民共和国",
-      "回声报",
-      "Les Echos",
-      "法国"
-    ],
-    "event_summary": "法国国家元首向中华人民共和国发出关税威胁，要求其减少对欧洲联盟的贸易顺差",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T11:48:30+00:00"
-  },
-  "新加坡洛坤大伯公庙一尊虎神像丢失，庙方已报警": {
-    "entities": [
-      "新加坡",
-      "洛坤大伯公庙"
-    ],
-    "event_summary": "一座宗教场所报告其所属的一尊神像丢失",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T10:30:00+00:00"
+    "event_summary": "中国外交官针对日本首相的涉台言论发表了包含人身威胁的激烈批评",
+    "sources": [],
+    "first_seen": "2025-11-14T03:27:42+00:00"
   },
-  "马来西亚华人公会表达对安瓦尔政府的不满": {
+  "交通部公布2026年五大國旅補助計畫，包括住宿補貼、生日抽獎、遊樂園優惠等": {
     "entities": [
-      "马来西亚华人公会",
-      "安瓦尔·易卜拉欣",
-      "马来西亚"
-    ],
-    "event_summary": "政党在年度大会上通过动议，明确表达对现任总理领导的联合政府的不满",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T06:10:00+00:00"
-  },
-  "中国与俄罗斯在俄罗斯领土举行第三次联合反导演习": {
-    "entities": [
-      "中华人民共和国",
-      "俄罗斯",
-      "中华人民共和国国防部"
-    ],
-    "event_summary": "两个主权国家在其中一方领土上共同开展军事演习，由一国国防部对外发布消息",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T03:36:27+00:00"
-  },
-  "香港国安公署警告外国媒体勿就火灾报道传播虚假信息": {
-    "entities": [
-      "中华人民共和国",
-      "香港特别行政区",
-      "香港国家安全公署"
-    ],
-    "event_summary": "中国在香港的政府机构警告外国媒体在报道火灾时不得传播虚假信息",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T02:33:57+00:00"
-  },
-  "日本防卫省称中国军机在冲绳主岛东南方对日本战斗机锁定雷达": {
-    "entities": [
-      "日本防卫省",
-      "日本自卫队",
-      "日本",
-      "中华人民共和国",
-      "中国海军",
-      "冲绳"
-    ],
-    "event_summary": "日本政府机构指控中国军事力量对日本战斗机实施雷达锁定行为",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T01:26:34+00:00"
-  },
-  "中国战斗机在国际水域对日本飞机使用火控雷达，日本防务大臣称其为危险行为": {
-    "entities": [
-      "日本飞机",
-      "中国战斗机",
-      "日本防卫省",
-      "宫内庁",
-      "日本",
-      "中华人民共和国"
-    ],
-    "event_summary": "中国军机在国际水域对日本飞机启用火控雷达，日本政府对此提出抗议并定性为危险行为",
-    "sources": [
-      "dw",
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T23:36:15+00:00"
-  },
-  "中国香港国家安全公署警告外国媒体勿就火灾报道传播虚假信息": {
-    "entities": [
-      "中华人民共和国",
-      "香港特别行政区",
-      "香港国家安全公署"
-    ],
-    "event_summary": "中国在香港的政府机构就火灾报道向外国媒体发出警告",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T14:21:17+00:00"
-  },
-  "中国社交媒体上出现对日本政治人物高市早苗的讨论与评价": {
-    "entities": [
-      "高市早苗",
-      "自民党",
-      "微信",
-      "微博",
-      "环球时报",
-      "中国国际问题研究院"
-    ],
-    "event_summary": "中国社交媒体用户及媒体机构对日本自民党总裁高市早苗当选首相前后发表评论和反应",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T03:00:00+00:00"
-  },
-  "日本企业拟于2032年将浮体式核电站商业化并出资120亿日元": {
-    "entities": [
-      "日本"
-    ],
-    "event_summary": "日本企业对浮体式核电站项目进行投资并计划2032年实现商业化",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "日本经济产业省干部在Lapidus活动中透露潜在顾客信息": {
-    "entities": [
-      "日本经济产业省",
-      "Lapidus"
-    ],
-    "event_summary": "政府机构代表披露某科技公司活动中的潜在客户情况",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "三星等公司计划采用MOR新型半导体光刻胶": {
-    "entities": [
-      "三星"
-    ],
-    "event_summary": "科技公司决定采用新型光刻胶材料",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "新兴航天公司ispace整合来自33个国家的人才": {
-    "entities": [
-      "ispace"
-    ],
-    "event_summary": "航天初创企业招聘并管理多国人才",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "日本队在ITTF混合团体世界杯2025中以8比2击败韩国队": {
-    "entities": [
-      "日本",
-      "韩国",
-      "ITTF混合団体ワールドカップ2025",
-      "中华人民共和国",
-      "戸上隼輔",
-      "早田ひな",
-      "張本美和"
-    ],
-    "event_summary": "日本国家乒乓球队在成都举行的国际乒联赛事中战胜韩国队",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T12:54:00+00:00"
-  },
-  "中国在10年间显著改善了大氣污染状况": {
-    "entities": [
-      "中华人民共和国",
-      "北京"
-    ],
-    "event_summary": "主权国家及其行政区在特定时期内显著改善了其环境状况",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T14:00:00+00:00"
-  },
-  "日本队在ITTF混合团体世界杯2025中以8-0战胜瑞典队": {
-    "entities": [
-      "日本",
-      "成都",
-      "瑞典",
-      "德国",
-      "中华人民共和国",
-      "ITTF混合団体ワールドカップ2025"
-    ],
-    "event_summary": "日本国家队在国际乒联主办的混合团体世界杯赛事中击败瑞典国家队",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T12:50:00+00:00"
-  },
-  "户上隼辅与早田希娜组合在混合双打比赛中以3-0获胜": {
-    "entities": [
-      "戸上隼輔",
-      "早田ひな",
-      "井村屋グループ",
-      "日本生命",
-      "ITTF混合団体ワールドカップ2025"
-    ],
-    "event_summary": "两名日本运动员代表其所属企业赞助商在混合双打项目中赢得比赛",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T12:50:00+00:00"
-  },
-  "伊藤美诚在女子单打比赛中以3-0获胜": {
-    "entities": [
-      "伊藤美誠",
-      "スターツ",
-      "ITTF混合団体ワールドカップ2025"
-    ],
-    "event_summary": "一名日本运动员代表其所属企业赞助商在女子单打项目中赢得比赛",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T12:50:00+00:00"
-  },
-  "aespa成员NINGNING过往发布的'蘑菇云灯'照片引发争议，致组合NHK红白歌合战初登场遭抵制": {
-    "entities": [
-      "aespa",
-      "NINGNING",
-      "日本放送协会",
-      "红白歌合战",
-      "产经新闻"
-    ],
-    "event_summary": "某艺人因过往社交媒体内容引发争议，导致其所在团体参与某媒体节目的资格受到公众质疑和抵制",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T05:35:50+00:00"
-  },
-  "株式会社oricon ME发布2025年中国・四国地区高校受験塾与個別指導塾满意度排名": {
-    "entities": [
-      "株式会社oricon ME",
-      "宇部進学教室",
-      "個別指導塾サクラサクセス",
-      "島根県松江市"
-    ],
-    "event_summary": "一家调查公司发布了特定地区两类补习机构的满意度排名，其中两家教育机构分别获得集団塾和個別指導塾第一名",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T03:01:13+00:00"
-  },
-  "CLOSE YOUR EYES成员 Kenshin 不参加中国粉丝见面会": {
-    "entities": [
-      "CLOSE YOUR EYES",
-      "Kenshin",
-      "中华人民共和国"
-    ],
-    "event_summary": "一名具有法律人格的自然人因未说明原因未参与由注册团体在中国举办的公开活动",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T01:31:11+00:00"
-  },
-  "美国贸易代表称中国在履行与特朗普政府贸易协议承诺方面进展良好": {
-    "entities": [
-      "Donald Trump",
-      "美利坚合众国",
-      "中华人民共和国",
-      "美国贸易代表"
-    ],
-    "event_summary": "美国贸易代表表示中国正在兑现与特朗普政府达成的贸易协议承诺",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T17:41:10+00:00"
-  },
-  "日本政府抗议中国军机对日本军机使用雷达照射": {
-    "entities": [
-      "中国海军",
-      "中华人民共和国国防部",
-      "日本政府",
-      "日本防卫省",
-      "冲绳",
-      "日本航空自卫队",
-      "日本",
-      "中华人民共和国",
-      "自民党"
-    ],
-    "event_summary": "日本政府就中国军机在冲绳附近对日本军机进行雷达照射的行为向中国政府提出抗议",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T14:19:55+00:00"
-  },
-  "百度无人出租车在中国株洲市发生碰撞事故致两人受伤": {
-    "entities": [
-      "百度",
-      "中华人民共和国",
-      "株洲市"
-    ],
-    "event_summary": "百度运营的无人出租车在株洲市发生碰撞并造成两人受伤",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T13:23:37+00:00"
-  },
-  "蒙泰罗·洛巴托的作品《小鼻子历险记》将在中国、瑞典、阿塞拜疆和俄罗斯获得翻译出版": {
-    "entities": [
-      "中华人民共和国",
-      "瑞典",
-      "阿塞拜疆",
-      "俄罗斯"
-    ],
-    "event_summary": "蒙泰罗·洛巴托的文学作品将在多个国家被翻译并出版",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T13:00:37+00:00"
-  },
-  "阿根廷总统Javier Milei推动宏观经济改革并呼吁企业调整微观运营": {
-    "entities": [
-      "Javier Milei",
-      "阿根廷",
-      "Mercado Libre",
-      "Techint"
-    ],
-    "event_summary": "阿根廷国家元首宣布宏观调整政策并要求本国企业自行适应微观变化",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-07T10:46:13+00:00"
-  },
-  "阿根廷肉类寻求进入高质高价市场": {
-    "entities": [
-      "阿根廷"
-    ],
-    "event_summary": "阿根廷试图将其肉类出口至高价值、高价格的国际市场",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T09:00:40+00:00"
-  },
-  "阿根廷2025/26年度小麦产量预计创纪录，导致生产者价格跌至八年低点": {
-    "entities": [
-      "阿根廷"
-    ],
-    "event_summary": "阿根廷的小麦产量预期创纪录，导致其国内生产者价格承压下跌",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T08:38:40+00:00"
-  },
-  "中国首次从阿根廷购买小麦，以补充储备并利用价格优势": {
-    "entities": [
-      "中华人民共和国",
-      "阿根廷"
-    ],
-    "event_summary": "中国从阿根廷采购小麦，这是两国贸易史上的首次",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T08:38:40+00:00"
-  },
-  "中国一家庭发现家中石板路留有至少1.8亿年前的恐龙足迹": {
-    "entities": [
-      "中华人民共和国"
-    ],
-    "event_summary": "一个家庭在其住所发现了具有古生物学意义的遗迹",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-06T01:13:07+00:00"
-  },
-  "阿根廷通过技术协议和可预测性推动对华农业产业合作": {
-    "entities": [
-      "中华人民共和国",
-      "阿根廷",
-      "阿根廷-中国商会",
-      "阿根廷种子协会",
-      "布宜诺斯艾利斯谷物交易所"
-    ],
-    "event_summary": "阿根廷多家机构在布宜诺斯艾利斯谷物交易所举办中国农企日活动，以促进对华农业产业合作",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-05T17:23:39+00:00"
-  },
-  "中国东方航空在埃塞萨机场举行活动，正式开通上海-奥克兰-布宜诺斯艾利斯新商业航线": {
-    "entities": [
-      "中国东方航空",
-      "阿根廷",
-      "上海市",
-      "奥克兰",
-      "布宜诺斯艾利斯"
-    ],
-    "event_summary": "一家航空公司在一个国家开通了一条连接多个城市的新国际航线",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-04T16:02:23+00:00"
-  },
-  "美国、俄罗斯和中国在委内瑞拉地缘政治局势中测试彼此的影响力": {
-    "entities": [
-      "美利坚合众国",
-      "俄罗斯",
-      "中华人民共和国",
-      "委内瑞拉",
-      "Donald Trump"
-    ],
-    "event_summary": "美国前总统特朗普推动对委内瑞拉施加压力，同时美国、俄罗斯和中国在该国地缘政治博弈中展现各自影响力",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T21:53:13+00:00"
-  },
-  "中国广州南沙区新建一座可容纳6万人的大湾区体育中心": {
-    "entities": [
-      "广州",
-      "中华人民共和国",
-      "南沙区"
-    ],
-    "event_summary": "中国在广州南沙区建成并启用一座大型体育中心",
-    "sources": [
-      "gnews"
-    ],
-    "first_seen": "2025-12-03T09:00:10+00:00"
-  },
-  "中国恢复从美国购买大豆，但全球大豆库存仍将在2026年达到纪录高位": {
-    "entities": [
-      "中华人民共和国",
-      "美利坚合众国"
-    ],
-    "event_summary": "中国重启对美国的大豆采购，但全球大豆库存预计在2026年创下新高",
-    "sources": [
-      "gnews"
+      "交通部"
     ],
-    "first_seen": "2025-12-01T10:03:50+00:00"
+    "event_summary": "政府部門公布未來旅遊補助計畫",
+    "sources": [],
+    "first_seen": "2025-11-14T03:45:40+00:00"
   }
 }

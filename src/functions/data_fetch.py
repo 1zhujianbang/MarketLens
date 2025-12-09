@@ -36,8 +36,8 @@ async def fetch_news_stream(
         新闻列表 (List[Dict])
     """
     tools = Tools()
-    # 配置驱动的并发上限（默认 5）
-    concurrency = 5
+    # 配置驱动的并发上限（默认 6）
+    concurrency = 6
     try:
         import yaml
         cfg_path = tools.CONFIG_DIR / "config.yaml"
@@ -248,8 +248,8 @@ async def search_news_by_keywords(
     if news_collector.API_POOL is None:
         raise RuntimeError("API Pool failed to initialize")
 
-    # 并发上限（默认 5，优先读取 config.agent2_config.max_workers）
-    concurrency = 5
+    # 并发上限（默认 6，优先读取 config.agent2_config.max_workers）
+    concurrency = 6
     try:
         import yaml
         cfg_path = Tools().CONFIG_DIR / "config.yaml"

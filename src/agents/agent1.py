@@ -178,6 +178,7 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 - 重要产品/品牌/型号（由明确主体生产/提供的具体产品或品牌，如 iPhone 15 Pro、Tesla Model 3、ChatGPT、Windows 11、Redmi 12C）
 
 ❌ 以下内容**不得**视为实体：
+- 只作为新闻通讯源的实体不应该作为实体
 - 抽象概念（如 “市场波动”、“系统性风险”、“资本流动”）
 - 技术或金融术语（如 “期权定价”、“资产负债表”、“量化宽松”）
 - 金融工具或资产名称（如 “标普500指数”、“10年期美债”、“黄金期货”、“BTC”）——除非指代其发行方、管理方或关联法人（如 “标普道琼斯指数公司”）
@@ -188,7 +189,7 @@ def llm_extract_events(title: str, content: str, max_retries=2) -> List[Dict]:
 1. 判断新闻是否包含一个或多个独立事件。
 2. 对每个事件，输出：
    - 一个简洁、客观、无情绪的中文摘要（作为事件唯一标识）
-   - 所有符合上述定义的实体（全称优先，避免缩写；若原文使用英文名且无通用中文译名，则保留英文；产品/品牌名称保留原文或通用译名）
+   - 所有符合上述定义的实体（全称优先，避免缩写；若原文使用英文名且无通用中文译名，则保留英文；产品/品牌名称保留原文或通用译名；不可添加书名号/引号/括号等标点；实体需要体现其在事件中的构成必要，没有该实体这个事件就无法成立；尽可能多地提取有构成必要的实体）
    - 所有符合上述定义的实体的原始语言表述（保留新闻中实体的原始语言形式；原始语言实体数组的索引与实体数组索引一一对应）
    - 该事件的本质描述（一句话说明“谁对谁做了什么”）
 
@@ -273,7 +274,6 @@ def get_unprocessed_news_files() -> List[Path]:
             processed_ids = set(line.strip() for line in f if line.strip())
     
     unprocessed: List[Path] = []
-    # 只处理 tmp/raw_news -> tmp/deduped_news
     raw_dir = tools.RAW_NEWS_TMP_DIR
     dedup_dir = tools.DEDUPED_NEWS_TMP_DIR
     raw_dir.mkdir(parents=True, exist_ok=True)
@@ -384,7 +384,7 @@ def process_news_stream():
                         tools.log(f"⚠️ 处理提取结果失败: {e}")
 
             try:
-                # 仅处理 tmp 目录下的 raw/deduped 文件
+                # 处理 tmp 目录下的 raw/deduped 文件
                 raw_dir = tools.RAW_NEWS_TMP_DIR
                 raw_file_name = file_path.stem.replace("_deduped", "") + ".jsonl"
                 raw_file_path = raw_dir / raw_file_name

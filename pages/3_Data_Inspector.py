@@ -27,7 +27,7 @@ def normalize_mixed(val):
     return str(val)
 
 # --- Tab 布局 ---
-tab_entities, tab_events, tab_news = st.tabs(["🧠 Entities", "🔗 Events", "📰 Raw News"])
+tab_entities, tab_events, tab_news, tab_tmp = st.tabs(["🧠 Entities", "🔗 Events", "📰 Raw News", "🗃️ Extracted Snapshots"])
 
 # 1. 实体浏览
 with tab_entities:
@@ -160,3 +160,69 @@ with tab_news:
                         st.json(item, expanded=False)
             else:
                 st.info("File is empty.")
+
+# 4. 提取结果快照（只读 + 删除）
+with tab_tmp:
+    st.subheader("🗃️ Extracted Events Snapshots (tmp)")
+    tmp_dir = ROOT_DIR / "data" / "tmp"
+    files = sorted(tmp_dir.glob("extracted_events_*.jsonl"), key=lambda x: x.stat().st_mtime, reverse=True)
+    
+    if not files:
+        st.info("No extracted snapshot files found.")
+    else:
+        data = []
+        for f in files:
+            try:
+                count = sum(1 for _ in f.open("r", encoding="utf-8"))
+            except Exception:
+                count = 0
+            data.append({
+                "file": f.name,
+                "rows": count,
+                "path": str(f)
+            })
+        df_snap = pd.DataFrame(data)
+        st.dataframe(df_snap, hide_index=True, use_container_width=True)
+        
+        selected = st.selectbox("选择要删除的文件（仅删除 tmp 快照）", [""] + [f.name for f in files])
+        if selected:
+            if st.button("🗑️ 删除所选快照", type="primary"):
+                try:
+                    target = tmp_dir / selected
+                    if target.exists():
+                        target.unlink()
+                        st.success(f"已删除 {selected}")
+                        st.rerun()
+                except Exception as e:
+                    st.error(f"删除失败: {e}")
+        
+        st.divider()
+        preview_file = st.selectbox("选择要预览的快照文件", [""] + [f.name for f in files], index=0)
+        if preview_file:
+            target = tmp_dir / preview_file
+            try:
+                rows = []
+                with open(target, "r", encoding="utf-8") as f:
+                    for idx, line in enumerate(f):
+                        if idx >= 50:
+                            break
+                        try:
+                            obj = json.loads(line)
+                            rows.append({
+                                "abstract": obj.get("abstract") or obj.get("event_summary") or "",
+                                "event_summary": obj.get("event_summary", ""),
+                                "entities": normalize_mixed(obj.get("entities")),
+                                "source": obj.get("source", ""),
+                                "published_at": obj.get("published_at", ""),
+                                "news_id": obj.get("news_id", ""),
+                            })
+                        except Exception:
+                            continue
+                if rows:
+                    df_preview = pd.DataFrame(rows)
+                    st.write(f"预览 {preview_file} （最多 50 行）")
+                    st.dataframe(df_preview, hide_index=True, use_container_width=True)
+                else:
+                    st.info("文件为空或无法解析可展示字段。")
+            except Exception as e:
+                st.error(f"预览失败: {e}")
