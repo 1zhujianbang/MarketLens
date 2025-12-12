@@ -16,6 +16,7 @@ from .serialization import Serializer
 from .imports import ImportManager
 from .news_processing import process_news_batch_async, build_published_at, load_processed_ids, save_processed_id
 from .agent_config import AgentConfigLoader, get_agent_config
+from .news_api_manager import NewsAPIManager, GNewsCollector
 from ..agents.api_client import LLMAPIPool
 from ..utils.tool_function import tools
 # 工具模块
@@ -60,6 +61,8 @@ __all__ = [
     'process_news_batch_async', 'build_published_at', 'load_processed_ids', 'save_processed_id',
     # Agent配置
     'AgentConfigLoader', 'get_agent_config',
+    # 新闻API管理器
+    'NewsAPIManager', 'GNewsCollector',
     # API客户端
     'LLMAPIPool',
     # 工具函数

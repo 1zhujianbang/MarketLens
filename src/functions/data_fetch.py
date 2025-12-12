@@ -1,10 +1,10 @@
 from typing import List, Dict, Any, Optional, Set
 import pandas as pd
 from ..core.registry import register_tool
-from ..data import news_collector
 from ..utils.tool_function import tools as Tools
 from ..core import ConfigManager, AsyncExecutor, RateLimiter
 from ..utils.data_utils import update_entities, update_abstract_map
+from ..utils.news_fetch_utils import fetch_from_multiple_sources, normalize_news_items
 from ..functions.extraction import llm_extract_events, NewsDeduplicator, persist_expanded_news_to_tmp
 from ..utils.file_utils import safe_unlink_multiple, safe_unlink
 from ..utils.data_utils import sanitize_datetime_fields, write_jsonl_file
@@ -13,6 +13,9 @@ import json
 import asyncio
 import time
 from datetime import datetime, timedelta, timezone
+
+# 导入新闻API管理器
+from ..core import NewsAPIManager
 
 @register_tool(
     name="fetch_news_stream",
@@ -35,11 +38,11 @@ async def fetch_news_stream(
 ) -> List[Dict[str, Any]]:
     """
     获取全渠道新闻数据。
-    
+
     Args:
         limit: 每个源获取的最大条数
         sources: 指定源列表 (如 ["GNews-cn"]), 默认为所有可用源
-        
+
     Returns:
         新闻列表 (List[Dict])
     """
@@ -47,76 +50,35 @@ async def fetch_news_stream(
     # 配置驱动的并发上限（使用统一配置管理器）
     config_manager = ConfigManager()
     concurrency = config_manager.get_concurrency_limit("agent1_config")
-    
-    # 初始化 API Pool
-    news_collector.init_api_pool()
-    if news_collector.API_POOL is None:
-        raise RuntimeError("API Pool failed to initialize")
 
-    available_sources = news_collector.API_POOL.list_available_sources()
+    # 初始化 API Pool
+    api_pool = NewsAPIManager()
+    available_sources = api_pool.list_available_sources()
     if sources:
         target_sources = [s for s in sources if s in available_sources]
     else:
         target_sources = available_sources
-    
+
     if not target_sources:
         tools.log("Warning: No valid sources to fetch from.")
         return []
 
-    # 使用统一异步执行器
-    async_executor = AsyncExecutor()
-
-    async def fetch_one(source_name: str) -> List[Dict[str, Any]]:
-        try:
-            collector = news_collector.API_POOL.get_collector(source_name)
-            async with collector:
-                if query:
-                    news = await collector.search(
-                        query=query,
-                        from_=from_,
-                        to=to,
-                        limit=limit,
-                        in_fields=in_fields,
-                        nullable=nullable,
-                        sortby=sortby,
-                        page=page,
-                        truncate=truncate,
-                    )
-                else:
-                    news = await collector.get_top_headlines(
-                        category=category,
-                        limit=limit,
-                        nullable=nullable,
-                        from_=from_,
-                        to=to,
-                        query=query,
-                        page=page,
-                        truncate=truncate,
-                    )
-                for item in news:
-                    if "source" not in item:
-                        item["source"] = source_name
-                    if "datetime" in item and hasattr(item["datetime"], "isoformat"):
-                        item["datetime"] = item["datetime"].isoformat()
-                tools.log(f"Fetched {len(news)} items from {source_name}")
-                return news
-        except Exception as e:
-            tools.log(f"Error fetching from {source_name}: {e}")
-            return []
-
-    # 使用AsyncExecutor进行并发执行
-    results = await async_executor.run_concurrent_tasks(
-        tasks=[lambda src=src: fetch_one(src) for src in target_sources],
-        concurrency=concurrency
+    # 使用公共函数获取数据
+    return await fetch_from_multiple_sources(
+        api_pool=api_pool,
+        source_names=target_sources,
+        concurrency_limit=concurrency,
+        query=query,
+        category=category,
+        limit=limit,
+        from_=from_,
+        to=to,
+        nullable=nullable,
+        truncate=truncate,
+        sortby=sortby,
+        in_fields=in_fields,
+        page=page,
     )
-
-    all_news = []
-    for news in results:
-        all_news.extend(news)
-
-    # 按时间倒序排序
-    all_news.sort(key=lambda x: x.get("datetime") or "", reverse=True)
-    return all_news
 
 
 def _load_entity_equivs() -> Dict[str, Set[str]]:
@@ -247,18 +209,14 @@ async def search_news_by_keywords(
     if not query_str:
         return []
 
-    news_collector.init_api_pool()
-    if news_collector.API_POOL is None:
-        raise RuntimeError("API Pool failed to initialize")
+    # 初始化 API Pool
+    api_pool = NewsAPIManager()
 
     # 并发上限（使用统一配置管理器）
     config_manager = ConfigManager()
     concurrency = config_manager.get_concurrency_limit("agent2_config")
 
-    # 使用统一异步执行器
-    async_executor = AsyncExecutor()
-
-    available_sources = news_collector.API_POOL.list_available_sources()
+    available_sources = api_pool.list_available_sources()
     if apis:
         target_sources = [s for s in apis if s in available_sources]
     else:
@@ -268,53 +226,22 @@ async def search_news_by_keywords(
         tools.log("Warning: No valid sources to search from.")
         return []
 
-    async def search_one(source_name: str) -> List[Dict[str, Any]]:
-        try:
-            collector = news_collector.API_POOL.get_collector(source_name)
-            async with collector:
-                news = await collector.search(
-                    query=query_str,
-                    from_=from_,
-                    to=to,
-                    limit=limit,
-                    in_fields=in_fields,
-                    nullable=nullable,
-                    sortby=sortby,
-                    page=page,
-                    truncate=truncate,
-                )
-                if not news and not query_str:
-                    news = await collector.get_top_headlines(
-                        category=category,
-                        limit=limit,
-                        nullable=nullable,
-                        from_=from_,
-                        to=to,
-                        query=None,
-                        page=page,
-                        truncate=truncate,
-                    )
-                for item in news:
-                    if "source" not in item:
-                        item["source"] = source_name
-                    if "datetime" in item and hasattr(item["datetime"], "isoformat"):
-                        item["datetime"] = item["datetime"].isoformat()
-                tools.log(f"Fetched {len(news)} items from {source_name} with query: {query_str}")
-                return news
-        except Exception as e:
-            tools.log(f"Error searching from {source_name}: {e}")
-            return []
-
-    # 使用AsyncExecutor进行并发执行
-    results = await async_executor.run_concurrent_tasks(
-        tasks=[lambda src=src: search_one(src) for src in target_sources],
-        concurrency=concurrency
+    # 使用公共函数获取数据
+    return await fetch_from_multiple_sources(
+        api_pool=api_pool,
+        source_names=target_sources,
+        concurrency_limit=concurrency,
+        query=query_str,
+        category=category,
+        limit=limit,
+        from_=from_,
+        to=to,
+        nullable=nullable,
+        truncate=truncate,
+        sortby=sortby,
+        in_fields=in_fields,
+        page=page,
     )
-    all_news: List[Dict[str, Any]] = []
-    for news in results:
-        all_news.extend(news)
-    all_news.sort(key=lambda x: x.get("datetime") or "", reverse=True)
-    return all_news
 
 
 async def expand_news_by_entities(entities: List[Dict], limit_per_entity: int = 10, time_window_days: int = 30, full_search: bool = False) -> List[Dict]:
@@ -335,12 +262,13 @@ async def expand_news_by_entities(entities: List[Dict], limit_per_entity: int = 
 
     # 获取所有可用的新闻收集器
     news_collectors = []
-    available_sources = news_collector.API_POOL.list_available_sources()
+    api_pool = NewsAPIManager()
+    available_sources = api_pool.list_available_sources()
 
     # 与更新后的API池兼容，移除可能的备用逻辑
     for source_name in available_sources:
         try:
-            collector = news_collector.API_POOL.get_collector(source_name)
+            collector = api_pool.get_collector(source_name)
             news_collectors.append(collector)
         except Exception as e:
             Tools().log(f"⚠️ 无法创建新闻收集器 {source_name}: {e}")
@@ -621,10 +549,9 @@ async def process_expanded_news(expanded_news: List[Dict], rate_limit: float = 1
                 await limiter.acquire_async()
 
             loop = asyncio.get_running_loop()
-            api_pool = news_collector.API_POOL.get_llm_api_pool() if hasattr(news_collector.API_POOL, 'get_llm_api_pool') else None
-            if api_pool is None:
-                from ..core import LLMAPIPool
-                api_pool = LLMAPIPool()
+            # 这里应该使用LLM API池，不是新闻API池
+            from ..core import LLMAPIPool
+            api_pool = LLMAPIPool()
             extracted = await loop.run_in_executor(None, llm_extract_events, title, content, api_pool)
 
             if extracted:
