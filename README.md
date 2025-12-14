@@ -274,7 +274,7 @@ await limiter.acquire_async()  # 获取令牌
 
 #### 🔧 使用Key管理器
 ```python
-from src.core.streamlit_key_manager import get_unique_key, KeyContext
+from src.web.streamlit_key_manager import get_unique_key, KeyContext
 
 # 生成唯一key
 key = get_unique_key('gnews', 'category', context='config_tab')

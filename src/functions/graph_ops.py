@@ -879,8 +879,9 @@ class KnowledgeGraph:
         # 使用AsyncExecutor统一管理线程并发
         async_executor = AsyncExecutor()
         entity_task_results = async_executor.run_threaded_tasks(
-            tasks=[batch for idx, batch in entity_batches],
-            func=lambda batch: _run_entity_batch(entity_batches.index((0, batch)), batch),
+            # 直接传入 (idx, batch) 避免通过 list.index 反查导致 ValueError
+            tasks=entity_batches,
+            func=lambda it: _run_entity_batch(it[0], it[1]),
             max_workers=entity_workers
         )
 

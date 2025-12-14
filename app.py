@@ -1,18 +1,8 @@
 import streamlit as st
-import sys
-from pathlib import Path
+from src.web.framework.page import init_page, PageSpec
 
-# 添加项目根目录到 path
-ROOT_DIR = Path(__file__).parent
-sys.path.append(str(ROOT_DIR))
-
-# 设置页面配置
-st.set_page_config(
-    page_title="新闻智能体系统 - News Intelligence Agent",
-    page_icon="📰",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
+# MUST be the first Streamlit command on this page
+init_page(PageSpec(title="新闻智能体系统 - News Intelligence Agent", icon="📰"))
 
 st.title("📰 新闻智能体系统")
 st.markdown("""
@@ -36,12 +26,3 @@ st.markdown("""
 请选择左侧的功能模块开始使用。
 """)
 
-st.sidebar.success("请在上方选择页面")
-
-st.sidebar.info(
-    """
-    **新闻智能体系统 v2.0**
-
-    基于LLM + 知识图谱的智能新闻分析系统
-    """
-)

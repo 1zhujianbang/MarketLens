@@ -1,12 +1,11 @@
 {
   "Nvidia发布2025年12月Studio驱动程序更新": {
     "entities": [
-      "Nvidia",
-      "FLUX.2",
-      "Topaz Video AI",
+      "Topaz Photo AI软件",
       "ComfyUI",
-      "Topaz Photo AI",
-      "Blender"
+      "Blender",
+      "Nvidia",
+      "FLUX.2"
     ],
     "event_summary": "一家科技公司发布了其面向创意应用的最新图形驱动程序",
     "sources": [],
@@ -15,8 +14,8 @@
   "美国最高法院就特朗普诉斯劳特案听取口头辩论，该案涉及总统豁免权争议": {
     "entities": [
       "特朗普",
-      "美国最高法院",
-      "斯劳特"
+      "斯劳特",
+      "美国最高法院"
     ],
     "event_summary": "美国最高法院审理前总统特朗普就总统豁免权提起的诉讼",
     "sources": [],
@@ -32,22 +31,11 @@
     "sources": [],
     "first_seen": "2025-12-08T22:32:19+00:00"
   },
-  "布鲁诺·费尔南德斯梅开二度助曼联取胜，狼队主场失利": {
-    "entities": [
-      "狼队",
-      "曼彻斯特联足球俱乐部",
-      "莫利纽球场",
-      "布鲁诺·费尔南德斯"
-    ],
-    "event_summary": "一支足球俱乐部在主场比赛中输给了另一支足球俱乐部",
-    "sources": [],
-    "first_seen": "2025-12-08T22:30:30+00:00"
-  },
   "Paulinho da Força rejeita incluir anistia em parecer sobre projeto de lei relacionado ao 8 de Janeiro": {
     "entities": [
-      "Paulinho da Força",
+      "1月8日事件涉案人员减刑法案",
       "CartaCapital",
-      "projeto de lei que pode reduzir as penas de condenados por envolvimento no 8 de Janeiro"
+      "Paulinho da Força"
     ],
     "event_summary": "O deputado federal Paulinho da Força, em contato com a revista CartaCapital, descarta incluir anistia no seu parecer sobre um projeto de lei ligado aos eventos de 8 de janeiro",
     "sources": [],
@@ -55,10 +43,10 @@
   },
   "参议院多数党领袖约翰·图恩未承诺本周就共和党医疗提案进行投票，而平价医疗法案的关键补贴即将到期": {
     "entities": [
-      "参议院",
       "约翰·图恩",
-      "美国",
-      "共和党"
+      "参议院",
+      "共和党",
+      "美国"
     ],
     "event_summary": "美国参议院共和党领袖未承诺就本党医疗提案安排投票，民主党则计划推动延长补贴的提案表决",
     "sources": [],
@@ -67,8 +55,7 @@
   "一名退休人员在与配偶因节日计划发生争执后自杀身亡": {
     "entities": [
       "María Venegas",
-      "Pedro Gómez",
-      "Prefectura Naval Argentina"
+      "Pedro Gómez"
     ],
     "event_summary": "一名阿根廷海警退休人员在与配偶发生争执后自杀",
     "sources": [],
@@ -77,8 +64,8 @@
   "阿根廷布宜诺斯艾利斯省参议院副主席职位因庇隆主义内部未达成协议而由Carlos Kikuchi继续担任至三月": {
     "entities": [
       "布宜诺斯艾利斯省参议院",
-      "Carlos Kikuchi",
-      "Verónica Magar"
+      "维罗妮卡·马加尔",
+      "Carlos Kikuchi"
     ],
     "event_summary": "一名政治人物因党内未达成继任协议，继续担任省级参议院副主席职务",
     "sources": [],
@@ -86,9 +73,9 @@
   },
   "美国总统特朗普否认其五天前在镜头前的言论，并对记者发起人身攻击": {
     "entities": [
+      "委内瑞拉",
       "特朗普",
-      "美国",
-      "委内瑞拉"
+      "美国"
     ],
     "event_summary": "美国前总统否认自己过往的公开言论并攻击提问记者",
     "sources": [],
@@ -118,8 +105,8 @@
     "entities": [
       "巴西民主运动党",
       "巴西",
-      "Renan Filho",
-      "交通部"
+      "交通部",
+      "Renan Filho"
     ],
     "event_summary": "巴西交通部长宣布了一项旨在简化和现代化国家驾驶执照管理流程的改革方案",
     "sources": [],
@@ -135,9 +122,11 @@
   },
   "Bruno Fernandes 随曼联客场4-1击败狼队并跻身英超前六": {
     "entities": [
+      "布鲁诺·费尔南德斯",
       "狼队",
-      "Bruno Fernandes",
-      "曼彻斯特联足球俱乐部"
+      "曼彻斯特联足球俱乐部",
+      "莫利纽球场",
+      "Bruno Fernandes"
     ],
     "event_summary": "Bruno Fernandes 帮助 Manchester United 在客场战胜 Wolves 并升至英超第六",
     "sources": [],
@@ -154,8 +143,8 @@
   },
   "Google在The Android Show活动上发布XR眼镜Xreal Project Aura及PC Connect技术": {
     "entities": [
+      "Xreal Project Aura眼镜",
       "PC Connect",
-      "Xreal Project Aura",
       "苹果公司"
     ],
     "event_summary": "科技公司发布了由其开发的XR眼镜和软件技术",
@@ -164,10 +153,10 @@
   },
   "Luigi Mangione在宾夕法尼亚州一家麦当劳被捕，警方在其背包中发现装有子弹的弹匣": {
     "entities": [
-      "麦当劳",
       "阿尔图纳警察局",
-      "宾夕法尼亚州",
-      "Luigi Mangione"
+      "麦当劳",
+      "Luigi Mangione",
+      "宾夕法尼亚州"
     ],
     "event_summary": "警方在宾夕法尼亚州麦当劳逮捕Luigi Mangione并搜出弹匣",
     "sources": [],
@@ -175,8 +164,8 @@
   },
   "美国国会通过年度国防政策法案要求国防部提供美军在国际水域打击船只的具体命令": {
     "entities": [
-      "美国众议院",
       "美国军队",
+      "美国众议院",
       "美国"
     ],
     "event_summary": "美国立法机构通过法案强制要求其国防行政部门向其提供军事行动的命令详情",
@@ -194,8 +183,8 @@
   },
   "阿根廷政府向参议院提交劳动现代化法案，拟通过调整解雇赔偿和降低雇主缴费减少退休基金来源": {
     "entities": [
-      "阿根廷参议院",
-      "阿根廷政府"
+      "阿根廷政府",
+      "阿根廷参议院"
     ],
     "event_summary": "阿根廷政府向立法机构提交劳动改革法案以改变退休基金筹资结构",
     "sources": [],
@@ -204,31 +193,21 @@
   "全国第十二届残疾人运动会暨第九届特殊奥林匹克运动会赛事全面展开": {
     "entities": [
       "全国第十二届残疾人运动会",
-      "第九届特殊奥林匹克运动会",
       "粤港澳",
       "全国34个代表团",
-      "福建队",
-      "河南队"
+      "河南队",
+      "盲人足球项目",
+      "福建队"
     ],
     "event_summary": "全国性体育赛事组织在粤港澳地区启动，多个代表团参与比赛",
-    "sources": [],
-    "first_seen": "2025-12-08T22:17:00+00:00"
-  },
-  "福建队在盲人足球项目男子组小组赛中战胜河南队": {
-    "entities": [
-      "福建队",
-      "河南队",
-      "盲人足球项目"
-    ],
-    "event_summary": "福建队在残特奥会盲人足球比赛中击败河南队",
     "sources": [],
     "first_seen": "2025-12-08T22:17:00+00:00"
   },
   "新加坡国家档案馆公布前副总理吴庆瑞博士关于新马分离的手写笔记与解密文件": {
     "entities": [
       "马来西亚",
-      "新加坡",
-      "吴庆瑞"
+      "吴庆瑞",
+      "新加坡"
     ],
     "event_summary": "一国档案馆公布了前政府官员关于历史政治事件的个人记录与政府文件",
     "sources": [],
@@ -236,7 +215,7 @@
   },
   "Netflix以830亿美元协议收购华纳兄弟探索公司": {
     "entities": [
-      "Netflix",
+      "Skydance Media",
       "华纳兄弟探索"
     ],
     "event_summary": "一家流媒体服务公司与一家媒体集团达成了收购协议",
@@ -289,8 +268,8 @@
   },
   "苹果与谷歌宣布合作以简化用户在Android与iPhone设备间的数据迁移": {
     "entities": [
+      "苹果手机",
       "苹果公司",
-      "iPhone",
       "Android"
     ],
     "event_summary": "两家科技公司宣布合作开发新功能，以优化跨平台设备间的数据迁移流程",
@@ -299,8 +278,8 @@
   },
   "CBS News报道Friends主演Matthew Perry去世消息": {
     "entities": [
-      "Matthew Perry",
-      "CBS News"
+      "CBS News",
+      "Matthew Perry"
     ],
     "event_summary": "新闻机构报道了一位演员的死讯",
     "sources": [],
@@ -308,9 +287,9 @@
   },
   "《哪吒2》和《疯狂动物城2》在中国电影市场引发观影热潮": {
     "entities": [
+      "中国电影",
       "《哪吒2》",
-      "《疯狂动物城2》",
-      "中国电影"
+      "《疯狂动物城2》"
     ],
     "event_summary": "两部动画电影在中国电影市场相继热映，推动票房增长并引发观众讨论",
     "sources": [],
@@ -318,11 +297,11 @@
   },
   "利物浦门将阿利松在欧冠赛前发布会上谈及萨拉赫与主帅斯洛特的球队危机": {
     "entities": [
-      "阿利松",
       "国际米兰",
-      "阿尔内·斯洛特",
       "利物浦",
-      "穆罕默德·萨拉赫"
+      "穆罕默德·萨拉赫",
+      "阿尔内·斯洛特",
+      "阿利松"
     ],
     "event_summary": "一名俱乐部球员在公开场合评论了涉及另一名球员和主教练的内部问题",
     "sources": [],
@@ -358,9 +337,9 @@
   "Ceará, Fortaleza, Juventude e Sport foram rebaixados na Série A do Campeonato Brasileiro 2025": {
     "entities": [
       "Campeonato Brasileiro",
+      "Fortaleza",
       "Ceará",
       "Juventude",
-      "Fortaleza",
       "Sport"
     ],
     "event_summary": "四支足球俱乐部在巴西足球甲级联赛2025赛季结束后被降级",
@@ -369,9 +348,9 @@
   },
   "日本气象厅向北海道太平洋沿岸中部、青森县太平洋沿岸及岩手县发布海啸警报并于9日凌晨2时45分降为海啸注意报": {
     "entities": [
+      "日本气象厅",
       "马来西亚",
       "岩手县",
-      "日本气象厅",
       "北海道"
     ],
     "event_summary": "日本气象厅对北海道、青森县、岩手县的太平洋沿岸区域发布并调整海啸警报等级",
@@ -380,10 +359,10 @@
   },
   "唐纳德·特朗普在白宫会议上评论其政府与乔·拜登政府对乌克兰提供的财政和军事援助规模": {
     "entities": [
-      "白宫",
-      "乔·拜登",
       "唐纳德·特朗普",
+      "白宫",
       "美国",
+      "乔·拜登",
       "乌克兰"
     ],
     "event_summary": "一国前总统在官方场所对比自己与现任总统对另一主权国家的援助政策",
@@ -392,8 +371,8 @@
   },
   "美国股市主要指数下跌，投资者关注美联储联邦公开市场委员会会议": {
     "entities": [
-      "美国",
-      "美联储"
+      "美联储",
+      "美国"
     ],
     "event_summary": "美国股市因投资者关注美联储会议而下跌",
     "sources": [],
@@ -402,8 +381,8 @@
   "环球小姐组织更新牙买加代表健康状况": {
     "entities": [
       "Gabrielle Henry",
-      "牙买加",
-      "环球小姐组织"
+      "环球小姐组织",
+      "牙买加"
     ],
     "event_summary": "一个国际选美组织通报了其选美比赛中一名参赛者的健康状况",
     "sources": [],
@@ -411,8 +390,7 @@
   },
   "Montereau-Fault-Yonne发生一起针对警察伴侣的绑架未遂事件": {
     "entities": [
-      "Seine-et-Marne",
-      "Montereau-Fault-Yonne"
+      "Seine-et-Marne"
     ],
     "event_summary": "在法国塞纳-马恩省Montereau-Fault-Yonne市，一名警察的伴侣在其住所遭遇绑架未遂",
     "sources": [],
@@ -430,8 +408,8 @@
   "刚果民主共和国总统齐塞克迪就卢旺达、安全与主权问题向全国发表讲话": {
     "entities": [
       "齐塞克迪",
-      "卢旺达",
-      "刚果民主共和国"
+      "刚果民主共和国",
+      "卢旺达"
     ],
     "event_summary": "一国元首就国家安全、主权及与邻国关系问题向全国发表政策讲话",
     "sources": [],
@@ -439,10 +417,9 @@
   },
   "2岁幼童Hariel Lucas Santos de Melo在Santa Luzia被少年驾车撞亡，遗体将于Belo Vale社区举行告别仪式": {
     "entities": [
-      "Santa Luzia",
       "Belo Vale",
       "Hariel Lucas Santos de Melo",
-      "Belo Horizonte"
+      "Santa Luzia"
     ],
     "event_summary": "幼童Hariel Lucas Santos de Melo在Santa Luzia遭遇车祸身亡，家属将在Belo Horizonte大都会区Belo Vale社区为其举行葬礼",
     "sources": [],
@@ -460,11 +437,9 @@
   },
   "Netflix联合首席执行官评论派拉蒙Skydance试图收购华纳兄弟探索公司": {
     "entities": [
-      "Paramount",
+      "泰德·萨兰多斯",
       "Skydance Media",
-      "Netflix",
-      "华纳兄弟探索",
-      "Ted Sarandos"
+      "华纳兄弟探索"
     ],
     "event_summary": "一家流媒体服务公司的联合首席执行官对另一家制片公司与一家媒体集团之间的潜在收购交易发表了评论",
     "sources": [],
@@ -472,14 +447,14 @@
   },
   "日本气象厅解除北海道及东北地区沿岸海啸注意警报": {
     "entities": [
-      "日本海沟",
-      "北海道",
-      "东北地方",
-      "日本气象厅",
-      "三陆冲",
-      "千叶县",
+      "日本",
       "千岛海沟",
-      "日本"
+      "北海道",
+      "千叶县",
+      "东北地方",
+      "三陆冲",
+      "日本气象厅",
+      "日本海沟"
     ],
     "event_summary": "政府机构解除了对特定行政区域发布的海啸预警，并要求相关地区做好防震准备",
     "sources": [],
@@ -488,8 +463,8 @@
   "巴黎圣日耳曼足球俱乐部球员卢卡斯·谢瓦利耶因伤可能缺席对阵毕尔巴鄂竞技的比赛": {
     "entities": [
       "卢卡斯·谢瓦利耶",
-      "巴黎圣日耳曼足球俱乐部",
-      "毕尔巴鄂竞技"
+      "毕尔巴鄂竞技",
+      "巴黎圣日耳曼足球俱乐部"
     ],
     "event_summary": "足球运动员因脚踝受伤可能无法代表俱乐部参加与另一俱乐部的赛事",
     "sources": [],
@@ -497,10 +472,10 @@
   },
   "卢卡斯·谢瓦利耶因在对阵摩纳哥的比赛中脚踝受伤而缺席里尔对阵雷恩的法甲比赛": {
     "entities": [
+      "卢卡斯·谢瓦利耶",
       "法国足球甲级联赛",
-      "摩纳哥足球俱乐部",
       "里尔",
-      "卢卡斯·谢瓦利耶"
+      "摩纳哥足球俱乐部"
     ],
     "event_summary": "球员在与一支球队比赛后受伤，导致其未能参与另一场由俱乐部参与的联赛赛事",
     "sources": [],
@@ -508,12 +483,11 @@
   },
   "派拉蒙环球旗下Skydance Media在埃里森家族支持下，对华纳兄弟探索公司发起敌意收购": {
     "entities": [
-      "派拉蒙",
-      "Netflix",
-      "David Ellison",
       "埃里森家族",
-      "华纳兄弟探索",
-      "Skydance Media"
+      "David Ellison",
+      "Skydance Media",
+      "派拉蒙",
+      "华纳兄弟探索"
     ],
     "event_summary": "一家媒体娱乐公司在特定家族财团支持下，试图强行收购另一家媒体娱乐公司",
     "sources": [],
@@ -531,8 +505,8 @@
   "派拉蒙首席执行官David Ellison向华纳兄弟探索首席执行官David Zaslav就潜在交易进行最后个人恳求": {
     "entities": [
       "派拉蒙",
-      "David Ellison",
       "华纳兄弟探索",
+      "David Ellison",
       "David Zaslav"
     ],
     "event_summary": "一家娱乐公司的负责人向另一家娱乐公司的负责人就一项重大交易进行了直接沟通",
@@ -541,8 +515,8 @@
   },
   "法国女子手球队在世界杯小组赛中负于荷兰队，将在四分之一决赛中对阵丹麦队": {
     "entities": [
-      "荷兰",
       "丹麦",
+      "荷兰",
       "法国"
     ],
     "event_summary": "法国女子手球队在小组赛中输给荷兰队，晋级后将在淘汰赛对阵丹麦队",
@@ -551,8 +525,8 @@
   },
   "音乐家Matthieu Chedid向其已故摄影师朋友Martin Parr致敬": {
     "entities": [
-      "Matthieu Chedid",
-      "Martin Parr"
+      "Martin Parr",
+      "Matthieu Chedid"
     ],
     "event_summary": "一位音乐家公开悼念一位已故的摄影师朋友",
     "sources": [],
@@ -560,10 +534,9 @@
   },
   "电影《MATCHING》续作《MATCHING TRUE LOVE》将于2026年上映，主演为土屋太凤与佐久间大介": {
     "entities": [
+      "土屋太凤",
       "佐久間大介",
-      "内田英治",
-      "Snow Man",
-      "土屋太凤"
+      "内田英治"
     ],
     "event_summary": "电影制作方宣布由特定演员主演的续集电影将于特定年份上映",
     "sources": [],
@@ -580,8 +553,8 @@
   "F1车手兰多·诺里斯因赢得世界冠军而在萨默塞特郡购物中心获命名街道": {
     "entities": [
       "萨默塞特郡",
-      "Abu Dhabi Grand Prix",
-      "兰多·诺里斯"
+      "兰多·诺里斯",
+      "Abu Dhabi Grand Prix"
     ],
     "event_summary": "一名F1车手在其家乡郡的购物中心因其在阿布扎比大奖赛中获得积分并赢得世界冠军而被授予命名街道的荣誉",
     "sources": [],
@@ -608,14 +581,12 @@
   },
   "乌克兰第7空中突击军确认国防军从米尔诺格勒附近两个村庄撤出": {
     "entities": [
-      "苏希亚尔",
+      "波克罗夫斯克",
       "利西夫卡",
       "韩国",
-      "米尔诺格勒",
-      "乌克兰国防军",
-      "乌克兰第7空中突击军",
-      "波克罗夫斯克",
-      "乌克兰"
+      "乌克兰",
+      "苏希亚尔",
+      "米尔诺格勒"
     ],
     "event_summary": "乌克兰军方确认其国防部队从两个特定村庄进行了有组织的撤离",
     "sources": [],
@@ -623,7 +594,7 @@
   },
   "TikTok宣布推出三项新功能：共同收藏、共同信息流和节日视频保存": {
     "entities": [
-      "TikTok"
+      "抖音国际版"
     ],
     "event_summary": "一家社交媒体公司推出了新的用户协作和内容保存功能",
     "sources": [],
@@ -633,7 +604,7 @@
     "entities": [
       "苹果公司",
       "Face ID",
-      "iPhone 18 Pro"
+      "iPhone 18 Pro手机"
     ],
     "event_summary": "某科技公司计划在其未来智能手机型号中应用新的屏下传感器技术",
     "sources": [],
@@ -641,10 +612,10 @@
   },
   "足球教练哈茨克维奇批评裁判丹尼斯拉夫·列兹尼科夫在波利西亚对阵鲁赫的比赛中破坏比赛": {
     "entities": [
-      "丹尼斯拉夫·列兹尼科夫",
-      "波利西亚足球俱乐部",
+      "哈茨克维奇",
       "鲁赫足球俱乐部",
-      "哈茨克维奇"
+      "波利西亚足球俱乐部",
+      "丹尼斯拉夫·列兹尼科夫"
     ],
     "event_summary": "教练指责裁判主导比赛结果并破坏比赛公平性",
     "sources": [],
@@ -652,10 +623,10 @@
   },
   "朝日电视台综艺节目《炎之挑战者》时隔25年复活，南原清隆与菊池风磨担任主持": {
     "entities": [
-      "朝日电视台",
-      "timelesz",
       "南原清隆",
-      "菊池风磨"
+      "朝日电视台",
+      "菊池风磨",
+      "timelesz"
     ],
     "event_summary": "某电视台宣布其经典综艺节目时隔多年以特别节目形式复活，并公布了新的主持阵容。",
     "sources": [],
@@ -672,11 +643,11 @@
   },
   "中国军机对日本自卫队飞机进行雷达照射引发欧洲安全专家关切": {
     "entities": [
-      "德国驻华大使馆",
-      "自衛隊",
       "日本",
       "中国",
-      "法国"
+      "法国",
+      "自衛隊",
+      "德国驻华大使馆"
     ],
     "event_summary": "中国军方对日本自卫队采取了被认为危险的军事行动，引发欧洲安全专家的分析与评论",
     "sources": [],
@@ -684,8 +655,8 @@
   },
   "光明日报记者报道2025年中国乡村发展情况": {
     "entities": [
-      "陈晨",
-      "光明日报"
+      "光明日报",
+      "陈晨"
     ],
     "event_summary": "记者通过光明日报对中国2025年乡村建设与文化活动进行报道",
     "sources": [],
@@ -702,8 +673,8 @@
   },
   "演员陈晓与成毅在2012年电视剧《王的女人》中合作，陈晓为男配角，成毅饰演其跟班": {
     "entities": [
-      "成毅",
-      "陈晓"
+      "陈晓",
+      "成毅"
     ],
     "event_summary": "两位演员在早年一部电视剧中存在合作与角色上的从属关系",
     "sources": [],
@@ -719,12 +690,12 @@
   },
   "中共中央召开党外人士座谈会讨论经济形势与政策": {
     "entities": [
-      "李强",
-      "中国",
-      "习近平",
       "蔡奇",
-      "丁薛祥",
-      "中共"
+      "李强",
+      "习近平",
+      "中国",
+      "中共",
+      "丁薛祥"
     ],
     "event_summary": "执政党中央委员会召集党外人士举行座谈，由国家领导人主持并通报经济工作情况",
     "sources": [],
@@ -732,9 +703,9 @@
   },
   "韩国足球运动员孙兴慜遭勒索，勒索者已被判入狱": {
     "entities": [
-      "孙兴慜",
       "韩国",
-      "洛杉矶足球俱乐部"
+      "洛杉矶足球俱乐部",
+      "孙兴慜"
     ],
     "event_summary": "勒索者因对一名效力于特定俱乐部和国家队的足球运动员进行勒索而被判刑",
     "sources": [],
@@ -750,8 +721,8 @@
   },
   "守门员康斯坦丁·沃尔科夫在28岁时决定结束球员生涯，其经纪人宣布此消息": {
     "entities": [
-      "亚历山大·切尔内赫",
-      "康斯坦丁·沃尔科夫"
+      "康斯坦丁·沃尔科夫",
+      "亚历山大·切尔内赫"
     ],
     "event_summary": "一名职业运动员通过其代理人宣布结束个人职业生涯",
     "sources": [],
@@ -775,12 +746,12 @@
   },
   "欧洲理事会主席科斯塔批评美国新国家安全战略干涉欧洲政治生活": {
     "entities": [
-      "欧洲理事会",
-      "唐纳德·特朗普",
-      "António Costa",
+      "欧洲",
       "华盛顿",
+      "唐纳德·特朗普",
       "美国",
-      "欧洲"
+      "欧洲理事会",
+      "António Costa"
     ],
     "event_summary": "欧洲理事会主席公开指责美国国家安全战略对欧洲政党与言论自由发表不当评论",
     "sources": [],
@@ -797,10 +768,10 @@
   },
   "足总杯第三轮抽签结果公布，卫冕冠军水晶宫将客场对阵第六级别球队麦克尔斯菲尔德，曼联和雷克瑟姆则抽中英超对手": {
     "entities": [
-      "英格兰足球总会",
-      "雷克瑟姆足球俱乐部",
       "曼彻斯特联足球俱乐部",
+      "雷克瑟姆足球俱乐部",
       "英格兰足球超级联赛",
+      "英格兰足球总会",
       "水晶宫足球俱乐部"
     ],
     "event_summary": "英格兰足球总会组织的足总杯赛事抽签决定了多支参赛足球俱乐部在第三轮的对阵关系",
@@ -809,8 +780,8 @@
   },
   "广东清远连南瑶族自治县举办第十五届盘王节瑶族文化艺术活动": {
     "entities": [
-      "唐桥辛二公",
-      "连南瑶族自治县"
+      "连南瑶族自治县",
+      "唐桥辛二公"
     ],
     "event_summary": "连南瑶族自治县政府举办瑶族盘王节文化活动，国家级非遗传承人唐桥辛二公参与表演",
     "sources": [],
@@ -818,12 +789,12 @@
   },
   "德国外长在北京呼吁中国利用其对俄罗斯的影响力推动和谈": {
     "entities": [
-      "北京",
-      "德国驻华大使馆",
-      "中国",
-      "俄罗斯联邦",
       "安娜莱娜·贝尔伯克",
-      "弗拉基米尔·普京"
+      "俄罗斯联邦",
+      "北京",
+      "中国",
+      "弗拉基米尔·普京",
+      "德国驻华大使馆"
     ],
     "event_summary": "德国政府高级官员在中国首都公开呼吁中国政府运用其影响力，促使俄罗斯政府重返谈判桌以结束战争",
     "sources": [],
@@ -831,10 +802,13 @@
   },
   "陈慧娴、草蜢、陈豪、唐诗咏、许靖韵和陈宗泽现身马场出席活动": {
     "entities": [
-      "草蜢",
+      "許靖韻",
       "唐诗咏",
-      "许靖韵",
-      "陈豪"
+      "陈豪",
+      "陈宗泽",
+      "蔡一智",
+      "陳慧嫻",
+      "草蜢"
     ],
     "event_summary": "多位艺人共同出席了一场位于马场的公开活动",
     "sources": [],
@@ -842,7 +816,6 @@
   },
   "Niantic公布Pokémon GO 2025年11月24日至30日游戏活动安排": {
     "entities": [
-      "Pokémon GO",
       "Niantic"
     ],
     "event_summary": "一家游戏开发商公布了其旗下手机游戏在特定时间段内的活动计划",
@@ -867,9 +840,9 @@
   },
   "范瑋琪在中国获得“中国最受瞩目歌手”奖并公开致谢杭州": {
     "entities": [
+      "杭州",
       "范瑋琪",
-      "中国",
-      "杭州"
+      "中国"
     ],
     "event_summary": "台湾艺人范瑋琪在中国获奖并公开致谢杭州市",
     "sources": [],
@@ -877,10 +850,10 @@
   },
   "中国宣布暂停进口日本水产品以反制日本外交言论": {
     "entities": [
-      "日本",
-      "中国",
       "高市早苗",
-      "福岛第一核电站"
+      "日本",
+      "福岛第一核电站",
+      "中国"
     ],
     "event_summary": "中国政府因应日本政治人物涉台言论，以核处理水监测为由暂停进口日本水产品",
     "sources": [],
@@ -889,9 +862,10 @@
   "第62届台湾电影金马奖举行，范冰冰凭《地母》角逐影后": {
     "entities": [
       "马来西亚",
-      "台湾电影金马奖",
+      "张吉安",
       "范瑋琪",
-      "张吉安"
+      "台湾电影金马奖",
+      "《地母》"
     ],
     "event_summary": "一位被中国封杀的女演员凭借在马来西亚导演作品中的表演参与台湾电影奖项角逐",
     "sources": [],
@@ -899,11 +873,13 @@
   },
   "日本首相高市早苗发表涉台言论引发中共实施经济报复，包括敦促公民避免赴日旅游": {
     "entities": [
-      "关西地区",
-      "台湾",
       "高市早苗",
+      "关西地区",
+      "日本",
+      "中国公民",
+      "中国",
       "中共",
-      "日本"
+      "台湾"
     ],
     "event_summary": "一国政府首脑的言论引发另一国政府采取包括旅游限制在内的经济反制措施",
     "sources": [],
@@ -928,10 +904,10 @@
   },
   "经济学人联合GlobeScan在32国进行民调显示中国全球支持率上升而美国下滑": {
     "entities": [
-      "GlobeScan",
-      "中国",
       "美国",
-      "经济学人"
+      "经济学人",
+      "GlobeScan",
+      "中国"
     ],
     "event_summary": "一家媒体与一家民调公司合作进行了一项关于中美两国全球影响力的民意调查",
     "sources": [],
@@ -950,6 +926,7 @@
   "澳门特别行政区行政长官岑浩辉宣布2026年现金分享计划向合资格永久居民发放一万元": {
     "entities": [
       "岑浩辉",
+      "何厚铧",
       "澳门特别行政区"
     ],
     "event_summary": "澳门特别行政区行政长官宣布向合资格居民发放现金补贴",
@@ -958,10 +935,10 @@
   },
   "中国外交官因日本首相高市早苗涉台言论发表激烈言辞": {
     "entities": [
-      "习近平",
+      "高市早苗",
       "日本",
-      "中国",
-      "高市早苗"
+      "习近平",
+      "中国"
     ],
     "event_summary": "中国外交官针对日本首相的涉台言论发表了包含人身威胁的激烈批评",
     "sources": [],
@@ -975,39 +952,14 @@
     "sources": [],
     "first_seen": "2025-11-14T03:45:40+00:00"
   },
-  "AC米兰在客场3比2逆转都灵，Christian Pulisic梅开二度并反超至意甲榜首": {
-    "entities": [
-      "AC米兰",
-      "都灵",
-      "克里斯蒂安·普利西奇",
-      "意大利足球甲级联赛"
-    ],
-    "event_summary": "AC米兰在客场逆转击败都灵并登上意甲榜首",
-    "sources": [
-      {
-        "id": "20566da74a707c3ac0b4232a67df8211",
-        "name": "Ouest-France",
-        "url": "https://www.ouest-france.fr",
-        "country": "fr"
-      }
-    ],
-    "first_seen": "2025-12-08T22:18:19+00:00"
-  },
   "欧足联对巴黎圣日耳曼球员Lucas Hernandez处以三场欧冠停赛": {
     "entities": [
-      "Lucas Hernandez",
+      "欧洲足球联盟",
       "巴黎圣日耳曼足球俱乐部",
-      "欧洲足球联盟"
+      "Lucas Hernandez"
     ],
     "event_summary": "欧足联对巴黎圣日耳曼球员Lucas Hernandez处以三场欧冠停赛",
-    "sources": [
-      {
-        "id": "1dd24060388881c7004c431a3332e3ec",
-        "name": "Foot01.com",
-        "url": "https://www.foot01.com",
-        "country": "fr"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-08T21:47:00+00:00"
   },
   "Adrien Rabiot 代表 AC Milan 在对阵 Torino 的比赛中打入加盟后首球": {
@@ -1017,62 +969,30 @@
       "都灵"
     ],
     "event_summary": "球员为俱乐部打入加盟后首粒进球",
-    "sources": [
-      {
-        "id": "89cf2616bd368132eca37d5e3d9f0598",
-        "name": "L'Équipe",
-        "url": "https://www.lequipe.fr",
-        "country": "fr"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-08T20:55:44+00:00"
   },
   "AC米兰助理教练兰杜奇在球队3-2战胜都灵后称赞球队永不放弃": {
     "entities": [
-      "AC米兰",
+      "克里斯蒂安·普利西奇",
+      "都灵",
       "阿尔内·斯洛特",
       "马尔科·兰杜奇",
-      "克里斯蒂安·普利西奇",
-      "都灵"
+      "AC米兰"
     ],
     "event_summary": "某足球俱乐部助理教练在比赛后赞扬了球队的精神",
-    "sources": [
-      {
-        "id": "8d71923b22fd94776aed4dd1c611fd91",
-        "name": "Yardbarker",
-        "url": "https://www.yardbarker.com",
-        "country": "us"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-08T22:38:20+00:00"
-  },
-  "Christian Pulisic带病替补登场梅开二度助AC米兰逆转都灵重返意甲榜首": {
-    "entities": [
-      "克里斯蒂安·普利西奇",
-      "AC米兰",
-      "都灵",
-      "意大利足球甲级联赛"
-    ],
-    "event_summary": "一名自然人球员在患病情况下代表一家足球俱乐部出战并攻入两球，帮助该俱乐部战胜另一家足球俱乐部，从而使其在意甲联赛中重返积分榜首位",
-    "sources": [
-      {
-        "id": "69e66981fb6f154068fb205e915bfbe6",
-        "name": "ESPN",
-        "url": "https://www.espn.com",
-        "country": "us"
-      }
-    ],
-    "first_seen": "2025-12-09T01:07:00+00:00"
   },
   "AC米兰凭借替补球员克里斯蒂安·普利西奇的梅开二度逆转战胜都灵，重返意甲榜首": {
     "entities": [
-      "意大利",
-      "都灵",
-      "AC米兰",
       "克里斯蒂安·普利西奇",
-      "意大利足球甲级联赛",
       "国际米兰",
-      "那不勒斯足球俱乐部"
+      "都灵",
+      "意大利足球甲级联赛",
+      "那不勒斯足球俱乐部",
+      "AC米兰",
+      "意大利"
     ],
     "event_summary": "一支足球俱乐部通过战胜另一支足球俱乐部，在联赛排名中超越其他竞争对手，重返榜首位置",
     "sources": [],
@@ -1080,19 +1000,11 @@
   },
   "Marko Lazetic在阿伯丁对阵圣米伦的比赛中攻入两球": {
     "entities": [
-      "Marko Lazetic",
       "Aberdeen",
-      "St Mirren"
+      "Marko Lazetic"
     ],
     "event_summary": "球员在俱乐部与对手的比赛中取得进球",
-    "sources": [
-      {
-        "id": "70f0e86899d38a3c4301bfc5b89b2ff4",
-        "name": "Daily Record",
-        "url": "https://www.dailyrecord.co.uk",
-        "country": "gb"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T19:19:24+00:00"
   },
   "AC米兰在意大利杯中被拉齐奥淘汰": {
@@ -1101,14 +1013,7 @@
       "拉齐奥"
     ],
     "event_summary": "一家足球俱乐部在杯赛中被另一家足球俱乐部淘汰",
-    "sources": [
-      {
-        "id": "5c3dbf9ebe394da687e079958be63250",
-        "name": "RMC Sport",
-        "url": "https://rmcsport.bfmtv.com",
-        "country": "fr"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-07T23:00:00+00:00"
   },
   "AC米兰将在意甲联赛中客场对阵都灵": {
@@ -1117,53 +1022,31 @@
       "都灵"
     ],
     "event_summary": "一家足球俱乐部将在联赛中与另一家足球俱乐部进行比赛",
-    "sources": [
-      {
-        "id": "5c3dbf9ebe394da687e079958be63250",
-        "name": "RMC Sport",
-        "url": "https://rmcsport.bfmtv.com",
-        "country": "fr"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-07T23:00:00+00:00"
   },
   "Napoli 在客场 1-0 击败 AS Roma，阻止对手重登意甲榜首": {
     "entities": [
       "Napoli",
-      "AS Roma",
+      "罗马奥林匹克体育场",
       "David Neres",
-      "AC米兰",
-      "Stadio Olimpico"
+      "AC米兰"
     ],
     "event_summary": "Napoli 在 Stadio Olimpico 以 1-0 战胜 AS Roma，David Neres 进球使 Napoli 与 AC Milan 同分并列榜首",
-    "sources": [
-      {
-        "id": "72bbcd9c095a3d51c97cdda7a97dba31",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com",
-        "country": "sg"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-11-30T22:24:32+00:00"
   },
   "纽卡斯尔联队球员桑德罗·托纳利在对阵托特纳姆热刺的比赛中受伤，可能影响周末对阵伯恩利的比赛": {
     "entities": [
-      "纽卡斯尔联队",
       "桑德罗·托纳利",
-      "AC米兰",
-      "托特纳姆热刺",
+      "伯恩利",
+      "纽卡斯尔联队",
       "圣詹姆斯公园球场",
-      "伯恩利"
+      "AC米兰",
+      "托特纳姆热刺"
     ],
     "event_summary": "一名足球运动员在俱乐部比赛中受伤，可能影响其后续比赛出场",
-    "sources": [
-      {
-        "id": "3396ad417e0d2903accd5a027a93503e",
-        "name": "Evening Chronicle",
-        "url": "https://www.chroniclelive.co.uk",
-        "country": "gb"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T09:30:30+00:00"
   },
   "AC米兰在意甲联赛中主场1-0战胜拉齐奥，暂时登顶积分榜": {
@@ -1174,104 +1057,61 @@
       "意大利足球甲级联赛"
     ],
     "event_summary": "一家足球俱乐部在体育赛事中战胜了另一家足球俱乐部",
-    "sources": [
-      {
-        "id": "72bbcd9c095a3d51c97cdda7a97dba31",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com",
-        "country": "sg"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-11-29T22:29:33+00:00"
   },
   "AC米兰在德比战中1比0击败国际米兰，凭借普利希奇进球和迈尼昂扑点": {
     "entities": [
-      "AC米兰",
-      "国际米兰",
       "克里斯蒂安·普利西奇",
-      "Mike Maignan",
+      "国际米兰",
+      "圣西罗球场",
       "Hakan Calhanoglu",
-      "圣西罗球场"
+      "Mike Maignan",
+      "AC米兰"
     ],
     "event_summary": "足球俱乐部AC米兰在主场通过球员进球与门将扑救击败对手国际米兰",
-    "sources": [
-      {
-        "id": "72bbcd9c095a3d51c97cdda7a97dba31",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com",
-        "country": "sg"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-11-23T22:02:53+00:00"
   },
   "那不勒斯足球俱乐部在客场以1-0战胜罗马足球俱乐部，阻止后者登顶意甲积分榜": {
     "entities": [
       "那不勒斯足球俱乐部",
+      "AC米兰",
       "罗马足球俱乐部",
-      "意大利足球甲级联赛",
-      "AC米兰"
+      "意大利足球甲级联赛"
     ],
     "event_summary": "一支足球俱乐部在联赛中战胜另一支足球俱乐部，影响了联赛榜首的竞争格局",
-    "sources": [
-      {
-        "id": "72bbcd9c095a3d51c97cdda7a97dba31",
-        "name": "The Straits Times",
-        "url": "https://www.straitstimes.com",
-        "country": "sg"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-11-30T22:14:44+00:00"
   },
   "摩尔线程在上交所科创板上市首日开盘大涨468.78%": {
     "entities": [
-      "摩尔线程",
-      "上海证券交易所"
+      "上海证券交易所",
+      "摩尔线程"
     ],
     "event_summary": "摩尔线程在上交所科创板完成首次公开发行并上市交易",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-09T00:00:00+00:00"
   },
   "联合利华分拆冰淇淋业务后新实体梦龙在阿姆斯特丹泛欧交易所、伦敦证券交易所和纽约证券交易所三地上市": {
     "entities": [
       "联合利华",
-      "梦龙",
       "荷兰",
       "伦敦证券交易所",
-      "纽约证券交易所"
+      "纽约证券交易所",
+      "梦龙"
     ],
     "event_summary": "联合利华将冰淇淋业务分拆为独立公司梦龙并在三地交易所上市",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-09T00:00:00+00:00"
   },
   "中国机器人企业AgiBot的人形机器人A2连续行走106公里获吉尼斯世界纪录认证": {
     "entities": [
-      "AgiBot",
       "A2",
       "吉尼斯世界纪录"
     ],
     "event_summary": "AgiBot公司制造的A2机器人以连续行走106公里被吉尼斯世界纪录认证为最长纪录",
-    "sources": [
-      {
-        "id": "4609d947e914f80baf7d9cbbf3958178",
-        "name": "ギズモード・ジャパン",
-        "url": "https://www.gizmodo.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-08T03:30:00+00:00"
   },
   "摩根士丹利中国首席经济学家邢自强在南方财经论坛2025年年会上阐述中国经济抢占未来先机的底层逻辑": {
@@ -1281,114 +1121,72 @@
       "南方财经论坛"
     ],
     "event_summary": "某金融机构首席经济学家在特定论坛上就中国经济战略发表观点",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-09T00:00:00+00:00"
   },
   "在日外国人于东京举行反对独裁政权示威": {
     "entities": [
+      "白俄罗斯",
       "日本",
-      "东京都",
-      "中国",
       "缅甸",
       "柬埔寨",
-      "白俄罗斯",
-      "联合国"
+      "中国",
+      "联合国",
+      "东京都"
     ],
     "event_summary": "在日外国人在东京都举行示威，反对多国的独裁政权并纪念联合国世界人权日",
-    "sources": [
-      {
-        "id": "ec8a18e873d0452c6b532d7a46d9671e",
-        "name": "Sankei Shimbun",
-        "url": "https://www.sankei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-08T03:35:02+00:00"
   },
   "英国文化教育协会中国区教育总监史蕾接受专访，谈及中国学生留学英国趋势及中英教育合作": {
     "entities": [
-      "英国文化教育协会",
-      "史蕾",
-      "21世纪经济报道",
-      "郑青亭",
+      "QS国际学生调查",
       "倪缤缤",
-      "北京",
-      "英国政府",
       "中国",
-      "QS国际学生调查"
+      "南方财经",
+      "郑青亭",
+      "北京",
+      "英国文化教育协会",
+      "英国政府",
+      "史蕾"
     ],
     "event_summary": "英国文化教育协会官员接受中国媒体采访，就中国学生留学英国的趋势和教育合作发表看法",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-09T00:00:00+00:00"
   },
   "新启航半导体自主研发的超快激光微纳加工设备打破海外垄断，入选2025年中国IC独角兽榜单": {
     "entities": [
       "新启航半导体",
       "华特气体",
-      "国星光电",
-      "联动科技",
       "希荻微",
-      "佛山"
+      "国星光电",
+      "佛山",
+      "联动科技"
     ],
     "event_summary": "一家中国公司通过自主研发设备打破了海外技术垄断，并获得了行业榜单认可",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-09T00:00:00+00:00"
   },
   "中国社交媒体关注日本自民党总裁高市早苗当选首相": {
     "entities": [
-      "中国",
-      "微信",
       "高市早苗",
-      "自民党",
+      "中国国际问题研究院",
+      "微信",
       "环球时报",
-      "中国国际问题研究院"
+      "自民党",
+      "中国"
     ],
     "event_summary": "中国社交媒体和媒体对日本新任首相高市早苗的当选及相关政治立场进行了报道和评论",
-    "sources": [
-      {
-        "id": "ec8a18e873d0452c6b532d7a46d9671e",
-        "name": "Sankei Shimbun",
-        "url": "https://www.sankei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-07T03:00:00+00:00"
   },
   "日本企业联合体出资120亿日元推进浮体式原子力发电站2032年商业化": {
     "entities": [
-      "日本勢",
-      "経済産業省"
+      "経済産業省",
+      "日本勢"
     ],
     "event_summary": "日本产业界联合体在政府相关部门关注下出资推动浮体式核电厂项目计划于2032年实现商业化",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "经济产业省官员透露参与拉皮达斯活动的潜在客户": {
@@ -1397,14 +1195,7 @@
       "ラピダス"
     ],
     "event_summary": "日本政府部门官员披露了参与特定企业活动的潜在客户信息",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "三星等公司采用新型半导体光刻胶MOR": {
@@ -1412,59 +1203,38 @@
       "三星"
     ],
     "event_summary": "韩国企业三星决定采用新型半导体制造材料MOR光刻胶",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "宇宙初创企业ispace整合来自33个国家的人才": {
     "entities": [
-      "ispace"
+      "ispace公司"
     ],
     "event_summary": "日本航天领域新兴企业ispace由首席技术官主导整合多国人才团队",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "美国国会众议院通过三项法案以阻止中国共产党对美国中小学课堂的影响": {
     "entities": [
-      "美国国会众议院",
+      "美国众议院",
       "中共",
-      "美国",
-      "中小学"
+      "中小学",
+      "美国"
     ],
     "event_summary": "美国立法机构通过多项法案以限制某外国政治力量对本国基础教育领域的影响",
-    "sources": [
-      {
-        "id": "d126b04a3817be12a5dd6ea9039393d8",
-        "name": "美国之音中文网 (VOA)",
-        "url": "https://www.voachinese.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T20:21:19+00:00"
   },
   "美国众议员汤姆·基恩与朱莉·约翰逊跨党推出《停止窃取我们的芯片法案》以打击AI芯片走私至中国": {
     "entities": [
+      "朱莉·约翰逊",
       "民主党",
-      "美国众议院",
-      "共和党",
-      "中国",
       "汤姆·基恩",
       "美国",
       "美国商务部产业与安全局",
-      "朱莉·约翰逊"
+      "美国众议院",
+      "中国",
+      "共和党"
     ],
     "event_summary": "两名美国众议员提出法案，要求设立举报奖励机制，加强对中国走私AI芯片的出口管制",
     "sources": [],
@@ -1472,17 +1242,15 @@
   },
   "福特汽车销售服务有限公司在中国整合长安福特与江铃福特销售网络": {
     "entities": [
-      "蒙迪欧",
-      "江铃福特",
-      "福特中国",
-      "锐界",
-      "F-150猛禽",
-      "福特汽车销售服务有限公司",
-      "广州",
-      "福特纵横",
       "游骑侠Ranger",
+      "广州",
       "福特",
-      "福特汽车公司"
+      "江铃福特",
+      "F-150猛禽",
+      "锐界",
+      "福特纵横",
+      "蒙迪欧",
+      "福特中国"
     ],
     "event_summary": "福特在华新成立的销售公司整合了其两家合资伙伴的销售网络，以统一品牌形象和业务运营。",
     "sources": [],
@@ -1490,75 +1258,53 @@
   },
   "日本队在ITTF混合团体世界杯2025比赛中以8-2击败韩国队": {
     "entities": [
-      "日本",
-      "韩国",
-      "国际乒乓球联合会",
-      "中国",
-      "成都",
+      "松岛辉空",
       "井村屋集团",
+      "木下集团",
+      "张本美和",
+      "中国",
+      "日本",
+      "早田雏",
       "日本生命",
-      "木下集团"
+      "大韩民国",
+      "韩国",
+      "户上隼辅",
+      "成都",
+      "国际乒乓球联合会"
     ],
     "event_summary": "一支国家乒乓球队在由国际组织举办的赛事中击败了另一支国家队",
-    "sources": [
-      {
-        "id": "02b7b14861d5da81f7deeaa31b363b39",
-        "name": "スポニチアネックス Sponichi Annex",
-        "url": "https://www.sponichi.co.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T12:54:00+00:00"
   },
   "日本队将在次日对阵中国队和法国队": {
     "entities": [
       "日本",
-      "中国",
-      "法国"
+      "法国",
+      "中国"
     ],
     "event_summary": "一支参赛队伍将在后续赛程中与另外两支国家队进行比赛",
-    "sources": [
-      {
-        "id": "02b7b14861d5da81f7deeaa31b363b39",
-        "name": "スポニチアネックス Sponichi Annex",
-        "url": "https://www.sponichi.co.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T12:54:00+00:00"
   },
   "BreakingDown18大会CEO朝倉未来宣布与中国格斗家团队进行5对5对抗战": {
     "entities": [
       "朝倉未来",
+      "埼玉超级竞技场",
       "BreakingDown18",
-      "埼玉超级竞技场"
+      "社区竞技场"
     ],
     "event_summary": "BreakingDown18大会CEO朝倉未来宣布将在大会中与中国格斗家团队进行5对5对抗战",
-    "sources": [
-      {
-        "id": "8c8c20cf5bc864f9ffe0dce373f12abc",
-        "name": "Iza",
-        "url": "https://www.iza.ne.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T03:54:57+00:00"
   },
   "美国国会众议院航空航天小组委员会举行听证会评估中国太空项目对美国领导地位的威胁": {
     "entities": [
-      "美国国会众议院科学、太空与技术委员会航空航天小组委员会",
       "中国",
+      "美国国会众议院科学、太空与技术委员会航空航天小组委员会",
       "习近平"
     ],
     "event_summary": "美国国会下属专门委员会就中国国家太空计划及其对美国全球领导地位构成的潜在风险举行正式听证",
-    "sources": [
-      {
-        "id": "d126b04a3817be12a5dd6ea9039393d8",
-        "name": "美国之音中文网 (VOA)",
-        "url": "https://www.voachinese.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T21:37:33+00:00"
   },
   "日本企业出资120亿日元支持浮体式核电站项目并计划于2032年实现商业化": {
@@ -1567,30 +1313,16 @@
       "経済産業省"
     ],
     "event_summary": "主权国家及其政府部门参与推动浮体式核电站商业化项目",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "经济产业省官员透露参加Rapidus活动的潜在客户情况": {
     "entities": [
-      "経済産業省",
-      "Rapidus"
+      "Rapidus",
+      "経済産業省"
     ],
     "event_summary": "政府机构披露某半导体公司潜在客户信息",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "三星等企业将采用MOR公司开发的新型半导体光刻胶": {
@@ -1599,76 +1331,49 @@
       "MOR"
     ],
     "event_summary": "注册公司采纳另一家公司研发的半导体材料产品",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "ispace公司整合33国人才推进航天业务": {
     "entities": [
-      "ispace"
+      "ispace公司"
     ],
     "event_summary": "注册公司实施跨国人才整合战略以支持其航天业务",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "商务部和财政部公布最新一批国际化消费环境建设试点城市名单": {
     "entities": [
+      "广州",
+      "重庆",
       "中华人民共和国商务部",
-      "中华人民共和国财政部",
       "北京",
       "上海",
-      "广州",
-      "天津",
-      "重庆"
+      "中华人民共和国财政部",
+      "天津"
     ],
     "event_summary": "中央政府部门联合发布新一批国际消费中心试点城市名单",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T00:00:00+00:00"
   },
   "CLOSE YOUR EYES日本成员ケンシン宣布不参加中国粉丝见面会": {
     "entities": [
       "CLOSE YOUR EYES",
-      "ケンシン"
+      "ケンシン",
+      "中国"
     ],
     "event_summary": "一名日本籍成员因未说明原因缺席其所属男子团体在中国举办的粉丝见面会",
-    "sources": [
-      {
-        "id": "ec8a18e873d0452c6b532d7a46d9671e",
-        "name": "Sankei Shimbun",
-        "url": "https://www.sankei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T01:31:11+00:00"
   },
   "中国出身的aespa成员宁宁因过去投稿‘蘑菇云灯’照片引发争议，被要求退出NHK红白歌合战": {
     "entities": [
-      "aespa",
-      "NHK",
-      "产经新闻",
+      "TBS电视台",
       "广岛",
+      "原爆",
+      "aespa",
       "宁宁",
-      "原爆"
+      "产经新闻"
     ],
     "event_summary": "一名艺人因发布与核爆相关物品的照片引发公众抗议，媒体和播出机构对其演出资格作出回应",
     "sources": [],
@@ -1676,33 +1381,26 @@
   },
   "产经新闻报道‘蘑菇云灯’销售网站明确标注‘广岛’和‘原爆’信息": {
     "entities": [
-      "产经新闻",
-      "蘑菇云灯"
+      "蘑菇云灯",
+      "产经新闻"
     ],
     "event_summary": "新闻媒体披露某商品在销售页面中注明与历史核爆事件相关的地点和事件名称",
-    "sources": [
-      {
-        "id": "d7af3aa0ba98393ebfc367c4b509375e",
-        "name": "Yukan Fuji",
-        "url": "https://www.zakzak.co.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T05:35:50+00:00"
   },
   "日本队在ITTF混合团体世界杯2025比赛中以8比0战胜瑞典队": {
     "entities": [
-      "井村屋集团",
-      "户上隼辅",
-      "成都",
-      "伊藤美诚",
-      "德国驻华大使馆",
-      "国际乒乓球联合会",
+      "早田雏",
       "日本",
+      "井村屋集团",
       "日本生命",
       "瑞典",
+      "伊藤美诚",
       "スターツ",
-      "早田雏"
+      "户上隼辅",
+      "成都",
+      "德国驻华大使馆",
+      "国际乒乓球联合会"
     ],
     "event_summary": "日本国家乒乓球队在国际乒乓球联合会组织的赛事中战胜了瑞典国家乒乓球队",
     "sources": [],
@@ -1711,8 +1409,8 @@
   "oricon ME发布2025年高校受験塾满意度调查中国四国地区排名": {
     "entities": [
       "株式会社oricon ME",
-      "宇部進学教室",
       "岛根县松江市",
+      "宇部進学教室",
       "個別指導塾サクラサクセス"
     ],
     "event_summary": "一家市场调研公司发布了特定地区针对特定考试类型的培训机构满意度排名结果",
@@ -1723,8 +1421,7 @@
     "entities": [
       "南方财经",
       "霍飞明",
-      "Martin Hofmann",
-      "21世纪经济报道"
+      "Martin Hofmann"
     ],
     "event_summary": "一名商会主席接受一家财经媒体的采访并发表关于中德创新合作的观点",
     "sources": [],
@@ -1732,26 +1429,21 @@
   },
   "法国总统马克龙对中国进行国事访问": {
     "entities": [
+      "马克龙",
       "法国",
+      "北京",
       "中国",
       "埃马纽埃尔·马克龙"
     ],
     "event_summary": "主权国家元首对另一主权国家进行正式外交访问",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T00:00:00+00:00"
   },
   "对外经济贸易大学法国经济研究中心主任赵永升就马克龙访华接受媒体专访": {
     "entities": [
-      "对外经济贸易大学",
       "赵永升",
-      "21世纪经济报道"
+      "对外经济贸易大学",
+      "南方财经"
     ],
     "event_summary": "高校研究机构负责人向新闻媒体就国际外交事件发表专业评论",
     "sources": [],
@@ -1759,11 +1451,11 @@
   },
   "美国参议员警告中国在人工智能领域的进展对美国构成挑战并呼吁加强应对措施": {
     "entities": [
+      "美国",
       "美国国会参议院外交关系委员会东亚、太平洋与国际网络安全政策小组委员会",
-      "皮特·里基茨",
-      "中国",
       "美国参议员",
-      "美国"
+      "中国",
+      "皮特·里基茨"
     ],
     "event_summary": "美国立法机构成员指出中国在人工智能领域的快速发展对美国科技与安全构成威胁，并推动强化出口管制和联盟合作",
     "sources": [],
@@ -1772,8 +1464,8 @@
   "深圳证券交易所组织深市上市公司在德国法兰克福举办路演交流会": {
     "entities": [
       "法兰克福",
-      "德国驻华大使馆",
-      "深圳证券交易所"
+      "深圳证券交易所",
+      "德国驻华大使馆"
     ],
     "event_summary": "证券交易所组织上市公司在德国城市举办面向境外投资者的路演活动",
     "sources": [],
@@ -1781,75 +1473,35 @@
   },
   "第十八届中国健康教育与健康促进大会暨健康体重专题培训在北京举办": {
     "entities": [
-      "中华人民共和国国家卫生健康委员会",
-      "郭燕红"
+      "郭燕红",
+      "中华人民共和国国家卫生健康委员会"
     ],
     "event_summary": "政府机构官员出席并讲话于一场由国家卫生健康委员会相关单位组织的健康教育大会",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-03T00:00:00+00:00"
   },
   "诺贝尔物理学奖得主约翰·马丁尼斯警告中国在量子计算领域正迅速缩小与美国的差距": {
     "entities": [
-      "彭博新闻社",
-      "特拉维夫",
       "欧洲",
-      "中国",
+      "特拉维夫",
+      "彭博新闻社",
       "美国",
+      "中国",
       "约翰·马丁尼斯"
     ],
     "event_summary": "一位诺贝尔奖得主向媒体表达了对中国在特定科技领域追赶速度的担忧",
     "sources": [],
     "first_seen": "2025-12-03T16:39:50+00:00"
   },
-  "ITTF混合团体世界杯2025在成都举行，日本8-2击败韩国": {
-    "entities": [
-      "国际乒乓球联合会",
-      "中国",
-      "日本",
-      "大韩民国",
-      "成都",
-      "松岛辉空",
-      "户上隼辅",
-      "早田雏",
-      "张本美和",
-      "井村屋集团",
-      "日本生命",
-      "木下集团"
-    ],
-    "event_summary": "国际乒联在中国成都举办混合团体世界杯，日本国家队击败韩国国家队",
-    "sources": [
-      {
-        "id": "02b7b14861d5da81f7deeaa31b363b39",
-        "name": "スポニチアネックス Sponichi Annex",
-        "url": "https://www.sponichi.co.jp",
-        "country": "jp"
-      }
-    ],
-    "first_seen": "2025-12-05T12:54:00+00:00"
-  },
   "21世纪经济报道记者在广州车展采访福特中国高管陈晓波": {
     "entities": [
-      "21世纪经济报道",
-      "福特中国",
+      "南方财经",
+      "广州",
       "陈晓波",
-      "广州"
+      "福特中国"
     ],
     "event_summary": "一家新闻媒体机构对其记者在特定地点采访某公司高管的事件进行了报道",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T00:00:00+00:00"
   },
   "日本企业计划出资120亿日元推动浮体式核电站于2032年实现商业化": {
@@ -1857,47 +1509,17 @@
       "日本"
     ],
     "event_summary": "某国企业计划出资推动一项特定核电技术的商业化",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
-    "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "日本经济产业省官员透露参加Rapidus活动的潜在客户信息": {
-    "entities": [
-      "経済産業省",
-      "Rapidus"
-    ],
-    "event_summary": "某国政府部门的官员透露了关于某半导体企业的潜在客户信息",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "海外动态涉及中国人形机器人量产及美国与台湾在光电融合领域的合作": {
     "entities": [
-      "中国",
+      "台湾",
       "美国",
-      "台湾"
+      "中国"
     ],
     "event_summary": "报道提及了多个国家或地区在特定技术领域的发展或合作",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "半导体光刻胶新材料MOR获三星等公司采用，为30年来首次出现的新星材料": {
@@ -1905,118 +1527,25 @@
       "三星"
     ],
     "event_summary": "某公司采用了新的半导体材料",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
   },
   "新兴太空企业ispace的CTO阐述如何管理来自33个国家的人才": {
     "entities": [
-      "ispace"
+      "ispace公司"
     ],
     "event_summary": "某公司的高管阐述其跨国人才管理策略",
-    "sources": [
-      {
-        "id": "f639ca597f9ccec2cc9817cfb31c1ab6",
-        "name": "Nihon Keizai Shimbun",
-        "url": "https://www.nikkei.com",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-05T23:00:00+00:00"
-  },
-  "朝仓未来宣布其主办的BreakingDown18赛事将与中国格斗家团队进行5对5对抗赛": {
-    "entities": [
-      "朝倉未来",
-      "BreakingDown18",
-      "埼玉超级竞技场",
-      "社区竞技场"
-    ],
-    "event_summary": "赛事主办人宣布其举办的格斗赛事将与一个外国格斗团队进行对抗赛",
-    "sources": [
-      {
-        "id": "8c8c20cf5bc864f9ffe0dce373f12abc",
-        "name": "Iza",
-        "url": "https://www.iza.ne.jp",
-        "country": "jp"
-      }
-    ],
-    "first_seen": "2025-12-04T03:54:57+00:00"
-  },
-  "CLOSE YOUR EYES日本成员KENSHIN宣布不参加中国粉丝见面会": {
-    "entities": [
-      "CLOSE YOUR EYES",
-      "ケンシン",
-      "中国"
-    ],
-    "event_summary": "某音乐组合的日本成员宣布无法参加其组合在中国举行的粉丝见面会活动",
-    "sources": [
-      {
-        "id": "ec8a18e873d0452c6b532d7a46d9671e",
-        "name": "Sankei Shimbun",
-        "url": "https://www.sankei.com",
-        "country": "jp"
-      }
-    ],
-    "first_seen": "2025-12-04T01:31:11+00:00"
-  },
-  "户上隼辅与早田雏代表日本队在混合双打比赛中获胜": {
-    "entities": [
-      "户上隼辅",
-      "早田雏",
-      "日本",
-      "井村屋集团",
-      "日本生命"
-    ],
-    "event_summary": "隶属于不同商业公司的运动员代表国家在体育赛事中获胜",
-    "sources": [
-      {
-        "id": "02b7b14861d5da81f7deeaa31b363b39",
-        "name": "スポニチアネックス Sponichi Annex",
-        "url": "https://www.sponichi.co.jp",
-        "country": "jp"
-      }
-    ],
-    "first_seen": "2025-12-04T12:50:00+00:00"
   },
   "伊藤美诚在女子单打比赛中获胜": {
     "entities": [
-      "伊藤美诚",
-      "スターツ"
+      "スターツ",
+      "伊藤美诚"
     ],
     "event_summary": "隶属于某商业公司的运动员在体育赛事中获胜",
-    "sources": [
-      {
-        "id": "02b7b14861d5da81f7deeaa31b363b39",
-        "name": "スポニチアネックス Sponichi Annex",
-        "url": "https://www.sponichi.co.jp",
-        "country": "jp"
-      }
-    ],
+    "sources": [],
     "first_seen": "2025-12-04T12:50:00+00:00"
-  },
-  "法国总统马克龙抵达北京对中国进行国事访问": {
-    "entities": [
-      "法国",
-      "马克龙",
-      "北京",
-      "中国"
-    ],
-    "event_summary": "法国国家元首对中国进行正式访问",
-    "sources": [
-      {
-        "id": "82cf1e5ed5d6b74255ea7c2d29340b4b",
-        "name": "21st Century Business Herald ",
-        "url": "https://www.21jingji.com",
-        "country": "cn"
-      }
-    ],
-    "first_seen": "2025-12-04T00:00:00+00:00"
   },
   "事件1": {
     "entities": [
@@ -2027,5 +1556,1374 @@
       "test_source"
     ],
     "first_seen": "2023-01-01"
+  },
+  "巴西劳工党议员向最高法院法官申请撤销众议院夜间投票决定": {
+    "entities": [
+      "Lindbergh Farias",
+      "Alexandre de Moraes",
+      "Supremo Tribunal Federal",
+      "Câmara dos Deputados"
+    ],
+    "event_summary": "巴西劳工党议员林德贝格·法里亚斯向最高法院法官亚历山大·德·莫赖斯提交人身保护令，要求撤销众议院在凌晨进行的投票结果。",
+    "sources": [
+      {
+        "id": "c1afce591abdcd7a9a075fec0c5e7cbb",
+        "name": "Poder360",
+        "url": "https://www.poder360.com.br"
+      }
+    ],
+    "first_seen": "2025-12-12T00:40:29+00:00"
+  },
+  "特朗普政府试图通过行政命令 preempt 各州人工智能法规": {
+    "entities": [
+      "特朗普政府",
+      "美国司法部",
+      "唐纳德·特朗普"
+    ],
+    "event_summary": "特朗普总统签署行政命令，指示美国司法部设立AI诉讼工作组以挑战各州的人工智能监管法律。",
+    "sources": [
+      {
+        "id": "0978beb86628acb239ee06cf0b116d2c",
+        "name": "NPR",
+        "url": "https://www.npr.org"
+      }
+    ],
+    "first_seen": "2025-12-12T00:39:38+00:00"
+  },
+  "香港置地将其在滨海湾金融中心1座和2座以及One Raffles Quay的权益注入新成立的新加坡80亿新元私募基金": {
+    "entities": [
+      "Hongkong Land",
+      "One Raffles Quay",
+      "新加坡"
+    ],
+    "event_summary": "香港置地将其持有的滨海湾金融中心1座、2座及One Raffles Quay的权益注入一家新设立的位于新加坡的80亿新元私募房地产基金",
+    "sources": [
+      {
+        "id": "ca2a0b2cf2abbbe3b596e7ab39d0a94f",
+        "name": "The Business Times",
+        "url": "https://www.businesstimes.com.sg"
+      }
+    ],
+    "first_seen": "2025-12-12T00:37:00+00:00"
+  },
+  "凯德商用信托收购香港置地在滨海湾金融中心3座的股权": {
+    "entities": [
+      "Keppel Reit",
+      "Hongkong Land",
+      "Marina Bay Financial Centre Tower 3"
+    ],
+    "event_summary": "凯德商用信托收购了香港置地所持的滨海湾金融中心3座的股权",
+    "sources": [
+      {
+        "id": "ca2a0b2cf2abbbe3b596e7ab39d0a94f",
+        "name": "The Business Times",
+        "url": "https://www.businesstimes.com.sg"
+      }
+    ],
+    "first_seen": "2025-12-12T00:37:00+00:00"
+  },
+  "卡普空在The Game Awards 2025上宣布其游戏《プラグマタ》将于2026年4月24日发售，并追加Nintendo Switch 2平台": {
+    "entities": [
+      "卡普空",
+      "The Game Awards",
+      "Steam"
+    ],
+    "event_summary": "卡普空在The Game Awards 2025上宣布其游戏《プラグマタ》的发售日期及支持平台",
+    "sources": [
+      {
+        "id": "6f20ede52496a215462bc370325c319b",
+        "name": "ファミ通",
+        "url": "https://www.famitsu.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:46:00+00:00"
+  },
+  "Google与英国合作邀请研究人员探索其先进量子芯片Willow的应用": {
+    "entities": [
+      "Willow",
+      "United Kingdom"
+    ],
+    "event_summary": "Google联合英国邀请研究人员开发其量子芯片Willow的应用场景",
+    "sources": [
+      {
+        "id": "da05009467a13bbcc84557ea09d86db3",
+        "name": "BBC",
+        "url": "https://www.bbc.co.uk"
+      }
+    ],
+    "first_seen": "2025-12-12T00:34:11+00:00"
+  },
+  "Mega-Sena 第2950期无人中头奖，奖金累计至4400万雷亚尔": {
+    "entities": [
+      "Caixa Econômica Federal"
+    ],
+    "event_summary": "Caixa Econômica Federal 运营的 Mega-Sena 彩票因无人中头奖而将奖金累计至下一期",
+    "sources": [
+      {
+        "id": "72ce36b6f1daeaa718bf0ebdc26a1c7f",
+        "name": "Agência Brasil",
+        "url": "https://agenciabrasil.ebc.com.br"
+      }
+    ],
+    "first_seen": "2025-12-12T00:34:00+00:00"
+  },
+  "英国国王查尔斯三世录制关于个人患癌经历的视频，将在英国癌症研究协会与第四频道联合举办的年度抗癌筹款活动中播出。": {
+    "entities": [
+      "英国国王查尔斯三世",
+      "英国癌症研究协会",
+      "第四频道"
+    ],
+    "event_summary": "英国国王查尔斯三世为英国癌症研究协会与第四频道联合举办的抗癌活动录制个人患癌经历视频。",
+    "sources": [
+      {
+        "id": "da05009467a13bbcc84557ea09d86db3",
+        "name": "BBC",
+        "url": "https://www.bbc.co.uk"
+      }
+    ],
+    "first_seen": "2025-12-12T00:31:47+00:00"
+  },
+  "欧盟委员会主席冯德莱恩评论美国新版国家安全战略，反对特朗普干涉欧洲民主进程": {
+    "entities": [
+      "美国",
+      "唐纳德·特朗普",
+      "欧洲联盟委员会",
+      "乌尔苏拉·冯德莱恩"
+    ],
+    "event_summary": "欧盟委员会主席冯德莱恩就美国新版国家安全战略发表评论，反对美国总统特朗普干涉欧洲民主进程。",
+    "sources": [
+      {
+        "id": "abcc9dfdb898078e73b888c37d35eba1",
+        "name": "EADaily",
+        "url": "https://eadaily.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:30:00+00:00"
+  },
+  "达娜·沃尔登就迪士尼首席执行官竞选和吉米·坎摩尔停播事件发表评论": {
+    "entities": [
+      "达娜·沃尔登",
+      "迪士尼娱乐",
+      "彭博新闻社"
+    ],
+    "event_summary": "迪士尼娱乐联合董事长达娜·沃尔登在接受彭博社采访时，就迪士尼首席执行官竞选和吉米·坎摩尔停播事件发表了看法。",
+    "sources": [
+      {
+        "id": "079303dd146f0fcdde881d709e8dbdf4",
+        "name": "Deadline",
+        "url": "https://deadline.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:25:00+00:00"
+  },
+  "利亚姆·尼森否认反疫苗观点，此前他为一部质疑疫苗合法性并赞扬罗伯特·F·肯尼迪的纪录片配音。": {
+    "entities": [
+      "利亚姆·尼森",
+      "罗伯特·F·肯尼迪"
+    ],
+    "event_summary": "自然人利亚姆·尼森澄清其个人立场，否认持有反疫苗观点，尽管他曾为一部质疑疫苗并赞扬罗伯特·F·肯尼迪的纪录片配音。",
+    "sources": [
+      {
+        "id": "558a003a7a0164e924408edec7e99f99",
+        "name": "The Guardian",
+        "url": "https://www.theguardian.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:25:00+00:00"
+  },
+  "The Game Awards 2025 在美国洛杉矶举行": {
+    "entities": [
+      "The Game Awards",
+      "美国",
+      "加利福尼亚州"
+    ],
+    "event_summary": "The Game Awards 在美国加利福尼亚州洛杉矶举办其2025年度颁奖典礼",
+    "sources": [
+      {
+        "id": "e931b61dfc7b841d3e28698bae90f8c3",
+        "name": "TecMundo",
+        "url": "https://www.tecmundo.com.br"
+      }
+    ],
+    "first_seen": "2025-12-12T00:22:00+00:00"
+  },
+  "巴西参议院投票并通过了《反法西斯法》，但众议院在表决所谓的剂量测定法项目时修改了其中一项无争议条款。": {
+    "entities": [
+      "巴西参议院",
+      "巴西众议院"
+    ],
+    "event_summary": "巴西参议院通过了一项法律，但众议院在另一法案表决过程中修改了该法的部分内容。",
+    "sources": [
+      {
+        "id": "3e44d007f2548c38dd0b89b42d4eb0b7",
+        "name": "Estadão",
+        "url": "https://www.estadao.com.br"
+      }
+    ],
+    "first_seen": "2025-12-12T00:21:57+00:00"
+  },
+  "新加坡运动员Shanti Pereira在2025年东南亚运动会女子100米比赛中卫冕金牌": {
+    "entities": [
+      "新加坡",
+      "东南亚运动会"
+    ],
+    "event_summary": "Shanti Pereira代表新加坡在东南亚运动会女子100米比赛中成功卫冕金牌",
+    "sources": [
+      {
+        "id": "fc22c9ffdaef43b7870c03b37c3a22ee",
+        "name": "AsiaOne",
+        "url": "https://www.asiaone.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:12:46+00:00"
+  },
+  "纽约法官判处TerraUSD创始人Do Kwon 15年监禁": {
+    "entities": [
+      "Do Kwon",
+      "纽约",
+      "美国",
+      "韩国",
+      "Terraform Labs Pte.",
+      "美国证券交易委员会",
+      "美国司法部",
+      "曼哈顿联邦法院",
+      "美国地区法官Jed Rakoff",
+      "Luna"
+    ],
+    "event_summary": "美国司法系统（通过曼哈顿联邦法院的法官）对韩国籍自然人、Terraform Labs联合创始人Do Kwon因其在TerraUSD和Luna崩盘中的欺诈行为判处了15年监禁。",
+    "sources": [
+      {
+        "id": "da05009467a13bbcc84557ea09d86db3",
+        "name": "BBC",
+        "url": "https://www.bbc.co.uk"
+      }
+    ],
+    "first_seen": "2025-12-12T00:21:41+00:00"
+  },
+  "谷歌计划于2026年春季发布新款预算智能手机Pixel 10a，其大部分规格与Pixel 9a相似，并已获得威瑞森网络的认证文件。": {
+    "entities": [
+      "谷歌",
+      "威瑞森"
+    ],
+    "event_summary": "谷歌公司计划发布其新款预算智能手机产品Pixel 10a。",
+    "sources": [
+      {
+        "id": "c2a587e04c96603d7d9f24f74771eb40",
+        "name": "dduvs.com",
+        "url": "https://dduvs.com"
+      }
+    ],
+    "first_seen": "2025-12-12T00:06:00+00:00"
+  },
+  "俄罗斯新西伯利亚将举办第一频道杯比赛，俄罗斯、白俄罗斯和哈萨克斯坦国家队参赛": {
+    "entities": [
+      "俄罗斯联邦",
+      "白俄罗斯",
+      "哈萨克斯坦",
+      "第一频道"
+    ],
+    "event_summary": "第一频道主办的杯赛将在新西伯利亚举行，俄罗斯、白俄罗斯和哈萨克斯坦国家队参与比赛",
+    "sources": [
+      {
+        "id": "4c590bc61f56b70fa74552c57e8091d5",
+        "name": "KHL",
+        "url": "https://www.khl.ru"
+      }
+    ],
+    "first_seen": "2025-12-12T00:05:25+00:00"
+  },
+  "Meilleurtaux 研究称 2026 年法国补充健康保险费率可能因年龄或地区显著上涨，该研究由 France Inter 与 Le Parisien 于 2025 年 12 月 11 日发布。": {
+    "entities": [
+      "Meilleurtaux",
+      "Le Parisien"
+    ],
+    "event_summary": "Meilleurtaux 发布研究，France Inter 与 Le Parisien 报道其关于 2026 年法国补充健康保险费率可能上涨的研究结果。",
+    "sources": [
+      {
+        "id": "a844c57a6c625180fcdc838e834677d1",
+        "name": "Actualités – Orange",
+        "url": "https://actu.orange.fr"
+      }
+    ],
+    "first_seen": "2025-12-12T00:00:00+00:00"
+  },
+  "里昂在欧洲联赛小组赛第六轮主场击败前进之鹰，确保至少获得附加赛资格。": {
+    "entities": [
+      "奥林匹克里昂",
+      "前进之鹰",
+      "Groupama体育场"
+    ],
+    "event_summary": "奥林匹克里昂足球俱乐部在Groupama体育场进行的欧洲联赛比赛中战胜了前进之鹰足球俱乐部。",
+    "sources": [
+      {
+        "id": "92e7e89f421accb3d56cecfb428a7d20",
+        "name": "20 Minutes",
+        "url": "https://www.20minutes.fr"
+      }
+    ],
+    "first_seen": "2025-12-11T23:55:00+00:00"
+  },
+  "美国对委内瑞拉实施新制裁，涉及马杜罗总统亲属及运油船只": {
+    "entities": [
+      "美国",
+      "委内瑞拉",
+      "尼古拉斯·马杜罗"
+    ],
+    "event_summary": "美利坚合众国对委内瑞拉玻利瓦尔共和国及其总统尼古拉斯·马杜罗的亲属实施新的制裁措施。",
+    "sources": [
+      {
+        "id": "5f3893b2bdd83721567eef82ac0a6d2e",
+        "name": "Korrespondent.net",
+        "url": "https://ua.korrespondent.net"
+      }
+    ],
+    "first_seen": "2025-12-11T23:49:00+00:00"
+  },
+  "Terraform Labs联合创始人Do Kwon因欺诈导致公司400亿美元崩溃被判15年监禁": {
+    "entities": [
+      "Do Kwon",
+      "Terraform Labs Pte."
+    ],
+    "event_summary": "韩国法院对Terraform Labs联合创始人Do Kwon判处15年监禁，因其欺诈行为导致公司崩溃并引发加密市场连锁危机。",
+    "sources": [
+      {
+        "id": "35303254fdf42d2f3365eadb3d9d8a17",
+        "name": "Bloomberg.com",
+        "url": "https://www.bloomberg.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:48:47+00:00"
+  },
+  "国际滑雪联合会（FIS）须按体育仲裁法庭（CAS）裁决允许俄罗斯残奥运动员佩戴国家标志参赛": {
+    "entities": [
+      "国际滑雪联合会",
+      "体育仲裁法庭",
+      "俄罗斯联邦"
+    ],
+    "event_summary": "体育仲裁法庭命令国际滑雪联合会允许俄罗斯残奥运动员佩戴国家标志参赛",
+    "sources": [
+      {
+        "id": "a6f85df2748a309623a54ff58c93d20a",
+        "name": "Sportbox",
+        "url": "https://news.sportbox.ru"
+      }
+    ],
+    "first_seen": "2025-12-11T23:43:34+00:00"
+  },
+  "南京大屠杀幸存者夏淑琴参加南京大屠杀死难者家庭祭告活动": {
+    "entities": [
+      "夏淑琴",
+      "中国"
+    ],
+    "event_summary": "自然人夏淑琴参与由中华人民共和国设立的南京大屠杀死难者家庭祭告活动。",
+    "sources": [
+      {
+        "id": "3a128398e925e99eda464c693ba9162b",
+        "name": "thepaper.cn",
+        "url": "https://www.thepaper.cn"
+      }
+    ],
+    "first_seen": "2025-12-11T23:39:00+00:00"
+  },
+  "侵华日军南京大屠杀遇难同胞纪念馆举行2025年新征文物史料发布会": {
+    "entities": [
+      "侵华日军南京大屠杀遇难同胞纪念馆",
+      "鲁照宁",
+      "美国"
+    ],
+    "event_summary": "侵华日军南京大屠杀遇难同胞纪念馆举办文物史料发布会，美籍华人鲁照宁介绍相关情况。",
+    "sources": [
+      {
+        "id": "3a128398e925e99eda464c693ba9162b",
+        "name": "thepaper.cn",
+        "url": "https://www.thepaper.cn"
+      }
+    ],
+    "first_seen": "2025-12-11T23:39:00+00:00"
+  },
+  "阿根廷官方美元汇率在批发市场收于1436比索，金融美元上涨，而阿根廷存托凭证和债券在华尔街下跌，当地S&P Merval指数下跌近2%。": {
+    "entities": [
+      "阿根廷政府",
+      "华尔街",
+      "标准普尔道琼斯指数公司"
+    ],
+    "event_summary": "阿根廷官方汇率收于特定价位，同时其相关金融资产在华尔街及本地市场表现疲软。",
+    "sources": [
+      {
+        "id": "224d386b3cafd9c5e993fab5f0c23e88",
+        "name": "Ambito",
+        "url": "https://www.ambito.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:39:00+00:00"
+  },
+  "阿根廷主持人安赫尔·德布里托透露玛丽亚·贝伦·卢杜埃尼亚将离开节目《Tarde o Temprano》及其接替者信息": {
+    "entities": [
+      "El Trece"
+    ],
+    "event_summary": "安赫尔·德布里托透露了关于节目《Tarde o Temprano》主持人变动及接替者的信息。",
+    "sources": [
+      {
+        "id": "dd8d4c68bb79ba05a367e10b6fb77635",
+        "name": "Exitoina",
+        "url": "https://exitoina.perfil.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:37:35+00:00"
+  },
+  "法国政府批准Breizh Ressources公司在西部四省开展稀土、铂、金矿勘探项目": {
+    "entities": [
+      "Breizh Ressources",
+      "法国政府",
+      "工业部长"
+    ],
+    "event_summary": "法国政府向Breizh Ressources公司授予矿业勘探许可，由工业部长签署相关许可证。",
+    "sources": [
+      {
+        "id": "0388bff8fc8f50c447a516a7b698e7a8",
+        "name": "insolentiae.com",
+        "url": "https://insolentiae.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:31:52+00:00"
+  },
+  "阿根廷政府强烈反对两家公司在马尔维纳斯群岛进行石油勘探的决定": {
+    "entities": [
+      "阿根廷政府",
+      "马尔维纳斯群岛"
+    ],
+    "event_summary": "阿根廷政府对两家公司宣布在马尔维纳斯群岛进行石油勘探的最终投资决定表达了最强烈的反对。",
+    "sources": [
+      {
+        "id": "3daf2c423541788248c07645b7c634ca",
+        "name": "Clarin.com",
+        "url": "https://www.clarin.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:28:33+00:00"
+  },
+  "TBS电视台播音员南波雅俊在“喜欢的男性播音员”调查中获得首位，TBS播音员整体表现突出，富士电视台播音员连续两年进入前五。": {
+    "entities": [
+      "TBS电视台",
+      "南波雅俊",
+      "富士电视台"
+    ],
+    "event_summary": "媒体调查显示TBS电视台播音员南波雅俊在人气排名中获得第一，反映了TBS和富士电视台播音员的人气状况。",
+    "sources": [
+      {
+        "id": "7d7c09d410a7ed615b930a663c8c40bc",
+        "name": "Yahoo!ニュース",
+        "url": "https://news.yahoo.co.jp"
+      }
+    ],
+    "first_seen": "2025-12-11T23:18:20+00:00"
+  },
+  "柬埔寨与泰国边境冲突持续，当地农民拒绝撤离": {
+    "entities": [
+      "柬埔寨",
+      "泰国",
+      "Banteay Meanchey省",
+      "Roluos commune"
+    ],
+    "event_summary": "柬埔寨西北部Banteay Meanchey省Roluos commune的居民在柬泰边境冲突加剧的情况下拒绝撤离。",
+    "sources": [
+      {
+        "id": "739b615c65becd670ee152cab7f8c439",
+        "name": "The Straits Times",
+        "url": "https://www.straitstimes.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:01:00+00:00"
+  },
+  "Yahoo!新闻评论区讨论WBC日本代表投手阵容，对山本由伸表示期待，对佐々木朗希不参加表示理解。": {
+    "entities": [
+      "山本由伸",
+      "佐々木朗希",
+      "洛杉矶道奇队",
+      "世界棒球经典赛",
+      "日本代表",
+      "Yahoo!新闻"
+    ],
+    "event_summary": "新闻读者在Yahoo!新闻评论区讨论世界棒球经典赛日本代表队的投手人选，涉及对两名洛杉矶道奇队球员参赛与否的看法。",
+    "sources": [
+      {
+        "id": "7d7c09d410a7ed615b930a663c8c40bc",
+        "name": "Yahoo!ニュース",
+        "url": "https://news.yahoo.co.jp"
+      }
+    ],
+    "first_seen": "2025-12-11T23:08:56+00:00"
+  },
+  "2026年春季甲子园“21世纪组”推荐校将于12日公布，9地区各自推举候选学校，最终2校将在1月30日由选拔委员会确定。": {
+    "entities": [
+      "神奈川县",
+      "北海道"
+    ],
+    "event_summary": "日本各都道府县棒球联盟推举候选高中，供日本高等学校棒球联盟选拔委员会最终选定21世纪组参赛校。",
+    "sources": [
+      {
+        "id": "8d5db897c9dea47e62bdc1d139c4f5de",
+        "name": "高校野球ドットコム",
+        "url": "https://www.hb-nippon.com"
+      }
+    ],
+    "first_seen": "2025-12-11T22:53:32+00:00"
+  },
+  "俄罗斯使用Shahed无人机从北方对乌克兰发动夜间袭击，目标包括苏梅州和新格勒-谢韦尔斯基方向": {
+    "entities": [
+      "俄罗斯联邦",
+      "乌克兰",
+      "苏梅州",
+      "新格勒-谢韦尔斯基"
+    ],
+    "event_summary": "俄罗斯向乌克兰发射Shahed型无人机，乌克兰空军通报其飞行路径自北向南经苏梅州指向新格勒-谢韦尔斯基",
+    "sources": [
+      {
+        "id": "ae8b9c98d707754fca5e1ea622855c50",
+        "name": "ТСН",
+        "url": "https://tsn.ua"
+      }
+    ],
+    "first_seen": "2025-12-11T22:20:03+00:00"
+  },
+  "乌克兰总统泽连斯基表示，乌克兰准备举行选举，但前提是完全停火，并称美国需就此与俄罗斯直接谈判。": {
+    "entities": [
+      "乌克兰",
+      "弗拉基米尔·泽连斯基",
+      "美国",
+      "俄罗斯联邦"
+    ],
+    "event_summary": "乌克兰总统泽连斯基提出举行选举的条件，并要求美国与俄罗斯就停火进行直接谈判。",
+    "sources": [
+      {
+        "id": "f22da91c498603eb4d447ae38063cc99",
+        "name": "Українська правда",
+        "url": "https://www.pravda.com.ua"
+      }
+    ],
+    "first_seen": "2025-12-11T22:46:00+00:00"
+  },
+  "東洋大学为第102回箱根駅伝举行壮行会，教练与选手表达冲击第5名、争取21年连续种子席位的目标": {
+    "entities": [
+      "東洋大学",
+      "酒井俊幸",
+      "網本佳悟",
+      "松浦"
+    ],
+    "event_summary": "東洋大学举行壮行会，教练酒井俊幸与队长網本佳悟等选手公开宣布冲击箱根駅伝第5名并争取连续21年种子席位",
+    "sources": [
+      {
+        "id": "7e916727a49df3e6f6c4405266297c4c",
+        "name": "4years",
+        "url": "https://4years.asahi.com"
+      }
+    ],
+    "first_seen": "2025-12-11T23:02:36+00:00"
+  },
+  "中央经济工作会议在北京举行，习近平发表重要讲话，李强作总结讲话，赵乐际、王沪宁、蔡奇、丁薛祥、李希出席会议。": {
+    "entities": [
+      "中国",
+      "北京",
+      "习近平",
+      "李强",
+      "赵乐际",
+      "王沪宁",
+      "蔡奇",
+      "丁薛祥"
+    ],
+    "event_summary": "中国领导层在北京举行中央经济工作会议，讨论并部署来年经济工作。",
+    "sources": [
+      {
+        "id": "5ffda0ebce7aedd3582a7cf3abb41526",
+        "name": "光明网",
+        "url": "https://news.gmw.cn"
+      }
+    ],
+    "first_seen": "2025-12-11T19:35:00+00:00"
+  },
+  "《华尔街日报》报道指出中国在全球AI竞赛中拥有电力优势，并探访内蒙古以说明情况。": {
+    "entities": [
+      "美国",
+      "中国",
+      "内蒙古",
+      "华尔街日报"
+    ],
+    "event_summary": "《华尔街日报》报道并探访了中国内蒙古，指出中国在AI竞赛中的电力优势。",
+    "sources": [
+      {
+        "id": "50b40c854b6a1a09ec98d3d19a5f5ea5",
+        "name": "文学城",
+        "url": "https://www.wenxuecity.com"
+      }
+    ],
+    "first_seen": "2025-12-11T15:36:06+00:00"
+  },
+  "国际货币基金组织敦促中国加快结构改革，减少出口依赖并增加消费": {
+    "entities": [
+      "国际货币基金组织",
+      "中国",
+      "克里斯塔利娜·格奥尔基耶娃"
+    ],
+    "event_summary": "国际货币基金组织及其总干事克里斯塔利娜·格奥尔基耶娃敦促中华人民共和国政府加快结构性改革，减少对出口的依赖，转向消费主导的增长模式。",
+    "sources": [
+      {
+        "id": "67e0c40c5e24b3fec372ab75763abad9",
+        "name": "DW",
+        "url": "https://www.dw.com"
+      }
+    ],
+    "first_seen": "2025-12-11T15:33:45+00:00"
+  },
+  "Pokémon GO发布2025年12月游戏活动日程，包括传说团体战、社群日等活动。": {
+    "entities": [
+      "Niantic"
+    ],
+    "event_summary": "游戏开发商Niantic, Inc.通过其产品Pokémon GO发布了2025年12月的游戏活动计划。",
+    "sources": [
+      {
+        "id": "fbf9d9bcc8b1371a7c231f5ac5e35c7e",
+        "name": "Pokemon Hubs",
+        "url": "https://pokemonhubs.com"
+      }
+    ],
+    "first_seen": "2025-12-01T17:53:49+00:00"
+  },
+  "日本歌手滨崎步上海演唱会被临时取消后，仍对空座位完成表演并录制，引发国际媒体关注。": {
+    "entities": [
+      "法国",
+      "中国",
+      "英国政府",
+      "上海",
+      "滨崎步"
+    ],
+    "event_summary": "日本歌手滨崎步在中国上海举办的演唱会被主办方临时取消，但表演者仍坚持完成演出。",
+    "sources": [],
+    "first_seen": "2025-12-04T00:27:42+00:00"
+  },
+  "滨崎步主题咖啡馆内相关照片被移除，引发网络讨论。": {
+    "entities": [
+      "滨崎步"
+    ],
+    "event_summary": "一家与滨崎步相关的主题咖啡馆清除了其内部展示的照片。",
+    "sources": [
+      {
+        "id": "48111276806f667e38d6ad6673eaf3e8",
+        "name": "奇摩新聞",
+        "url": "https://tw.news.yahoo.com"
+      }
+    ],
+    "first_seen": "2025-12-04T00:27:42+00:00"
+  },
+  "BBC报道指出，太平洋岛国帛琉（帕劳）曾因大量中国游客而旅游繁荣，后因地缘政治因素骤减。": {
+    "entities": [
+      "帕劳",
+      "BBC",
+      "美国",
+      "中国",
+      "BBC国际部"
+    ],
+    "event_summary": "BBC国际部报道帛琉（帕劳）旅游业因中国游客减少而衰退。",
+    "sources": [],
+    "first_seen": "2025-11-25T04:53:30+00:00"
+  },
+  "Pokémon GO 2025年11月24日至11月30日举行极巨化洛奇亚、凯路迪欧（觉悟的样子）及11月社群日活动": {
+    "entities": [
+      "Niantic",
+      "洛奇亞",
+      "凱路迪歐",
+      "伊布"
+    ],
+    "event_summary": "Pokémon GO 运营方在2025年11月下旬举办包含极巨化洛奇亚、凯路迪欧（觉悟的样子）和社群日在内的系列游戏内活动",
+    "sources": [
+      {
+        "id": "fbf9d9bcc8b1371a7c231f5ac5e35c7e",
+        "name": "Pokemon Hubs",
+        "url": "https://pokemonhubs.com"
+      }
+    ],
+    "first_seen": "2025-11-23T09:00:25+00:00"
+  },
+  "Pokémon GO 在2025年11月持续推行「千變萬化的故事」主题及奖励活动至12月2日": {
+    "entities": [
+      "Niantic"
+    ],
+    "event_summary": "Pokémon GO 运营方将「千變萬化的故事」主题活动及其相关奖励延长至2025年12月2日",
+    "sources": [
+      {
+        "id": "fbf9d9bcc8b1371a7c231f5ac5e35c7e",
+        "name": "Pokemon Hubs",
+        "url": "https://pokemonhubs.com"
+      }
+    ],
+    "first_seen": "2025-11-23T09:00:25+00:00"
+  },
+  "日本产经新闻报道称，尽管中国游客减少，但其他国际游客增多，日本旅游业未感危机。": {
+    "entities": [
+      "日本",
+      "中国",
+      "日本产经新闻"
+    ],
+    "event_summary": "日本产经新闻发布报道，分析中国游客减少对日本旅游业的影响。",
+    "sources": [],
+    "first_seen": "2025-12-01T01:07:00+00:00"
+  },
+  "第80回甲子園ボウル全日本大学選手権決勝由関西学院大学与立命館大学对决": {
+    "entities": [
+      "関西学院大学",
+      "立命館大学",
+      "兵庫県",
+      "阪神甲子園球場",
+      "木下亮介"
+    ],
+    "event_summary": "関西学院大学与立命館大学在兵庫県阪神甲子園球場进行第80回甲子園ボウル全日本大学選手権決勝",
+    "sources": [
+      {
+        "id": "7e916727a49df3e6f6c4405266297c4c",
+        "name": "4years",
+        "url": "https://4years.asahi.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:36:53+00:00"
+  },
+  "巴黎圣日耳曼将在卡塔尔Al-Rayyan的Ahmad bin Ali球场与弗拉门戈争夺洲际杯冠军": {
+    "entities": [
+      "Qatar",
+      "弗拉门戈",
+      "Estádio Ahmad bin Ali",
+      "Al-Rayyan"
+    ],
+    "event_summary": "巴黎圣日耳曼将在卡塔尔Al-Rayyan的Ahmad bin Ali球场与弗拉门戈进行洲际杯决赛",
+    "sources": [
+      {
+        "id": "ce26f7a8b516b538f8a715b07afe2220",
+        "name": "UOL",
+        "url": "https://www.uol.com.br"
+      }
+    ],
+    "first_seen": "2025-12-13T23:25:00+00:00"
+  },
+  "Nahuel Ferraresi 的代表接受 Botafogo 提出的条件，正等待与 São Paulo 的谈判结果": {
+    "entities": [
+      "Nahuel Ferraresi",
+      "Botafogo Futebol e Regatas",
+      "Sport",
+      "Alexsander Vieira"
+    ],
+    "event_summary": "Nahuel Ferraresi 的经纪人接受 Botafogo 的转会条件，等待 São Paulo 俱乐部完成谈判",
+    "sources": [
+      {
+        "id": "dfd484578dd2139901178ebb4b565eee",
+        "name": "FogãoNET",
+        "url": "https://www.fogaonet.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:37:52+00:00"
+  },
+  "弗拉门戈俱乐部在与巴黎圣日耳曼决赛前的背景介绍": {
+    "entities": [
+      "弗拉门戈",
+      "Qatar"
+    ],
+    "event_summary": "Clube de Regatas do Flamengo 将与 Paris Saint-Germain 进行一场决赛。",
+    "sources": [
+      {
+        "id": "afa44d2274d03e1001a36df71eb36692",
+        "name": "L'Équipe",
+        "url": "https://www.lequipe.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T23:23:03+00:00"
+  },
+  "71岁新加坡飞镖选手Paul Lim成为PDC世界飞镖锦标赛史上最年长比赛获胜者。": {
+    "entities": [
+      "新加坡",
+      "Paul Lim",
+      "Professional Darts Corporation"
+    ],
+    "event_summary": "新加坡籍自然人Paul Lim在由Professional Darts Corporation组织的世界锦标赛中创造了最年长获胜者纪录。",
+    "sources": [
+      {
+        "id": "739b615c65becd670ee152cab7f8c439",
+        "name": "The Straits Times",
+        "url": "https://www.straitstimes.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:30:00+00:00"
+  },
+  "日本政府发行的'おこめ券'因使用限制引发混乱，经济评论家加谷珪一批评高市早苗首相未作充分说明，相关发行方已进行价格调整，农水相则解释其使用范围。": {
+    "entities": [
+      "全国米穀販売事業共済協同組合",
+      "全国農業協同組合連合会",
+      "高市早苗",
+      "加谷珪一",
+      "鈴木憲和",
+      "農林水産省",
+      "日本"
+    ],
+    "event_summary": "经济评论家加谷珪一批评日本首相高市早苗未就'おこめ券'政策进行充分说明，而发行方全国米穀販売事業共済協同組合与全国農業協同組合連合会已调整价格，农水相鈴木憲和则为其使用范围进行辩解。",
+    "sources": [
+      {
+        "id": "7d7c09d410a7ed615b930a663c8c40bc",
+        "name": "Yahoo!ニュース",
+        "url": "https://news.yahoo.co.jp"
+      }
+    ],
+    "first_seen": "2025-12-13T23:30:00+00:00"
+  },
+  "Star Academy 2025节目中的学员Sarah、Ambre和Bastiaan在已晋级的情况下仍参与了巡演直播演出": {
+    "entities": [
+      "Star Academy"
+    ],
+    "event_summary": "Star Academy 2025节目组织了一场由学员Sarah、Ambre和Bastiaan参与的巡演直播演出",
+    "sources": [
+      {
+        "id": "92e7e89f421accb3d56cecfb428a7d20",
+        "name": "20 Minutes",
+        "url": "https://www.20minutes.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T23:15:00+00:00"
+  },
+  "巴西国家交通秘书处设定驾驶执照考试费用上限为180雷亚尔，相关行业专业人士提出异议。": {
+    "entities": [
+      "巴西国家交通秘书处"
+    ],
+    "event_summary": "巴西国家交通秘书处通过发布法令，对全国范围内获取或更新驾驶执照所需考试的总费用设定了上限。",
+    "sources": [
+      {
+        "id": "0acd7d674efdf6162b71da20a779f415",
+        "name": "Correio Braziliense",
+        "url": "https://www.correiobraziliense.com.br"
+      }
+    ],
+    "first_seen": "2025-12-13T23:12:00+00:00"
+  },
+  "索菲娅·“拉雷尼”·戈内特与奥梅罗·佩蒂纳托关系破裂后，公开了包含攻击性内容的聊天记录。": {
+    "entities": [
+      "索菲娅·“拉雷尼”·戈内特",
+      "奥梅罗·佩蒂纳托"
+    ],
+    "event_summary": "自然人索菲娅·戈内特公开了与自然人奥梅罗·佩蒂纳托之间的私人聊天记录。",
+    "sources": [
+      {
+        "id": "32b61a562295a89bd1b5b9b4fc2ff364",
+        "name": "Infobae",
+        "url": "https://www.infobae.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:16:00+00:00"
+  },
+  "Jean-Louis Aubert举办演唱会，多位艺人作为嘉宾出席": {
+    "entities": [
+      "Jean-Louis Aubert",
+      "M",
+      "Louane",
+      "La Défense Arena",
+      "Nanterre",
+      "Hauts-de-Seine"
+    ],
+    "event_summary": "Jean-Louis Aubert在巴黎拉德芳斯竞技场举办演唱会，邀请Vianney、Louane、Raphaël和M作为嘉宾参与演出",
+    "sources": [
+      {
+        "id": "4c1a44e6e0f469dc804ccacf842c3b6f",
+        "name": "Le Parisien",
+        "url": "https://www.leparisien.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T23:13:00+00:00"
+  },
+  "一名55岁男子被发现死于新加坡盛港组屋楼下，疑似高处坠落": {
+    "entities": [
+      "新加坡"
+    ],
+    "event_summary": "新加坡警方在盛港组屋楼下发现一名55岁男子尸体，初步怀疑其从高处坠落身亡",
+    "sources": [
+      {
+        "id": "fc22c9ffdaef43b7870c03b37c3a22ee",
+        "name": "AsiaOne",
+        "url": "https://www.asiaone.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:10:00+00:00"
+  },
+  "巴西前锋恩德里克将从皇家马德里租借至奥林匹克里昂": {
+    "entities": [
+      "恩德里克",
+      "皇家马德里足球俱乐部",
+      "奥林匹克里昂"
+    ],
+    "event_summary": "皇家马德里足球俱乐部将球员恩德里克租借至奥林匹克里昂足球俱乐部。",
+    "sources": [
+      {
+        "id": "32b61a562295a89bd1b5b9b4fc2ff364",
+        "name": "Infobae",
+        "url": "https://www.infobae.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:10:00+00:00"
+  },
+  "法国电视节目《Star Academy》公布巡演阵容，Léo因被观众淘汰而无法参与。": {
+    "entities": [
+      "Star Academy"
+    ],
+    "event_summary": "法国电视节目《Star Academy》公布了即将进行巡演的学员名单，Léo因在节目中被观众投票淘汰而无法参加。",
+    "sources": [
+      {
+        "id": "4c1a44e6e0f469dc804ccacf842c3b6f",
+        "name": "Le Parisien",
+        "url": "https://www.leparisien.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T23:10:44+00:00"
+  },
+  "拉潘帕银行准备推出年终节日促销活动以促进消费": {
+    "entities": [
+      "El Banco de La Pampa",
+      "Gobierno nacional"
+    ],
+    "event_summary": "拉潘帕银行针对受国家政策影响严重的群体，准备推出旨在促进消费的年终节日促销活动",
+    "sources": [
+      {
+        "id": "b4251de109db1dc60990ce43d72861d0",
+        "name": "La Arena",
+        "url": "https://www.laarena.com.ar"
+      }
+    ],
+    "first_seen": "2025-12-13T23:06:07+00:00"
+  },
+  "以色列军方称在加沙城对一辆汽车发动袭击，击毙哈马斯高级指挥官拉伊德·赛义德": {
+    "entities": [
+      "以色列国防军",
+      "哈马斯",
+      "拉伊德·赛义德",
+      "加沙城"
+    ],
+    "event_summary": "以色列国防军对加沙城的一辆汽车发动袭击，击毙了哈马斯高级指挥官拉伊德·赛义德",
+    "sources": [
+      {
+        "id": "c2ee0470b87084b697f00e72ba277afd",
+        "name": "CNN Brasil",
+        "url": "https://www.cnnbrasil.com.br"
+      }
+    ],
+    "first_seen": "2025-12-13T23:09:31+00:00"
+  },
+  "意大利普拉托法院审理涉及控制欧洲时尚物流的中国犯罪组织案件因文件丢失和翻译辞职等问题进展艰难。": {
+    "entities": [
+      "意大利",
+      "普拉托",
+      "托斯卡纳大区"
+    ],
+    "event_summary": "意大利司法机构对涉嫌控制欧洲时尚产业物流的中国犯罪组织进行审判，但审判过程因各种阻碍而进展不顺。",
+    "sources": [
+      {
+        "id": "31280eb773ec58b2d5348fe891a1cb8d",
+        "name": "Reuters",
+        "url": "https://jp.reuters.com"
+      }
+    ],
+    "first_seen": "2025-12-13T23:06:55+00:00"
+  },
+  "法国足球联合会调整寻找迪迪埃·德尚继任者的时间表": {
+    "entities": [
+      "法国足球联合会",
+      "迪迪埃·德尚",
+      "菲利普·迪亚洛"
+    ],
+    "event_summary": "法国足球联合会决定改变法国国家队主教练继任者的遴选时间表",
+    "sources": [
+      {
+        "id": "70dee843b79435985bac7c5e28b9dd06",
+        "name": "Foot Mercato",
+        "url": "https://www.footmercato.net"
+      }
+    ],
+    "first_seen": "2025-12-13T23:02:53+00:00"
+  },
+  "NHK大河剧《べらぼう》制作统筹回顾主演横滨流星的演艺历程及电影《国宝》的成就": {
+    "entities": [
+      "日本放送协会",
+      "大河剧《べらぼう～蔦重栄華乃夢噺～》",
+      "横滨流星",
+      "藤并英树",
+      "电影《国宝》",
+      "吉泽亮",
+      "李相日"
+    ],
+    "event_summary": "日本放送协会大河剧制作统筹藤并英树回顾了主演横滨流星约一年半的拍摄历程及其主演的电影《国宝》所取得的成功。",
+    "sources": [
+      {
+        "id": "a0177cf5d7c257930e6a11484e7896ca",
+        "name": "シネマトゥデイ",
+        "url": "https://www.cinematoday.jp"
+      }
+    ],
+    "first_seen": "2025-12-13T23:02:00+00:00"
+  },
+  "电视剧《ザ・ロイヤルファミリー》拍摄结束，主要演员完成拍摄": {
+    "entities": [
+      "妻夫木聡",
+      "目黒蓮",
+      "佐藤浩市",
+      "松本若菜",
+      "安藤政信",
+      "津田健次郎",
+      "TBS电视台"
+    ],
+    "event_summary": "演员妻夫木聪、目黑莲等在TBS电视台周日剧场剧集《ザ・ロイヤルファミリー》中完成拍摄，全剧组宣告杀青",
+    "sources": [
+      {
+        "id": "140a476fa3c8d45f8ed89b14316f6e0b",
+        "name": "オリコンニュース",
+        "url": "https://www.oricon.co.jp"
+      }
+    ],
+    "first_seen": "2025-12-13T23:00:00+00:00"
+  },
+  "巴西联邦储蓄银行在圣保罗幸运空间抽取第6902期Quina彩票号码，预计奖金为300万雷亚尔。": {
+    "entities": [
+      "巴西联邦储蓄银行",
+      "圣保罗"
+    ],
+    "event_summary": "巴西联邦储蓄银行在圣保罗市进行了Quina彩票第6902期的开奖活动。",
+    "sources": [
+      {
+        "id": "cc6331a2d21e6dd60d52bb2909dd4c7d",
+        "name": "Rádio Itatiaia",
+        "url": "https://www.itatiaia.com.br"
+      }
+    ],
+    "first_seen": "2025-12-13T23:00:00+00:00"
+  },
+  "Sofía Gonet comparte chats privados con Homero Pettinato en Instagram": {
+    "entities": [
+      "Sofía Gonet"
+    ],
+    "event_summary": "Sofía Gonet publicó conversaciones privadas que mantuvo con Homero Pettinato en sus historias de Instagram",
+    "sources": [
+      {
+        "id": "efc172408cdeeb33a329e7008379e72f",
+        "name": "Revista Paparazzi",
+        "url": "https://www.paparazzi.com.ar"
+      }
+    ],
+    "first_seen": "2025-12-13T23:00:00+00:00"
+  },
+  "《Star Academy》节目现场投票淘汰一名学员，使其失去2026巡演资格": {
+    "entities": [
+      "TBS电视台"
+    ],
+    "event_summary": "TF1旗下节目《Star Academy》通过观众投票淘汰一名学员，导致其无法参加2026年巡演",
+    "sources": [
+      {
+        "id": "4efa8e0df26aedffd0508ec8475fbf8d",
+        "name": "Charts in France",
+        "url": "https://www.chartsinfrance.net"
+      }
+    ],
+    "first_seen": "2025-12-13T22:56:00+00:00"
+  },
+  "Luis Ángel Godoy 被控性侵女儿七年后，因女儿承认撒谎获判无罪": {
+    "entities": [
+      "Luis Ángel Godoy",
+      "La Plata"
+    ],
+    "event_summary": "阿根廷 La Plata 工程师 Luis Ángel Godoy 被前妻指控性侵女儿，七年后法院因女儿承认撒谎而判其无罪",
+    "sources": [
+      {
+        "id": "32b61a562295a89bd1b5b9b4fc2ff364",
+        "name": "Infobae",
+        "url": "https://www.infobae.com"
+      }
+    ],
+    "first_seen": "2025-12-13T22:56:00+00:00"
+  },
+  "至少一名枪手在美国布朗大学校园开枪，造成多人伤亡，应急车辆已抵达现场。": {
+    "entities": [
+      "美国",
+      "布朗大学"
+    ],
+    "event_summary": "一名枪手在美国布朗大学校园内开枪射击，造成人员伤亡。",
+    "sources": [
+      {
+        "id": "776b9efe5cc2aef8ea8147e620e89dbb",
+        "name": "G1",
+        "url": "https://g1.globo.com"
+      }
+    ],
+    "first_seen": "2025-12-13T22:54:40+00:00"
+  },
+  "波音777飞机发动机故障引发华盛顿杜勒斯机场周边灌木火灾": {
+    "entities": [
+      "Boeing",
+      "Washington Dulles International Airport",
+      "United Kingdom"
+    ],
+    "event_summary": "一架波音777飞机在华盛顿杜勒斯机场发生发动机故障，导致机场周边灌木起火，但飞机安全着陆且无人员受伤。",
+    "sources": [
+      {
+        "id": "a9a14c2a6effa584c49d0d1fb84b0db0",
+        "name": "BFM",
+        "url": "https://www.bfmtv.com"
+      }
+    ],
+    "first_seen": "2025-12-13T22:54:33+00:00"
+  },
+  "图卢兹橄榄球队在冠军杯橄榄球赛第二轮比赛中，下半场崩盘，以21-28负于格拉斯哥勇士队。": {
+    "entities": [
+      "图卢兹橄榄球队",
+      "格拉斯哥勇士队"
+    ],
+    "event_summary": "格拉斯哥勇士队在冠军杯橄榄球赛中击败了图卢兹橄榄球队。",
+    "sources": [
+      {
+        "id": "091056d666beb02c3011a24a96e70859",
+        "name": "Franceinfo",
+        "url": "https://www.franceinfo.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T22:54:22+00:00"
+  },
+  "巴西乡村音乐二人组Matheus & Kauan宣布暂停组合活动。": {
+    "entities": [
+      "Matheus & Kauan"
+    ],
+    "event_summary": "音乐组合Matheus & Kauan宣布暂停其演艺事业。",
+    "sources": [
+      {
+        "id": "10b1d0f94f516b83761ca4cf9353735b",
+        "name": "Notícias da TV",
+        "url": "https://noticiasdatv.uol.com.br"
+      }
+    ],
+    "first_seen": "2025-12-13T22:54:00+00:00"
+  },
+  "Racing Club y Estudiantes disputan el título del Torneo Clausura 2025, con clasificación a la Copa Libertadores en juego": {
+    "entities": [
+      "Racing Club",
+      "Estudiantes",
+      "Copa Libertadores"
+    ],
+    "event_summary": "Racing Club y Estudiantes de La Plata compiten por ganar el Torneo Clausura 2025 y obtener un lugar en la Copa Libertadores",
+    "sources": [
+      {
+        "id": "8c5234375a4317a4719330abc94f61a8",
+        "name": "ESPN Argentina",
+        "url": "https://www.espn.com.ar"
+      }
+    ],
+    "first_seen": "2025-12-13T22:53:59+00:00"
+  },
+  "日本J1联赛升级附加赛决赛中，千叶市原队战胜德岛漩涡队，时隔17年重返J1联赛。": {
+    "entities": [
+      "J1联赛",
+      "千叶市原足球俱乐部",
+      "德岛漩涡足球俱乐部",
+      "J1联赛升级附加赛",
+      "福田电子竞技场"
+    ],
+    "event_summary": "千叶市原足球俱乐部在升级附加赛中战胜德岛漩涡足球俱乐部，成功晋级日本职业足球顶级联赛。",
+    "sources": [
+      {
+        "id": "7d7c09d410a7ed615b930a663c8c40bc",
+        "name": "Yahoo!ニュース",
+        "url": "https://news.yahoo.co.jp"
+      }
+    ],
+    "first_seen": "2025-12-13T22:52:18+00:00"
+  },
+  "联合航空一架波音777客机因发动机故障在华盛顿机场紧急降落并引发火灾": {
+    "entities": [
+      "Boeing 777",
+      "Washington Dulles International Airport",
+      "États-Unis"
+    ],
+    "event_summary": "联合航空的一架波音777飞机因发动机故障在华盛顿的机场紧急降落，导致起火",
+    "sources": [
+      {
+        "id": "78745d481f7d656e1603ec3796aa77f2",
+        "name": "TF1 Info",
+        "url": "https://www.tf1info.fr"
+      }
+    ],
+    "first_seen": "2025-12-13T22:48:37+00:00"
+  },
+  "胡安·塞巴斯蒂安·贝隆在阿根廷甲级联赛决赛中，与拉普拉塔大学生队球迷一同出现在看台。": {
+    "entities": [
+      "胡安·塞巴斯蒂安·贝隆",
+      "拉普拉塔大学生足球俱乐部",
+      "阿根廷竞技俱乐部",
+      "圣地亚哥-德尔埃斯特罗省",
+      "城市母亲体育场"
+    ],
+    "event_summary": "自然人胡安·塞巴斯蒂安·贝隆前往特定行政区划的体育场，与特定足球俱乐部的球迷一起观看该俱乐部与另一特定足球俱乐部的决赛。",
+    "sources": [
+      {
+        "id": "32b61a562295a89bd1b5b9b4fc2ff364",
+        "name": "Infobae",
+        "url": "https://www.infobae.com"
+      }
+    ],
+    "first_seen": "2025-12-13T22:38:00+00:00"
+  },
+  "在帕索科尔多巴发现失踪青年恩佐·德奥罗的遗体": {
+    "entities": [
+      "Enzo de Oro",
+      "José González",
+      "Mendoza",
+      "Paso Córdoba",
+      "río Negro"
+    ],
+    "event_summary": "恩佐·德奥罗的遗体在帕索科尔多巴的内格罗河被找到，当地警方和社区对此作出回应",
+    "sources": [
+      {
+        "id": "58fb1fcbc49d45eb85921ae8d0f245c4",
+        "name": "Diario Río Negro",
+        "url": "https://www.rionegro.com.ar"
+      }
+    ],
+    "first_seen": "2025-12-13T22:37:03+00:00"
+  },
+  "亚洲多国航空公司因系统问题大规模取消和延误航班，导致数千旅客滞留。": {
+    "entities": [
+      "新加坡",
+      "韩国",
+      "中国国际航空股份有限公司",
+      "全日本空输株式会社",
+      "日本",
+      "中国",
+      "新加坡",
+      "大韩民国",
+      "印度尼西亚",
+      "泰国"
+    ],
+    "event_summary": "新加坡、韩国、中国国际航空、全日空等航空公司及多国因系统问题，对旅客造成了大规模航班取消与延误。",
+    "sources": [
+      {
+        "id": "1cbffab9ade94d830ac7fbb7c9713f30",
+        "name": "Travel And Tour World",
+        "url": "https://www.travelandtourworld.com"
+      }
+    ],
+    "first_seen": "2025-12-13T22:02:59+00:00"
+  },
+  "新加坡副总理黄循财与中国国务院副总理丁薛祥在重庆共同主持第21届新中双边合作联合委员会会议": {
+    "entities": [
+      "新加坡",
+      "中国",
+      "黄循财",
+      "丁薛祥",
+      "重庆",
+      "新中双边合作联合委员会"
+    ],
+    "event_summary": "新加坡副总理与中国国务院副总理共同主持两国间最高层级的双边合作机制会议。",
+    "sources": [
+      {
+        "id": "fc22c9ffdaef43b7870c03b37c3a22ee",
+        "name": "AsiaOne",
+        "url": "https://www.asiaone.com"
+      }
+    ],
+    "first_seen": "2025-12-13T21:01:00+00:00"
+  },
+  "阿森纳足球俱乐部在英超联赛中凭借对手的乌龙球于补时阶段战胜狼队足球俱乐部，保持联赛榜首位置。": {
+    "entities": [
+      "狼队",
+      "英格兰足球超级联赛",
+      "阿森纳足球俱乐部",
+      "酋长球场"
+    ],
+    "event_summary": "阿森纳足球俱乐部在英超联赛中，于酋长球场主场对阵狼队足球俱乐部，并凭借后者在补时阶段的乌龙球获胜。",
+    "sources": [],
+    "first_seen": "2025-12-13T22:00:09+00:00"
+  },
+  "2025年中央经济工作会议在北京闭幕，确定延续积极财政政策等经济基调。": {
+    "entities": [
+      "中国",
+      "中央经济工作会议",
+      "中央政治局",
+      "新疆维吾尔自治区"
+    ],
+    "event_summary": "中华人民共和国通过中央经济工作会议确定了来年的经济政策基调。",
+    "sources": [
+      {
+        "id": "f331a5ed3965fb59761dfcecfc7e7a34",
+        "name": "BBC",
+        "url": "https://www.bbc.com"
+      }
+    ],
+    "first_seen": "2025-12-12T13:42:31+00:00"
+  },
+  "賴清德訪問台北麵店並讚揚店主，謝寒冰發表諷刺評論": {
+    "entities": [
+      "賴清德",
+      "謝寒冰",
+      "開封包公府私房麵",
+      "郭明華",
+      "台北市",
+      "中山區"
+    ],
+    "event_summary": "賴清德造訪台北市中山區的「開封包公府私房麵」並公開讚揚店主郭明華，媒體人謝寒冰對此發表諷刺性評論。",
+    "sources": [
+      {
+        "id": "d9590760adbbd51e78bd1e2e7a728081",
+        "name": "風傳媒",
+        "url": "https://www.storm.mg"
+      }
+    ],
+    "first_seen": "2025-12-13T07:47:06+00:00"
+  },
+  "美国前总统特朗普宣布允许英伟达向中国特定客户出口H200人工智能芯片，并计划从销售额中抽取技术使用费。": {
+    "entities": [
+      "英伟达",
+      "唐纳德·特朗普",
+      "美国",
+      "中国",
+      "华为"
+    ],
+    "event_summary": "美国前总统特朗普宣布了一项政策，允许英伟达公司向中国获得批准的客户出口其H200人工智能芯片。",
+    "sources": [],
+    "first_seen": "2025-12-11T23:33:56+00:00"
+  },
+  "滨崎步主题咖啡厅在上海的照片被清空。": {
+    "entities": [
+      "滨崎步",
+      "上海"
+    ],
+    "event_summary": "位于上海的滨崎步主题咖啡厅内相关照片被移除。",
+    "sources": [
+      {
+        "id": "48111276806f667e38d6ad6673eaf3e8",
+        "name": "奇摩新聞",
+        "url": "https://tw.news.yahoo.com"
+      }
+    ],
+    "first_seen": "2025-12-04T00:27:42+00:00"
+  },
+  "日本产经新闻报道称，中共的旅游限制令对关西等中国团客较多地区产生影响。": {
+    "entities": [
+      "日本",
+      "关西地区",
+      "大阪观光局",
+      "日本产经新闻",
+      "中国",
+      "中共"
+    ],
+    "event_summary": "日本产经新闻引用大阪观光局资料，报道了中共旅游限制令对日本关西地区旅游业的具体影响。",
+    "sources": [],
+    "first_seen": "2025-12-01T01:07:00+00:00"
+  },
+  "第62届台湾电影金马奖举行，范冰冰凭借影片《地母》角逐最佳女主角": {
+    "entities": [
+      "马来西亚",
+      "范瑋琪",
+      "台湾电影金马奖",
+      "《地母》",
+      "中国",
+      "第62届金马奖颁奖典礼"
+    ],
+    "event_summary": "范冰冰以演员身份参与由台湾电影金马奖主办的第62届颁奖活动，凭借在马来西亚背景影片《地母》中的表演角逐最佳女主角奖项",
+    "sources": [],
+    "first_seen": "2025-11-21T06:23:51+00:00"
   }
 }

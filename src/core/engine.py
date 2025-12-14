@@ -39,7 +39,8 @@ class PipelineEngine:
 
         try:
             # 将任务配置传递给TaskExecutor处理
-            result = await asyncio.get_event_loop().run_in_executor(
+            loop = asyncio.get_running_loop()
+            result = await loop.run_in_executor(
                 None, self.task_executor.execute_task, task_config
             )
 

@@ -18,7 +18,10 @@ from .news_processing import process_news_batch_async, build_published_at, load_
 from .agent_config import AgentConfigLoader, get_agent_config
 from .news_api_manager import NewsAPIManager, GNewsCollector
 from ..agents.api_client import LLMAPIPool
-from ..utils.tool_function import tools
+# NOTE: `tools` is a singleton utility class; export an INSTANCE here so callers can use `tools.log(...)`
+# instead of accidentally calling unbound methods on the class (Python 3.12 makes this fail loudly).
+from ..utils.tool_function import tools as _Tools
+tools = _Tools()
 # 工具模块
 from ..utils import json_utils, llm_utils, file_utils, data_utils, data_ops
 from . import async_file_utils

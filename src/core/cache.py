@@ -145,7 +145,7 @@ class FileCache:
             return None
 
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             data = await loop.run_in_executor(self._executor, self._load_cache_file, cache_file)
             return data
         except Exception:
@@ -165,7 +165,7 @@ class FileCache:
         await self._ensure_cache_size()
 
         try:
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             await loop.run_in_executor(self._executor, self._save_cache_file, cache_file, value)
         except Exception:
             pass  # 忽略缓存写入失败
@@ -183,7 +183,7 @@ class FileCache:
         cache_file = self._get_cache_file(key)
 
         if cache_file.exists():
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             await loop.run_in_executor(self._executor, cache_file.unlink)
             return True
         return False
@@ -192,7 +192,7 @@ class FileCache:
         """清空所有缓存"""
         import shutil
         if self.cache_dir.exists():
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             await loop.run_in_executor(self._executor, shutil.rmtree, self.cache_dir)
             self.cache_dir.mkdir(parents=True, exist_ok=True)
 
@@ -214,7 +214,7 @@ class FileCache:
 
     async def _ensure_cache_size(self) -> None:
         """确保缓存大小不超过限制"""
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         total_size = await loop.run_in_executor(self._executor, self._calculate_cache_size)
 
         if total_size > self.max_size_bytes:

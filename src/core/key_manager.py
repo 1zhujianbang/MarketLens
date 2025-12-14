@@ -8,12 +8,14 @@ import json
 import base64
 import hashlib
 import secrets
+import threading
 from pathlib import Path
 from typing import Dict, Optional, Any, List
 from cryptography.fernet import Fernet, InvalidToken
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import logging
+from datetime import datetime
 from .logging import LoggerManager
 from .singleton import singleton
 
@@ -44,6 +46,8 @@ class KeyManager:
         # 密钥缓存
         self._key_cache: Dict[str, Dict[str, Any]] = {}
         self._cache_loaded = False
+        # 文件读写锁：避免并发读写导致文件损坏/解密失败（尤其在多线程抽取+频繁store_api_key时）
+        self._file_lock = threading.RLock()
 
         # 初始化存储文件（必须在fernet之后）
         self._ensure_key_store()
@@ -97,40 +101,68 @@ class KeyManager:
 
     def _ensure_key_store(self):
         """确保密钥存储文件存在"""
-        try:
-            if not self.key_store_path.exists():
-                self.key_store_path.parent.mkdir(parents=True, exist_ok=True)
-                # 创建空的加密存储
-                empty_data = {"keys": {}, "metadata": {}}
-                encrypted_data = self.fernet.encrypt(json.dumps(empty_data).encode())
-                self.key_store_path.write_bytes(encrypted_data)
-                # 在Windows上设置文件权限（如果可能）
-                try:
-                    self.key_store_path.chmod(0o600)
-                except OSError:
-                    # Windows可能不支持chmod，忽略这个错误
-                    pass
-        except Exception as e:
-            self.logger.warning(f"Failed to ensure key store: {e}")
+        with self._file_lock:
+            try:
+                if not self.key_store_path.exists():
+                    self.key_store_path.parent.mkdir(parents=True, exist_ok=True)
+                    empty_data = {"keys": {}, "metadata": {}}
+                    encrypted_data = self.fernet.encrypt(json.dumps(empty_data).encode())
+                    self._atomic_write_bytes(self.key_store_path, encrypted_data)
+                    # 在Windows上设置文件权限（如果可能）
+                    try:
+                        self.key_store_path.chmod(0o600)
+                    except OSError:
+                        pass
+            except Exception as e:
+                self.logger.warning(f"Failed to ensure key store: {e!r}")
+
+    def _atomic_write_bytes(self, path: Path, data: bytes) -> None:
+        """Atomic write to avoid partial files (best-effort on Windows)."""
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_bytes(data)
+        # replace is atomic-ish on modern OS; on Windows it replaces if exists
+        tmp.replace(path)
 
     def _load_key_store(self) -> Dict[str, Any]:
         """加载密钥存储"""
-        try:
-            encrypted_data = self.key_store_path.read_bytes()
-            decrypted_data = self.fernet.decrypt(encrypted_data)
-            return json.loads(decrypted_data.decode())
-        except (InvalidToken, json.JSONDecodeError) as e:
-            self.logger.error(f"Failed to load key store: {e}")
-            # 返回空的存储结构
-            return {"keys": {}, "metadata": {}}
+        with self._file_lock:
+            try:
+                self._ensure_key_store()
+                encrypted_data = self.key_store_path.read_bytes()
+                decrypted_data = self.fernet.decrypt(encrypted_data)
+                return json.loads(decrypted_data.decode())
+            except (InvalidToken, json.JSONDecodeError) as e:
+                # 常见原因：
+                # 1) 多线程并发写导致文件被截断/损坏
+                # 2) master_key 发生变化，导致旧文件无法解密
+                self.logger.error(f"Failed to load key store: {e!r}")
+                # 备份坏文件并重建，避免持续刷屏 + 后续所有读取失败
+                try:
+                    if self.key_store_path.exists():
+                        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+                        backup = self.key_store_path.with_suffix(self.key_store_path.suffix + f".corrupt_{ts}")
+                        self.key_store_path.replace(backup)
+                        self.logger.warning(f"Key store seems corrupted; backed up to: {backup}")
+                except Exception as be:
+                    self.logger.warning(f"Failed to backup corrupted key store: {be!r}")
+
+                try:
+                    empty_data = {"keys": {}, "metadata": {}}
+                    encrypted_data = self.fernet.encrypt(json.dumps(empty_data).encode())
+                    self._atomic_write_bytes(self.key_store_path, encrypted_data)
+                except Exception as re:
+                    self.logger.warning(f"Failed to reinitialize key store: {re!r}")
+                return {"keys": {}, "metadata": {}}
 
     def _save_key_store(self, data: Dict[str, Any]):
         """保存密钥存储"""
-        try:
-            encrypted_data = self.fernet.encrypt(json.dumps(data).encode())
-            self.key_store_path.write_bytes(encrypted_data)
-        except Exception as e:
-            self.logger.error(f"Failed to save key store: {e}")
+        with self._file_lock:
+            try:
+                encrypted_data = self.fernet.encrypt(json.dumps(data).encode())
+                self._atomic_write_bytes(self.key_store_path, encrypted_data)
+            except Exception as e:
+                self.logger.error(f"Failed to save key store: {e!r}")
 
     def store_api_key(self, service_name: str, api_key: str, metadata: Optional[Dict[str, Any]] = None):
         """

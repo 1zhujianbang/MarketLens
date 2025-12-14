@@ -120,7 +120,7 @@ class AsyncFileHandler:
             文件是否存在
         """
         import asyncio
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         return await loop.run_in_executor(None, lambda: Path(file_path).exists())
 
     @staticmethod
@@ -135,7 +135,7 @@ class AsyncFileHandler:
             文件大小（字节）
         """
         import asyncio
-        loop = asyncio.get_event_loop()
+        loop = asyncio.get_running_loop()
         return await loop.run_in_executor(None, lambda: Path(file_path).stat().st_size)
 
     @staticmethod

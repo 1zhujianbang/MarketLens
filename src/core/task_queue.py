@@ -258,7 +258,7 @@ class AsyncTaskQueue:
             return await task.func(*task.args, **task.kwargs)
         else:
             # 在线程池中运行同步函数
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             return await loop.run_in_executor(
                 None, task.func, *task.args, **task.kwargs
             )

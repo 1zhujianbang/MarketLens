@@ -105,15 +105,18 @@ class TaskExecutor:
             try:
                 # 根据函数类型选择执行方式
                 if asyncio.iscoroutinefunction(func):
-                    # 异步函数 - 需要在事件循环中运行
-                    if asyncio.get_event_loop().is_running():
-                        # 如果已经在事件循环中，使用asyncio.create_task
-                        import nest_asyncio
-                        nest_asyncio.apply()
-                        result = asyncio.get_event_loop().run_until_complete(func(**inputs))
-                    else:
-                        # 正常异步执行
+                    # 异步函数：在不同运行环境下安全执行
+                    # - Python 3.11+/3.12: 普通线程默认没有 event loop，get_event_loop() 会抛错
+                    # - 若当前线程已有运行中的 loop（少见场景），才使用 run_until_complete
+                    try:
+                        loop = asyncio.get_running_loop()
+                    except RuntimeError:
                         result = asyncio.run(func(**inputs))
+                    else:
+                        import nest_asyncio
+
+                        nest_asyncio.apply()
+                        result = loop.run_until_complete(func(**inputs))
                 else:
                     # 同步函数
                     result = func(**inputs)
