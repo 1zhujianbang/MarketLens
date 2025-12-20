@@ -111,8 +111,8 @@ def show_manual_download_guide():
     print("2. 点击 'Files and versions' 标签")
     print("3. 下载所有文件到本地目录")
     print("4. 放置到缓存目录:")
-    print("   Windows: %USERPROFILE%\\.cache\\torch\\sentence_transformers\\")
-    print("            sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2\\")
+    print("   Windows: %USERPROFILE%\\.cache\\huggingface\\hub\\")
+    print("            models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2\\")
     print()
     
     print("方法2：使用 Git LFS")
@@ -138,8 +138,8 @@ def check_model_exists():
         from pathlib import Path
         
         # 检查缓存目录
-        cache_home = Path.home() / '.cache' / 'torch' / 'sentence_transformers'
-        model_dir = cache_home / 'sentence-transformers_paraphrase-multilingual-MiniLM-L12-v2'
+        cache_home = Path.home() / '.cache' / 'huggingface' / 'hub'
+        model_dir = cache_home / 'models--sentence-transformers--paraphrase-multilingual-MiniLM-L12-v2'
         
         if model_dir.exists():
             print(f"✅ 发现已缓存的模型: {model_dir}")

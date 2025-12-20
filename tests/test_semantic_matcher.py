@@ -50,7 +50,8 @@ def test_semantic_matcher_basic():
         for cn, en in test_pairs:
             score = matcher.similarity(cn, en)
             status = "✅" if score and score > 0.6 else "❌"
-            print(f"  {status} {cn:<15} vs {en:<20} → {score:.3f if score else 'N/A'}")
+            score_str = f"{score:.3f}" if score is not None else "N/A"
+            print(f"  {status} {cn:<15} vs {en:<20} → {score_str}")
         
         return True
         

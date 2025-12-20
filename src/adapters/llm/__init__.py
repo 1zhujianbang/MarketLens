@@ -11,7 +11,7 @@ from .providers import (
     DefaultLLMClientPool,
     create_llm_client,
 )
-from .pool import DefaultLLMPool
+from .pool import DefaultLLMPool, get_llm_pool
 
 # 兼容别名：LLMAPIPool 指向新的 DefaultLLMPool 实现
 LLMAPIPool = DefaultLLMPool
@@ -24,4 +24,5 @@ __all__ = [
     "DefaultLLMPool",
     "LLMAPIPool",
     "create_llm_client",
+    "get_llm_pool",
 ]
