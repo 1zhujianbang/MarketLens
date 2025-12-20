@@ -7,7 +7,5 @@ __pycache__/
 *.pyc
 .env.local
 *.log
-*.jsonl
-*.json
 *.txt
 !requirements.txt

@@ -35,5 +35,13 @@ psutil
 # 可视化
 altair
 
+# 文本相似度算法（可选，提升实体合并准确度）
+# 如果不安装，会降级到标准库的 difflib.SequenceMatcher
+jellyfish  # Jaro-Winkler、Levenshtein 等高级字符串相似度算法
+
+# 语义相似度（可选，支持跨语言实体匹配）
+# 注意：sentence-transformers 模型较大（~500MB），首次加载需下载
+# sentence-transformers  # 取消注释以启用语义匹配
+
 pytest
 

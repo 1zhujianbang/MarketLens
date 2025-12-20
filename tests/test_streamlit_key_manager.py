@@ -28,16 +28,16 @@ class TestStreamlitKeyManager:
 
     def test_generate_unique_key_basic(self):
         """测试基本key生成"""
-        key1 = self.manager.generate_key('gnews', 'category', context='config_tab')
+        key1 = self.manager.generate_key('gnews', 'category', custom_context='config_tab')
         assert key1 == 'gnews_category_config_tab'
 
         # 再次生成应该不同
-        key2 = self.manager.generate_key('gnews', 'category', context='config_tab')
+        key2 = self.manager.generate_key('gnews', 'category', custom_context='config_tab')
         assert key2 == 'gnews_category_config_tab_1'
 
     def test_generate_key_with_index(self):
         """测试带索引的key生成"""
-        key = self.manager.generate_key('data', 'row', index=5, context='table')
+        key = self.manager.generate_key('data', 'row', index=5, custom_context='table')
         assert key == 'data_row_table_5'
 
     def test_context_management(self):
@@ -75,16 +75,23 @@ class TestStreamlitKeyManager:
 
     def test_context_manager(self):
         """测试上下文管理器"""
-        assert self.manager.get_current_context() == 'global'
+        # 使用全局 key_manager（因为 KeyContext 使用全局实例）
+        from src.web.streamlit_key_manager import key_manager
+        
+        # 重置全局管理器状态
+        key_manager.context_stack.clear()
+        key_manager.used_keys.clear()
+        
+        assert key_manager.get_current_context() == 'global'
 
         with KeyContext('test_context'):
-            assert self.manager.get_current_context() == 'test_context'
+            assert key_manager.get_current_context() == 'test_context'
 
-            key = self.manager.generate_key('test', 'element')
+            key = key_manager.generate_key('test', 'element')
             assert 'test_context' in key
 
         # 退出后恢复
-        assert self.manager.get_current_context() == 'global'
+        assert key_manager.get_current_context() == 'global'
 
     def test_stats(self):
         """测试统计功能"""

@@ -1,36 +1,64 @@
-from .registry import FunctionRegistry, register_tool
-from .context import PipelineContext
-from .engine import PipelineEngine
-from .task_executor import TaskExecutor
+"""
+src.core 包（轻量入口 + 懒加载）
 
-# 新增的共享基础设施组件
-from .config import ConfigManager
-from .key_manager import KeyManager, get_key_manager, store_api_key, get_api_key
-from .di_container import DependencyContainer, GlobalContainer, get_container, get_service, register_service, register_service_factory, ServiceLifetime
-from ..utils.llm_utils import AsyncExecutor, RateLimiter
-from .data_utils import DataNormalizer, DataPipeline, StandardEventPipeline, BatchDataProcessor
-from .agent_base import BaseAgent, PipelineAgent, TaskAgent, AgentRegistry, register_agent, AgentStatus
-from .agent_manager import AgentManager, AgentWorkflow, get_agent_manager
-from .logging import LoggerManager
-from .serialization import Serializer
-from .imports import ImportManager
-from .news_processing import process_news_batch_async, build_published_at, load_processed_ids, save_processed_id
-from .agent_config import AgentConfigLoader, get_agent_config
-from .news_api_manager import NewsAPIManager, GNewsCollector
-from ..agents.api_client import LLMAPIPool
-# NOTE: `tools` is a singleton utility class; export an INSTANCE here so callers can use `tools.log(...)`
-# instead of accidentally calling unbound methods on the class (Python 3.12 makes this fail loudly).
-from ..utils.tool_function import tools as _Tools
-tools = _Tools()
-# 工具模块
-from ..utils import json_utils, llm_utils, file_utils, data_utils, data_ops
-from . import async_file_utils
-from .exceptions import (
-    NewsAgentException, ConfigError, ValidationError, NetworkError,
-    APIError, ProcessingError, FileOperationError, ConcurrencyError,
-    handle_errors, handle_async_errors, ErrorHandler
-)
-from .singleton import SingletonBase, SingletonMeta, ThreadLocalSingleton, singleton, get_singleton_instance
+目标：
+- 避免 import-time 拉起 LLM/agents/utils 等重型依赖，消灭循环导入
+- 仍保持对旧代码 `from src.core import X` 的兼容（通过 __getattr__ 懒加载）
+"""
+
+from __future__ import annotations
+
+from typing import Any
+
+# 轻量且不产生循环导入的基础导出
+from ..infra.registry import FunctionRegistry, register_tool
+from ..infra.config import ConfigManager
+from ..infra.key_manager import KeyManager, get_key_manager, store_api_key, get_api_key
+from ..infra.logging import LoggerManager
+
+# ============================================================================
+# 新架构兼容层：从 infra 层重导出
+# ============================================================================
+# 这些导入提供向后兼容性，新代码应直接从 src.infra 导入
+try:
+    from ..infra import (
+        # Exceptions
+        NewsAgentException,
+        ConfigError,
+        ValidationError,
+        NetworkError,
+        APIError,
+        ProcessingError,
+        FileOperationError,
+        ConcurrencyError,
+        handle_errors,
+        handle_async_errors,
+        ErrorHandler,
+        # Clock & IdFactory
+        Clock,
+        SystemClock,
+        get_clock,
+        utc_now,
+        utc_now_iso,
+        IdFactory,
+        # Cache
+        MemoryCache,
+        SmartCache,
+        get_global_cache,
+        # Serialization
+        Serializer,
+        extract_json_from_llm_response,
+        safe_json_loads,
+        # Retry
+        RetryConfig,
+        retry_with_backoff,
+    )
+except ImportError:
+    # infra 层可能尚未完全初始化
+    pass
+
+# 注意：不要在 import-time 引入 src.utils.tool_function（它会 import src.core.singleton，而导入子模块前会先执行本 __init__，容易形成循环）。
+# tools 将通过 __getattr__ 懒加载提供。
 
 # 全局实例工厂函数 (避免循环导入)
 def get_config_manager() -> ConfigManager:
@@ -41,38 +69,61 @@ def get_logger_manager() -> LoggerManager:
     """获取日志管理器实例"""
     return LoggerManager()
 
+_LAZY_EXPORTS = {
+    # Pipeline 执行 - 新架构路径 (app/pipeline)
+    "PipelineContext": ("src.app.pipeline.context", "PipelineContext"),
+    "PipelineEngine": ("src.app.pipeline.engine", "PipelineEngine"),
+    "TaskExecutor": ("src.app.pipeline.engine", "PipelineEngine"),  # 别名
+    # 并发/限速（依赖 llm_utils，可能进一步引入 api_client，因此懒加载）
+    "AsyncExecutor": ("src.infra.async_utils", "AsyncExecutor"),
+    "RateLimiter": ("src.infra.async_utils", "RateLimiter"),
+    # LLM Pool - 新架构路径 (adapters/llm)
+    "LLMAPIPool": ("src.adapters.llm.pool", "DefaultLLMPool"),
+    "DefaultLLMPool": ("src.adapters.llm.pool", "DefaultLLMPool"),
+    "get_llm_pool": ("src.adapters.llm.pool", "get_llm_pool"),
+    # Data pipeline - 新架构路径 (domain)
+    "DataNormalizer": ("src.domain.data_pipeline", "DataNormalizer"),
+    "DataPipeline": ("src.domain.data_pipeline", "DataPipeline"),
+    "StandardEventPipeline": ("src.domain.data_pipeline", "StandardEventPipeline"),
+    "BatchDataProcessor": ("src.domain.data_pipeline", "BatchDataProcessor"),
+    # News APIs - 新架构路径 (adapters/news)
+    "NewsAPIManager": ("src.adapters.news.api_manager", "NewsAPIManager"),
+    "GNewsAdapter": ("src.adapters.news.api_manager", "GNewsAdapter"),
+    # 向后兼容旧名称
+    "GNewsCollector": ("src.adapters.news.api_manager", "GNewsAdapter"),
+}
+
+
+def __getattr__(name: str) -> Any:  # PEP 562
+    if name == "tools":
+        from ..infra.paths import tools as ToolsClass
+
+        v = ToolsClass()
+        globals()["tools"] = v
+        return v
+    if name in _LAZY_EXPORTS:
+        mod_name, attr = _LAZY_EXPORTS[name]
+        import importlib
+
+        m = importlib.import_module(mod_name)
+        v = getattr(m, attr)
+        globals()[name] = v  # cache
+        return v
+    raise AttributeError(name)
+
+
 __all__ = [
-    # 原有组件
-    'FunctionRegistry', 'register_tool', 'PipelineContext', 'PipelineEngine', 'TaskExecutor',
-    # 新增组件
-    'ConfigManager', 'KeyManager', 'get_key_manager', 'store_api_key', 'get_api_key',
-    'DependencyContainer', 'GlobalContainer', 'get_container', 'get_service', 'register_service', 'register_service_factory', 'ServiceLifetime',
-    'AsyncExecutor', 'RateLimiter', 'DataNormalizer',
-    'DataPipeline', 'StandardEventPipeline', 'BatchDataProcessor',
-    'BaseAgent', 'PipelineAgent', 'TaskAgent', 'AgentRegistry', 'register_agent', 'AgentStatus',
-    'AgentManager', 'AgentWorkflow', 'get_agent_manager',
-    'LoggerManager', 'Serializer', 'ImportManager',
-    # 异常处理
-    'NewsAgentException', 'ConfigError', 'ValidationError', 'NetworkError',
-    'APIError', 'ProcessingError', 'FileOperationError', 'ConcurrencyError',
-    'handle_errors', 'handle_async_errors', 'ErrorHandler',
-    # 单例模式
-    'SingletonBase', 'SingletonMeta', 'ThreadLocalSingleton', 'singleton', 'get_singleton_instance',
-    # 全局实例工厂
-    'get_config_manager', 'get_logger_manager',
-    # 新闻处理工具
-    'process_news_batch_async', 'build_published_at', 'load_processed_ids', 'save_processed_id',
-    # Agent配置
-    'AgentConfigLoader', 'get_agent_config',
-    # 新闻API管理器
-    'NewsAPIManager', 'GNewsCollector',
-    # API客户端
-    'LLMAPIPool',
-    # 工具函数
-    'tools',
-    # 工具模块
-    'json_utils', 'llm_utils', 'file_utils', 'data_utils', 'data_ops',
-    # 异步文件工具
-    'async_file_utils'
+    "FunctionRegistry",
+    "register_tool",
+    "ConfigManager",
+    "KeyManager",
+    "get_key_manager",
+    "store_api_key",
+    "get_api_key",
+    "LoggerManager",
+    "tools",
+    "get_config_manager",
+    "get_logger_manager",
+    *_LAZY_EXPORTS.keys(),
 ]
 

@@ -1,0 +1,82 @@
+{
+  "run_id": "20251220_123046_57fa46ed",
+  "created_at": "2025-12-20T12:31:00",
+  "pipeline_name": "Incremental Update",
+  "status": "failed",
+  "error": "找不到工具: fetch_news_stream",
+  "new_entities": [],
+  "new_events": [],
+  "duplicate_events": [],
+  "evidence_events": [],
+  "pipeline_def": {
+    "name": "Incremental Update",
+    "steps": [
+      {
+        "id": "fetch_news",
+        "tool": "fetch_news_stream",
+        "inputs": {
+          "limit": 10,
+          "sources": [
+            "GNews-cn",
+            "GNews-us",
+            "GNews-hk",
+            "GNews-tw",
+            "GNews-sg",
+            "GNews-gb",
+            "GNews-au",
+            "GNews-ca",
+            "GNews-fr",
+            "GNews-de",
+            "GNews-jp",
+            "GNews-kr",
+            "GNews-ru",
+            "GNews-ua",
+            "GNews-br",
+            "GNews-ar",
+            "GNews-mx",
+            "GNews-es",
+            "GNews-it",
+            "GNews-in"
+          ],
+          "from_": "2025-12-19T00:00:00.000Z",
+          "to": "2025-12-20T23:59:59.999Z"
+        },
+        "output": "raw_news_data"
+      },
+      {
+        "id": "process_news",
+        "tool": "batch_process_news",
+        "inputs": {
+          "news_list": "$raw_news_data"
+        },
+        "output": "extracted_events"
+      },
+      {
+        "id": "update_graph",
+        "tool": "append_only_update_graph",
+        "inputs": {
+          "events_list": "$extracted_events",
+          "allow_append_original_forms": true
+        },
+        "output": "kg_update_result"
+      },
+      {
+        "id": "refresh_kg",
+        "tool": "refresh_knowledge_graph",
+        "inputs": {},
+        "output": "kg_refresh"
+      },
+      {
+        "id": "report",
+        "tool": "generate_markdown_report",
+        "inputs": {
+          "events_list": "$extracted_events",
+          "title": "Incremental Update Report"
+        },
+        "output": "final_report_md"
+      }
+    ]
+  },
+  "completed_steps": 1,
+  "total_steps": 5
+}

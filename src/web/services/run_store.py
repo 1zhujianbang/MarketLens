@@ -100,6 +100,57 @@ def load_run_context_snapshot(path: Path) -> Dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def run_steps_path(project_id: str, run_id: str) -> Path:
+    ensure_dirs(project_id)
+    return runs_dir(project_id) / f"run_{run_id}_steps.jsonl"
+
+
+def append_run_step_record(project_id: str, run_id: str, record: Dict[str, Any]) -> Path:
+    """
+    追加 step 级别记录（JSONL），用于 UI 跳转/回放/验收。
+    record 建议包含：
+    - step_idx, step_id, tool, status, started_at, ended_at, duration_ms
+    - inputs_resolved, output_key, error
+    """
+    ensure_dirs(project_id)
+    p = run_steps_path(project_id, run_id)
+    line = json.dumps(record, ensure_ascii=False)
+    with p.open("a", encoding="utf-8") as f:
+        f.write(line + "\n")
+    return p
+
+
+def load_run_step_records(project_id: str, run_id: str, limit: int = 2000) -> List[Dict[str, Any]]:
+    p = run_steps_path(project_id, run_id)
+    if not p.exists():
+        return []
+    out: List[Dict[str, Any]] = []
+    try:
+        for line in p.read_text(encoding="utf-8", errors="ignore").splitlines():
+            if not line.strip():
+                continue
+            try:
+                out.append(json.loads(line))
+            except Exception:
+                continue
+    except Exception:
+        return []
+    if limit > 0:
+        out = out[-int(limit) :]
+    return out
+
+
+def save_run_step_context_snapshot(project_id: str, run_id: str, step_idx: int, snapshot: Dict[str, Any]) -> Path:
+    """保存每步的 context 快照（可用于 resume / debug）。"""
+    ensure_dirs(project_id)
+    p = runs_dir(project_id) / f"run_{run_id}_context_step_{int(step_idx):03d}.json"
+    try:
+        p.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:
+        p.write_text(json.dumps({"_non_serializable": str(snapshot)}, ensure_ascii=False, indent=2), encoding="utf-8")
+    return p
+
+
 def save_evidence_note(
     project_id: str, run_id: str, kind: str, key: str, note: str, meta: Optional[Dict[str, Any]] = None
 ) -> Path:

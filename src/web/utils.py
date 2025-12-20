@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import pandas as pd
 from pathlib import Path
-from src.web.config import ENTITIES_FILE, EVENTS_FILE, DATA_DIR
+from src.web.config import DATA_DIR
 # API配置现在通过ConfigManager获取
 
 # 模板存储目录
@@ -12,38 +12,39 @@ TEMPLATES_DIR.mkdir(parents=True, exist_ok=True)
 # 临时原始新闻目录（Agent1 处理入口）
 RAW_NEWS_TMP_DIR = DATA_DIR / "tmp" / "raw_news"
 
-@st.cache_data(ttl=60)
 def load_entities():
     """
-    加载实体数据，缓存 60 秒
+    直接从 SQLite 主存储读取实体数据（无缓存）
     """
-    if ENTITIES_FILE.exists():
-        try:
-            with open(ENTITIES_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
-            st.error(f"Error loading entities: {e}")
-            return {}
+    try:
+        from src.adapters.sqlite.store import get_store
+        store = get_store()
+        data = store.export_entities_json()
+        if isinstance(data, dict):
+            return data
+    except Exception as e:
+        st.error(f"Error loading entities from SQLite: {e}")
+        return {}
     return {}
 
-@st.cache_data(ttl=60)
 def load_events():
     """
-    加载事件数据，缓存 60 秒
+    直接从 SQLite 主存储读取事件数据（无缓存）
     """
-    if EVENTS_FILE.exists():
-        try:
-            with open(EVENTS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except Exception as e:
-            st.error(f"Error loading events: {e}")
-            return {}
+    try:
+        from src.adapters.sqlite.store import get_store
+        store = get_store()
+        data = store.export_abstract_map_json()
+        if isinstance(data, dict):
+            return data
+    except Exception as e:
+        st.error(f"Error loading events from SQLite: {e}")
+        return {}
     return {}
 
-@st.cache_data(ttl=300)
 def get_raw_news_files():
     """
-    获取原始新闻文件列表，缓存 300 秒 (5分钟)
+    直接获取原始新闻文件列表（无缓存）
     仅使用 tmp/raw_news，并按修改时间倒序。
     """
     files = []
@@ -51,10 +52,9 @@ def get_raw_news_files():
         files.extend(RAW_NEWS_TMP_DIR.glob("*.jsonl"))
     return sorted(files, key=lambda x: x.stat().st_mtime, reverse=True)
 
-@st.cache_data(ttl=60)
 def load_raw_news_file(file_path: Path):
     """
-    加载单个新闻文件内容，缓存 60 秒
+    直接加载单个新闻文件内容（无缓存）
     """
     news_items = []
     if file_path.exists():
@@ -99,19 +99,28 @@ def get_default_api_sources_df():
         data = []
 
     if not data:
-         data = [
+        # 扩展到20个以上的新闻源
+        data = [
             {"name": "GNews-cn", "language": "zh", "country": "cn", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-us", "language": "en", "country": "us", "timeout": 30, "enabled": True, "type": "gnews"},
-            {"name": "GNews-fr", "language": "fr", "country": "fr", "timeout": 30, "enabled": True, "type": "gnews"},
-            {"name": "GNews-gb", "language": "en", "country": "gb", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-hk", "language": "zh", "country": "hk", "timeout": 30, "enabled": True, "type": "gnews"},
-            {"name": "GNews-ru", "language": "ru", "country": "ru", "timeout": 30, "enabled": True, "type": "gnews"},
-            {"name": "GNews-ua", "language": "uk", "country": "ua", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-tw", "language": "zh", "country": "tw", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-sg", "language": "en", "country": "sg", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-gb", "language": "en", "country": "gb", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-au", "language": "en", "country": "au", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-ca", "language": "en", "country": "ca", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-fr", "language": "fr", "country": "fr", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-de", "language": "de", "country": "de", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-jp", "language": "ja", "country": "jp", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-kr", "language": "ko", "country": "kr", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-ru", "language": "ru", "country": "ru", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-ua", "language": "uk", "country": "ua", "timeout": 30, "enabled": True, "type": "gnews"},
             {"name": "GNews-br", "language": "pt", "country": "br", "timeout": 30, "enabled": True, "type": "gnews"},
-            {"name": "GNews-ar", "language": "es", "country": "ar", "timeout": 30, "enabled": True, "type": "gnews"}
+            {"name": "GNews-ar", "language": "es", "country": "ar", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-mx", "language": "es", "country": "mx", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-es", "language": "es", "country": "es", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-it", "language": "it", "country": "it", "timeout": 30, "enabled": True, "type": "gnews"},
+            {"name": "GNews-in", "language": "en", "country": "in", "timeout": 30, "enabled": True, "type": "gnews"}
         ]
         
     return pd.DataFrame(data)

@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 from unittest.mock import patch, MagicMock
 
-from src.core.config import ConfigManager
+from src.infra.config import ConfigManager
 
 
 class TestConfigManager:
@@ -140,7 +140,7 @@ class TestConfigManager:
         hash2 = cm.get_config_hash()
         assert hash1 != hash2
 
-    @patch('src.core.config.Observer')
+    @patch('src.infra.config.Observer')
     def test_hot_reload(self, mock_observer_class):
         """测试热重载功能"""
         mock_observer = MagicMock()

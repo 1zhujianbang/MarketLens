@@ -9,8 +9,10 @@ from typing import Any, Dict, Optional
 
 import streamlit as st
 
-from src.core.context import PipelineContext
-from src.core.engine import PipelineEngine
+from src.app.pipeline.context import PipelineContext
+from src.app.pipeline.engine import PipelineEngine
+from src.web.services.run_store import append_run_step_record, save_run_step_context_snapshot
+from src.app.pipeline.models import PipelineRunState
 
 
 @dataclass
@@ -51,6 +53,8 @@ class GlobalPipelineRunner:
         history_idx: Optional[int],
         start_at: int = 0,
         initial_data: Optional[Dict[str, Any]] = None,
+        run_id: Optional[str] = None,
+        project_id: Optional[str] = None,
     ) -> bool:
         if self.is_running:
             return False
@@ -71,6 +75,8 @@ class GlobalPipelineRunner:
             self.last_context_snapshot = initial_data.copy() if isinstance(initial_data, dict) else {}
             self._start_at = max(0, int(start_at))
             self._initial_data = initial_data.copy() if isinstance(initial_data, dict) else None
+            self._run_id = str(run_id or "")
+            self._project_id = str(project_id or "")
 
         def _worker():
             asyncio.run(self._run_async(pipeline_def))
@@ -91,7 +97,65 @@ class GlobalPipelineRunner:
         steps = pipeline_def.get("steps", [])
         init = self._initial_data if isinstance(getattr(self, "_initial_data", None), dict) else None
         context = PipelineContext(initial_data=init, log_callback=log_callback)
-        engine = PipelineEngine(context)
+        project_id = str(getattr(self, "_project_id", "") or "")
+        if not project_id:
+            project_id = "default"
+        run_id = str(getattr(self, "_run_id", "") or "")
+        if not run_id:
+            # fallback（不应发生：run_id 通常来自 append_history）
+            run_id = uuid4().hex[:12]
+        run_state = PipelineRunState(
+            run_id=run_id,
+            project_id=project_id,
+            pipeline_name=str(pipeline_def.get("name") or "Pipeline"),
+            total_steps=len(steps or []),
+        )
+
+        def on_step_start(run_state, step_state, ctx):
+            try:
+                append_run_step_record(
+                    project_id,
+                    run_id,
+                    {
+                        "step_idx": step_state.step_idx,
+                        "step_id": step_state.step_id,
+                        "tool": step_state.tool,
+                        "output_key": step_state.output_key,
+                        "status": step_state.status,
+                        "started_at": step_state.started_at,
+                        "ended_at": step_state.ended_at,
+                        "duration_ms": step_state.duration_ms,
+                        "inputs_resolved": step_state.inputs_resolved,
+                        "error": step_state.error,
+                    },
+                )
+            except Exception:
+                pass
+
+        def on_step_end(run_state, step_state, ctx):
+            try:
+                append_run_step_record(
+                    project_id,
+                    run_id,
+                    {
+                        "step_idx": step_state.step_idx,
+                        "step_id": step_state.step_id,
+                        "tool": step_state.tool,
+                        "output_key": step_state.output_key,
+                        "status": step_state.status,
+                        "started_at": step_state.started_at,
+                        "ended_at": step_state.ended_at,
+                        "duration_ms": step_state.duration_ms,
+                        "inputs_resolved": step_state.inputs_resolved,
+                        "error": step_state.error,
+                    },
+                )
+                # per-step context snapshot（best-effort）
+                save_run_step_context_snapshot(project_id, run_id, step_state.step_idx, ctx.get_all())
+            except Exception:
+                pass
+
+        engine = PipelineEngine(context, on_step_start=on_step_start, on_step_end=on_step_end)
 
         try:
             start_at = max(0, int(getattr(self, "_start_at", 0)))
@@ -106,9 +170,15 @@ class GlobalPipelineRunner:
                         "state": "running",
                         "expanded": True,
                     }
-                await engine.run_task(step)
 
-                # capture outputs + context snapshot (truncated) for resume/debug (thread-safe)
+                # 让 engine 执行单步（可被 hooks 记录）
+                await engine.run_step(
+                    run_state=run_state,
+                    step_idx=i,
+                    step=step,
+                )
+
+                # capture outputs + context snapshot for UI
                 try:
                     out_key = step.get("output")
                     if out_key:

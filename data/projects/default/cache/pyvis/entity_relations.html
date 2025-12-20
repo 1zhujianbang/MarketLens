@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 720px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u6b27\u6d32\u56fd\u5bb6", "label": "\u6b27\u6d32\u56fd\u5bb6", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u67ec\u57d4\u5be8", "label": "\u67ec\u57d4\u5be8", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u82f1\u4f1f\u8fbe", "label": "\u82f1\u4f1f\u8fbe", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u6cf0\u56fd", "label": "\u6cf0\u56fd", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u514b\u52b3\u8fea\u5a05\u00b7\u8f9b\u9c8d\u59c6", "label": "\u514b\u52b3\u8fea\u5a05\u00b7\u8f9b\u9c8d\u59c6", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u5e03\u6717\u5927\u5b66", "label": "\u5e03\u6717\u5927\u5b66", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u83ab\u65af\u79d1", "label": "\u83ab\u65af\u79d1", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u4fc4\u7f57\u65af", "label": "\u4fc4\u7f57\u65af", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u5353\u8363\u6cf0", "label": "\u5353\u8363\u6cf0", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u6b27\u76df", "label": "\u6b27\u76df", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "Niantic", "label": "Niantic", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u65e5\u672c", "label": "\u65e5\u672c", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "Pok\u00e9mon GO", "label": "Pok\u00e9mon GO", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u7f8e\u56fd", "label": "\u7f8e\u56fd", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "label": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "Avatar: Fire and Ash", "label": "Avatar: Fire and Ash", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "James Cameron", "label": "James Cameron", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u8d56\u6e05\u5fb7", "label": "\u8d56\u6e05\u5fb7", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u81ea\u7531\u524d\u8fdb\u515a", "label": "\u81ea\u7531\u524d\u8fdb\u515a", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u6d1b\u96f7\u5a1c\u00b7\u6bd4\u5229\u4e9a\u97e6\u5fb7", "label": "\u6d1b\u96f7\u5a1c\u00b7\u6bd4\u5229\u4e9a\u97e6\u5fb7", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\uac1c\ud601\uc2e0\ub2f9", "label": "\uac1c\ud601\uc2e0\ub2f9", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u4e4c\u514b\u5170", "label": "\u4e4c\u514b\u5170", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u53f0\u6e7e", "label": "\u53f0\u6e7e", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u5218\u771f", "label": "\u5218\u771f", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u8f9b\u9f99", "label": "\u8f9b\u9f99", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u897f\u65b9", "label": "\u897f\u65b9", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u58a8\u897f\u54e5", "label": "\u58a8\u897f\u54e5", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u4e2d\u56fd", "label": "\u4e2d\u56fd", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u6469\u5c14\u591a\u74e6", "label": "\u6469\u5c14\u591a\u74e6", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\ubbfc\uc911\uae30 \ud2b9\ubcc4\uac80\uc0ac\ud300", "label": "\ubbfc\uc911\uae30 \ud2b9\ubcc4\uac80\uc0ac\ud300", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u5e15\u52b3", "label": "\u5e15\u52b3", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u6cfd\u8fde\u65af\u57fa", "label": "\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u6cfd\u8fde\u65af\u57fa", "shape": "dot", "size": 25}, {"borderWidth": 2, "color": "#1f77b4", "font": {"color": "#333333"}, "id": "\u9ebb\u7701\u7406\u5de5\u5b66\u9662", "label": "\u9ebb\u7701\u7406\u5de5\u5b66\u9662", "shape": "dot", "size": 25}]);
+                  edges = new vis.DataSet([{"color": "#e74c3c", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 6 \u6b21", "to": "\u4fc4\u7f57\u65af", "width": 5}, {"color": "#f39c12", "from": "\u4e2d\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 3 \u6b21", "to": "\u7f8e\u56fd", "width": 3}, {"color": "#f39c12", "from": "\u83ab\u65af\u79d1", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 3 \u6b21", "to": "\u4fc4\u7f57\u65af", "width": 3}, {"color": "#95a5a6", "from": "Avatar: Fire and Ash", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "James Cameron", "width": 2}, {"color": "#95a5a6", "from": "Pok\u00e9mon GO", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "Niantic", "width": 2}, {"color": "#95a5a6", "from": "\u4e2d\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u65e5\u672c", "width": 2}, {"color": "#95a5a6", "from": "\u4e2d\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u82f1\u4f1f\u8fbe", "width": 2}, {"color": "#95a5a6", "from": "\u4e2d\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u8d56\u6e05\u5fb7", "width": 2}, {"color": "#95a5a6", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "width": 2}, {"color": "#95a5a6", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u6469\u5c14\u591a\u74e6", "width": 2}, {"color": "#95a5a6", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u6b27\u6d32\u56fd\u5bb6", "width": 2}, {"color": "#95a5a6", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u83ab\u65af\u79d1", "width": 2}, {"color": "#95a5a6", "from": "\u4e4c\u514b\u5170", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u897f\u65b9", "width": 2}, {"color": "#95a5a6", "from": "\u4fc4\u7f57\u65af", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u6b27\u76df", "width": 2}, {"color": "#95a5a6", "from": "\u4fc4\u7f57\u65af", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u897f\u65b9", "width": 2}, {"color": "#95a5a6", "from": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4fc4\u7f57\u65af", "width": 2}, {"color": "#95a5a6", "from": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u897f\u65b9", "width": 2}, {"color": "#95a5a6", "from": "\u514b\u52b3\u8fea\u5a05\u00b7\u8f9b\u9c8d\u59c6", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u58a8\u897f\u54e5", "width": 2}, {"color": "#95a5a6", "from": "\u53f0\u6e7e", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u5353\u8363\u6cf0", "width": 2}, {"color": "#95a5a6", "from": "\u5e15\u52b3", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u7f8e\u56fd", "width": 2}, {"color": "#95a5a6", "from": "\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u6cfd\u8fde\u65af\u57fa", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4e4c\u514b\u5170", "width": 2}, {"color": "#95a5a6", "from": "\u6b27\u6d32\u56fd\u5bb6", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4fc4\u7f57\u65af", "width": 2}, {"color": "#95a5a6", "from": "\u6b27\u6d32\u56fd\u5bb6", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "width": 2}, {"color": "#95a5a6", "from": "\u6b27\u6d32\u56fd\u5bb6", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u897f\u65b9", "width": 2}, {"color": "#95a5a6", "from": "\u6cf0\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u67ec\u57d4\u5be8", "width": 2}, {"color": "#95a5a6", "from": "\u7f8e\u56fd", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u82f1\u4f1f\u8fbe", "width": 2}, {"color": "#95a5a6", "from": "\u81ea\u7531\u524d\u8fdb\u515a", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u6d1b\u96f7\u5a1c\u00b7\u6bd4\u5229\u4e9a\u97e6\u5fb7", "width": 2}, {"color": "#95a5a6", "from": "\u83ab\u65af\u79d1", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u4fc4\u7f57\u65af\u603b\u7edf\u5f17\u62c9\u57fa\u7c73\u5c14\u00b7\u666e\u4eac", "width": 2}, {"color": "#95a5a6", "from": "\u83ab\u65af\u79d1", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u6b27\u6d32\u56fd\u5bb6", "width": 2}, {"color": "#95a5a6", "from": "\u83ab\u65af\u79d1", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u897f\u65b9", "width": 2}, {"color": "#95a5a6", "from": "\u8f9b\u9f99", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u5218\u771f", "width": 2}, {"color": "#95a5a6", "from": "\u9ebb\u7701\u7406\u5de5\u5b66\u9662", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\u5e03\u6717\u5927\u5b66", "width": 2}, {"color": "#95a5a6", "from": "\ubbfc\uc911\uae30 \ud2b9\ubcc4\uac80\uc0ac\ud300", "smooth": {"enabled": true, "type": "dynamic"}, "title": "\u5171\u73b0 2 \u6b21", "to": "\uac1c\ud601\uc2e0\ub2f9", "width": 2}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -2000,
+            "springConstant": 0.04,
+            "springLength": 150
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

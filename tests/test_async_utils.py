@@ -10,8 +10,8 @@ from unittest.mock import patch, AsyncMock, MagicMock
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.utils.llm_utils import AsyncExecutor, RateLimiter
-from src.utils.file_utils import AsyncFileOperations, AsyncFileLock
+from src.infra.async_utils import AsyncExecutor, RateLimiter
+from src.infra.file_utils import AsyncFileOperations, AsyncFileLock
 
 
 class TestAsyncExecutor:

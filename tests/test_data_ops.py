@@ -14,7 +14,7 @@ from unittest.mock import patch, mock_open, MagicMock
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.utils.data_ops import (
+from src.domain.data_operations import (
     write_jsonl_file, read_jsonl_file, write_json_file, read_json_file,
     sanitize_datetime_fields, create_temp_file_path, update_entities,
     update_abstract_map, merge_entity_data, merge_event_data,
@@ -90,12 +90,13 @@ class TestDataOperations:
         assert temp_path.name.endswith("data.jsonl")
         assert len(temp_path.name) > 20  # 包含时间戳
 
-    @patch('src.utils.data_utils.safe_save_data')
-    @patch('src.utils.data_utils.load_json_data')
-    def test_update_entities(self, mock_load, mock_safe_save, temp_dir):
+    @patch('src.adapters.sqlite.store.get_store')
+    def test_update_entities(self, mock_get_store, temp_dir):
         """测试实体更新"""
-        mock_load.return_value = {}  # 空字典表示没有现有数据
-        mock_safe_save.return_value = True
+        # 模拟 SQLite store 成功
+        mock_store = MagicMock()
+        mock_get_store.return_value = mock_store
+        mock_store.upsert_entities.return_value = None
 
         entities = ["实体A", "实体B"]
         entities_original = ["Entity A", "Entity B"]
@@ -103,14 +104,15 @@ class TestDataOperations:
         result = update_entities(entities, entities_original, "test_source", "2023-01-01")
 
         assert result is True
-        mock_safe_save.assert_called_once()
+        mock_store.upsert_entities.assert_called_once()
 
-    @patch('src.utils.data_utils.safe_save_data')
-    @patch('src.utils.data_utils.load_json_data')
-    def test_update_abstract_map(self, mock_load, mock_safe_save, temp_dir):
+    @patch('src.adapters.sqlite.store.get_store')
+    def test_update_abstract_map(self, mock_get_store, temp_dir):
         """测试抽象映射更新"""
-        mock_load.return_value = {}  # 空字典表示没有现有数据
-        mock_safe_save.return_value = True
+        # 模拟 SQLite store 成功
+        mock_store = MagicMock()
+        mock_get_store.return_value = mock_store
+        mock_store.upsert_events.return_value = None
 
         extracted_list = [
             {"abstract": "事件1", "entities": ["实体A"], "event_summary": "摘要1"}
@@ -119,7 +121,7 @@ class TestDataOperations:
         result = update_abstract_map(extracted_list, "test_source", "2023-01-01")
 
         assert result is True
-        mock_safe_save.assert_called_once()
+        mock_store.upsert_events.assert_called_once()
 
 
 class TestDataMerging:

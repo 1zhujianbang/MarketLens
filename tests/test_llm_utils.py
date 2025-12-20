@@ -12,7 +12,7 @@ from unittest.mock import patch, AsyncMock, MagicMock
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from src.utils.llm_utils import (
+from src.infra.async_utils import (
     call_llm_with_retry, create_extraction_prompt,
     create_deduplication_prompt, create_event_deduplication_prompt
 )
