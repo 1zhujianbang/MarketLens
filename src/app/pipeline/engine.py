@@ -43,7 +43,6 @@ class PipelineEngine:
     def _ensure_tools_loaded(self) -> None:
         """
         确保工具已注册到 FunctionRegistry。
-        由于我们把 src/__init__ 轻量化了，脚本/worker 场景下需要显式加载 src.functions 才能触发 @register_tool。
         """
         if self._tools_loaded:
             return
@@ -53,7 +52,7 @@ class PipelineEngine:
         
         errors = []
         
-        # 先加载业务模块（app/business），确保所有 @register_tool 被执行
+        # 加载业务模块（app/business），确保所有 @register_tool 被执行
         try:
             importlib.import_module("src.app.business")
         except Exception as e:
@@ -64,12 +63,6 @@ class PipelineEngine:
             importlib.import_module("src.interfaces.tools")
         except Exception as e:
             errors.append(f"src.interfaces.tools: {e}\n{traceback.format_exc()}")
-        
-        # 加载旧入口（functions）保证兼容
-        try:
-            importlib.import_module("src.functions")
-        except Exception as e:
-            errors.append(f"src.functions: {e}\n{traceback.format_exc()}")
         
         self._tools_loaded = True
         

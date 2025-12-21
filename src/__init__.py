@@ -2,7 +2,7 @@
 src 包入口（轻量 + 懒加载）。
 
 原则：
-- import src 不应触发 agents/functions/utils/core 的重型初始化
+- import src 不应触发 core/storage/web/app 的重型初始化
 - 需要某个子包时再显式 import（或通过 __getattr__ 访问）
 """
 
@@ -12,7 +12,7 @@ from typing import Any
 
 __version__ = "2.0.0"
 
-_LAZY_SUBPACKAGES = {"agents", "functions", "utils", "core", "storage", "web", "app"}
+_LAZY_SUBPACKAGES = {"core", "storage", "web", "app"}
 
 
 def __getattr__(name: str) -> Any:  # PEP 562
