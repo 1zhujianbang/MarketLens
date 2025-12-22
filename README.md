@@ -1,6 +1,6 @@
 # MarketLens feature branch update
 
-feature分支的当前版本主要更新了以下内容：
+`feature`分支的当前版本主要更新了以下内容：
 
 ## 1. **测试基础设施完善**
 - 为所有新增模块创建了完整的单元测试和集成测试
