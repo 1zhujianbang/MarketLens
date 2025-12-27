@@ -1,6 +1,7 @@
-version: '1.0.0'
+version: '3.8'
 
 services:
+  # Web应用服务
   news-agent-system:
     build: .
     ports:
@@ -14,22 +15,90 @@ services:
       - STREAMLIT_SERVER_HEADLESS=true
       - STREAMLIT_SERVER_PORT=8501
       - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
     restart: unless-stopped
+    depends_on:
+      - redis
+      - neo4j
     healthcheck:
       test: ["CMD", "python", "-c", "from src.core import get_config_manager; get_config_manager()"]
       interval: 30s
       timeout: 10s
       retries: 3
       start_period: 40s
+    networks:
+      - marketlens-network
 
-  # 可选：添加Redis用于缓存（如果需要）
-  # redis:
-  #   image: redis:7-alpine
-  #   ports:
-  #     - "6379:6379"
-  #   volumes:
-  #     - redis_data:/data
-  #   restart: unless-stopped
+  # Redis缓存服务
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+    networks:
+      - marketlens-network
+
+  # Neo4j图数据库服务
+  neo4j:
+    image: neo4j:5-community
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+    environment:
+      - NEO4J_AUTH=neo4j/password
+      - NEO4J_server_memory_heap_initial__size=1G
+      - NEO4J_server_memory_heap_max__size=2G
+    restart: unless-stopped
+    networks:
+      - marketlens-network
+
+  # Celery Worker服务
+  celery-worker:
+    build: .
+    command: celery -A src.app.pipeline.celery_worker worker --loglevel=info --queues=pipelines,steps
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    restart: unless-stopped
+    depends_on:
+      - redis
+    networks:
+      - marketlens-network
+
+  # Celery Beat服务
+  celery-beat:
+    build: .
+    command: celery -A src.app.pipeline.celery_worker beat --loglevel=info
+    volumes:
+      - ./data:/app/data
+      - ./config:/app/config
+      - ./.env:/app/.env
+    environment:
+      - PYTHONPATH=/app
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    restart: unless-stopped
+    depends_on:
+      - redis
+    networks:
+      - marketlens-network
 
 volumes:
   redis_data:
+  neo4j_data:
+  neo4j_logs:
+
+networks:
+  marketlens-network:
+    driver: bridge
