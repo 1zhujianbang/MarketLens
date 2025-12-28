@@ -1,6 +1,10 @@
 # MarketLens feat branch update
 
 `feat`分支的当前版本主要更新了以下内容：
+v1.4
+- Neo4j 迁移与验证工具：新增 `migrate_sqlite_to_neo4j` 工具与连接/迁移脚本
+- LLM 池支持 Ollama（OpenAI 兼容接口）
+- Neo4j 图数据库支持：通过 `KG_STORE_BACKEND=neo4j|dual` 可切换/双写（配套 `NEO4J_URI/USER/PASSWORD`）
 v1.3
 - 实现Neo4j适配器与快照功能
 - 新增Neo4j图数据库适配器，支持Cypher查询和批量操作
