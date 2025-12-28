@@ -1514,14 +1514,14 @@ class EntityRelationGraphRenderer(GraphRenderer):
             co_occurrence = rel["co_occurrence"]
             
             # 颜色映射
-            if co_occurrence >= 5:
+            if co_occurrence >= 20:
                 color = GraphStyle.COLOR_RELATION_STRONG
-            elif co_occurrence >= 3:
+            elif co_occurrence >= 10:
                 color = GraphStyle.COLOR_RELATION_MEDIUM
             else:
                 color = GraphStyle.COLOR_RELATION_WEAK
             
-            width = min(co_occurrence, 8)
+            width = min(co_occurrence / 10 + 1, 5)
 
             abs_list = []
             raw_events = rel.get("events")
@@ -1626,9 +1626,9 @@ class EntityRelationGraphRenderer(GraphRenderer):
         with st.expander("🎨 图例说明"):
             st.markdown(f"""
             **边颜色**：
-            - <span style='color:{GraphStyle.COLOR_RELATION_STRONG}'>●</span> 强关系（共现 ≥ 5 次）
-            - <span style='color:{GraphStyle.COLOR_RELATION_MEDIUM}'>●</span> 中等关系（共现 3-4 次）
-            - <span style='color:{GraphStyle.COLOR_RELATION_WEAK}'>●</span> 弱关系（共现 2 次）
+            - <span style='color:{GraphStyle.COLOR_RELATION_STRONG}'>●</span> 强关系（共现 ≥ 20 次）
+            - <span style='color:{GraphStyle.COLOR_RELATION_MEDIUM}'>●</span> 中等关系（共现 10-20 次）
+            - <span style='color:{GraphStyle.COLOR_RELATION_WEAK}'>●</span> 弱关系（共现 ≤ 10 次）
             - <span style='color:#ff9800'>●</span> 实体关系（三元组，虚线带箭头）
             
             **边宽度**：表示关系强度
